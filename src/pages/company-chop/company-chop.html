@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar header-color>
+    <!-- <ion-title text-left>HKID (1/2)</ion-title> -->
+  </ion-navbar>
+</ion-header>
+<!-- Themes Register + logo -->
+<ion-content background-size default-background>
+  <ion-grid>
+    <ion-row wrap padding>
+      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 no-padding>
+        <div class="form">
+          <h1 title>印章 | Company Chop</h1>
+          <ion-row margin-bottom padding-bottom>
+            <ion-col class="p-l-r-10 p-t-b-0" margin-vertical padding-vertical>
+              <p margin-bottom>如果您單位屬於貴公司，請上傳其印章圖片 | IF YOUR UNIT(S) IS OWNED BY YOUT COMPANY, PLEASE UPLOAD A PHOTO OF THE COMPANY CHOP.</p>
+              <!-- <ion-row>
+                  <ion-col text-center no-padding class="img-preview-div">
+                    <img *ngIf="!license_image" src="./assets/images/logo/login.png" class="preview-image" alt="">
+                    <img *ngIf="license_image" [src]="license_image" class="preview-image" alt="">
+                  </ion-col>
+                </ion-row> -->
+              <ion-row>
+                <ion-col text-center no-padding>
+                  <button ion-button button-clear-outline round outline color="mytheme" (click)="presentActionSheet()">
+                    <ion-icon name="ios-camera-outline" class="camera-icon"></ion-icon>
+                    拍 | Take</button>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row margin-top>
+            <ion-col text-center margin-top>
+              <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="goToRegister()">下一頁 | Next</button>
+            </ion-col>
+          </ion-row>
+        </div>
+        <!-- <div logo>
+            <img left src="./assets/images/logo/login_3.png">
+          </div> -->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,107 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.header-background-image {
+    background-image: url('../assets/images/background/16.jpg');
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    @include darkening-blend-mode;
+    img {
+        padding-top: 40px;
+        margin: 0 auto;
+        height: 100px;
+        display: block;
+        position: relative;
+        z-index: 9;
+        max-width: 60px;
+    }
+    [item-title] {
+        color: theme-colors('textColors', 'accent-first') !important;
+        position: relative;
+        z-index: 9;
+    }
+} // Settings Main  Menu
+[main-menu] {
+    padding-left: 30px;
+    .item-inner {
+        margin-left: 0 !important;
+    }
+    [icon-small] {
+        margin-top: 18px !important;
+    }
+} // Settings Submenu
+[submenu] {
+    ion-label {
+        padding-left: 30px !important;
+    }
+}
+
+.toolbar .toolbar-background {
+    background: #00bee4;
+    background: linear-gradient(to left, #00bee4 0, #0091d2 100%);
+}
+
+.toolbar .toolbar-title {
+    color: #ffffff;
+}
+
+.bar-buttons {
+    color: #ffffff;
+}
+
+img {
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.button-outline-ios.activated {
+    color: #ffffff !important;
+}
+
+.label[stacked],
+.label[floating] {
+    margin-left: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.p-l-r-10 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.p-t-b-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.action-sheet-ios .action-sheet-button {
+    color: #0090d0;
+}
+
+.action-sheet-md .action-sheet-button {
+    color: #0090d0;
+}
+
+.tabs .tab-button[aria-selected=true] .tab-button-icon {
+    color: #ffffff;
+}
+
+.tabs .tab-button-icon {
+    color: rgba(60, 60, 60, 0.7);
+}
+
+[c-width-100] {
+    width: 100%;
+}

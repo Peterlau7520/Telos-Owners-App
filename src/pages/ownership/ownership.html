@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar header-color>
+    <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <!-- <ion-title text-left>Ownership</ion-title> -->
+  </ion-navbar>
+</ion-header>
+<!-- Themes Register + logo -->
+<ion-content background-size default-background>
+  <ion-grid>
+    <ion-row wrap padding>
+      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 no-padding>
+        <!--Form-->
+        <div class="form">
+          <!--Form Title-->
+          <h1 title>業主資料 | Ownership</h1>
+          <ion-row>
+            <ion-col class="p-l-r-10 p-t-b-0">
+              <p>請輸入您單位的每一位業主之全名 | Please enter the full names of all the owners of your unit:</p>
+              <ion-item no-padding *ngFor="let owners_info of owners_list; let i = index;">
+                <ion-label floating margin-top>全名 | FULL NAME ({{i+1}})</ion-label>
+                <ion-input required type="text" [(ngModel)]="owners_info.owner_full_name"></ion-input>
+                <button ion-button clear item-end no-margin no-padding class="close-btn">
+                  <ion-icon name="md-close" (click)="removeItemFromArray(i)" *ngIf="owners_list.length>1">
+                  </ion-icon>
+                </button>
+                <!-- <ion-icon item-end name="md-close" class="close-icon">
+                </ion-icon> -->
+              </ion-item>
+              <!-- <ion-item no-padding>
+                <ion-label floating margin-top>全名 | FULL NAME</ion-label>
+                <ion-input required type="text"></ion-input>
+              </ion-item> -->
+              <!---Register button-->
+              <ion-row margin-vertical>
+                <ion-col text-center margin-bottom>
+                  <button ion-button button-clear-outline round outline color="mytheme" (click)="pushItemIntoArray()">加業主 | Add Owner</button>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row margin-top>
+            <ion-col text-center margin-top>
+              <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="goToIDVerification1()">下一頁 | Next</button>
+            </ion-col>
+          </ion-row>
+        </div>
+        <!-- <div logo>
+          <img left src="./assets/images/logo/login_3.png">
+        </div> -->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

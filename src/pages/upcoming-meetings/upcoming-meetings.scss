@@ -1,0 +1,29 @@
+page-upcoming-meetings {
+    [card-image] {
+        position: relative;
+        @include darkening-blend-mode;
+        &::before {
+            z-index: 3;
+        }
+        img {
+            width: 100% !important;
+        }
+        [card-title] {
+            color: theme-colors('textColors', 'accent-first') !important;
+            position: absolute;
+            left: 16px;
+            bottom: 20px;
+            z-index: 999;
+        }
+    }
+    .card-content {
+        padding: 13px 10px;
+    }
+    [card-body-text] {
+        letter-spacing: 0.5px;
+    }
+    .footer-card-txt {
+        letter-spacing: 0;
+        font-weight: 600 !important;
+    }
+}

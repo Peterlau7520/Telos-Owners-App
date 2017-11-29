@@ -1,0 +1,41 @@
+<!-- <ion-header>
+  <ion-navbar header-color>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-left>Login</ion-title>
+  </ion-navbar>
+</ion-header> -->
+<!-- Themes Login + logo -->
+<ion-content white-background>
+  <ion-grid class="bottom-div">
+    <ion-row wrap padding>
+      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 padding-bottom>
+        <!-- <button ion-button button-clear clear (click)="onEvent('onSkip')">Skip</button> -->
+        <!---Logo-->
+        <img src="./assets/images/logo/telos_logo.png" style="margin-bottom:0px;">
+        <!-- <p text-center ion-button no-margin clear full style="font-size: 18px;">TELOS</p> -->
+        <!---Input field username-->
+        <ion-item no-padding transparent>
+          <ion-label floating no-margin>用戶名 | USERNAME</ion-label>
+          <ion-input required type="text"></ion-input>
+        </ion-item>
+        <!---Input field password-->
+        <ion-item no-padding transparent>
+          <ion-label floating no-margin>密碼 | PASSWORD</ion-label>
+          <ion-input required type="password"></ion-input>
+        </ion-item>
+        <!---Login button-->
+        <ion-row>
+          <ion-col col-12 text-center no-padding>
+            <button ion-button button-clear-outline text-center round outline class="login-button" color="mytheme" (click)="doLoginFunction()">签入 | Log In</button>
+          </ion-col>
+          <ion-col col-12 no-padding text-center>
+            <a (click)="goToRegister()" class="create-acc">Create an account</a>
+          </ion-col>
+        </ion-row>
+        <!---Register button-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

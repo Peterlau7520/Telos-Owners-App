@@ -1,0 +1,60 @@
+page-personal-details {
+    [default-background] {
+        background-image: url("../assets/images/background/29.jpg");
+        @include darkening-blend-mode;
+    }
+    img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .form {
+        background: #fff;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow-z2;
+        padding: 15px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        .item-inner {
+            border-bottom-color: theme-colors('mainColors', 'primary') !important;
+            box-shadow: none !important;
+        }
+        [button-clear] {
+            margin-top: 15px;
+        }
+        [title] {
+            font-size: font-size-text('h1');
+            color: #0d96d2;
+            font-weight: 600;
+            margin: 0;
+        }
+        p {
+            color: #0d96d2;
+            font-size: 13px;
+        }
+    }
+    [logo] {
+        [button-clear] {
+            color: theme-colors('textColors', 'accent-first') !important;
+            font-weight: 300;
+        }
+    }
+    .preview-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .img-preview-div {
+        height: 140px;
+    }
+    .next-button {
+        width: 70%;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .camera-icon {
+        font-size: 1.5em;
+    }
+    /* .grid {
+        height: 94%;
+        justify-content: center;
+    } */
+}

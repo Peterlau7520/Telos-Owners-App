@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar header-color>
+    <!-- <ion-title text-left>HKID (2/2)</ion-title> -->
+  </ion-navbar>
+</ion-header>
+<!-- Themes Register + logo -->
+<ion-content background-size default-background>
+  <ion-grid>
+    <ion-row wrap padding>
+      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 no-padding>
+        <div class="form">
+          <h1 title>身分證 | HKID (2/2)</h1>
+          <ion-row>
+            <ion-col class="p-l-r-10 p-t-b-0">
+              <p>請上傳您身分證圖片跟輸入其號碼 | Please upload a photo of your HKID and enter your HKID number below (e.g. R123456)</p>
+              <ion-row>
+                <ion-col text-center no-padding class="img-preview-div">
+                  <img *ngIf="!license_image" src="./assets/images/logo/sample.png" class="preview-image" alt="">
+                  <img *ngIf="license_image" [src]="license_image" class="preview-image" alt="">
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col text-center margin-top no-padding>
+                  <button ion-button button-clear-outline round outline color="mytheme" (click)="presentActionSheet()">
+                    <ion-icon name="ios-camera-outline" class="camera-icon"></ion-icon>
+                    拍 | Take</button>
+                </ion-col>
+              </ion-row>
+              <!---Input field username-->
+              <ion-item no-padding padding-bottom>
+                <ion-label floating>身分證號碼 | HKID NUMBER (e.g. R123456)</ion-label>
+                <ion-input required type="text"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row margin-top>
+            <ion-col text-center margin-top>
+              <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="goToCompanyChop()">確定 | Submit</button>
+            </ion-col>
+          </ion-row>
+        </div>
+        <!-- <div logo>
+            <img left src="./assets/images/logo/login_3.png">
+          </div> -->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

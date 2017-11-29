@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar header-color>
+  </ion-navbar>
+</ion-header>
+<ion-content background-size default-background>
+  <ion-grid>
+    <ion-row wrap padding>
+      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 no-padding>
+        <div class="form">
+          <h1 title>註冊 | Register</h1>
+          <ion-row>
+            <ion-col class="p-l-r-10 p-t-b-0">
+              <ion-item no-padding>
+                <ion-label floating margin-top>用戶名 | USERNAME</ion-label>
+                <ion-input required type="text"></ion-input>
+              </ion-item>
+              <ion-item no-padding>
+                <ion-label floating margin-top>密碼 | PASSWORD</ion-label>
+                <ion-input required type="password"></ion-input>
+              </ion-item>
+              <ion-item no-padding>
+                <ion-label floating margin-top>再次輸入密碼 | RE-ENTER PASSWORD</ion-label>
+                <ion-input required type="password"></ion-input>
+              </ion-item>
+              <ion-row margin-top>
+                <ion-col text-center margin-top padding-top>
+                  <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="goToPersonalDetails()">下一頁 | Next</button>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </div>
+        <!-- <div logo>
+            <img left src="./assets/images/logo/login_3.png">
+          </div> -->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
