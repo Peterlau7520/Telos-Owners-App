@@ -24,7 +24,8 @@
               <div class="collapsible-header" no-margin no-padding (click)="toggleGroup(group)">
                 <ion-item no-padding text-center transparent no-lines text-center>
                   <h2 text-center item-title>{{group.group_title}}</h2>
-                  <!-- <ion-checkbox></ion-checkbox> -->
+                  <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="group.is_complete">
+                  </ion-icon>
                 </ion-item>
               </div>
               <!-- Expandable Centered with header Body -->
@@ -36,19 +37,9 @@
                       <p>Cost : {{option_details.cost}}</p>
                       <p>Description : {{option_details.description}}</p>
                     </ion-label>
-                    <ion-checkbox></ion-checkbox>
+                    <ion-checkbox [(ngModel)]="option_details.is_checked"></ion-checkbox>
                   </ion-item>
                 </ion-card>
-                <!-- <ion-card no-margin c-width-100>
-                  <ion-item>
-                    <ion-label margin-vertical item-title>
-                      <p under-line>Option 2</p>
-                      <p>Cost : </p>
-                      <p>Description : </p>
-                    </ion-label>
-                    <ion-checkbox></ion-checkbox>
-                  </ion-item>
-                </ion-card> -->
               </div>
             </ion-card>
           </li>
@@ -56,7 +47,7 @@
       </ion-list>
       <ion-row margin-vertical>
         <ion-col text-center margin-top padding-horizontal>
-          <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="submitData()">確定 | Submit</button>
+          <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="submitData(survey_details.group_list)">確定 | Submit</button>
         </ion-col>
       </ion-row>
     </ion-col>

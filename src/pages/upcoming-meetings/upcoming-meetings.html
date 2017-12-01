@@ -10,95 +10,14 @@
 <ion-content>
   <ion-grid no-padding>
     <ion-row margin-bottom>
-      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
+      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 *ngFor="let meeting_details of upcoming_meeting_list;" (click)="goToViewMeetingDetails(meeting_details)">
         <ion-card text-left>
           <div card-image>
-            <img images-filter src="./assets/images/background/1.jpg" />
-            <h2 card-title>Meeting Title</h2>
+            <img images-filter [src]="meeting_details.meeting_background" />
+            <h2 card-title>{{meeting_details.meeting_title}}</h2>
           </div>
           <ion-card-content>
-            <p card-body-text>meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary
-              meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary</p>
-            <ion-row margin-top padding-top>
-              <ion-col no-padding>
-                <p card-body-text class="footer-card-txt">Meeting Date & Time:</p>
-              </ion-col>
-              <ion-col no-padding>
-                <p card-body-text class="footer-card-txt">Venue:</p>
-              </ion-col>
-            </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
-        <ion-card text-left>
-          <div card-image>
-            <img images-filter src="./assets/images/background/6.jpg" />
-            <h2 card-title>Meeting Title</h2>
-          </div>
-          <ion-card-content>
-            <p card-body-text>meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary
-              meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary</p>
-            <ion-row margin-top padding-top>
-              <ion-col no-padding>
-                <p card-body-text class="footer-card-txt">Meeting Date & Time:</p>
-              </ion-col>
-              <ion-col no-padding>
-                <p card-body-text class="footer-card-txt">Venue:</p>
-              </ion-col>
-            </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
-        <ion-card text-left>
-          <div card-image>
-            <img images-filter src="./assets/images/background/7.jpg" />
-            <h2 card-title>Meeting Title</h2>
-          </div>
-          <ion-card-content>
-            <p card-body-text>meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary
-              meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary</p>
-            <ion-row margin-top padding-top>
-              <ion-col no-padding>
-                <p card-body-text class="footer-card-txt">Meeting Date & Time:</p>
-              </ion-col>
-              <ion-col no-padding>
-                <p card-body-text class="footer-card-txt">Venue:</p>
-              </ion-col>
-            </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
-        <ion-card text-left>
-          <div card-image>
-            <img images-filter src="./assets/images/background/8.jpg" />
-            <h2 card-title>Meeting Title</h2>
-          </div>
-          <ion-card-content>
-            <p card-body-text>meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary
-              meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary</p>
-            <ion-row margin-top padding-top>
-              <ion-col no-padding>
-                <p card-body-text class="footer-card-txt">Meeting Date & Time:</p>
-              </ion-col>
-              <ion-col no-padding>
-                <p card-body-text class="footer-card-txt">Venue:</p>
-              </ion-col>
-            </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
-        <ion-card text-left>
-          <div card-image>
-            <img images-filter src="./assets/images/background/9.jpg" />
-            <h2 card-title>Meeting Title</h2>
-          </div>
-          <ion-card-content>
-            <p card-body-text>meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary
-              meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary</p>
+            <p card-body-text>{{meeting_details.meeting_desc}}</p>
             <ion-row margin-top padding-top>
               <ion-col no-padding>
                 <p card-body-text class="footer-card-txt">Meeting Date & Time:</p>

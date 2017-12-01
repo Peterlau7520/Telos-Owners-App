@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../../pages/home/home';
 
 @IonicPage()
 @Component({
@@ -17,7 +18,7 @@ export class PersonalDetails {
 
   finishRegistration() {
     console.log("finishRegistration");
-    this.navCtrl.popToRoot();
+    this.navCtrl.setRoot(HomePage);
   }
 
 }
