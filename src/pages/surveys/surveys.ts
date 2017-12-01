@@ -19,7 +19,8 @@ export class Surveys {
     for (let i = 0; i < 3; i++) {
       let tmp_group_list = [];
       this.survey_list.push({
-        "survey_title": "Survey " + (i + 1)
+        "survey_title": "Survey " + (i + 1),
+        "is_complete": false
       });
       for (let j = 0; j < 2; j++) {
         let tmp_option_list = [];
@@ -29,7 +30,8 @@ export class Surveys {
         for (let k = 0; k < 2; k++) {
           tmp_option_list.push({
             "cost": "",
-            "description": "sample description"
+            "description": "sample description",
+            "is_checked": false
           });
         }
         console.log(tmp_option_list);
@@ -54,8 +56,23 @@ export class Surveys {
     return group.show;
   }
 
-  submitData() {
-
+  submitData(group) {
+    /* group.is_complete = true; */
+    for (let i = 0; i < group.length; i++) {
+      console.log(group[i]);
+      let tmp_option_list = group[i].option_list;
+      for (let j = 0; j < tmp_option_list.length; j++) {
+        if (tmp_option_list[j].is_checked == true) {
+          console.log("TRUE");
+          group[i].is_complete = true;
+        }
+        else {
+          console.log("FALSE");
+          group[i].is_complete = false;
+        }
+      }
+    }
+    console.log(group);
   }
 
 }

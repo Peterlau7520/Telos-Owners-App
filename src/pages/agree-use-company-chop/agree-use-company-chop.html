@@ -1,0 +1,23 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss()"></div>
+  <div class="modal_content">
+    <ion-row class="modal_inner_content">
+      <ion-col col-12>
+        <p class="agree-title" text-center>Agree to use your company's chop to appoint a Telos employee as a proxy : </p>
+      </ion-col>
+      <ion-col col-12>
+        <p>
+          &nbsp;
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="acceptAgreement()">Accept</button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="dismiss()">Decline</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

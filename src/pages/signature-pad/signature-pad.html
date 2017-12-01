@@ -1,0 +1,22 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss()"></div>
+  <div class="modal_content">
+    <ion-row class="modal_inner_content">
+      <ion-col>
+        <ion-row>
+          <p col-12 class="agree-title" text-center>Electronic Signature ({{current_signature}}/{{total_signatures}})</p>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12 border-bottom>
+            <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="saveSignature()">Submit</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
