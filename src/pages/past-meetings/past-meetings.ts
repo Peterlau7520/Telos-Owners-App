@@ -29,6 +29,9 @@ export class PastMeetings {
 
   goToViewMeetingDetails(meeting_details) {
     console.log(meeting_details);
+    let tmp_meeting_details = JSON.stringify(meeting_details);
+    localStorage.setItem("meeting_details", tmp_meeting_details);
+    this.navCtrl.push("ViewPastMeetingDetails", { "meeting_details": tmp_meeting_details });
   }
 
 }

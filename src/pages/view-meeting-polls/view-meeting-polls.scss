@@ -49,4 +49,61 @@ page-view-meeting-polls {
     .item-inner {
         padding: 0 !important;
     }
+    ul>li:last-child ion-item:before {
+        border-bottom: 1px solid transparent !important;
+    }
+    li {
+        list-style: none;
+    }
+    ion-list-header {
+        &[background-size] {
+            height: 200px;
+            width: 100%;
+        }
+        [item-title] {
+            z-index: 5;
+            position: relative;
+        }
+    }
+    .item-accordion {
+        height: 0;
+        /* @include gradient-accent ($color-1, $color-2); */
+        display: block !important;
+        -webkit-transition: all 300ms;
+        transition: all 300ms;
+        overflow: hidden;
+        &.active {
+            -webkit-transition: all 300ms;
+            transition: all 300ms;
+            height: auto !important;
+        }
+    }
+    .collapsible-header {
+        background-color: #efefef;
+        .item-md.item-block .item-inner {
+            padding-right: 0 !important;
+        }
+        ion-icon {
+            display: block;
+            text-align: center;
+        }
+    }
+    [under-line] {
+        text-decoration: underline;
+    }
+    .item p {
+        font-weight: 600;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .summary-title {
+        font-weight: 600;
+        margin: 8px 0 !important;
+    }
+    .summary-desc {
+        margin-bottom: 15px !important;
+    }
+    .check-mark-style {
+        color: #69BB7B;
+    }
 }

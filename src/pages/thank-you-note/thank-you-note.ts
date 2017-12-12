@@ -16,13 +16,7 @@ export class ThankYouNote {
   }
 
   dismiss() {
-    /* this.navCtrl.push("ViewMeetingDetails").then(() => { */
-    localStorage.setItem("", "");
     this.viewCtrl.dismiss();
-
-    /* const index = this.viewCtrl.index;
-    this.navCtrl.remove(index); */
-    /* }); */
   }
 
 }

@@ -16,13 +16,13 @@ export class AgreeUseTelos {
   }
 
   openAgeeUseCompany() {
-    let myModal = this.modalCtrl.create("AgreeUseCompanyChop");
-    myModal.present();
-    this.viewCtrl.dismiss();
+    /* let myModal = this.modalCtrl.create("AgreeUseCompanyChop");
+    myModal.present(); */
+    this.viewCtrl.dismiss("accept");
   }
 
   dismiss() {
-    this.viewCtrl.dismiss();
+    this.viewCtrl.dismiss("decline");
   }
 
 }

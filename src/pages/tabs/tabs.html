@@ -1,6 +1,7 @@
-<ion-tabs>
-  <ion-tab [root]="tab1Root" tabTitle="Noticaboard" tabIcon="ios-alert"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="Upcoming Meetings" tabIcon="ios-calendar"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Past Meetings" tabIcon="ios-paper"></ion-tab>
-  <ion-tab [root]="tab4Root" tabTitle="Surveys" tabIcon="ios-clipboard"></ion-tab>
+<ion-tabs (ionChange)="tabChanged($event)">
+  <ion-tab [root]="tab1Root" tabTitle="通告 Noticaboard" tabIcon="ios-alert"></ion-tab>
+  <!-- <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="ios-calendar" [tabBadge]="badgeCount" tabBadgeStyle="danger"></ion-tab> -->
+  <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="ios-calendar"></ion-tab>
+  <!-- <ion-tab [root]="tab3Root" tabTitle="以往會議 Past&nbsp;Meetings" tabIcon="ios-paper"></ion-tab> -->
+  <ion-tab [root]="tab4Root" tabTitle="問卷 Surveys" tabIcon="ios-clipboard"></ion-tab>
 </ion-tabs>

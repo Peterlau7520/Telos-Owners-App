@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import { Platform, ToastController, AlertController } from 'ionic-angular';
@@ -6,7 +6,7 @@ import { Platform, ToastController, AlertController } from 'ionic-angular';
 @Injectable()
 export class ShowMessage {
 
-  constructor(public http: HttpClient, public platform: Platform, public toastCtrl: ToastController, public alertCtrl: AlertController) {
+  constructor(public http: Http, public platform: Platform, public toastCtrl: ToastController, public alertCtrl: AlertController) {
   }
 
   public showToastBottom(text) {

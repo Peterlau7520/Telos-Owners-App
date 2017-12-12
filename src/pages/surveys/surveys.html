@@ -9,19 +9,19 @@
 
 <ion-content white-background>
   <ion-row margin-bottom>
-    <ion-col col-12 *ngFor="let survey_details of survey_list">
+    <ion-col col-12>
       <ion-row padding>
         <ion-col col-12 no-padding>
-          <p survey-desc>Survey Title: {{survey_details.survey_title}}</p>
-          <p survey-desc>Complete By:</p>
+          <p style="font-size: 16px !important;" no-margin>Survey Title: {{survey_details.survey_title}}</p>
+          <p style="font-size: 16px !important;" no-margin>Complete By:</p>
         </ion-col>
       </ion-row>
       <ion-list>
         <ul no-margin no-padding class="collapsible">
-          <li no-margin *ngFor="let group of survey_details.group_list;">
+          <li no-margin *ngFor="let group of survey_details.group_list; let i=index;">
             <ion-card>
               <!-- Expandable Centered with header Header-->
-              <div class="collapsible-header" no-margin no-padding (click)="toggleGroup(group)">
+              <div class="collapsible-header" no-margin no-padding (click)="toggleGroup1(group, i, survey_details)">
                 <ion-item no-padding text-center transparent no-lines text-center>
                   <h2 text-center item-title>{{group.group_title}}</h2>
                   <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="group.is_complete">
@@ -30,16 +30,20 @@
               </div>
               <!-- Expandable Centered with header Body -->
               <div class="item-accordion" [ngClass]="{'active': isGroupShown(group) }" [hidden]="!isGroupShown(group)">
-                <ion-card no-margin c-width-100 *ngFor="let option_details of group.option_list;">
-                  <ion-item>
-                    <ion-label margin-vertical item-title>
-                      <p under-line>Option 1</p>
-                      <p>Cost : {{option_details.cost}}</p>
-                      <p>Description : {{option_details.description}}</p>
-                    </ion-label>
-                    <ion-checkbox [(ngModel)]="option_details.is_checked"></ion-checkbox>
-                  </ion-item>
-                </ion-card>
+
+                <ion-list radio-group [(ngModel)]="group.is_complete" (ionChange)="valueChanged(group, i, survey_details)">
+                  <ion-card no-margin c-width-100 *ngFor="let option_details of group.option_list; let k=index;">
+                    <ion-item text-wrap>
+                      <ion-label margin-vertical item-title>
+                        <p under-line>Option 1</p>
+                        <p>Cost : {{option_details.cost}}</p>
+                        <p>Description : {{option_details.description}}</p>
+                      </ion-label>
+                      <!-- <ion-checkbox [(ngModel)]="option_details.is_checked" (ionChange)="valueChanged($event, group, i, k, survey_details)"></ion-checkbox> -->
+                      <ion-radio item-left [value]="k+1" color="mytheme"></ion-radio>
+                    </ion-item>
+                  </ion-card>
+                </ion-list>
               </div>
             </ion-card>
           </li>

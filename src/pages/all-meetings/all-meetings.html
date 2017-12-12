@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar header-color>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-left>Meetings</ion-title>
+  </ion-navbar>
+</ion-header>
+<!-- Themes Register + logo -->
+<ion-content white-background>
+  <ion-row margin-bottom>
+    <ion-col col-12>
+      <ul no-margin no-padding class="collapsible">
+        <li no-margin>
+          <ion-card>
+            <div class="collapsible-header" no-margin no-padding (click)="goToUpcomingMeetings()">
+              <ion-item no-padding padding text-center transparent no-lines text-center>
+                <ion-label style="margin-right: 0; margin-left: 0;">
+                  <h2 text-center no-margin class="survey-title-text">Upcoming Meetings</h2>
+                </ion-label>
+              </ion-item>
+            </div>
+          </ion-card>
+        </li>
+        <li no-margin>
+          <ion-card>
+            <div class="collapsible-header" no-margin no-padding (click)="goToPastMeetings()">
+              <ion-item no-padding padding text-center transparent no-lines text-center>
+                <ion-label style="margin-right: 0; margin-left: 0;">
+                  <h2 text-center no-margin class="survey-title-text">Past Meetings</h2>
+                </ion-label>
+              </ion-item>
+            </div>
+          </ion-card>
+        </li>
+      </ul>
+    </ion-col>
+  </ion-row>
+</ion-content>

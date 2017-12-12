@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, ModalController } from 'ionic-angular';
-import { SignaturePadPage } from '../../pages/signature-pad/signature-pad';
+/* import { SignaturePadPage } from '../../pages/signature-pad-page/signature-pad-page'; */
 
 @IonicPage()
 @Component({
@@ -17,16 +17,16 @@ export class AgreeUseCompanyChop {
   }
 
   dismiss() {
-    this.viewCtrl.dismiss();
+    this.viewCtrl.dismiss("decline");
   }
 
   acceptAgreement() {
-    let myModal = this.modalCtrl.create(SignaturePadPage, {
+    /* let myModal = this.modalCtrl.create(SignaturePadPage, {
       "signatures": 2,
       "current_signature": 1
     });
-    myModal.present();
-    this.viewCtrl.dismiss();
+    myModal.present(); */
+    this.viewCtrl.dismiss("accept");
   }
 
 }

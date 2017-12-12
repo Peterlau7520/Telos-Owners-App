@@ -51,6 +51,15 @@
     }
 }
 
+ion-label {
+    a {
+        color: #488aff !important;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
 .toolbar .toolbar-background {
     background: #00bee4;
     background: linear-gradient(to left, #00bee4 0, #0091d2 100%);
@@ -160,8 +169,8 @@ img {
 }
 
 .modal_inner_content {
-    max-height: 88%;
-    height: 88%;
+    max-height: 86%;
+    height: 86%;
     overflow: auto;
 }
 
@@ -174,4 +183,91 @@ signature-pad {
 
 [border-bottom] {
     border-bottom: 1px solid #000000;
+}
+
+[border-top-e7] {
+    border-top: 1px solid #e7e7e7 !important;
+}
+
+[padding-5px] {
+    padding: 5px;
+}
+
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+
+.close-button {
+    font-size: 20px;
+    padding: 3px;
+    background: #0090d0;
+    color: #ffffff;
+    border-radius: 26px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.tab-button-text {
+    white-space: pre-wrap !important;
+    min-height: 30px !important;
+    word-wrap: initial !important;
+}
+
+.tabs-md .tab-button[aria-selected=true] .tab-button-text {
+    transition: none !important;
+    transform: none !important
+}
+
+[c-display-inline-block] {
+    display: inline-block;
+}
+
+.login-button {
+    margin-bottom: 10px;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.radio-ios-mytheme {
+    color: #0090d0;
+    border: 1px solid #0090d0;
+    border-radius: 3px;
+}
+
+.radio-ios .radio-checked {
+    border-color: #ffffff;
+    background: #0090d0;
+}
+
+.radio-ios .radio-icon {
+    position: relative;
+    display: block;
+    width: 21px;
+    height: 21px;
+}
+
+.radio-ios .radio-checked .radio-inner {
+    left: 8px;
+    top: 3px;
+    background: #0090d0;
+    border-color: #ffffff;
+}
+
+.loading-wrapper {
+    text-align: center;
+    border-radius: 0px !important;
+    max-width: 100% !important;
+    height: 100%;
+    width: 100%;
+    max-height: 100% !important;
+    color: rgba(0, 0, 0, 0.5);
+    background: #fafafa;
+    -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+    padding: 24px;
+}
+
+.loading-content {
+    width: 100% !important;
 }

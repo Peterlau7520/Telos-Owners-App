@@ -4,10 +4,10 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 
 @IonicPage()
 @Component({
-  selector: 'page-id-verification-2',
-  templateUrl: 'id-verification-2.html',
+  selector: 'page-all-meetings',
+  templateUrl: 'all-meetings.html',
 })
-export class IdVerification2 {
+export class AllMeetingsPage {
 
   license_image: any = "";
 
@@ -69,6 +69,14 @@ export class IdVerification2 {
 
   goToCompanyChop() {
     this.navCtrl.push("CompanyChop");
+  }
+
+  goToUpcomingMeetings() {
+    this.navCtrl.push("UpcomingMeetings");
+  }
+
+  goToPastMeetings() {
+    this.navCtrl.push("PastMeetings");
   }
 
 }

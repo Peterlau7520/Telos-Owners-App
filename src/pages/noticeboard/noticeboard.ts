@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-/* import { FileOpener } from '@ionic-native/file-opener'; */
-/* import { InAppBrowser } from '@ionic-native/in-app-browser'; */
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
+import { FileOpener } from '@ionic-native/file-opener';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+import { File } from '@ionic-native/file';
+import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer';
 
 @IonicPage()
 @Component({
@@ -12,46 +15,74 @@ export class Noticeboard {
 
   browser: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams, private transfer: FileTransfer, private file: File, private iab: InAppBrowser, private document: DocumentViewer, private fileOpener: FileOpener) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Noticeboard');
   }
 
-  viewPdfFile(card_title) {
+  IonViewDidEnter() {
+
     /* const options: DocumentViewerOptions = {
-      title: card_title
+      title: 'My PDF'
     }
-    this.document.viewDocument('./assets/pdf/Telos_Ionic.pdf', 'application/pdf', options);
-    let baseUrl = location.href.replace("/index.html", "");
-    function  {
-      console.log(file);
-      return baseUrl + "/" + file;
-    } */
-    /* this.fileOpener.open('file:///android_asset/www/pdf/Telos_Ionic.pdf', 'application/pdf')
-      .then(() => console.log('File is opened'))
-      .catch(e => console.log('Error openening file', e)); */
-    /* this.browser = this.iab.create('assets/pdf/Telos_Ionic.pdf', '_blank', 'closebuttoncaption=Cancel,clearcache=yes,clearsessioncache=yes'); */
-    console.log(this.browser);
+    this.document.viewDocument('https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf', 'application/pdf', options) */
+
+  }
+
+  viewPdfFile(card_title) {
+    /* this.file.dataDirectory; */
+    const options: DocumentViewerOptions = {
+      print: { enabled: false },
+      bookmarks: { enabled: false },
+      email: { enabled: false },
+      title: card_title
+    };
+    const fileTransfer: FileTransferObject = this.transfer.create();
+    const url = 'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf';
+    fileTransfer.download(url, this.file.dataDirectory + 'demopdfflie.pdf').then((entry) => {
+      console.log('download complete: ' + entry.toURL());
+      this.document.viewDocument(this.file.dataDirectory + "demopdfflie.pdf", "application/pdf",
+        options, onShow, onClose, onMissingApp, onError);
+    }, (error) => {
+      console.log(error);
+      // handle error
+    });
+
+    function onShow() {
+      window.console.log('document shown');
+      //e.g. track document usage
+    }
+
+    function onClose() {
+      window.console.log('document closed');
+      //e.g. remove temp files
+    }
+
+    function onMissingApp(appId, installer) {
+      if (confirm("PDF viewer not available on your device, Do you want to install the free PDF Viewer App to view this document?")) {
+        installer();
+      }
+    }
+    function onError(error) {
+      window.console.log(error);
+      alert("Sorry! Cannot view document.");
+    }
   }
 
   viewPdfFile1(card_title) {
-    /* const options: DocumentViewerOptions = {
-      title: card_title
-    }
-    this.document.viewDocument('./assets/pdf/Telos_Ionic.pdf', 'application/pdf', options);
-    let baseUrl = location.href.replace("/index.html", "");
-    function  {
-      console.log(file);
-      return baseUrl + "/" + file;
-    } */
-    /* this.fileOpener.open('file:///android_asset/www/pdf/Telos_Ionic.pdf', 'application/pdf')
-      .then(() => console.log('File is opened'))
-      .catch(e => console.log('Error openening file', e)); */
-    /* this.browser = this.iab.create('../assets/pdf/Telos_Ionic.pdf', '_blank', 'closebuttoncaption=Cancel,clearcache=yes,clearsessioncache=yes'); */
-    console.log(this.browser);
+    /* let file_url = "https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf"; */
+    const fileTransfer: FileTransferObject = this.transfer.create();
+    const url = 'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf';
+    fileTransfer.download(url, this.file.dataDirectory + 'demopdfflie.pdf').then((entry) => {
+      console.log('download complete: ' + entry.toURL());
+      this.document.viewDocument(this.file.dataDirectory + "demopdfflie.pdf", "application/pdf",
+        { print: { enabled: true }, bookmarks: { enabled: true }, email: { enabled: true }, title: "document title" });
+    }, (error) => {
+      console.log(error);
+      // handle error
+    });
   }
-
 
 }

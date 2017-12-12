@@ -1,0 +1,25 @@
+<ion-content class="main-view">
+  <!-- <div class="overlay" (click)="dismiss()"></div> -->
+  <div class="overlay"></div>
+  <div class="modal_content">
+    <ion-row class="modal_inner_content">
+      <ion-col col-12>
+        <p class="agree-title" text-center>Owner {{current_HKID}} Name</p>
+        <p class="agree-title" no-margin text-center>Please type your HKID number below (e.g. R123456)</p>
+      </ion-col>
+      <ion-col col-12>
+        <div class="form">
+          <ion-item no-padding>
+            <ion-label floating margin-top>身分證號碼 | HKID Number</ion-label>
+            <ion-input required type="text"></ion-input>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="submitHKID()">Submit</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

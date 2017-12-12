@@ -1,0 +1,27 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss()"></div>
+  <!-- <div class="overlay"></div> -->
+  <div class="modal_content">
+    <ion-row class="modal_inner_content">
+      <ion-col>
+        <ion-icon name="md-close" class="close-button" (click)="dismiss()"></ion-icon>
+        <ion-row>
+          <p col-12 class="agree-title" style="margin-bottom:0;" text-center>Electronic Signature ({{current_signature}}/{{total_signatures}})</p>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12 border-bottom [ngClass]="{'drawing-active': isDrawing}">
+            <signature-pad [options]="signaturePadOptions" id="signatureCanvas"></signature-pad>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="clearSignaturePad()">Clear</button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="saveSignature()">Submit</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

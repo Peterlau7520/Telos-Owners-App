@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar header-color>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-left>Surveys</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content white-background>
+  <ion-row margin-bottom>
+    <ion-col col-12>
+      <ul no-margin no-padding class="collapsible">
+        <li no-margin *ngFor="let survey_details of survey_list;">
+          <ion-card>
+            <!-- Expandable Centered with header Header-->
+            <div class="collapsible-header" no-margin no-padding (click)="viewSurveyDetails(survey_details)">
+              <ion-item no-padding padding text-center transparent no-lines text-center>
+                <h2 text-center class="survey-title-text">{{survey_details.survey_title}}</h2>
+                <h2 text-center class="survey-title-text">Complete By:</h2>
+              </ion-item>
+            </div>
+          </ion-card>
+        </li>
+      </ul>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,4 +1,4 @@
-page-id-verification-2 {
+page-all-meetings {
     [default-background] {
         background-image: url("../assets/images/background/29.jpg");
         @include darkening-blend-mode;
@@ -39,6 +39,10 @@ page-id-verification-2 {
             font-weight: 300;
         }
     }
+    .survey-title-text {
+        font-size: 16px !important;
+        letter-spacing: 1px;
+    }
     .preview-image {
         max-width: 100%;
         max-height: 100%;
@@ -53,5 +57,31 @@ page-id-verification-2 {
     }
     .camera-icon {
         font-size: 1.5em;
+    }
+    .collapsible-header {
+        background-color: #efefef !important;
+    }
+    [survey-desc] {
+        font-size: 13px;
+        margin: 0;
+    }
+    ul>li:last-child ion-item:before {
+        border-bottom: 1px solid transparent !important;
+    }
+    li {
+        list-style: none;
+    }
+    ion-list-header {
+        &[background-size] {
+            height: 200px;
+            width: 100%;
+        }
+        [item-title] {
+            z-index: 5;
+            position: relative;
+        }
+    }
+    .item.item-block .item-inner {
+        padding: 0 !important;
     }
 }
