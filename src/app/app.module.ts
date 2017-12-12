@@ -36,7 +36,7 @@ import { SignaturePadPage } from '../pages/signature-pad-page/signature-pad-page
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    //MyApp,
+    MyApp,
     HomePage,
     SignaturePadPage
   ],
