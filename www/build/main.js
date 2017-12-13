@@ -76,19 +76,19 @@ var map = {
 		21
 	],
 	"../pages/agree-use-telos/agree-use-telos.module": [
-		288,
+		289,
 		20
 	],
 	"../pages/all-meetings/all-meetings.module": [
-		290,
+		288,
 		19
 	],
 	"../pages/change-password-page/change-password-page.module": [
-		289,
+		291,
 		18
 	],
 	"../pages/company-chop/company-chop.module": [
-		291,
+		290,
 		17
 	],
 	"../pages/id-verification-1/id-verification-1.module": [
@@ -112,19 +112,19 @@ var map = {
 		12
 	],
 	"../pages/personal-details/personal-details.module": [
-		297,
+		298,
 		11
 	],
 	"../pages/profile-page/profile-page.module": [
-		298,
+		297,
 		10
 	],
 	"../pages/register/register.module": [
-		299,
+		300,
 		9
 	],
 	"../pages/survey-list/survey-list.module": [
-		301,
+		299,
 		8
 	],
 	"../pages/surveys/surveys.module": [
@@ -132,7 +132,7 @@ var map = {
 		7
 	],
 	"../pages/tabs/tabs.module": [
-		300,
+		301,
 		6
 	],
 	"../pages/thank-you-note-2/thank-you-note-2.module": [
@@ -184,7 +184,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -242,7 +242,7 @@ var LoadingService = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShowMessage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -521,20 +521,20 @@ var AppModule = (function () {
                 }, {
                     links: [
                         { loadChildren: '../pages/agree-use-company-chop/agree-use-company-chop.module#AgreeUseCompanyChopModule', name: 'AgreeUseCompanyChop', segment: 'agree-use-company-chop', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/agree-use-telos/agree-use-telos.module#AgreeUseTelosModule', name: 'AgreeUseTelos', segment: 'agree-use-telos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/change-password-page/change-password-page.module#ChangePasswordPageModule', name: 'ChangePasswordPage', segment: 'change-password-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/all-meetings/all-meetings.module#IdVerification2Module', name: 'AllMeetingsPage', segment: 'all-meetings', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/agree-use-telos/agree-use-telos.module#AgreeUseTelosModule', name: 'AgreeUseTelos', segment: 'agree-use-telos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/company-chop/company-chop.module#CompanyChopModule', name: 'CompanyChop', segment: 'company-chop', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/change-password-page/change-password-page.module#ChangePasswordPageModule', name: 'ChangePasswordPage', segment: 'change-password-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/id-verification-1/id-verification-1.module#IdVerification1Module', name: 'IdVerification1', segment: 'id-verification-1', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/owner-hkid-number/owner-hkid-number.module#OwnerHkidNumberModule', name: 'OwnerHkidNumber', segment: 'owner-hkid-number', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/noticeboard/noticeboard.module#NoticeboardModule', name: 'Noticeboard', segment: 'noticeboard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ownership/ownership.module#OwnershipModule', name: 'Ownership', segment: 'ownership', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/past-meetings/past-meetings.module#PastMeetingsModule', name: 'PastMeetings', segment: 'past-meetings', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/personal-details/personal-details.module#PersonalDetailsModule', name: 'PersonalDetails', segment: 'personal-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile-page/profile-page.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile-page', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/personal-details/personal-details.module#PersonalDetailsModule', name: 'PersonalDetails', segment: 'personal-details', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/survey-list/survey-list.module#SurveyListModule', name: 'SurveyList', segment: 'survey-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterModule', name: 'Register', segment: 'register', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs/tabs.module#TabsModule', name: 'Tabs', segment: 'tabs', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/survey-list/survey-list.module#SurveyListModule', name: 'SurveyList', segment: 'survey-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/surveys/surveys.module#SurveysModule', name: 'Surveys', segment: 'surveys', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/thank-you-note-2/thank-you-note-2.module#ThankYouNote2Module', name: 'ThankYouNote2', segment: 'thank-you-note-2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/thank-you-note/thank-you-note.module#ThankYouNoteModule', name: 'ThankYouNote', segment: 'thank-you-note', priority: 'low', defaultHistory: [] },
