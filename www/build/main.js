@@ -39,7 +39,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/home/home.html"*/`<!-- <ion-header>\n  <ion-navbar header-color>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-left>Login</ion-title>\n  </ion-navbar>\n</ion-header> -->\n<!-- Themes Login + logo -->\n<ion-content white-background>\n  <ion-grid class="bottom-div">\n    <ion-row wrap padding>\n      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 padding-bottom>\n        <!-- <button ion-button button-clear clear (click)="onEvent(\'onSkip\')">Skip</button> -->\n        <!---Logo-->\n        <img src="./assets/images/logo/telos_logo.png" style="margin-bottom:0px;">\n        <!-- <p text-center ion-button no-margin clear full style="font-size: 18px;">TELOS</p> -->\n        <!---Input field username-->\n        <ion-item no-padding transparent>\n          <ion-label floating no-margin>用戶名 | USERNAME</ion-label>\n          <ion-input required type="text"></ion-input>\n        </ion-item>\n        <!---Input field password-->\n        <ion-item no-padding transparent>\n          <ion-label floating margin-top>密碼 | PASSWORD</ion-label>\n          <ion-input required type="password"></ion-input>\n        </ion-item>\n        <!---Login button-->\n        <ion-row>\n          <ion-col col-12 text-center no-padding>\n            <button ion-button button-clear-outline text-center round outline class="login-button" color="mytheme" (click)="doLoginFunction()">登入 | Log In</button>\n          </ion-col>\n          <ion-col col-12 no-padding text-center>\n            <a (click)="goToRegister()" class="create-acc">開新帳戶 | Create an account</a>\n          </ion-col>\n        </ion-row>\n        <!---Register button-->\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\home\home.html"*/`<!-- <ion-header>\n\n  <ion-navbar header-color>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title text-left>Login</ion-title>\n\n  </ion-navbar>\n\n</ion-header> -->\n\n<!-- Themes Login + logo -->\n\n<ion-content>\n\n  <ion-grid class="bottom-div">\n\n    <ion-row wrap padding>\n\n      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 padding-bottom>\n\n        <!-- <button ion-button button-clear clear (click)="onEvent(\'onSkip\')">Skip</button> -->\n\n        <!---Logo-->\n\n        <img src="./assets/images/logo/logo_white.png" style="margin-bottom:0px;">\n\n        <!-- <p text-center ion-button no-margin clear full style="font-size: 18px;">TELOS</p> -->\n\n        <!---Input field username-->\n\n        <ion-item no-padding transparent>\n\n          <ion-label floating no-margin>用戶名 | USERNAME</ion-label>\n\n          <ion-input required type="text"></ion-input>\n\n        </ion-item>\n\n        <!---Input field password-->\n\n        <ion-item no-padding transparent>\n\n          <ion-label floating margin-top>密碼 | PASSWORD</ion-label>\n\n          <ion-input required type="password"></ion-input>\n\n        </ion-item>\n\n        <!---Login button-->\n\n        <ion-row>\n\n          <ion-col col-12 text-center no-padding>\n\n            <button ion-button button-clear-outline text-center round outline class="login-button" color="mytheme" (click)="doLoginFunction()">登入 | Log In</button>\n\n          </ion-col>\n\n          <ion-col col-12 no-padding text-center>\n\n            <a (click)="goToRegister()" class="create-acc">開新帳戶 | Create an account</a>\n\n          </ion-col>\n\n        </ion-row>\n\n        <!---Register button-->\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>`/*ion-inline-end:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__["a" /* LoadingService */]])
     ], HomePage);
@@ -76,19 +76,19 @@ var map = {
 		21
 	],
 	"../pages/agree-use-telos/agree-use-telos.module": [
-		289,
+		288,
 		20
 	],
 	"../pages/all-meetings/all-meetings.module": [
-		288,
+		290,
 		19
 	],
 	"../pages/change-password-page/change-password-page.module": [
-		291,
+		289,
 		18
 	],
 	"../pages/company-chop/company-chop.module": [
-		290,
+		291,
 		17
 	],
 	"../pages/id-verification-1/id-verification-1.module": [
@@ -96,11 +96,11 @@ var map = {
 		16
 	],
 	"../pages/noticeboard/noticeboard.module": [
-		294,
+		293,
 		15
 	],
 	"../pages/owner-hkid-number/owner-hkid-number.module": [
-		293,
+		294,
 		14
 	],
 	"../pages/ownership/ownership.module": [
@@ -112,27 +112,27 @@ var map = {
 		12
 	],
 	"../pages/personal-details/personal-details.module": [
-		298,
+		297,
 		11
 	],
 	"../pages/profile-page/profile-page.module": [
-		297,
+		298,
 		10
 	],
 	"../pages/register/register.module": [
-		300,
+		299,
 		9
 	],
 	"../pages/survey-list/survey-list.module": [
-		299,
+		300,
 		8
 	],
 	"../pages/surveys/surveys.module": [
-		302,
+		301,
 		7
 	],
 	"../pages/tabs/tabs.module": [
-		301,
+		302,
 		6
 	],
 	"../pages/thank-you-note-2/thank-you-note-2.module": [
@@ -184,7 +184,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -208,7 +208,7 @@ var LoadingService = (function () {
         this.sanitizer = sanitizer;
     }
     LoadingService.prototype.showLoading = function () {
-        var svg = "<svg width=\"60\" height=\"60\" viewBox=\"0 0 44 44\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#00bee4\">\n    <g fill=\"none\" fill-rule=\"evenodd\" stroke-width=\"2\">\n        <circle cx=\"22\" cy=\"22\" r=\"1\">\n            <animate attributeName=\"r\"\n                begin=\"0s\" dur=\"1.8s\"\n                values=\"1; 20\"\n                calcMode=\"spline\"\n                keyTimes=\"0; 1\"\n                keySplines=\"0.165, 0.84, 0.44, 1\"\n                repeatCount=\"indefinite\" />\n            <animate attributeName=\"stroke-opacity\"\n                begin=\"0s\" dur=\"1.8s\"\n                values=\"1; 0\"\n                calcMode=\"spline\"\n                keyTimes=\"0; 1\"\n                keySplines=\"0.3, 0.61, 0.355, 1\"\n                repeatCount=\"indefinite\" />\n        </circle>\n        <circle cx=\"22\" cy=\"22\" r=\"1\">\n            <animate attributeName=\"r\"\n                begin=\"-0.9s\" dur=\"1.8s\"\n                values=\"1; 20\"\n                calcMode=\"spline\"\n                keyTimes=\"0; 1\"\n                keySplines=\"0.165, 0.84, 0.44, 1\"\n                repeatCount=\"indefinite\" />\n            <animate attributeName=\"stroke-opacity\"\n                begin=\"-0.9s\" dur=\"1.8s\"\n                values=\"1; 0\"\n                calcMode=\"spline\"\n                keyTimes=\"0; 1\"\n                keySplines=\"0.3, 0.61, 0.355, 1\"\n                repeatCount=\"indefinite\" />\n        </circle>\n    </g>\n</svg>";
+        var svg = "<svg width=\"60\" height=\"60\" viewBox=\"0 0 44 44\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#000000\">\n    <g fill=\"none\" fill-rule=\"evenodd\" stroke-width=\"2\">\n        <circle cx=\"22\" cy=\"22\" r=\"1\">\n            <animate attributeName=\"r\"\n                begin=\"0s\" dur=\"1.8s\"\n                values=\"1; 20\"\n                calcMode=\"spline\"\n                keyTimes=\"0; 1\"\n                keySplines=\"0.165, 0.84, 0.44, 1\"\n                repeatCount=\"indefinite\" />\n            <animate attributeName=\"stroke-opacity\"\n                begin=\"0s\" dur=\"1.8s\"\n                values=\"1; 0\"\n                calcMode=\"spline\"\n                keyTimes=\"0; 1\"\n                keySplines=\"0.3, 0.61, 0.355, 1\"\n                repeatCount=\"indefinite\" />\n        </circle>\n        <circle cx=\"22\" cy=\"22\" r=\"1\">\n            <animate attributeName=\"r\"\n                begin=\"-0.9s\" dur=\"1.8s\"\n                values=\"1; 20\"\n                calcMode=\"spline\"\n                keyTimes=\"0; 1\"\n                keySplines=\"0.165, 0.84, 0.44, 1\"\n                repeatCount=\"indefinite\" />\n            <animate attributeName=\"stroke-opacity\"\n                begin=\"-0.9s\" dur=\"1.8s\"\n                values=\"1; 0\"\n                calcMode=\"spline\"\n                keyTimes=\"0; 1\"\n                keySplines=\"0.3, 0.61, 0.355, 1\"\n                repeatCount=\"indefinite\" />\n        </circle>\n    </g>\n</svg>";
         this.safeSvg = this.sanitizer.bypassSecurityTrustHtml(svg);
         this.loading = this.loadingCtrl.create({
             /* content: 'Please wait', */
@@ -242,7 +242,7 @@ var LoadingService = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShowMessage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -425,7 +425,7 @@ var SignaturePadPage = (function () {
     ], SignaturePadPage.prototype, "signaturePad", void 0);
     SignaturePadPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-signature-pad',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/signature-pad-page/signature-pad-page.html"*/`<ion-content class="main-view">\n  <div class="overlay" (click)="dismiss()"></div>\n  <!-- <div class="overlay"></div> -->\n  <div class="modal_content">\n    <ion-row class="modal_inner_content">\n      <ion-col>\n        <ion-icon name="md-close" class="close-button" (click)="dismiss()"></ion-icon>\n        <ion-row>\n          <p col-12 class="agree-title" style="margin-bottom:0;" text-center>Electronic Signature ({{current_signature}}/{{total_signatures}})</p>\n        </ion-row>\n        <ion-row>\n          <ion-col col-12 border-bottom [ngClass]="{\'drawing-active\': isDrawing}">\n            <signature-pad [options]="signaturePadOptions" id="signatureCanvas"></signature-pad>\n          </ion-col>\n        </ion-row>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col text-center>\n        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="clearSignaturePad()">Clear</button>\n      </ion-col>\n      <ion-col text-center>\n        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="saveSignature()">Submit</button>\n      </ion-col>\n    </ion-row>\n  </div>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/signature-pad-page/signature-pad-page.html"*/,
+            selector: 'page-signature-pad',template:/*ion-inline-start:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\signature-pad-page\signature-pad-page.html"*/`<ion-content class="main-view">\n  <div class="overlay" (click)="dismiss()"></div>\n  <!-- <div class="overlay"></div> -->\n  <div class="modal_content">\n    <ion-row class="modal_inner_content">\n      <ion-col>\n        <ion-icon name="md-close" class="close-button" (click)="dismiss()"></ion-icon>\n        <ion-row>\n          <p col-12 class="agree-title" style="margin-bottom:0;" text-center>Electronic Signature ({{current_signature}}/{{total_signatures}})</p>\n        </ion-row>\n        <ion-row>\n          <ion-col col-12 border-bottom [ngClass]="{\'drawing-active\': isDrawing}">\n            <signature-pad [options]="signaturePadOptions" id="signatureCanvas"></signature-pad>\n          </ion-col>\n        </ion-row>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col text-center>\n        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="clearSignaturePad()">Clear</button>\n      </ion-col>\n      <ion-col text-center>\n        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="saveSignature()">Submit</button>\n      </ion-col>\n    </ion-row>\n  </div>\n</ion-content>`/*ion-inline-end:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\signature-pad-page\signature-pad-page.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
     ], SignaturePadPage);
@@ -521,21 +521,21 @@ var AppModule = (function () {
                 }, {
                     links: [
                         { loadChildren: '../pages/agree-use-company-chop/agree-use-company-chop.module#AgreeUseCompanyChopModule', name: 'AgreeUseCompanyChop', segment: 'agree-use-company-chop', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/all-meetings/all-meetings.module#IdVerification2Module', name: 'AllMeetingsPage', segment: 'all-meetings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agree-use-telos/agree-use-telos.module#AgreeUseTelosModule', name: 'AgreeUseTelos', segment: 'agree-use-telos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/company-chop/company-chop.module#CompanyChopModule', name: 'CompanyChop', segment: 'company-chop', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/change-password-page/change-password-page.module#ChangePasswordPageModule', name: 'ChangePasswordPage', segment: 'change-password-page', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/all-meetings/all-meetings.module#IdVerification2Module', name: 'AllMeetingsPage', segment: 'all-meetings', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/company-chop/company-chop.module#CompanyChopModule', name: 'CompanyChop', segment: 'company-chop', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/id-verification-1/id-verification-1.module#IdVerification1Module', name: 'IdVerification1', segment: 'id-verification-1', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/owner-hkid-number/owner-hkid-number.module#OwnerHkidNumberModule', name: 'OwnerHkidNumber', segment: 'owner-hkid-number', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/noticeboard/noticeboard.module#NoticeboardModule', name: 'Noticeboard', segment: 'noticeboard', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/owner-hkid-number/owner-hkid-number.module#OwnerHkidNumberModule', name: 'OwnerHkidNumber', segment: 'owner-hkid-number', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ownership/ownership.module#OwnershipModule', name: 'Ownership', segment: 'ownership', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/past-meetings/past-meetings.module#PastMeetingsModule', name: 'PastMeetings', segment: 'past-meetings', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/profile-page/profile-page.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/personal-details/personal-details.module#PersonalDetailsModule', name: 'PersonalDetails', segment: 'personal-details', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/survey-list/survey-list.module#SurveyListModule', name: 'SurveyList', segment: 'survey-list', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/profile-page/profile-page.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterModule', name: 'Register', segment: 'register', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tabs/tabs.module#TabsModule', name: 'Tabs', segment: 'tabs', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/survey-list/survey-list.module#SurveyListModule', name: 'SurveyList', segment: 'survey-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/surveys/surveys.module#SurveysModule', name: 'Surveys', segment: 'surveys', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tabs/tabs.module#TabsModule', name: 'Tabs', segment: 'tabs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/thank-you-note-2/thank-you-note-2.module#ThankYouNote2Module', name: 'ThankYouNote2', segment: 'thank-you-note-2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/thank-you-note/thank-you-note.module#ThankYouNoteModule', name: 'ThankYouNote', segment: 'thank-you-note', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/upcoming-meetings/upcoming-meetings.module#UpcomingMeetingsModule', name: 'UpcomingMeetings', segment: 'upcoming-meetings', priority: 'low', defaultHistory: [] },
@@ -609,8 +609,9 @@ var MyApp = (function () {
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
-            statusBar.styleDefault();
-            statusBar.backgroundColorByHexString("#007bb0");
+            statusBar.styleBlackTranslucent();
+            /* statusBar.overlaysWebView(false); */
+            /* statusBar.backgroundColorByHexString("#000000"); */
             splashScreen.hide();
             _this.menu.swipeEnable(false);
         });
@@ -635,14 +636,15 @@ var MyApp = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */]) === "function" && _a || Object)
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/app/app.html"*/`<ion-split-pane when="xl">\n    <ion-menu [content]="content">\n        <ion-header>\n            <div class="header-background-image">\n                <img src="assets/images/logo/logo_white.png">\n            </div>\n        </ion-header>\n\n        <ion-content color="primary">\n            <ion-list no-margin>\n                <button menuClose paddinge-left ion-item no-lines item-title main-menu (click)="openNoticeboard(\'Noticeboard\')">\n                    <ion-icon icon-small item-left name="ios-home-outline"></ion-icon>\n                    主頁 | Home\n                </button>\n            </ion-list>\n            <ion-list no-margin>\n                <button menuClose paddinge-left ion-item no-lines item-title main-menu (click)="openProfilePage(\'ProfilePage\')">\n                    <ion-icon icon-small item-left name="ios-person-outline"></ion-icon>\n                    我 | Profile\n                </button>\n            </ion-list>\n            <ion-list no-margin>\n                <button menuClose paddinge-left ion-item no-lines item-title main-menu (click)="doLogout()">\n                    <ion-icon icon-small item-left name="ios-log-out-outline"></ion-icon>\n                    登出 | Log Out\n                </button>\n            </ion-list>\n        </ion-content>\n    </ion-menu>\n\n    <ion-nav [root]="rootPage" #content main swipeBackEnabled="false"></ion-nav>\n</ion-split-pane>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\app\app.html"*/`<ion-split-pane when="xl">\n    <ion-menu [content]="content">\n        <ion-header>\n            <div class="header-background-image">\n                <img src="assets/images/logo/logo_white.png">\n            </div>\n        </ion-header>\n\n        <ion-content color="primary">\n            <ion-list no-margin>\n                <button menuClose paddinge-left ion-item no-lines item-title main-menu (click)="openNoticeboard(\'Noticeboard\')">\n                    <ion-icon icon-small item-left name="ios-home-outline"></ion-icon>\n                    主頁 | Home\n                </button>\n            </ion-list>\n            <ion-list no-margin>\n                <button menuClose paddinge-left ion-item no-lines item-title main-menu (click)="openProfilePage(\'ProfilePage\')">\n                    <ion-icon icon-small item-left name="ios-person-outline"></ion-icon>\n                    我 | Profile\n                </button>\n            </ion-list>\n            <ion-list no-margin>\n                <button menuClose paddinge-left ion-item no-lines item-title main-menu (click)="doLogout()">\n                    <ion-icon icon-small item-left name="ios-log-out-outline"></ion-icon>\n                    登出 | Log Out\n                </button>\n            </ion-list>\n        </ion-content>\n    </ion-menu>\n\n    <ion-nav [root]="rootPage" #content main swipeBackEnabled="false"></ion-nav>\n</ion-split-pane>`/*ion-inline-end:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */]) === "function" && _e || Object])
     ], MyApp);
     return MyApp;
+    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=app.component.js.map

@@ -1,6 +1,6 @@
 webpackJsonp([8],{
 
-/***/ 299:
+/***/ 300:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SurveyListModule", function() { return SurveyListModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__survey_list__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__survey_list__ = __webpack_require__(322);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var SurveyListModule = (function () {
 
 /***/ }),
 
-/***/ 321:
+/***/ 322:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -91,7 +91,7 @@ var SurveyList = (function () {
     };
     SurveyList = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-survey-list',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/survey-list/survey-list.html"*/`<ion-header>\n  <ion-navbar header-color>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-left>屋苑問卷調查 | Surveys</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content white-background>\n  <ion-row margin-bottom>\n    <ion-col col-12>\n      <ul no-margin no-padding class="collapsible">\n        <li no-margin *ngFor="let survey_details of survey_list;">\n          <ion-card>\n            <!-- Expandable Centered with header Header-->\n            <div class="collapsible-header" no-margin no-padding (click)="viewSurveyDetails(survey_details)">\n              <ion-item no-padding padding text-center transparent no-lines text-center>\n                <h2 text-center class="survey-title-text">{{survey_details.survey_title}}</h2>\n                <h2 text-center class="survey-title-text">Complete By:</h2>\n              </ion-item>\n            </div>\n          </ion-card>\n        </li>\n      </ul>\n    </ion-col>\n  </ion-row>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/survey-list/survey-list.html"*/,
+            selector: 'page-survey-list',template:/*ion-inline-start:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\survey-list\survey-list.html"*/`<ion-header>\n\n  <ion-navbar header-color>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title text-left>屋苑問卷調查 | Surveys</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content white-background>\n\n  <ion-row margin-bottom>\n\n    <ion-col col-12>\n\n      <ul no-margin no-padding class="collapsible">\n\n        <li no-margin *ngFor="let survey_details of survey_list;">\n\n          <ion-card>\n\n            <!-- Expandable Centered with header Header-->\n\n            <div class="collapsible-header" no-margin no-padding (click)="viewSurveyDetails(survey_details)">\n\n              <ion-item no-padding padding text-center transparent no-lines text-center>\n\n                <h2 text-center class="survey-title-text">{{survey_details.survey_title}}</h2>\n\n                <h2 text-center class="survey-title-text">Complete By:</h2>\n\n              </ion-item>\n\n            </div>\n\n          </ion-card>\n\n        </li>\n\n      </ul>\n\n    </ion-col>\n\n  </ion-row>\n\n</ion-content>`/*ion-inline-end:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\survey-list\survey-list.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
     ], SurveyList);

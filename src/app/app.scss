@@ -60,10 +60,10 @@ ion-label {
     }
 }
 
-.toolbar .toolbar-background {
+/* .toolbar .toolbar-background {
     background: #00bee4;
     background: linear-gradient(to left, #00bee4 0, #0091d2 100%);
-}
+} */
 
 .toolbar .toolbar-title {
     color: #ffffff;
@@ -75,10 +75,6 @@ ion-label {
 
 img {
     image-rendering: -webkit-optimize-contrast;
-}
-
-.button-outline-ios.activated {
-    color: #ffffff !important;
 }
 
 .label[stacked],
@@ -99,11 +95,11 @@ img {
 }
 
 .action-sheet-ios .action-sheet-button {
-    color: #0090d0;
+    color: #000000;
 }
 
 .action-sheet-md .action-sheet-button {
-    color: #0090d0;
+    color: #000000;
 }
 
 .tabs .tab-button[aria-selected=true] .tab-button-icon {
@@ -115,11 +111,11 @@ img {
 }
 
 .tabs .tab-button-icon {
-    color: rgba(60, 60, 60, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .tab-button-text {
-    color: rgba(60, 60, 60, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 [c-width-100] {
@@ -200,7 +196,7 @@ signature-pad {
 .close-button {
     font-size: 20px;
     padding: 3px;
-    background: #0090d0;
+    background: #000000;
     color: #ffffff;
     border-radius: 26px;
     position: absolute;
@@ -230,14 +226,14 @@ signature-pad {
 }
 
 .radio-ios-mytheme {
-    color: #0090d0;
-    border: 1px solid #0090d0;
+    color: #000000;
+    border: 1px solid #000000;
     border-radius: 3px;
 }
 
 .radio-ios .radio-checked {
     border-color: #ffffff;
-    background: #0090d0;
+    background: #000000;
 }
 
 .radio-ios .radio-icon {
@@ -247,11 +243,23 @@ signature-pad {
     height: 21px;
 }
 
+.radio-ios{
+    border: 1px solid #000000;
+}
+
 .radio-ios .radio-checked .radio-inner {
     left: 8px;
     top: 3px;
-    background: #0090d0;
+    background: #000000;
     border-color: #ffffff;
+}
+
+.radio-md .radio-checked {
+    border-color: #000000;
+}
+
+.radio-md .radio-icon{
+    border-color: #000000;
 }
 
 .loading-wrapper {
@@ -270,4 +278,49 @@ signature-pad {
 
 .loading-content {
     width: 100% !important;
+}
+
+.toolbar .toolbar-background {
+    background: #000000 !important;
+}
+
+[card-content]::before{
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.header-background-image::before{
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.tabs .tabbar{
+    background: #000000 !important;
+}
+
+[icon-small]{
+    color: #000000 !important;
+}
+
+[card-image]::before{
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+[background-size]::before{
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+[header-bcg] {
+    background-color: #000000 !important;
+}
+
+[button-clear-outline] {
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+[item-color-fff]{
+    color: #ffffff !important;
+}
+
+[item-color-000]{
+    color: #000000 !important;
 }

@@ -15,7 +15,7 @@ page-ownership {
         overflow: hidden;
         margin-bottom: 20px;
         .item-inner {
-            border-bottom-color: theme-colors('mainColors', 'primary') !important;
+            border-bottom-color: #000000 !important;
             box-shadow: none !important;
         }
         [button-clear] {
@@ -23,13 +23,13 @@ page-ownership {
         }
         [title] {
             font-size: font-size-text('h1');
-            color: #0d96d2;
+            color: #000000;
             /* text-transform: uppercase; */
             font-weight: 600;
             margin: 0;
         }
         p {
-            color: #0d96d2;
+            color: #000000;
             font-size: 13px;
         }
     }
@@ -49,5 +49,24 @@ page-ownership {
         right: -6px;
         bottom: 8px;
         color: red;
+    }
+    .item-input .label,
+    .item-select .label {
+        color: #000000 !important;
+    }
+    .item.item-input.input-has-focus .item-inner {
+        border-bottom-color: #000000 !important;
+        border-bottom-width: 2px !important;
+        box-shadow: none !important;
+    }
+    .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+    .item.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+        border-bottom-color: #000000 !important;
+        border-bottom-width: 2px !important;
+        box-shadow: none !important;
+    }
+    .button-outline-ios.activated {
+        color: #ffffff !important;
+        background-color: #000000 !important;
     }
 }

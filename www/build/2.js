@@ -67,7 +67,7 @@ var ViewMeetingDetails = (function () {
     };
     ViewMeetingDetails = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-view-meeting-details',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/view-meeting-details/view-meeting-details.html"*/`<!--\n  Generated template for the ViewMeetingDetails page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>view-meeting-details</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/view-meeting-details/view-meeting-details.html"*/,
+            selector: 'page-view-meeting-details',template:/*ion-inline-start:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\view-meeting-details\view-meeting-details.html"*/`<!--\n  Generated template for the ViewMeetingDetails page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>view-meeting-details</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n`/*ion-inline-end:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\view-meeting-details\view-meeting-details.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
     ], ViewMeetingDetails);

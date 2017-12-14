@@ -1,6 +1,6 @@
 webpackJsonp([6],{
 
-/***/ 301:
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabsModule", function() { return TabsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(324);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var TabsModule = (function () {
 
 /***/ }),
 
-/***/ 323:
+/***/ 324:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -82,7 +82,7 @@ var Tabs = (function () {
     };
     Tabs = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-tabs',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/tabs/tabs.html"*/`<ion-tabs (ionChange)="tabChanged($event)">\n  <ion-tab [root]="tab1Root" tabTitle="通告 Noticaboard" tabIcon="ios-alert"></ion-tab>\n  <!-- <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="ios-calendar" [tabBadge]="badgeCount" tabBadgeStyle="danger"></ion-tab> -->\n  <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="ios-calendar"></ion-tab>\n  <!-- <ion-tab [root]="tab3Root" tabTitle="以往會議 Past&nbsp;Meetings" tabIcon="ios-paper"></ion-tab> -->\n  <ion-tab [root]="tab4Root" tabTitle="問卷 Surveys" tabIcon="ios-clipboard"></ion-tab>\n</ion-tabs>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/tabs/tabs.html"*/,
+            selector: 'page-tabs',template:/*ion-inline-start:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\tabs\tabs.html"*/`<ion-tabs (ionChange)="tabChanged($event)">\n  <ion-tab [root]="tab1Root" tabTitle="通告 Noticaboard" tabIcon="ios-alert"></ion-tab>\n  <!-- <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="ios-calendar" [tabBadge]="badgeCount" tabBadgeStyle="danger"></ion-tab> -->\n  <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="ios-calendar"></ion-tab>\n  <!-- <ion-tab [root]="tab3Root" tabTitle="以往會議 Past&nbsp;Meetings" tabIcon="ios-paper"></ion-tab> -->\n  <ion-tab [root]="tab4Root" tabTitle="問卷 Surveys" tabIcon="ios-clipboard"></ion-tab>\n</ion-tabs>`/*ion-inline-end:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\tabs\tabs.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
     ], Tabs);

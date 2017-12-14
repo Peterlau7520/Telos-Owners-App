@@ -1,6 +1,6 @@
 webpackJsonp([18],{
 
-/***/ 291:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChangePasswordPageModule", function() { return ChangePasswordPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__change_password_page__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__change_password_page__ = __webpack_require__(311);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var ChangePasswordPageModule = (function () {
 
 /***/ }),
 
-/***/ 313:
+/***/ 311:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78,7 +78,7 @@ var ChangePasswordPage = (function () {
     };
     ChangePasswordPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-change-password-page',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/change-password-page/change-password-page.html"*/`<ion-content class="main-view">\n  <div class="overlay" (click)="dismiss()"></div>\n  <div class="modal_content">\n    <ion-row class="modal_inner_content">\n      <ion-col>\n        <ion-icon name="md-close" class="close-button" (click)="dismiss()"></ion-icon>\n        <ion-row>\n          <p col-12 class="agree-title" text-center no-margin>改密碼 | Reset Password</p>\n          <!-- <button ion-button buttin-clear round> -->\n          <!-- </button> -->\n        </ion-row>\n        <ion-row>\n          <ion-col col-12>\n            <div class="form">\n              <ion-item no-padding>\n                <ion-label floating margin-top>輸入久密碼 | ENTER OLD PASSWORD</ion-label>\n                <ion-input required type="password" [(ngModel)]="password_data.old_password"></ion-input>\n              </ion-item>\n              <ion-item no-padding>\n                <ion-label floating margin-top>輸入新密碼 | ENTER NEW PASSWORD</ion-label>\n                <ion-input required type="password" [(ngModel)]="password_data.new_password"></ion-input>\n              </ion-item>\n              <ion-item no-padding>\n                <ion-label floating margin-top>再次輸入新密碼 | RE-ENTER NEW PASSWORD</ion-label>\n                <ion-input required type="password" [(ngModel)]="password_data.renew_password"></ion-input>\n              </ion-item>\n            </div>\n          </ion-col>\n        </ion-row>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col text-center>\n        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="savePassword(password_data)">確定 | Confirm</button>\n      </ion-col>\n    </ion-row>\n  </div>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/change-password-page/change-password-page.html"*/,
+            selector: 'page-change-password-page',template:/*ion-inline-start:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\change-password-page\change-password-page.html"*/`<ion-content class="main-view">\n  <div class="overlay" (click)="dismiss()"></div>\n  <div class="modal_content">\n    <ion-row class="modal_inner_content">\n      <ion-col>\n        <ion-icon name="md-close" class="close-button" (click)="dismiss()"></ion-icon>\n        <ion-row>\n          <p col-12 class="agree-title" text-center no-margin>改密碼 | Reset Password</p>\n          <!-- <button ion-button buttin-clear round> -->\n          <!-- </button> -->\n        </ion-row>\n        <ion-row>\n          <ion-col col-12>\n            <div class="form">\n              <ion-item no-padding>\n                <ion-label floating margin-top>輸入久密碼 | ENTER OLD PASSWORD</ion-label>\n                <ion-input required type="password" [(ngModel)]="password_data.old_password"></ion-input>\n              </ion-item>\n              <ion-item no-padding>\n                <ion-label floating margin-top>輸入新密碼 | ENTER NEW PASSWORD</ion-label>\n                <ion-input required type="password" [(ngModel)]="password_data.new_password"></ion-input>\n              </ion-item>\n              <ion-item no-padding>\n                <ion-label floating margin-top>再次輸入新密碼 | RE-ENTER NEW PASSWORD</ion-label>\n                <ion-input required type="password" [(ngModel)]="password_data.renew_password"></ion-input>\n              </ion-item>\n            </div>\n          </ion-col>\n        </ion-row>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col text-center>\n        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="savePassword(password_data)">確定 | Confirm</button>\n      </ion-col>\n    </ion-row>\n  </div>\n</ion-content>`/*ion-inline-end:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\change-password-page\change-password-page.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_show_message__["a" /* ShowMessage */]])
     ], ChangePasswordPage);

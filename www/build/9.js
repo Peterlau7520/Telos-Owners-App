@@ -1,6 +1,6 @@
 webpackJsonp([9],{
 
-/***/ 300:
+/***/ 299:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterModule", function() { return RegisterModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(321);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var RegisterModule = (function () {
 
 /***/ }),
 
-/***/ 322:
+/***/ 321:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69,7 +69,7 @@ var Register = (function () {
     };
     Register = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-register',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/register/register.html"*/`<ion-header>\n  <ion-navbar header-color>\n  </ion-navbar>\n</ion-header>\n<ion-content background-size default-background>\n  <ion-grid>\n    <ion-row wrap padding>\n      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 no-padding>\n        <div class="form">\n          <h1 title>註冊 | Register</h1>\n          <ion-row>\n            <ion-col class="p-l-r-10 p-t-b-0">\n              <ion-item no-padding>\n                <ion-label floating margin-top>用戶名 | USERNAME</ion-label>\n                <ion-input required type="text"></ion-input>\n              </ion-item>\n              <ion-item no-padding>\n                <ion-label floating margin-top>密碼 | PASSWORD</ion-label>\n                <ion-input required type="password"></ion-input>\n              </ion-item>\n              <ion-item no-padding>\n                <ion-label floating margin-top>再次輸入密碼 | RE-ENTER PASSWORD</ion-label>\n                <ion-input required type="password"></ion-input>\n              </ion-item>\n              <ion-row margin-top>\n                <ion-col text-center margin-top padding-top>\n                  <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="goToPersonalDetails()">下一頁 | Next</button>\n                </ion-col>\n              </ion-row>\n            </ion-col>\n          </ion-row>\n        </div>\n        <!-- <div logo>\n            <img left src="./assets/images/logo/login_3.png">\n          </div> -->\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/register/register.html"*/,
+            selector: 'page-register',template:/*ion-inline-start:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\register\register.html"*/`<ion-header>\n  <ion-navbar header-color>\n  </ion-navbar>\n</ion-header>\n<ion-content background-size default-background>\n  <ion-grid>\n    <ion-row wrap padding>\n      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 no-padding>\n        <div class="form">\n          <h1 title>註冊 | Register</h1>\n          <ion-row>\n            <ion-col class="p-l-r-10 p-t-b-0">\n              <ion-item no-padding>\n                <ion-label floating margin-top>用戶名 | USERNAME</ion-label>\n                <ion-input required type="text"></ion-input>\n              </ion-item>\n              <ion-item no-padding>\n                <ion-label floating margin-top>密碼 | PASSWORD</ion-label>\n                <ion-input required type="password"></ion-input>\n              </ion-item>\n              <ion-item no-padding>\n                <ion-label floating margin-top>再次輸入密碼 | RE-ENTER PASSWORD</ion-label>\n                <ion-input required type="password"></ion-input>\n              </ion-item>\n              <ion-row margin-top>\n                <ion-col text-center margin-top padding-top>\n                  <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="goToPersonalDetails()">下一頁 | Next</button>\n                </ion-col>\n              </ion-row>\n            </ion-col>\n          </ion-row>\n        </div>\n        <!-- <div logo>\n            <img left src="./assets/images/logo/login_3.png">\n          </div> -->\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\register\register.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
     ], Register);

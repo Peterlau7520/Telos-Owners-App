@@ -451,8 +451,8 @@ Copyright (c) 2015 Daniel Eden
     transform: skewX(-0.78125deg) skewY(-0.78125deg);
   }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg);
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg);
   }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
@@ -486,8 +486,8 @@ Copyright (c) 2015 Daniel Eden
     transform: skewX(-0.78125deg) skewY(-0.78125deg);
   }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg);
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg);
   }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
@@ -56768,12 +56768,10 @@ ion-label a {
   margin-bottom: 5px;
 }
 
-.toolbar .toolbar-background {
-  background: #00bee4;
-  background: -webkit-gradient(linear, right top, left top, color-stop(0, #00bee4), to(#0091d2));
-  background: linear-gradient(to left, #00bee4 0, #0091d2 100%);
-}
-
+/* .toolbar .toolbar-background {
+    background: #00bee4;
+    background: linear-gradient(to left, #00bee4 0, #0091d2 100%);
+} */
 .toolbar .toolbar-title {
   color: #ffffff;
 }
@@ -56784,10 +56782,6 @@ ion-label a {
 
 img {
   image-rendering: -webkit-optimize-contrast;
-}
-
-.button-outline-ios.activated {
-  color: #ffffff !important;
 }
 
 .label[stacked],
@@ -56808,11 +56802,11 @@ img {
 }
 
 .action-sheet-ios .action-sheet-button {
-  color: #0090d0;
+  color: #000000;
 }
 
 .action-sheet-md .action-sheet-button {
-  color: #0090d0;
+  color: #000000;
 }
 
 .tabs .tab-button[aria-selected=true] .tab-button-icon {
@@ -56824,11 +56818,11 @@ img {
 }
 
 .tabs .tab-button-icon {
-  color: rgba(60, 60, 60, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .tab-button-text {
-  color: rgba(60, 60, 60, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 [c-width-100] {
@@ -56908,7 +56902,7 @@ signature-pad canvas {
 .close-button {
   font-size: 20px;
   padding: 3px;
-  background: #0090d0;
+  background: #000000;
   color: #ffffff;
   border-radius: 26px;
   position: absolute;
@@ -56940,14 +56934,14 @@ signature-pad canvas {
 }
 
 .radio-ios-mytheme {
-  color: #0090d0;
-  border: 1px solid #0090d0;
+  color: #000000;
+  border: 1px solid #000000;
   border-radius: 3px;
 }
 
 .radio-ios .radio-checked {
   border-color: #ffffff;
-  background: #0090d0;
+  background: #000000;
 }
 
 .radio-ios .radio-icon {
@@ -56957,11 +56951,23 @@ signature-pad canvas {
   height: 21px;
 }
 
+.radio-ios {
+  border: 1px solid #000000;
+}
+
 .radio-ios .radio-checked .radio-inner {
   left: 8px;
   top: 3px;
-  background: #0090d0;
+  background: #000000;
   border-color: #ffffff;
+}
+
+.radio-md .radio-checked {
+  border-color: #000000;
+}
+
+.radio-md .radio-icon {
+  border-color: #000000;
 }
 
 .loading-wrapper {
@@ -56982,6 +56988,51 @@ signature-pad canvas {
   width: 100% !important;
 }
 
+.toolbar .toolbar-background {
+  background: #000000 !important;
+}
+
+[card-content]::before {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.header-background-image::before {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.tabs .tabbar {
+  background: #000000 !important;
+}
+
+[icon-small] {
+  color: #000000 !important;
+}
+
+[card-image]::before {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+[background-size]::before {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+[header-bcg] {
+  background-color: #000000 !important;
+}
+
+[button-clear-outline] {
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+}
+
+[item-color-fff] {
+  color: #ffffff !important;
+}
+
+[item-color-000] {
+  color: #000000 !important;
+}
+
 page-agree-use-company-chop [button-clear] {
   color: white !important;
   font-weight: 300;
@@ -56998,6 +57049,11 @@ page-agree-use-company-chop .agree-title {
   font-weight: 600;
 }
 
+page-agree-use-company-chop .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+}
+
 page-agree-use-telos [button-clear] {
   color: white !important;
   font-weight: 300;
@@ -57012,6 +57068,11 @@ page-agree-use-telos .next-button {
 page-agree-use-telos .agree-title {
   font-size: 15px;
   font-weight: 600;
+}
+
+page-agree-use-telos .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
 page-all-meetings [default-background] {
@@ -57165,6 +57226,11 @@ page-change-password-page .modal_inner_content {
   overflow: auto;
 }
 
+page-change-password-page .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+}
+
 page-company-chop {
   /* .grid {
         height: 94%;
@@ -57220,13 +57286,13 @@ page-company-chop .form [button-clear] {
 
 page-company-chop .form [title] {
   font-size: 24px;
-  color: #0d96d2;
+  color: #000000;
   font-weight: 600;
   margin: 0;
 }
 
 page-company-chop .form p {
-  color: #0d96d2;
+  color: #000000;
   font-size: 13px;
 }
 
@@ -57254,6 +57320,15 @@ page-company-chop .camera-icon {
   font-size: 1.5em;
 }
 
+page-company-chop .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+}
+
+page-home ion-content {
+  background-color: #000000 !important;
+}
+
 page-home ion-col {
   position: relative;
 }
@@ -57266,13 +57341,14 @@ page-home ion-col [button-clear] {
 
 page-home img {
   max-width: 120px;
-  max-height: 120px;
+  max-height: 130px;
+  height: 130px;
   display: block;
   margin: 35px auto 20px;
 }
 
 page-home .item-inner {
-  border-bottom-color: #1d1d26 !important;
+  border-bottom-color: #ffffff !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
@@ -57280,6 +57356,8 @@ page-home .item-inner {
 page-home [button-clear-outline] {
   margin-top: 10%;
   width: 70%;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 page-home [social] {
@@ -57299,7 +57377,7 @@ page-home [social] > button:nth-child(2n) {
 }
 
 page-home .create-acc {
-  color: #0d96d2;
+  color: #ffffff;
 }
 
 page-home .bottom-div {
@@ -57312,6 +57390,32 @@ page-home .login-button {
   margin-bottom: 10px;
   padding-top: 20px !important;
   padding-bottom: 20px !important;
+}
+
+page-home .item-input .label,
+page-home .item-select .label {
+  color: #ffffff !important;
+}
+
+page-home .item.item-input.input-has-focus .item-inner {
+  border-bottom-color: #ffffff !important;
+  border-bottom-width: 2px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-home .item-input ion-input {
+  color: #ffffff !important;
+}
+
+page-home .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+page-home .item.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: #ffffff !important;
+}
+
+page-home .button-outline-ios.activated {
+  color: #000000 !important;
+  background-color: #ffffff !important;
 }
 
 page-id-verification-1 [default-background] {
@@ -57362,14 +57466,14 @@ page-id-verification-1 .form [button-clear] {
 
 page-id-verification-1 .form [title] {
   font-size: 24px;
-  color: #0d96d2;
+  color: #000000;
   font-weight: 600;
   /* text-transform: uppercase; */
   margin: 0;
 }
 
 page-id-verification-1 .form p {
-  color: #0d96d2;
+  color: #000000;
   font-size: 13px;
 }
 
@@ -57395,6 +57499,35 @@ page-id-verification-1 .next-button {
 
 page-id-verification-1 .camera-icon {
   font-size: 1.5em;
+}
+
+page-id-verification-1 .form .item-inner {
+  border-bottom-color: #000000 !important;
+}
+
+page-id-verification-1 .item-input .label,
+page-id-verification-1 .item-select .label {
+  color: #000000 !important;
+}
+
+page-id-verification-1 .item.item-input.input-has-focus .item-inner {
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 2px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-id-verification-1 .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+page-id-verification-1 .item.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 2px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-id-verification-1 .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
 page-noticeboard ion-card [card-title] {
@@ -57483,7 +57616,7 @@ page-owner-hkid-number .form {
 }
 
 page-owner-hkid-number .form .item-inner {
-  border-bottom-color: #1d1d26 !important;
+  border-bottom-color: #000000 !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
@@ -57494,15 +57627,40 @@ page-owner-hkid-number .form [button-clear] {
 
 page-owner-hkid-number .form [title] {
   font-size: 24px;
-  color: #0d96d2;
+  color: #000000;
   /* text-transform: uppercase; */
   font-weight: 600;
   margin: 0;
 }
 
 page-owner-hkid-number .form p {
-  color: #0d96d2;
+  color: #000000;
   font-size: 13px;
+}
+
+page-owner-hkid-number .item-input .label,
+page-owner-hkid-number .item-select .label {
+  color: #000000 !important;
+}
+
+page-owner-hkid-number .item.item-input.input-has-focus .item-inner {
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 2px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-owner-hkid-number .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+page-owner-hkid-number .item.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 2px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-owner-hkid-number .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
 page-ownership [default-background] {
@@ -57542,7 +57700,7 @@ page-ownership .form {
 }
 
 page-ownership .form .item-inner {
-  border-bottom-color: #1d1d26 !important;
+  border-bottom-color: #000000 !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
@@ -57553,14 +57711,14 @@ page-ownership .form [button-clear] {
 
 page-ownership .form [title] {
   font-size: 24px;
-  color: #0d96d2;
+  color: #000000;
   /* text-transform: uppercase; */
   font-weight: 600;
   margin: 0;
 }
 
 page-ownership .form p {
-  color: #0d96d2;
+  color: #000000;
   font-size: 13px;
 }
 
@@ -57580,6 +57738,31 @@ page-ownership .close-btn {
   right: -6px;
   bottom: 8px;
   color: red;
+}
+
+page-ownership .item-input .label,
+page-ownership .item-select .label {
+  color: #000000 !important;
+}
+
+page-ownership .item.item-input.input-has-focus .item-inner {
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 2px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-ownership .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+page-ownership .item.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 2px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-ownership .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
 page-past-meetings [card-image] {
@@ -57632,13 +57815,6 @@ page-past-meetings .footer-card-txt {
   font-weight: 600 !important;
 }
 
-page-personal-details {
-  /* .grid {
-        height: 94%;
-        justify-content: center;
-    } */
-}
-
 page-personal-details [default-background] {
   background-image: url("../assets/images/background/29.jpg");
   background-color: white;
@@ -57687,13 +57863,13 @@ page-personal-details .form [button-clear] {
 
 page-personal-details .form [title] {
   font-size: 24px;
-  color: #0d96d2;
+  color: #000000;
   font-weight: 600;
   margin: 0;
 }
 
 page-personal-details .form p {
-  color: #0d96d2;
+  color: #000000;
   font-size: 13px;
 }
 
@@ -57719,6 +57895,35 @@ page-personal-details .next-button {
 
 page-personal-details .camera-icon {
   font-size: 1.5em;
+}
+
+page-personal-details .form .item-inner {
+  border-bottom-color: #000000 !important;
+}
+
+page-personal-details .item-input .label,
+page-personal-details .item-select .label {
+  color: #000000 !important;
+}
+
+page-personal-details .item.item-input.input-has-focus .item-inner {
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 2px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-personal-details .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+page-personal-details .item.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 2px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-personal-details .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
 page-profile-page [logo] {
@@ -57763,7 +57968,7 @@ page-profile-page img {
 page-profile-page [user-f-l-name] {
   /* display: inline-block; */
   font-size: 22px;
-  color: #0090d0 !important;
+  color: #000000 !important;
   margin: 0;
 }
 
@@ -57809,14 +58014,12 @@ page-profile-page .login-button {
 }
 
 page-profile-page .pwd-text {
-  color: #0090d0 !important;
+  color: #000000 !important;
 }
 
-page-register {
-  /* .grid {
-        height: 94%;
-        justify-content: center;
-    } */
+page-profile-page .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
 page-register [default-background] {
@@ -57867,13 +58070,13 @@ page-register .form [button-clear] {
 
 page-register .form [title] {
   font-size: 24px;
-  color: #0d96d2;
+  color: #000000;
   font-weight: 600;
   margin: 0;
 }
 
 page-register .form p {
-  color: #0d96d2;
+  color: #000000;
   font-size: 13px;
 }
 
@@ -57899,6 +58102,43 @@ page-register .next-button {
 
 page-register .camera-icon {
   font-size: 1.5em;
+}
+
+page-register [floating] .label {
+  color: #000000 !important;
+}
+
+page-register ion-item .label {
+  color: #000000 !important;
+}
+
+page-register .form .item-inner {
+  border-bottom-color: #000000 !important;
+}
+
+page-register .item-input .label,
+page-register .item-select .label {
+  color: #000000 !important;
+}
+
+page-register .item.item-input.input-has-focus .item-inner {
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 2px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-register .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+page-register .item.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: #000000 !important;
+  border-bottom-width: 2px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-register .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
 page-signature-pad [button-clear] {
@@ -57930,6 +58170,11 @@ page-signature-pad .modal_inner_content {
   max-height: 80%;
   height: 80%;
   overflow: auto;
+}
+
+page-signature-pad .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
 page-survey-list [survey-desc] {
@@ -58077,6 +58322,11 @@ page-surveys .next-button {
 
 page-surveys .check-mark-style {
   color: #69BB7B;
+}
+
+page-surveys .button-outline-ios.activated {
+  color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
 page-thank-you-note .agree-title {

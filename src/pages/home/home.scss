@@ -1,4 +1,7 @@
 page-home {
+    ion-content {
+        background-color: #000000 !important;
+    }
     ion-col {
         position: relative;
         [button-clear] {
@@ -9,17 +12,20 @@ page-home {
     }
     img {
         max-width: 120px;
-        max-height: 120px;
+        max-height: 130px;
+        height: 130px;
         display: block;
         margin: 35px auto 20px;
     }
     .item-inner {
-        border-bottom-color: theme-colors('mainColors', 'primary') !important;
+        border-bottom-color: #ffffff !important;
         box-shadow: none !important;
     }
     [button-clear-outline] {
         margin-top: 10%;
         width: 70%;
+        border-color: #ffffff !important;
+        color: #ffffff !important;
     }
     [social] {
         margin: 20px auto 0;
@@ -35,7 +41,7 @@ page-home {
         }
     }
     .create-acc {
-        color: #0d96d2;
+        color: #ffffff;
     }
     .bottom-div {
         position: absolute;
@@ -46,5 +52,25 @@ page-home {
         margin-bottom: 10px;
         padding-top: 20px !important;
         padding-bottom: 20px !important;
+    }
+    .item-input .label,
+    .item-select .label {
+        color: #ffffff !important;
+    }
+    .item.item-input.input-has-focus .item-inner {
+        border-bottom-color: #ffffff !important;
+        border-bottom-width: 2px !important;
+        box-shadow: none !important;
+    }
+    .item-input ion-input {
+        color: #ffffff !important;
+    }
+    .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+    .item.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+        border-bottom-color: #ffffff !important;
+    }
+    .button-outline-ios.activated {
+        color: #000000 !important;
+        background-color: #ffffff !important;
     }
 }

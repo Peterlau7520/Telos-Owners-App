@@ -1,6 +1,6 @@
 webpackJsonp([19],{
 
-/***/ 288:
+/***/ 290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IdVerification2Module", function() { return IdVerification2Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__all_meetings__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__all_meetings__ = __webpack_require__(312);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var IdVerification2Module = (function () {
 
 /***/ }),
 
-/***/ 310:
+/***/ 312:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -127,7 +127,7 @@ var AllMeetingsPage = (function () {
     };
     AllMeetingsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-all-meetings',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/all-meetings/all-meetings.html"*/`<ion-header>\n  <ion-navbar header-color>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-left>會議 | Meetings</ion-title>\n  </ion-navbar>\n</ion-header>\n<!-- Themes Register + logo -->\n<ion-content white-background>\n  <ion-row margin-bottom>\n    <ion-col col-12>\n      <ul no-margin no-padding class="collapsible">\n        <li no-margin>\n          <ion-card>\n            <div class="collapsible-header" no-margin no-padding (click)="goToUpcomingMeetings()">\n              <ion-item no-padding padding text-center transparent no-lines text-center>\n                <ion-label style="margin-right: 0; margin-left: 0;">\n                  <h2 text-center no-margin class="survey-title-text">近期會議 | Upcoming Meetings</h2>\n                </ion-label>\n              </ion-item>\n            </div>\n          </ion-card>\n        </li>\n        <li no-margin>\n          <ion-card>\n            <div class="collapsible-header" no-margin no-padding (click)="goToPastMeetings()">\n              <ion-item no-padding padding text-center transparent no-lines text-center>\n                <ion-label style="margin-right: 0; margin-left: 0;">\n                  <h2 text-center no-margin class="survey-title-text">過往會議 | Past Meetings</h2>\n                </ion-label>\n              </ion-item>\n            </div>\n          </ion-card>\n        </li>\n      </ul>\n    </ion-col>\n  </ion-row>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/all-meetings/all-meetings.html"*/,
+            selector: 'page-all-meetings',template:/*ion-inline-start:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\all-meetings\all-meetings.html"*/`<ion-header>\n\n  <ion-navbar header-color>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title text-left>會議 | Meetings</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<!-- Themes Register + logo -->\n\n<ion-content white-background>\n\n  <ion-row margin-bottom>\n\n    <ion-col col-12>\n\n      <ul no-margin no-padding class="collapsible">\n\n        <li no-margin>\n\n          <ion-card>\n\n            <div class="collapsible-header" no-margin no-padding (click)="goToUpcomingMeetings()">\n\n              <ion-item no-padding padding text-center transparent no-lines text-center>\n\n                <ion-label style="margin-right: 0; margin-left: 0;">\n\n                  <h2 text-center no-margin class="survey-title-text">近期會議 | Upcoming Meetings</h2>\n\n                </ion-label>\n\n              </ion-item>\n\n            </div>\n\n          </ion-card>\n\n        </li>\n\n        <li no-margin>\n\n          <ion-card>\n\n            <div class="collapsible-header" no-margin no-padding (click)="goToPastMeetings()">\n\n              <ion-item no-padding padding text-center transparent no-lines text-center>\n\n                <ion-label style="margin-right: 0; margin-left: 0;">\n\n                  <h2 text-center no-margin class="survey-title-text">過往會議 | Past Meetings</h2>\n\n                </ion-label>\n\n              </ion-item>\n\n            </div>\n\n          </ion-card>\n\n        </li>\n\n      </ul>\n\n    </ion-col>\n\n  </ion-row>\n\n</ion-content>`/*ion-inline-end:"D:\ionic 2 projects\Projects\Telos-Owners-Ionic-App\src\pages\all-meetings\all-meetings.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ToastController */]])
     ], AllMeetingsPage);

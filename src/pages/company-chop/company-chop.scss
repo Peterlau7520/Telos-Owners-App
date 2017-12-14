@@ -23,12 +23,12 @@ page-company-chop {
         }
         [title] {
             font-size: font-size-text('h1');
-            color: #0d96d2;
+            color: #000000;
             font-weight: 600;
             margin: 0;
         }
         p {
-            color: #0d96d2;
+            color: #000000;
             font-size: 13px;
         }
     }
@@ -52,6 +52,10 @@ page-company-chop {
     }
     .camera-icon {
         font-size: 1.5em;
+    }
+    .button-outline-ios.activated {
+        color: #ffffff !important;
+        background-color: #000000 !important;
     }
     /* .grid {
         height: 94%;
