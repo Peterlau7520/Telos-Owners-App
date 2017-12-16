@@ -66,7 +66,7 @@ ion-label {
 } */
 
 .toolbar .toolbar-title {
-    color: #ffffff;
+    color: #f2f2f2;
 }
 
 .bar-buttons {
@@ -103,11 +103,11 @@ img {
 }
 
 .tabs .tab-button[aria-selected=true] .tab-button-icon {
-    color: #ffffff;
+    color: #f2f2f2;
 }
 
 .tabs .tab-button[aria-selected=true] .tab-button-text {
-    color: #ffffff;
+    color: #f2f2f2;
 }
 
 .tabs .tab-button-icon {
@@ -151,8 +151,8 @@ img {
     z-index: 100;
     margin: 0 auto;
     padding: 10px;
-    color: #333;
-    background: #ffffff;
+    color: #1d1d26 !important;
+    background: #f7f7f7;
     /* background: -moz-linear-gradient(top, #fff 0%, #e8e8e8 100%);
     background: -webkit-linear-gradient(top, #fff 0%, #e8e8e8 100%);
     background: linear-gradient(to bottom, #fff 0%, #e8e8e8 100%); */
@@ -196,9 +196,9 @@ signature-pad {
 .close-button {
     font-size: 20px;
     padding: 3px;
-    background: #000000;
+    background: #1d1d26;
     color: #ffffff;
-    border-radius: 26px;
+    border-radius: 50%;
     position: absolute;
     top: 0;
     right: 0;
@@ -226,14 +226,14 @@ signature-pad {
 }
 
 .radio-ios-mytheme {
-    color: #000000;
-    border: 1px solid #000000;
+    color: #1d1d26;
+    border: 1px solid #1d1d26;
     border-radius: 3px;
 }
 
 .radio-ios .radio-checked {
     border-color: #ffffff;
-    background: #000000;
+    background: #1d1d26;
 }
 
 .radio-ios .radio-icon {
@@ -244,22 +244,22 @@ signature-pad {
 }
 
 .radio-ios{
-    border: 1px solid #000000;
+    border: 1px solid #1d1d26;
 }
 
 .radio-ios .radio-checked .radio-inner {
     left: 8px;
     top: 3px;
-    background: #000000;
+    background: #1d1d26;
     border-color: #ffffff;
 }
 
 .radio-md .radio-checked {
-    border-color: #000000;
+    border-color: #1d1d26;
 }
 
 .radio-md .radio-icon{
-    border-color: #000000;
+    border-color: #1d1d26;
 }
 
 .loading-wrapper {
@@ -297,7 +297,7 @@ signature-pad {
 }
 
 [icon-small]{
-    color: #000000 !important;
+    color: #1d1d26 !important;
 }
 
 [card-image]::before{
@@ -313,8 +313,8 @@ signature-pad {
 }
 
 [button-clear-outline] {
-    color: #000000 !important;
-    border: 1px solid #000000 !important;
+    color: #1d1d26 !important;
+    border: 1px solid #1d1d26 !important;
 }
 
 [item-color-fff]{
@@ -322,5 +322,9 @@ signature-pad {
 }
 
 [item-color-000]{
-    color: #000000 !important;
+    color: #1d1d26 !important;
+}
+
+[color-1d1d26]{
+    color: #1d1d26 !important;
 }

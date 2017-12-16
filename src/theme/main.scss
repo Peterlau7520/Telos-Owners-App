@@ -48,8 +48,11 @@ $item-ios-thumbnail-size: 120px;
 
 // Font Style
 @import "open-sans";
-$font-family-md-base: 'Open Sans', sans-serif !default;
-$font-family-ios-base: 'Open Sans', sans-serif !default;
+
+/* @import "avenir"; */
+/* font-family: 'avenir' */
+$font-family-md-base: 'avenir';
+$font-family-ios-base: 'avenir' !default;
 
 // Font sizes
 $font-size-text:(
@@ -301,13 +304,13 @@ $icon-size:(
 // LIST VIEWS - Items Parameters
 
 [item-title] {
-  color: theme-colors('textColors', 'accent') !important;
+  color: #1d1d26 !important;
   font-size: font-size-text('h2') !important;
   letter-spacing: 1px;
 }
 
 [item-subtitle] {
-  color: theme-colors('textColors', 'accent') !important;
+  color: #1d1d26 !important;
   font-size: font-size-text('h5') !important;
   text-transform: uppercase;
   font-weight: 300 !important;
@@ -408,7 +411,7 @@ $card-ios-background-color: theme-colors('mainColors', 'accent');
 }
 
 [card-body-text]{
-  color: theme-colors('textColors', 'accent') !important;
+  color: #1d1d26 !important;
   font-size: font-size-text('p') !important;
   font-weight: 300 !important;
   letter-spacing: 1px;
@@ -426,7 +429,7 @@ $item-md-sliding-content-background: theme-colors('mainColors', 'secondary');
 
 // Parallax Settings
 [parallax-title]{
-  color: theme-colors('textColors', 'accent-first');
+  color: #f2f2f2;
   font-size: font-size-text('h1') !important;
   letter-spacing: 1px;
 }

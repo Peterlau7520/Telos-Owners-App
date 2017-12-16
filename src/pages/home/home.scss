@@ -18,14 +18,14 @@ page-home {
         margin: 35px auto 20px;
     }
     .item-inner {
-        border-bottom-color: #ffffff !important;
+        border-bottom-color: #f2f2f2 !important;
         box-shadow: none !important;
     }
     [button-clear-outline] {
         margin-top: 10%;
         width: 70%;
-        border-color: #ffffff !important;
-        color: #ffffff !important;
+        border-color: #f2f2f2 !important;
+        color: #f2f2f2 !important;
     }
     [social] {
         margin: 20px auto 0;
@@ -41,7 +41,7 @@ page-home {
         }
     }
     .create-acc {
-        color: #ffffff;
+        color: #f2f2f2;
     }
     .bottom-div {
         position: absolute;
@@ -55,22 +55,22 @@ page-home {
     }
     .item-input .label,
     .item-select .label {
-        color: #ffffff !important;
+        color: #f2f2f2 !important;
     }
     .item.item-input.input-has-focus .item-inner {
-        border-bottom-color: #ffffff !important;
+        border-bottom-color: #f2f2f2 !important;
         border-bottom-width: 2px !important;
         box-shadow: none !important;
     }
     .item-input ion-input {
-        color: #ffffff !important;
+        color: #f2f2f2 !important;
     }
     .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
     .item.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
-        border-bottom-color: #ffffff !important;
+        border-bottom-color: #f2f2f2 !important;
     }
     .button-outline-ios.activated {
-        color: #000000 !important;
-        background-color: #ffffff !important;
+        color: #1d1d26 !important;
+        background-color: #f2f2f2 !important;
     }
 }

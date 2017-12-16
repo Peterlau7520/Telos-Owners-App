@@ -8,7 +8,7 @@ page-id-verification-1 {
         max-height: 50px;
     }
     .form {
-        background: #fff;
+        background: #f7f7f7;
         border-radius: $border-radius;
         box-shadow: $box-shadow-z2;
         padding: 15px;
@@ -23,13 +23,13 @@ page-id-verification-1 {
         }
         [title] {
             font-size: font-size-text('h1');
-            color: #000000;
+            color: #1d1d26;
             font-weight: 600;
             /* text-transform: uppercase; */
             margin: 0;
         }
         p {
-            color: #000000;
+            color: #1d1d26;
             font-size: 13px;
         }
     }
@@ -55,25 +55,25 @@ page-id-verification-1 {
         font-size: 1.5em;
     }
     .form .item-inner {
-        border-bottom-color: #000000 !important;
+        border-bottom-color: #1d1d26 !important;
     }
     .item-input .label,
     .item-select .label {
-        color: #000000 !important;
+        color: #1d1d26 !important;
     }
     .item.item-input.input-has-focus .item-inner {
-        border-bottom-color: #000000 !important;
+        border-bottom-color: #1d1d26 !important;
         border-bottom-width: 2px !important;
         box-shadow: none !important;
     }
     .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
     .item.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
-        border-bottom-color: #000000 !important;
+        border-bottom-color: #1d1d26 !important;
         border-bottom-width: 2px !important;
         box-shadow: none !important;
     }
     .button-outline-ios.activated {
-        color: #ffffff !important;
-        background-color: #000000 !important;
+        color: #f2f2f2 !important;
+        background-color: #1d1d26 !important;
     }
 }

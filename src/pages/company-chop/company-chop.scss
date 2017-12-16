@@ -8,7 +8,7 @@ page-company-chop {
         max-height: 50px;
     }
     .form {
-        background: #fff;
+        background: #f7f7f7;
         border-radius: $border-radius;
         box-shadow: $box-shadow-z2;
         padding: 15px;
@@ -23,12 +23,12 @@ page-company-chop {
         }
         [title] {
             font-size: font-size-text('h1');
-            color: #000000;
+            color: #1d1d26;
             font-weight: 600;
             margin: 0;
         }
         p {
-            color: #000000;
+            color: #1d1d26;
             font-size: 13px;
         }
     }
@@ -54,8 +54,8 @@ page-company-chop {
         font-size: 1.5em;
     }
     .button-outline-ios.activated {
-        color: #ffffff !important;
-        background-color: #000000 !important;
+        color: #f2f2f2 !important;
+        background-color: #1d1d26 !important;
     }
     /* .grid {
         height: 94%;

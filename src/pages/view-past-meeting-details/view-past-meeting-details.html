@@ -18,20 +18,20 @@
       <!--Content-->
       <ion-col col-12>
         <!--Info-->
-        <ion-item no-lines no-margin padding-right>
+        <ion-item color-1d1d26 no-lines no-margin padding-right>
           <ion-label>
             <div info>
               <span left>Meeting Time : </span>
-              <p>&nbsp;</p>
+              <span>&nbsp;</span>
             </div>
             <div info>
               <span left>Venue : </span>
-              <p>&nbsp;</p>
+              <span>&nbsp;</span>
             </div>
           </ion-label>
         </ion-item>
         <!-- Description-->
-        <ion-item no-lines text-wrap no-margin padding-right>
+        <ion-item color-1d1d26 no-lines text-wrap no-margin padding-right>
           <ion-label no-margin>
             <h3 parallax-description>{{meeting_details.meeting_desc}}</h3>
             <h3 parallax-description>{{meeting_details.meeting_desc}}</h3>
@@ -39,19 +39,19 @@
             <h3 parallax-description no-margin>{{meeting_details.meeting_desc}}</h3>
           </ion-label>
         </ion-item>
-        <ion-item no-lines no-margin padding-right>
+        <ion-item color-1d1d26 no-lines no-margin padding-right>
           <ion-label margin-bottom>
             <div info>
               <span left>Agenda : </span>
-              <p>&nbsp;</p>
+              <span>&nbsp;</span>
             </div>
             <div info>
               <span left>Vote by : </span>
-              <p>&nbsp;</p>
+              <span>&nbsp;</span>
             </div>
           </ion-label>
         </ion-item>
-        <ion-item no-padding>
+        <ion-item color-1d1d26 no-padding>
           <ion-label no-margin padding-5px>
             <ion-list>
               <ul no-margin no-padding class="collapsible">
@@ -59,7 +59,7 @@
                   <ion-card>
                     <!-- Expandable Centered with header Header-->
                     <div class="collapsible-header" no-margin no-padding (click)="expandPoll(poll_details)">
-                      <ion-item no-padding text-center no-lines text-center>
+                      <ion-item color-1d1d26 no-padding text-center no-lines text-center>
                         <h3 no-margin c-font-bold>{{poll_details.poll_title}}</h3>
                         <h3 no-margin c-font-bold>Final Result : Option 1</h3>
                         <!-- <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="poll_details.is_complete">
@@ -69,28 +69,28 @@
                     <!-- Expandable Centered with header Body -->
                     <div class="item-accordion" [ngClass]="{'active': isGroupShown(poll_details) }" [hidden]="!isGroupShown(poll_details)">
                       <ion-card no-margin c-width-100 border-top-e7>
-                        <ion-item padding-5px text-wrap>
+                        <ion-item color-1d1d26 padding-5px text-wrap>
                           <ion-label no-margin>
-                            <h2 class="summary-title">Poll Results</h2>
-                            <h3 *ngFor="let option_details of poll_details.option_list;">{{option_details.option_title}} :
-                              <span c-font-bold>{{option_details.option_value}}</span>
+                            <h2 color-1d1d26 class="summary-title">Poll Results</h2>
+                            <h3 color-1d1d26 *ngFor="let option_details of poll_details.option_list;">{{option_details.option_title}} :
+                              <span color-1d1d26 c-font-bold>{{option_details.option_value}}</span>
                             </h3>
                           </ion-label>
                         </ion-item>
                       </ion-card>
                       <ion-card no-margin c-width-100 border-top-e7>
-                        <ion-item padding-5px text-wrap>
+                        <ion-item color-1d1d26 padding-5px text-wrap>
                           <ion-label no-margin>
-                            <h2 class="summary-title">Summary</h2>
-                            <h5 class="summary-desc">summary summary summary summary summary summary summary summary summary summary summary summary
+                            <h2 color-1d1d26 class="summary-title">Summary</h2>
+                            <h5 color-1d1d26 class="summary-desc">summary summary summary summary summary summary summary summary summary summary summary summary
                               summary summary summary summary</h5>
                           </ion-label>
                         </ion-item>
                       </ion-card>
                       <ion-card no-margin c-width-100 border-top-e7>
-                        <ion-item padding-5px text-wrap>
+                        <ion-item color-1d1d26 padding-5px text-wrap>
                           <ion-label no-margin>
-                            <h2 class="summary-title">Documents</h2>
+                            <h2 color-1d1d26 class="summary-title">Documents</h2>
                             <a>Document1.pdf</a>
                             <a>Document1.pdf</a>
                           </ion-label>

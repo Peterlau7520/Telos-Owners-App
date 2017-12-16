@@ -18,7 +18,7 @@
           <ion-row>
             <ion-col class="p-l-r-10 p-t-b-0">
               <p>請輸入您單位的每一位業主之全名 | Please enter the full names of all the owners of your unit:</p>
-              <ion-item no-padding *ngFor="let owners_info of owners_list; let i = index;">
+              <ion-item transparent no-padding *ngFor="let owners_info of owners_list; let i = index;">
                 <ion-label floating margin-top>全名 | FULL NAME ({{i+1}})</ion-label>
                 <ion-input required type="text" [(ngModel)]="owners_info.owner_full_name"></ion-input>
                 <button ion-button clear item-end no-margin no-padding class="close-btn">
