@@ -1,1 +1,132 @@
-webpackJsonp([17],{267:function(l,n,t){"use strict";function e(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,1,"ion-icon",[["class","tab-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),b["ɵdid"](1,147456,null,0,T.a,[_.a,b.ElementRef,b.Renderer],{name:[0,"name"],isActive:[1,"isActive"]},null)],function(l,n){var t=n.component;l(n,1,0,t.tab.tabIcon,t.tab.isSelected)},function(l,n){l(n,0,0,b["ɵnov"](n,1)._hidden)})}function a(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,1,"span",[["class","tab-button-text"]],null,null,null,null,null)),(l()(),b["ɵted"](1,null,["",""]))],null,function(l,n){l(n,1,0,n.component.tab.tabTitle)})}function o(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,2,"ion-badge",[["class","tab-badge"]],null,null,null,null,null)),b["ɵdid"](1,16384,null,0,E.a,[_.a,b.ElementRef,b.Renderer],{color:[0,"color"]},null),(l()(),b["ɵted"](2,null,["",""]))],function(l,n){l(n,1,0,n.component.tab.tabBadgeStyle)},function(l,n){l(n,2,0,n.component.tab.tabBadge)})}function u(l){return b["ɵvid"](0,[(l()(),b["ɵand"](16777216,null,null,1,null,e)),b["ɵdid"](1,16384,null,0,S.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵand"](16777216,null,null,1,null,a)),b["ɵdid"](3,16384,null,0,S.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵand"](16777216,null,null,1,null,o)),b["ɵdid"](5,16384,null,0,S.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵeld"](6,0,null,null,0,"div",[["class","button-effect"]],null,null,null,null,null))],function(l,n){var t=n.component;l(n,1,0,t.tab.tabIcon);l(n,3,0,t.tab.tabTitle);l(n,5,0,t.tab.tabBadge)},null)}function i(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,1,"a",[["class","tab-button"],["href","#"],["role","tab"]],[[1,"id",0],[1,"aria-controls",0],[1,"aria-selected",0],[2,"has-title",null],[2,"has-icon",null],[2,"has-title-only",null],[2,"icon-only",null],[2,"has-badge",null],[2,"disable-hover",null],[2,"tab-disabled",null],[2,"tab-hidden",null]],[[null,"ionSelect"],[null,"click"]],function(l,n,t){var e=!0,a=l.component;if("click"===n){e=!1!==b["ɵnov"](l,1).onClick()&&e}if("ionSelect"===n){e=!1!==a.select(l.context.$implicit)&&e}return e},u,F)),b["ɵdid"](1,114688,null,0,w.a,[_.a,b.ElementRef,b.Renderer],{tab:[0,"tab"]},{ionSelect:"ionSelect"})],function(l,n){l(n,1,0,n.context.$implicit)},function(l,n){l(n,0,1,[b["ɵnov"](n,1).tab._btnId,b["ɵnov"](n,1).tab._tabId,b["ɵnov"](n,1).tab.isSelected,b["ɵnov"](n,1).hasTitle,b["ɵnov"](n,1).hasIcon,b["ɵnov"](n,1).hasTitleOnly,b["ɵnov"](n,1).hasIconOnly,b["ɵnov"](n,1).hasBadge,b["ɵnov"](n,1).disHover,!b["ɵnov"](n,1).tab.enabled,!b["ɵnov"](n,1).tab.show])})}function d(l){return b["ɵvid"](0,[b["ɵqud"](402653184,1,{_highlight:0}),b["ɵqud"](402653184,2,{_tabbar:0}),b["ɵqud"](402653184,3,{portal:0}),(l()(),b["ɵeld"](3,0,[[2,0],["tabbar",1]],null,4,"div",[["class","tabbar"],["role","tablist"]],null,null,null,null,null)),(l()(),b["ɵand"](16777216,null,null,1,null,i)),b["ɵdid"](5,802816,null,0,S.h,[b.ViewContainerRef,b.TemplateRef,b.IterableDiffers],{ngForOf:[0,"ngForOf"]},null),(l()(),b["ɵeld"](6,0,null,null,1,"div",[["class","tab-highlight"]],null,null,null,null,null)),b["ɵdid"](7,16384,[[1,4]],0,D.a,[b.ElementRef,N.a],null,null),b["ɵncd"](null,0),(l()(),b["ɵeld"](9,16777216,[[3,3],["portal",1]],null,0,"div",[["tab-portal",""]],null,null,null,null,null))],function(l,n){l(n,5,0,n.component._tabs)},null)}function r(l){return b["ɵvid"](0,[b["ɵqud"](402653184,1,{_vp:0}),(l()(),b["ɵeld"](1,16777216,[[1,3],["viewport",1]],null,0,"div",[],null,null,null,null,null)),(l()(),b["ɵeld"](2,0,null,null,0,"div",[["class","nav-decor"]],null,null,null,null,null))],null,null)}function c(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,14,"ion-tabs",[],null,[[null,"ionChange"]],function(l,n,t){var e=!0;if("ionChange"===n){e=!1!==l.component.tabChanged(t)&&e}return e},d,L)),b["ɵprd"](6144,null,k.a,null,[M.a]),b["ɵdid"](2,4374528,null,0,M.a,[[2,A.a],[2,B.a],O.a,_.a,b.ElementRef,P.a,b.Renderer,V.a,H.a],null,{ionChange:"ionChange"}),(l()(),b["ɵted"](-1,0,["\n  "])),(l()(),b["ɵeld"](4,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","ios-alert"],["tabTitle","通告 Noticaboard"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,r,j)),b["ɵdid"](5,245760,null,0,q.a,[M.a,O.a,_.a,P.a,b.ElementRef,b.NgZone,b.Renderer,b.ComponentFactoryResolver,b.ChangeDetectorRef,x.l,Z.a,[2,V.a],N.a,b.ErrorHandler],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(l()(),b["ɵted"](-1,0,["\n  "])),(l()(),b["ɵted"](-1,0,["\n  "])),(l()(),b["ɵeld"](8,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","ios-calendar"],["tabTitle","將來會議 Meetings"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,r,j)),b["ɵdid"](9,245760,null,0,q.a,[M.a,O.a,_.a,P.a,b.ElementRef,b.NgZone,b.Renderer,b.ComponentFactoryResolver,b.ChangeDetectorRef,x.l,Z.a,[2,V.a],N.a,b.ErrorHandler],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(l()(),b["ɵted"](-1,0,["\n  "])),(l()(),b["ɵted"](-1,0,["\n  "])),(l()(),b["ɵeld"](12,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","ios-clipboard"],["tabTitle","問卷 Surveys"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,r,j)),b["ɵdid"](13,245760,null,0,q.a,[M.a,O.a,_.a,P.a,b.ElementRef,b.NgZone,b.Renderer,b.ComponentFactoryResolver,b.ChangeDetectorRef,x.l,Z.a,[2,V.a],N.a,b.ErrorHandler],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(l()(),b["ɵted"](-1,0,["\n"]))],function(l,n){var t=n.component;l(n,5,0,t.tab1Root,"通告 Noticaboard","ios-alert");l(n,9,0,t.tab2Root,"將來會議 Meetings","ios-calendar");l(n,13,0,t.tab4Root,"問卷 Surveys","ios-clipboard")},function(l,n){l(n,4,0,b["ɵnov"](n,5)._tabId,b["ɵnov"](n,5)._btnId);l(n,8,0,b["ɵnov"](n,9)._tabId,b["ɵnov"](n,9)._btnId);l(n,12,0,b["ɵnov"](n,13)._tabId,b["ɵnov"](n,13)._btnId)})}Object.defineProperty(n,"__esModule",{value:!0});var b=t(0),s=(t(3),t(39),function(){function l(l,n){this.navCtrl=l,this.navParams=n,this.tab1Root="",this.tab2Root="AllMeetingsPage",this.tab3Root="PastMeetings",this.tab4Root="SurveyList",this.badgeCount=10,console.log("tab Changed const"),this.tab1Root=localStorage.getItem("firstTabPage")}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad Tabs"),this.tab1Root=localStorage.getItem("firstTabPage")},l.prototype.getBadgesCounts=function(){},l.prototype.tabChanged=function(l){console.log("TAB CHANGED..."),console.log(l)},l}()),f=function(){return function(){}}(),p=t(203),v=t(204),g=t(205),m=t(206),R=t(207),h=t(208),I=t(209),C=t(210),y=t(211),T=t(35),_=t(1),E=t(140),S=t(15),w=t(134),F=b["ɵcrt"]({encapsulation:2,styles:[],data:{}}),D=t(88),N=t(9),k=t(30),M=t(86),A=t(21),B=t(5),O=t(8),P=t(4),V=t(17),H=t(22),L=b["ɵcrt"]({encapsulation:2,styles:[],data:{}}),q=t(133),x=t(6),Z=t(29),j=b["ɵcrt"]({encapsulation:2,styles:[],data:{}}),$=t(10),G=b["ɵcrt"]({encapsulation:2,styles:[],data:{}}),J=b["ɵccf"]("page-tabs",s,function(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,1,"page-tabs",[],null,null,null,c,G)),b["ɵdid"](1,49152,null,0,s,[A.a,$.a],null,null)],null,null)},{},{},[]),z=t(16),K=t(124),Q=t(40);t.d(n,"TabsModuleNgFactory",function(){return U});var U=b["ɵcmf"](f,[],function(l){return b["ɵmod"]([b["ɵmpd"](512,b.ComponentFactoryResolver,b["ɵCodegenComponentFactoryResolver"],[[8,[p.a,v.a,g.a,m.a,R.a,h.a,I.a,C.a,y.a,J]],[3,b.ComponentFactoryResolver],b.NgModuleRef]),b["ɵmpd"](4608,S.k,S.j,[b.LOCALE_ID,[2,S.s]]),b["ɵmpd"](4608,z.n,z.n,[]),b["ɵmpd"](4608,z.c,z.c,[]),b["ɵmpd"](512,S.b,S.b,[]),b["ɵmpd"](512,z.m,z.m,[]),b["ɵmpd"](512,z.d,z.d,[]),b["ɵmpd"](512,z.k,z.k,[]),b["ɵmpd"](512,K.a,K.a,[]),b["ɵmpd"](512,K.b,K.b,[]),b["ɵmpd"](512,f,f,[]),b["ɵmpd"](256,Q.a,s,[])])})}});
+webpackJsonp([17],{
+
+/***/ 292:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompanyChopModule", function() { return CompanyChopModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__company_chop__ = __webpack_require__(314);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var CompanyChopModule = (function () {
+    function CompanyChopModule() {
+    }
+    CompanyChopModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__company_chop__["a" /* CompanyChop */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__company_chop__["a" /* CompanyChop */]),
+            ],
+        })
+    ], CompanyChopModule);
+    return CompanyChopModule;
+}());
+
+//# sourceMappingURL=company-chop.module.js.map
+
+/***/ }),
+
+/***/ 314:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompanyChop; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_show_message__ = __webpack_require__(201);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CompanyChop = (function () {
+    function CompanyChop(navCtrl, navParams, camera, actionSheetCtrl, toastCtrl, showMessage) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.camera = camera;
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.toastCtrl = toastCtrl;
+        this.showMessage = showMessage;
+        this.license_image = "";
+    }
+    CompanyChop.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CompanyChop');
+    };
+    CompanyChop.prototype.presentActionSheet = function () {
+        var _this = this;
+        var actionSheet = this.actionSheetCtrl.create({
+            title: 'Select Image Source',
+            buttons: [
+                {
+                    text: 'Load from Library',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.PHOTOLIBRARY);
+                    }
+                },
+                {
+                    text: 'Use Camera',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.CAMERA);
+                    }
+                },
+                {
+                    text: 'Cancel',
+                    role: 'cancel'
+                }
+            ]
+        });
+        actionSheet.present();
+    };
+    CompanyChop.prototype.takePicture = function (sourceType) {
+        var _this = this;
+        var options = {
+            quality: 40,
+            sourceType: sourceType,
+            destinationType: this.camera.DestinationType.DATA_URL
+        };
+        this.camera.getPicture(options).then(function (imageData) {
+            _this.license_image = 'data:image/png;base64,' + imageData;
+            _this.showMessage.showToastBottom("Uploaded successfully!");
+        }, function (err) {
+            _this.showMessage.showToastBottom("Unable to get image");
+        });
+    };
+    CompanyChop.prototype.goToRegister = function () {
+        this.navCtrl.push("Register");
+    };
+    CompanyChop = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-company-chop',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/company-chop/company-chop.html"*/`<ion-header>\n  <ion-navbar header-color>\n    <!-- <ion-title text-left>HKID (1/2)</ion-title> -->\n  </ion-navbar>\n</ion-header>\n<!-- Themes Register + logo -->\n<ion-content background-size default-background>\n  <ion-grid>\n    <ion-row wrap padding>\n      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 no-padding>\n        <div class="form">\n          <h1 title>印章 | Company Chop</h1>\n          <ion-row margin-bottom padding-bottom>\n            <ion-col class="p-l-r-10 p-t-b-0" margin-vertical padding-vertical>\n              <p margin-bottom>如果您單位屬於貴公司，請上傳其印章圖片 | IF YOUR UNIT(S) IS OWNED BY YOUT COMPANY, PLEASE UPLOAD A PHOTO OF THE COMPANY CHOP.</p>\n              <!-- <ion-row>\n                  <ion-col text-center no-padding class="img-preview-div">\n                    <img *ngIf="!license_image" src="./assets/images/logo/login.png" class="preview-image" alt="">\n                    <img *ngIf="license_image" [src]="license_image" class="preview-image" alt="">\n                  </ion-col>\n                </ion-row> -->\n              <ion-row>\n                <ion-col text-center no-padding>\n                  <button ion-button button-clear-outline round outline color="mytheme" (click)="presentActionSheet()">\n                    <ion-icon name="ios-camera-outline" class="camera-icon"></ion-icon>\n                    拍 | Take</button>\n                </ion-col>\n              </ion-row>\n            </ion-col>\n          </ion-row>\n          <ion-row margin-top>\n            <ion-col text-center margin-top>\n              <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="goToRegister()">下一頁 | Next</button>\n            </ion-col>\n          </ion-row>\n        </div>\n        <!-- <div logo>\n            <img left src="./assets/images/logo/login_3.png">\n          </div> -->\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/company-chop/company-chop.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ToastController */], __WEBPACK_IMPORTED_MODULE_3__providers_show_message__["a" /* ShowMessage */]])
+    ], CompanyChop);
+    return CompanyChop;
+}());
+
+//# sourceMappingURL=company-chop.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=17.js.map

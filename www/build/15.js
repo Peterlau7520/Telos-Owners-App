@@ -1,1 +1,152 @@
-webpackJsonp([15],{269:function(l,n,u){"use strict";function e(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,22,"ion-content",[["class","main-view"]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,h.b,h.a)),t["ɵdid"](1,4374528,null,0,k.a,[y.a,w.a,g.a,t.ElementRef,t.Renderer,b.a,C.a,t.NgZone,[2,R.a],[2,_.a]],null,null),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](3,0,null,1,0,"div",[["class","overlay"]],null,[[null,"click"]],function(l,n,u){var e=!0;if("click"===n){e=!1!==l.component.dismiss()&&e}return e},null,null)),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](5,0,null,1,16,"div",[["class","modal_content"]],null,[[null,"click"]],function(l,n,u){var e=!0;if("click"===n){e=!1!==l.component.dismiss()&&e}return e},null,null)),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵeld"](7,0,null,null,13,"ion-row",[["class","modal_inner_content row"]],null,null,null,null,null)),t["ɵdid"](8,16384,null,0,N.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](10,0,null,null,9,"ion-col",[["class","col"]],null,null,null,null,null)),t["ɵdid"](11,16384,null,0,F.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](13,0,null,null,5,"ion-row",[["class","row"]],null,null,null,null,null)),t["ɵdid"](14,16384,null,0,N.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](16,0,null,null,1,"p",[["class","agree-title"],["col-12",""],["no-margin",""],["text-center",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Thank you, you are now welcome to vote."])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵted"](-1,1,["\n"]))],null,function(l,n){l(n,0,0,t["ɵnov"](n,1).statusbarPadding,t["ɵnov"](n,1)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var t=u(0),o=(u(3),u(39),function(){function l(l,n,u,e){this.navCtrl=l,this.navParams=n,this.viewCtrl=u,this.modalCtrl=e}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad ThankYouNote")},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l}()),a=function(){return function(){}}(),d=u(203),i=u(204),r=u(205),c=u(206),s=u(207),m=u(208),p=u(209),f=u(210),v=u(211),h=u(81),k=u(19),y=u(1),w=u(4),g=u(9),b=u(8),C=u(22),R=u(5),_=u(21),N=u(56),F=u(55),L=u(10),D=u(58),M=t["ɵcrt"]({encapsulation:2,styles:[],data:{}}),P=t["ɵccf"]("page-thank-you-note",o,function(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"page-thank-you-note",[],null,null,null,e,M)),t["ɵdid"](1,49152,null,0,o,[_.a,L.a,R.a,D.a],null,null)],null,null)},{},{},[]),T=u(15),j=u(16),E=u(124),O=u(40);u.d(n,"ThankYouNoteModuleNgFactory",function(){return V});var V=t["ɵcmf"](a,[],function(l){return t["ɵmod"]([t["ɵmpd"](512,t.ComponentFactoryResolver,t["ɵCodegenComponentFactoryResolver"],[[8,[d.a,i.a,r.a,c.a,s.a,m.a,p.a,f.a,v.a,P]],[3,t.ComponentFactoryResolver],t.NgModuleRef]),t["ɵmpd"](4608,T.k,T.j,[t.LOCALE_ID,[2,T.s]]),t["ɵmpd"](4608,j.n,j.n,[]),t["ɵmpd"](4608,j.c,j.c,[]),t["ɵmpd"](512,T.b,T.b,[]),t["ɵmpd"](512,j.m,j.m,[]),t["ɵmpd"](512,j.d,j.d,[]),t["ɵmpd"](512,j.k,j.k,[]),t["ɵmpd"](512,E.a,E.a,[]),t["ɵmpd"](512,E.b,E.b,[]),t["ɵmpd"](512,a,a,[]),t["ɵmpd"](256,O.a,o,[])])})}});
+webpackJsonp([15],{
+
+/***/ 294:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoticeboardModule", function() { return NoticeboardModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__noticeboard__ = __webpack_require__(316);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var NoticeboardModule = (function () {
+    function NoticeboardModule() {
+    }
+    NoticeboardModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__noticeboard__["a" /* Noticeboard */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__noticeboard__["a" /* Noticeboard */]),
+            ],
+        })
+    ], NoticeboardModule);
+    return NoticeboardModule;
+}());
+
+//# sourceMappingURL=noticeboard.module.js.map
+
+/***/ }),
+
+/***/ 316:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Noticeboard; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_file_opener__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_in_app_browser__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_transfer__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_document_viewer__ = __webpack_require__(207);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var Noticeboard = (function () {
+    function Noticeboard(platform, navCtrl, navParams, transfer, file, iab, document, fileOpener) {
+        this.platform = platform;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.transfer = transfer;
+        this.file = file;
+        this.iab = iab;
+        this.document = document;
+        this.fileOpener = fileOpener;
+    }
+    Noticeboard.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Noticeboard');
+    };
+    Noticeboard.prototype.IonViewDidEnter = function () {
+        /* const options: DocumentViewerOptions = {
+          title: 'My PDF'
+        }
+        this.document.viewDocument('https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf', 'application/pdf', options) */
+    };
+    Noticeboard.prototype.viewPdfFile = function (card_title) {
+        var _this = this;
+        /* this.file.dataDirectory; */
+        var options = {
+            print: { enabled: false },
+            bookmarks: { enabled: false },
+            email: { enabled: false },
+            title: card_title
+        };
+        var fileTransfer = this.transfer.create();
+        var url = 'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf';
+        fileTransfer.download(url, this.file.dataDirectory + 'demopdfflie.pdf').then(function (entry) {
+            console.log('download complete: ' + entry.toURL());
+            _this.document.viewDocument(_this.file.dataDirectory + "demopdfflie.pdf", "application/pdf", options, onShow, onClose, onMissingApp, onError);
+        }, function (error) {
+            console.log(error);
+            // handle error
+        });
+        function onShow() {
+            window.console.log('document shown');
+            //e.g. track document usage
+        }
+        function onClose() {
+            window.console.log('document closed');
+            //e.g. remove temp files
+        }
+        function onMissingApp(appId, installer) {
+            if (confirm("PDF viewer not available on your device, Do you want to install the free PDF Viewer App to view this document?")) {
+                installer();
+            }
+        }
+        function onError(error) {
+            window.console.log(error);
+            alert("Sorry! Cannot view document.");
+        }
+    };
+    Noticeboard.prototype.viewPdfFile1 = function (card_title) {
+        var _this = this;
+        /* let file_url = "https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf"; */
+        var fileTransfer = this.transfer.create();
+        var url = 'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf';
+        fileTransfer.download(url, this.file.dataDirectory + 'demopdfflie.pdf').then(function (entry) {
+            console.log('download complete: ' + entry.toURL());
+            _this.document.viewDocument(_this.file.dataDirectory + "demopdfflie.pdf", "application/pdf", { print: { enabled: true }, bookmarks: { enabled: true }, email: { enabled: true }, title: "document title" });
+        }, function (error) {
+            console.log(error);
+            // handle error
+        });
+    };
+    Noticeboard = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-noticeboard',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/noticeboard/noticeboard.html"*/`<ion-header>\n  <ion-navbar header-color>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-left> 通告 | NOTICEBOARD</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<!--Theme Full Image Cards-->\n<ion-content>\n  <ion-grid no-padding>\n    <ion-row margin-bottom>\n      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>\n        <ion-card padding text-center (click)="viewPdfFile(\'Card 1\')">\n          <div card-content>\n            <img images-filter src="./assets/images/background/1.jpg" />\n            <div card-title>Card 1</div>\n            <div card-subtitle>Description about card 1.</div>\n          </div>\n        </ion-card>\n      </ion-col>\n      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>\n        <ion-card padding text-center (click)="viewPdfFile(\'Card 2\')">\n          <div card-content>\n            <img images-filter src="./assets/images/background/2.jpg" />\n            <div card-title>Card 2</div>\n            <div card-subtitle>Description about card 2.</div>\n          </div>\n        </ion-card>\n      </ion-col>\n      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>\n        <ion-card padding text-center (click)="viewPdfFile(\'Card 3\')">\n          <div card-content>\n            <img images-filter src="./assets/images/background/3.jpg" />\n            <div card-title>Card 3</div>\n            <div card-subtitle>Description about card 3.</div>\n          </div>\n        </ion-card>\n      </ion-col>\n      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>\n        <ion-card padding text-center (click)="viewPdfFile(\'Card 4\')">\n          <div card-content>\n            <img images-filter src="./assets/images/background/4.jpg" />\n            <div card-title>Card 4</div>\n            <div card-subtitle>Description about card 4.</div>\n          </div>\n        </ion-card>\n      </ion-col>\n      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>\n        <ion-card padding text-center (click)="viewPdfFile(\'Card 5\')">\n          <div card-content>\n            <img images-filter src="./assets/images/background/5.jpg" />\n            <div card-title>Card 5</div>\n            <div card-subtitle>Description about card 5.</div>\n          </div>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n<!--Fab Button-->\n<!-- <ion-fab #fab bottom right>\n  <button button-ion-fab ion-fab (click)="onEvent(\'onFab\', data, $event)">\n    <ion-icon name="add"></ion-icon>\n  </button>\n</ion-fab> -->`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/noticeboard/noticeboard.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_transfer__["a" /* FileTransfer */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__["a" /* File */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_in_app_browser__["a" /* InAppBrowser */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_document_viewer__["a" /* DocumentViewer */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_file_opener__["a" /* FileOpener */]])
+    ], Noticeboard);
+    return Noticeboard;
+}());
+
+//# sourceMappingURL=noticeboard.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=15.js.map

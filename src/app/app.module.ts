@@ -19,6 +19,7 @@ import { LoadingService } from '../providers/loading-service';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SignaturePadPage } from '../pages/signature-pad-page/signature-pad-page';
+import { AuthProvider } from '../providers/auth/auth';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { SignaturePadPage } from '../pages/signature-pad-page/signature-pad-page
     FileTransfer,
     DocumentViewer,
     ScreenOrientation,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    AuthProvider
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

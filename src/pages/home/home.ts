@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { LoadingService } from '../../providers/loading-service';
+import { AuthProvider } from '../../providers/auth/auth';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'page-home',
@@ -8,17 +10,17 @@ import { LoadingService } from '../../providers/loading-service';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public loadingService: LoadingService) {
+  constructor(
+    public navCtrl: NavController, 
+    public loadingService: LoadingService,
+    private authprovider: AuthProvider) {
 
   }
 
   doLoginFunction() {
-    /* this.navCtrl.setRoot("Noticeboard"); */
+    
     this.loadingService.showLoading();
-    localStorage.setItem("firstTabPage", "Noticeboard");
-    /* setTimeout(function () {
-    }, 3000);
-    this.loadingService.hideLoading(); */
+    localStorage.setItem("firstTabPage", "Noticeboard")
     this.navCtrl.push("Tabs");
   }
 

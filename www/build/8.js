@@ -1,1 +1,106 @@
-webpackJsonp([8],{258:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,20,"ion-header",[],null,null,null,null,null)),t["ɵdid"](1,16384,null,0,w.a,[C.a,t.ElementRef,t.Renderer,[2,D.a]],null,null),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵeld"](3,0,null,null,16,"ion-navbar",[["class","toolbar"],["header-color",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,y.b,y.a)),t["ɵdid"](4,49152,null,0,E.a,[_.a,[2,D.a],[2,x.a],C.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,3,["\n    "])),(l()(),t["ɵeld"](6,0,null,0,8,"button",[["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==t["ɵnov"](l,8).toggle()&&u}return u},F.b,F.a)),t["ɵdid"](7,1097728,[[1,4]],0,P.a,[[8,""],C.a,t.ElementRef,t.Renderer],null,null),t["ɵdid"](8,1064960,null,0,I.a,[V.a,[2,D.a],[2,P.a],[2,E.a]],{menuToggle:[0,"menuToggle"]},null),t["ɵdid"](9,16384,null,1,j.a,[C.a,t.ElementRef,t.Renderer,[2,T.a],[2,E.a]],null,null),t["ɵqud"](603979776,1,{_buttons:1}),(l()(),t["ɵted"](-1,0,["\n      "])),(l()(),t["ɵeld"](12,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t["ɵdid"](13,147456,null,0,K.a,[C.a,t.ElementRef,t.Renderer],{name:[0,"name"]},null),(l()(),t["ɵted"](-1,0,["\n    "])),(l()(),t["ɵted"](-1,3,["\n    "])),(l()(),t["ɵeld"](16,0,null,3,2,"ion-title",[["text-left",""]],null,null,null,L.b,L.a)),t["ɵdid"](17,49152,null,0,N.a,[C.a,t.ElementRef,t.Renderer,[2,T.a],[2,E.a]],null,null),(l()(),t["ɵted"](-1,0,[" 通告 | NOTICEBOARD"])),(l()(),t["ɵted"](-1,3,["\n  "])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵted"](-1,null,["\n\n"])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵeld"](23,0,null,null,105,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,M.b,M.a)),t["ɵdid"](24,4374528,null,0,O.a,[C.a,A.a,B.a,t.ElementRef,t.Renderer,_.a,G.a,t.NgZone,[2,D.a],[2,x.a]],null,null),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](26,0,null,1,101,"ion-grid",[["class","grid"],["no-padding",""]],null,null,null,null,null)),t["ɵdid"](27,16384,null,0,U.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵeld"](29,0,null,null,97,"ion-row",[["class","row"],["margin-bottom",""]],null,null,null,null,null)),t["ɵdid"](30,16384,null,0,q.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](32,0,null,null,17,"ion-col",[["class","col"],["col-12",""],["col-lg-4",""],["col-md-6",""],["col-sm-6",""],["col-xl-4",""]],null,null,null,null,null)),t["ɵdid"](33,16384,null,0,H.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](35,0,null,null,13,"ion-card",[["padding",""],["text-center",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.viewPdfFile("Card 1")&&u}return u},null,null)),t["ɵdid"](36,16384,null,0,J.a,[C.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](38,0,null,null,9,"div",[["card-content",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](40,0,null,null,0,"img",[["images-filter",""],["src","./assets/images/background/1.jpg"]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](42,0,null,null,1,"div",[["card-title",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Card 1"])),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](45,0,null,null,1,"div",[["card-subtitle",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Description about card 1."])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](51,0,null,null,17,"ion-col",[["class","col"],["col-12",""],["col-lg-4",""],["col-md-6",""],["col-sm-6",""],["col-xl-4",""]],null,null,null,null,null)),t["ɵdid"](52,16384,null,0,H.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](54,0,null,null,13,"ion-card",[["padding",""],["text-center",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.viewPdfFile("Card 2")&&u}return u},null,null)),t["ɵdid"](55,16384,null,0,J.a,[C.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](57,0,null,null,9,"div",[["card-content",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](59,0,null,null,0,"img",[["images-filter",""],["src","./assets/images/background/2.jpg"]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](61,0,null,null,1,"div",[["card-title",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Card 2"])),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](64,0,null,null,1,"div",[["card-subtitle",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Description about card 2."])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](70,0,null,null,17,"ion-col",[["class","col"],["col-12",""],["col-lg-4",""],["col-md-6",""],["col-sm-6",""],["col-xl-4",""]],null,null,null,null,null)),t["ɵdid"](71,16384,null,0,H.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](73,0,null,null,13,"ion-card",[["padding",""],["text-center",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.viewPdfFile("Card 3")&&u}return u},null,null)),t["ɵdid"](74,16384,null,0,J.a,[C.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](76,0,null,null,9,"div",[["card-content",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](78,0,null,null,0,"img",[["images-filter",""],["src","./assets/images/background/3.jpg"]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](80,0,null,null,1,"div",[["card-title",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Card 3"])),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](83,0,null,null,1,"div",[["card-subtitle",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Description about card 3."])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](89,0,null,null,17,"ion-col",[["class","col"],["col-12",""],["col-lg-4",""],["col-md-6",""],["col-sm-6",""],["col-xl-4",""]],null,null,null,null,null)),t["ɵdid"](90,16384,null,0,H.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](92,0,null,null,13,"ion-card",[["padding",""],["text-center",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.viewPdfFile("Card 4")&&u}return u},null,null)),t["ɵdid"](93,16384,null,0,J.a,[C.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](95,0,null,null,9,"div",[["card-content",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](97,0,null,null,0,"img",[["images-filter",""],["src","./assets/images/background/4.jpg"]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](99,0,null,null,1,"div",[["card-title",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Card 4"])),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](102,0,null,null,1,"div",[["card-subtitle",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Description about card 4."])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](108,0,null,null,17,"ion-col",[["class","col"],["col-12",""],["col-lg-4",""],["col-md-6",""],["col-sm-6",""],["col-xl-4",""]],null,null,null,null,null)),t["ɵdid"](109,16384,null,0,H.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](111,0,null,null,13,"ion-card",[["padding",""],["text-center",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.viewPdfFile("Card 5")&&u}return u},null,null)),t["ɵdid"](112,16384,null,0,J.a,[C.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](114,0,null,null,9,"div",[["card-content",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](116,0,null,null,0,"img",[["images-filter",""],["src","./assets/images/background/5.jpg"]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](118,0,null,null,1,"div",[["card-title",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Card 5"])),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](121,0,null,null,1,"div",[["card-subtitle",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Description about card 5."])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵted"](-1,1,["\n"])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵted"](-1,null,["\n"]))],function(l,n){l(n,8,0,"");l(n,13,0,"menu")},function(l,n){l(n,3,0,t["ɵnov"](n,4)._hidden,t["ɵnov"](n,4)._sbPadding);l(n,6,0,t["ɵnov"](n,8).isHidden);l(n,12,0,t["ɵnov"](n,13)._hidden);l(n,23,0,t["ɵnov"](n,24).statusbarPadding,t["ɵnov"](n,24)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var t=e(0),d=(e(3),e(39),e(135)),a=e(131),o=e(136),i=e(137),r=e(138),c=function(){function l(l,n,e,u,t,d,a,o){this.platform=l,this.navCtrl=n,this.navParams=e,this.transfer=u,this.file=t,this.iab=d,this.document=a,this.fileOpener=o}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad Noticeboard")},l.prototype.IonViewDidEnter=function(){},l.prototype.viewPdfFile=function(l){function n(){window.console.log("document shown")}function e(){window.console.log("document closed")}function u(l,n){confirm("PDF viewer not available on your device, Do you want to install the free PDF Viewer App to view this document?")&&n()}function t(l){window.console.log(l),alert("Sorry! Cannot view document.")}var d=this,a={print:{enabled:!1},bookmarks:{enabled:!1},email:{enabled:!1},title:l};this.transfer.create().download("https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf",this.file.dataDirectory+"demopdfflie.pdf").then(function(l){console.log("download complete: "+l.toURL()),d.document.viewDocument(d.file.dataDirectory+"demopdfflie.pdf","application/pdf",a,n,e,u,t)},function(l){console.log(l)})},l.prototype.viewPdfFile1=function(l){var n=this;this.transfer.create().download("https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf",this.file.dataDirectory+"demopdfflie.pdf").then(function(l){console.log("download complete: "+l.toURL()),n.document.viewDocument(n.file.dataDirectory+"demopdfflie.pdf","application/pdf",{print:{enabled:!0},bookmarks:{enabled:!0},email:{enabled:!0},title:"document title"})},function(l){console.log(l)})},l}(),s=function(){return function(){}}(),f=e(203),m=e(204),b=e(205),g=e(206),p=e(207),v=e(208),k=e(209),R=e(210),h=e(211),w=e(82),C=e(1),D=e(5),y=e(274),E=e(44),_=e(8),x=e(21),F=e(28),P=e(18),I=e(129),V=e(23),j=e(130),T=e(57),K=e(35),L=e(275),N=e(125),M=e(81),O=e(19),A=e(4),B=e(9),G=e(22),U=e(84),q=e(56),H=e(55),J=e(126),S=e(10),Z=t["ɵcrt"]({encapsulation:2,styles:[],data:{}}),z=t["ɵccf"]("page-noticeboard",c,function(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"page-noticeboard",[],null,null,null,u,Z)),t["ɵdid"](1,49152,null,0,c,[A.a,x.a,S.a,o.a,i.a,a.a,r.a,d.a],null,null)],null,null)},{},{},[]),Q=e(15),W=e(16),X=e(124),Y=e(40);e.d(n,"NoticeboardModuleNgFactory",function(){return $});var $=t["ɵcmf"](s,[],function(l){return t["ɵmod"]([t["ɵmpd"](512,t.ComponentFactoryResolver,t["ɵCodegenComponentFactoryResolver"],[[8,[f.a,m.a,b.a,g.a,p.a,v.a,k.a,R.a,h.a,z]],[3,t.ComponentFactoryResolver],t.NgModuleRef]),t["ɵmpd"](4608,Q.k,Q.j,[t.LOCALE_ID,[2,Q.s]]),t["ɵmpd"](4608,W.n,W.n,[]),t["ɵmpd"](4608,W.c,W.c,[]),t["ɵmpd"](512,Q.b,Q.b,[]),t["ɵmpd"](512,W.m,W.m,[]),t["ɵmpd"](512,W.d,W.d,[]),t["ɵmpd"](512,W.k,W.k,[]),t["ɵmpd"](512,X.a,X.a,[]),t["ɵmpd"](512,X.b,X.b,[]),t["ɵmpd"](512,s,s,[]),t["ɵmpd"](256,Y.a,c,[])])})},274:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),t["ɵdid"](1,278528,null,0,d.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵeld"](2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.backButtonClick(e)&&u}return u},a.b,a.a)),t["ɵdid"](3,278528,null,0,d.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](4,1097728,null,0,o.a,[[8,"bar-button"],i.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵeld"](5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t["ɵdid"](6,278528,null,0,d.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](7,147456,null,0,r.a,[i.a,t.ElementRef,t.Renderer],{name:[0,"name"]},null),(l()(),t["ɵeld"](8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),t["ɵdid"](9,278528,null,0,d.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵted"](10,null,["",""])),t["ɵncd"](null,0),t["ɵncd"](null,1),t["ɵncd"](null,2),(l()(),t["ɵeld"](14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),t["ɵdid"](15,278528,null,0,d.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵncd"](null,3)],function(l,n){var e=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+e._mode);l(n,3,0,"back-button","back-button-"+e._mode);l(n,6,0,"back-button-icon","back-button-icon-"+e._mode);l(n,7,0,e._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+e._mode);l(n,15,0,"toolbar-content","toolbar-content-"+e._mode)},function(l,n){var e=n.component;l(n,2,0,e._hideBb);l(n,5,0,t["ɵnov"](n,7)._hidden);l(n,10,0,e._backText)})}e.d(n,"a",function(){return c}),n.b=u;var t=e(0),d=e(15),a=e(28),o=e(18),i=e(1),r=e(35),c=(e(44),e(5),e(21),t["ɵcrt"]({encapsulation:2,styles:[],data:{}}))},275:function(l,n,e){"use strict";function u(l){return t["ɵvid"](2,[(l()(),t["ɵeld"](0,0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),t["ɵdid"](1,278528,null,0,d.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵncd"](null,0)],function(l,n){l(n,1,0,"toolbar-title","toolbar-title-"+n.component._mode)},null)}e.d(n,"a",function(){return a}),n.b=u;var t=e(0),d=e(15),a=(e(125),e(1),e(57),e(44),t["ɵcrt"]({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([8],{
+
+/***/ 301:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SurveyListModule", function() { return SurveyListModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__survey_list__ = __webpack_require__(323);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var SurveyListModule = (function () {
+    function SurveyListModule() {
+    }
+    SurveyListModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__survey_list__["a" /* SurveyList */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__survey_list__["a" /* SurveyList */]),
+            ],
+        })
+    ], SurveyListModule);
+    return SurveyListModule;
+}());
+
+//# sourceMappingURL=survey-list.module.js.map
+
+/***/ }),
+
+/***/ 323:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SurveyList; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SurveyList = (function () {
+    function SurveyList(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.survey_list = [];
+        this.getStaticData();
+    }
+    SurveyList.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SurveyList');
+    };
+    SurveyList.prototype.getStaticData = function () {
+        this.survey_list = [];
+        for (var i = 0; i < 3; i++) {
+            var tmp_group_list = [];
+            this.survey_list.push({
+                "survey_title": "Survey " + (i + 1),
+                "is_complete": false
+            });
+        }
+        console.log(this.survey_list);
+        var tmp_data = JSON.stringify(this.survey_list);
+        console.log(tmp_data);
+    };
+    SurveyList.prototype.toggleGroup = function (group) {
+        group.show = !group.show;
+    };
+    SurveyList.prototype.isGroupShown = function (group) {
+        return group.show;
+    };
+    SurveyList.prototype.viewSurveyDetails = function (survey_details) {
+        var tmp_survey_details = JSON.stringify(survey_details);
+        this.navCtrl.push("Surveys", { "survey_details": tmp_survey_details });
+    };
+    SurveyList = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-survey-list',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/survey-list/survey-list.html"*/`<ion-header>\n  <ion-navbar header-color>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-left>屋苑問卷調查 | Surveys</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-row margin-bottom>\n    <ion-col col-12>\n      <ul no-margin no-padding class="collapsible">\n        <li no-margin *ngFor="let survey_details of survey_list;">\n          <ion-card>\n            <!-- Expandable Centered with header Header-->\n            <div class="collapsible-header" no-margin no-padding (click)="viewSurveyDetails(survey_details)">\n              <ion-item no-padding padding text-center transparent no-lines text-center>\n                <h2 color-1d1d26 text-center class="survey-title-text">{{survey_details.survey_title}}</h2>\n                <h2 color-1d1d26 text-center class="survey-title-text">Complete By:</h2>\n              </ion-item>\n            </div>\n          </ion-card>\n        </li>\n      </ul>\n    </ion-col>\n  </ion-row>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/survey-list/survey-list.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
+    ], SurveyList);
+    return SurveyList;
+}());
+
+//# sourceMappingURL=survey-list.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=8.js.map
