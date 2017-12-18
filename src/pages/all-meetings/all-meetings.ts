@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ActionSheetController, ToastController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
-
+import { MeetingsProvider } from '../../providers/meetings/meetings';
 @IonicPage()
 @Component({
   selector: 'page-all-meetings',
@@ -10,8 +10,14 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 export class AllMeetingsPage {
 
   license_image: any = "";
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera, public actionSheetCtrl: ActionSheetController, public toastCtrl: ToastController, ) {
+  public currentMeetings:any;
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams, 
+    public camera: Camera, 
+    public actionSheetCtrl: ActionSheetController, 
+    public toastCtrl: ToastController, 
+    public meetingsProvider: MeetingsProvider) {
   }
 
 
@@ -72,7 +78,24 @@ export class AllMeetingsPage {
   }
 
   goToUpcomingMeetings() {
-    this.navCtrl.push("UpcomingMeetings");
+    this.meetingsProvider.getUpcomingMeetings().then((info) => {
+      this.currentMeetings = info['currentMeetings'];
+      console.log(this.currentMeetings);
+      this.navCtrl.push("UpcomingMeetings", {'currentMeetings': this.currentMeetings});
+    }, (err) => {
+      // loading.present();
+      //  const alert = this.alertCtril.create({
+      //    title: 'Errors',
+      //    message: 'Failed to retrieve documents',
+      //    buttons: [
+      //      {
+      //        text: 'Ok',
+      //        role: 'cancel',
+      //      }
+      //    ] 
+      //  });
+
+    });
   }
 
   goToPastMeetings() {

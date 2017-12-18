@@ -8,24 +8,31 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class UpcomingMeetings {
 
-  upcoming_meeting_list: any = [];
-
+  public upcoming_meeting_list: any = [];
+  public currentMeetings: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.getStaticMeetingList();
+    this.currentMeetings = this.navParams.data.currentMeetings;
+    const self = this;
+    this.currentMeetings.forEach(function(meeting, i){
+      self.upcoming_meeting_list.push({
+        "meeting_id": meeting._id,
+        "meeting_title": meeting.title,
+        "meeting_titleChn": meeting.titleChn,
+        "meeting_desc": "Summary",
+        "meeting_startTime": meeting.startTime,
+        "meeting_endTime": meeting.startTime,
+        "meeting_venue": meeting.venue,
+        "meeting_fileLinks": meeting.fileLinks,
+        "meeting_pollEndTime": meeting.pollEndTime,
+        "meeting_polls": meeting.polls,
+        "meeting_background": "./assets/images/background/" + (i + 1) + ".jpg"
+      })
+    })
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UpcomingMeetings');
-  }
-
-  getStaticMeetingList() {
-    for (let i = 0; i < 5; i++) {
-      this.upcoming_meeting_list.push({
-        "meeting_title": "Meeting Title " + (i + 1),
-        "meeting_desc": "meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary meeting summary",
-        "meeting_background": "./assets/images/background/" + (i + 1) + ".jpg"
-      });
-    }
+    
   }
 
   goToViewMeetingDetails(meeting_details) {

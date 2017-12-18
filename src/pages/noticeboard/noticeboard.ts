@@ -5,6 +5,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
 import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer';
+import {NoticesProvider} from '../../providers/notices/notices';
 
 @IonicPage()
 @Component({
@@ -14,20 +15,39 @@ import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-vi
 export class Noticeboard {
 
   browser: any;
+  public notices: any = [];
 
-  constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams, private transfer: FileTransfer, private file: File, private iab: InAppBrowser, private document: DocumentViewer, private fileOpener: FileOpener) {
-  }
-
+  constructor(
+    public platform: Platform, 
+    public navCtrl: NavController, 
+    public navParams: NavParams, 
+    private transfer: FileTransfer, 
+    private file: File, private iab: InAppBrowser, 
+    private document: DocumentViewer, private fileOpener: FileOpener,
+    public noticeProvider: NoticesProvider) {
+      this.noticeProvider.getNotices().then((info) => {
+        this.notices = info['notices'];
+        console.log(this.notices);
+      }, (err) => {
+        // loading.present();
+        //  const alert = this.alertCtril.create({
+        //    title: 'Errors',
+        //    message: 'Failed to retrieve documents',
+        //    buttons: [
+        //      {
+        //        text: 'Ok',
+        //        role: 'cancel',
+        //      }
+        //    ] 
+        //  });
+  
+      });
+    };
   ionViewDidLoad() {
     console.log('ionViewDidLoad Noticeboard');
   }
 
   IonViewDidEnter() {
-
-    /* const options: DocumentViewerOptions = {
-      title: 'My PDF'
-    }
-    this.document.viewDocument('https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf', 'application/pdf', options) */
 
   }
 

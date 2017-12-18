@@ -12,47 +12,11 @@
   <ion-grid no-padding>
     <ion-row margin-bottom>
       <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
-        <ion-card padding text-center (click)="viewPdfFile('Card 1')">
+        <ion-card padding text-center *ngFor="let notice of notices" (click)="viewPdfFile('Card 1')" >
           <div card-content>
             <img images-filter src="./assets/images/background/1.jpg" />
-            <div card-title>Card 1</div>
-            <div card-subtitle>Description about card 1.</div>
-          </div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
-        <ion-card padding text-center (click)="viewPdfFile('Card 2')">
-          <div card-content>
-            <img images-filter src="./assets/images/background/2.jpg" />
-            <div card-title>Card 2</div>
-            <div card-subtitle>Description about card 2.</div>
-          </div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
-        <ion-card padding text-center (click)="viewPdfFile('Card 3')">
-          <div card-content>
-            <img images-filter src="./assets/images/background/3.jpg" />
-            <div card-title>Card 3</div>
-            <div card-subtitle>Description about card 3.</div>
-          </div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
-        <ion-card padding text-center (click)="viewPdfFile('Card 4')">
-          <div card-content>
-            <img images-filter src="./assets/images/background/4.jpg" />
-            <div card-title>Card 4</div>
-            <div card-subtitle>Description about card 4.</div>
-          </div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
-        <ion-card padding text-center (click)="viewPdfFile('Card 5')">
-          <div card-content>
-            <img images-filter src="./assets/images/background/5.jpg" />
-            <div card-title>Card 5</div>
-            <div card-subtitle>Description about card 5.</div>
+            <div card-title>Card 1 {{notice.title}}</div>
+            <div card-subtitle>Description about card 1</div>
           </div>
         </ion-card>
       </ion-col>

@@ -35,6 +35,8 @@ export class ViewMeetingPolls {
 
   constructor(public element: ElementRef, public renderer: Renderer, public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, private iab: InAppBrowser, private youtube: YoutubeVideoPlayer) {
     this.meeting_details = JSON.parse(this.navParams.get("meeting_details"));
+    this.poll_list =  this.meeting_details.meeting_polls;
+    console.log(this.meeting_details);
   }
 
   ionViewDidLoad() {
@@ -44,7 +46,6 @@ export class ViewMeetingPolls {
 
   ionViewWillEnter() {
     console.log('ionViewDidEnter ViewMeetingPolls');
-    this.getStaticData();
   }
 
 
@@ -158,23 +159,6 @@ export class ViewMeetingPolls {
     return poll_details.show;
   }
 
-  getStaticData() {
-    this.poll_list = [];
-    for (let i = 0; i < 1; i++) {
-      let tmp_option_list = [];
-      this.poll_list.push({
-        "poll_title": "Poll " + (i + 1),
-        "is_complete": false
-      });
-      for (let j = 0; j < 2; j++) {
-        tmp_option_list.push({
-          "option_title": "Option " + (j + 1)
-        });
-      }
-      this.poll_list[i].option_list = tmp_option_list;
-    }
-    console.log(this.poll_list);
-  }
 
   getHKIDByOption(poll_details, current_HKID) {
     let myModal4 = this.modalCtrl.create("OwnerHkidNumber", {

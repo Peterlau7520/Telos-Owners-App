@@ -15,11 +15,14 @@ import { File } from '@ionic-native/file';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { ShowMessage } from '../providers/show-message';
 import { LoadingService } from '../providers/loading-service';
-
+import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SignaturePadPage } from '../pages/signature-pad-page/signature-pad-page';
 import { AuthProvider } from '../providers/auth/auth';
+import { MeetingsProvider } from '../providers/meetings/meetings';
+import { NoticesProvider } from '../providers/notices/notices';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +37,7 @@ import { AuthProvider } from '../providers/auth/auth';
     IonicModule.forRoot(MyApp, {
       backButtonText: ""
     }),
+    IonicStorageModule.forRoot(),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -56,7 +60,9 @@ import { AuthProvider } from '../providers/auth/auth';
     DocumentViewer,
     ScreenOrientation,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    AuthProvider
+    AuthProvider,
+    MeetingsProvider,
+    NoticesProvider
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

@@ -17,8 +17,8 @@ export class HomePage {
 
   }
 
-  doLoginFunction() {
-    
+  doLoginFunction(form: NgForm) {
+    this.authprovider.signin(form.value.account, form.value.password);
     this.loadingService.showLoading();
     localStorage.setItem("firstTabPage", "Noticeboard")
     this.navCtrl.push("Tabs");

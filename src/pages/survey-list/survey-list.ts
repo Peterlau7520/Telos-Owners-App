@@ -10,6 +10,7 @@ export class SurveyList {
   survey_list = [];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.getStaticData();
+    
   }
 
   ionViewDidLoad() {

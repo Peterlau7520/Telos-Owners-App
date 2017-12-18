@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 303:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SurveysModule", function() { return SurveysModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__surveys__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__surveys__ = __webpack_require__(330);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,14 +38,14 @@ var SurveysModule = (function () {
 
 /***/ }),
 
-/***/ 325:
+/***/ 330:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Surveys; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_show_message__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_show_message__ = __webpack_require__(202);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -172,38 +172,15 @@ var Surveys = (function () {
                 this.toggleGroup(tmp_group_list[i]);
             }
         }
-        /* let tmp_option_list = group.option_list;
-        for (let j = 0; j < tmp_option_list.length; j++) {
-          if (j != k) {
-            console.log("TRUE");
-            group.option_list[j].is_checked = false;
-          }
-          else {
-            group.is_complete = true;
-            group.option_list[j].is_checked = true;
-          }
-        }
-        if (event.checked == true) {
-          this.toggleGroup(group);
-          let tmp_group_list = survey_details.group_list;
-          i++;
-          console.log(i);
-          console.log(tmp_group_list.length);
-          if (i < tmp_group_list.length) {
-            this.toggleGroup(tmp_group_list[i]);
-          }
-        } */
-        /* else {
-          group.is_complete = false;
-        } */
     };
     Surveys = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-surveys',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/surveys/surveys.html"*/`<ion-header>\n  <ion-navbar header-color>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-left>屋苑問卷調查 | Surveys</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-row margin-bottom>\n    <ion-col col-12>\n      <ion-row padding>\n        <ion-col col-12 no-padding>\n          <p color-1d1d26 style="font-size: 16px !important;" no-margin>Survey Title: {{survey_details.survey_title}}</p>\n          <p color-1d1d26 style="font-size: 16px !important;" no-margin>Complete By:</p>\n        </ion-col>\n      </ion-row>\n      <ion-list>\n        <ul no-margin no-padding class="collapsible">\n          <li no-margin *ngFor="let group of survey_details.group_list; let i=index;">\n            <ion-card transparent>\n              <!-- Expandable Centered with header Header-->\n              <div class="collapsible-header" no-margin no-padding (click)="toggleGroup1(group, i, survey_details)">\n                <ion-item color-1d1d26 no-padding text-center transparent no-lines text-center>\n                  <h2 color-1d1d26 text-center item-title>{{group.group_title}}</h2>\n                  <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="group.is_complete">\n                  </ion-icon>\n                </ion-item>\n              </div>\n              <!-- Expandable Centered with header Body -->\n              <div class="item-accordion" transparent [ngClass]="{\'active\': isGroupShown(group) }" [hidden]="!isGroupShown(group)">\n\n                <ion-list radio-group transparent [(ngModel)]="group.is_complete" (ionChange)="valueChanged(group, i, survey_details)">\n                  <ion-card no-margin transparent c-width-100 *ngFor="let option_details of group.option_list; let k=index;" style="box-shadow: none;">\n                    <ion-item color-1d1d26 transparent text-wrap>\n                      <ion-label margin-vertical item-title>\n                        <p color-1d1d26 under-line>Option 1</p>\n                        <p color-1d1d26>Cost : {{option_details.cost}}</p>\n                        <p color-1d1d26 style="font-family:\'avenir\'">Description : {{option_details.description}}</p>\n                      </ion-label>\n                      <!-- <ion-checkbox [(ngModel)]="option_details.is_checked" (ionChange)="valueChanged($event, group, i, k, survey_details)"></ion-checkbox> -->\n                      <ion-radio item-left [value]="k+1" color="mytheme"></ion-radio>\n                    </ion-item>\n                  </ion-card>\n                </ion-list>\n              </div>\n            </ion-card>\n          </li>\n        </ul>\n      </ion-list>\n      <ion-row margin-vertical>\n        <ion-col text-center margin-top padding-horizontal>\n          <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="submitData(survey_details.group_list)">確定 | Submit</button>\n        </ion-col>\n      </ion-row>\n    </ion-col>\n  </ion-row>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/surveys/surveys.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_show_message__["a" /* ShowMessage */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_show_message__["a" /* ShowMessage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_show_message__["a" /* ShowMessage */]) === "function" && _c || Object])
     ], Surveys);
     return Surveys;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=surveys.js.map

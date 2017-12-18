@@ -126,30 +126,7 @@ export class Surveys {
         this.toggleGroup(tmp_group_list[i]);
       }
     }
-    /* let tmp_option_list = group.option_list;
-    for (let j = 0; j < tmp_option_list.length; j++) {
-      if (j != k) {
-        console.log("TRUE");
-        group.option_list[j].is_checked = false;
-      }
-      else {
-        group.is_complete = true;
-        group.option_list[j].is_checked = true;
-      }
-    }
-    if (event.checked == true) {
-      this.toggleGroup(group);
-      let tmp_group_list = survey_details.group_list;
-      i++;
-      console.log(i);
-      console.log(tmp_group_list.length);
-      if (i < tmp_group_list.length) {
-        this.toggleGroup(tmp_group_list[i]);
-      }
-    } */
-    /* else {
-      group.is_complete = false;
-    } */
+
   }
 
 }

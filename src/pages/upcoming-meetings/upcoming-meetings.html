@@ -17,10 +17,12 @@
             <p card-body-text>{{meeting_details.meeting_desc}}</p>
             <ion-row margin-top padding-top>
               <ion-col no-padding>
-                <p card-body-text class="footer-card-txt">Meeting Date & Time:</p>
+                <p card-body-text class="footer-card-txt">Meeting Date & Time: {{meeting_details.meeting_startTime}} - {{meeting_details.meeting_endTime}}</p>
               </ion-col>
+              </ion-row>
+              <ion-row margin-top padding-top>
               <ion-col no-padding>
-                <p card-body-text class="footer-card-txt">Venue:</p>
+                <p card-body-text class="footer-card-txt">Venue: {{meeting_details.meeting_venue}}</p>
               </ion-col>
             </ion-row>
           </ion-card-content>
