@@ -15,6 +15,7 @@ import { File } from '@ionic-native/file';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { ShowMessage } from '../providers/show-message';
 import { LoadingService } from '../providers/loading-service';
+import { DataService } from '../providers/data-service';
 import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -54,6 +55,7 @@ import { NoticesProvider } from '../providers/notices/notices';
     InAppBrowser,
     ShowMessage,
     LoadingService,
+    DataService,
     FileOpener,
     File,
     FileTransfer,

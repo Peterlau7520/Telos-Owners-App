@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
+
 import { LoadingService } from '../../providers/loading-service';
-import { AuthProvider } from '../../providers/auth/auth';
+import { DataService } from '../../providers/data-service';
+import { ShowMessage } from '../../providers/show-message';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -11,17 +14,33 @@ import { NgForm } from '@angular/forms';
 export class HomePage {
 
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public loadingService: LoadingService,
-    private authprovider: AuthProvider) {
+    private dataService: DataService,
+    private showMessage: ShowMessage,
+    public storage: Storage) {
 
   }
 
   doLoginFunction(form: NgForm) {
-    this.authprovider.signin(form.value.account, form.value.password);
     this.loadingService.showLoading();
-    localStorage.setItem("firstTabPage", "Noticeboard")
-    this.navCtrl.push("Tabs");
+    this.dataService.postData("login", form.value, {}).subscribe(results => {
+      this.loadingService.hideLoading();
+      if (results.success == true) {
+        this.storage.set('token', results.token);
+        if (results.registered == true) {
+          localStorage.setItem("firstTabPage", "Noticeboard");
+          this.navCtrl.push("Tabs");
+        }
+      }
+      else {
+        this.showMessage.showToastBottom(results.message);
+      }
+    }, err => {
+      console.log("err", err);
+      this.loadingService.hideLoading();
+      this.showMessage.showToastBottom("Unable to login, please try again.");
+    });
   }
 
   goToRegister() {
