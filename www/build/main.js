@@ -29,7 +29,6 @@ var HomePage = (function () {
         this.authprovider = authprovider;
     }
     HomePage.prototype.doLoginFunction = function () {
-        this.authprovider.signin();
         this.loadingService.showLoading();
         localStorage.setItem("firstTabPage", "Noticeboard");
         this.navCtrl.push("Tabs");
@@ -39,7 +38,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/home/home.html"*/`<!-- <ion-header>\n  <ion-navbar header-color>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-left>Login</ion-title>\n  </ion-navbar>\n</ion-header> -->\n<!-- Themes Login + logo -->\n<ion-content>\n  <ion-grid class="bottom-div">\n    <ion-row wrap padding>\n      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 padding-bottom>\n        <!-- <button ion-button button-clear clear (click)="onEvent(\'onSkip\')">Skip</button> -->\n        <!---Logo-->\n        <img src="./assets/images/logo/logo_white.png" style="margin-bottom:0px;">\n        <!-- <p text-center ion-button no-margin clear full style="font-size: 18px;">TELOS</p> -->\n        <!---Input field username-->\n        <ion-item no-padding transparent>\n          <ion-label floating no-margin>用戶名 | USERNAME</ion-label>\n          <ion-input required type="text"></ion-input>\n        </ion-item>\n        <!---Input field password-->\n        <ion-item no-padding transparent>\n          <ion-label floating margin-top>密碼 | PASSWORD</ion-label>\n          <ion-input required type="password"></ion-input>\n        </ion-item>\n        <!---Login button-->\n        <ion-row>\n          <ion-col col-12 text-center no-padding>\n            <button ion-button button-clear-outline text-center round outline class="login-button" color="mytheme" (click)="doLoginFunction()">登入 | Log In</button>\n          </ion-col>\n          <ion-col col-12 no-padding text-center>\n            <a (click)="goToRegister()" class="create-acc">開新帳戶 | Create an account</a>\n          </ion-col>\n        </ion-row>\n        <!---Register button-->\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/home/home.html"*/`<ion-content>\n  <ion-grid class="bottom-div">\n    <ion-row wrap padding>\n      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 padding-bottom>\n        <!---Logo-->\n        <img src="./assets/images/logo/logo_white.png" style="margin-bottom:0px;">\n        \n        <!---Input field username-->\n        <ion-item no-padding transparent>\n          <ion-label floating no-margin>用戶名 | USERNAME</ion-label>\n          <ion-input required type="text"></ion-input>\n        </ion-item>\n        <!---Input field password-->\n        <ion-item no-padding transparent>\n          <ion-label floating margin-top>密碼 | PASSWORD</ion-label>\n          <ion-input required type="password"></ion-input>\n        </ion-item>\n\n        <!---Login button-->\n        <ion-row>\n          <ion-col col-12 text-center no-padding>\n            <button ion-button button-clear-outline text-center round outline class="login-button" type="submit" color="mytheme" (click)="doLoginFunction()">登入 | Log In</button>\n          </ion-col>\n          <ion-col col-12 no-padding text-center>\n            <a (click)="goToRegister()" class="create-acc">開新帳戶 | Create an account</a>\n          </ion-col>\n        </ion-row>\n        <!---Register button-->\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__["a" /* LoadingService */],
@@ -78,15 +77,15 @@ var map = {
 		21
 	],
 	"../pages/agree-use-telos/agree-use-telos.module": [
-		289,
+		290,
 		20
 	],
 	"../pages/all-meetings/all-meetings.module": [
-		291,
+		289,
 		19
 	],
 	"../pages/change-password-page/change-password-page.module": [
-		290,
+		291,
 		18
 	],
 	"../pages/company-chop/company-chop.module": [
@@ -130,11 +129,11 @@ var map = {
 		8
 	],
 	"../pages/surveys/surveys.module": [
-		303,
+		302,
 		7
 	],
 	"../pages/tabs/tabs.module": [
-		302,
+		303,
 		6
 	],
 	"../pages/thank-you-note-2/thank-you-note-2.module": [
@@ -186,7 +185,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -279,7 +278,7 @@ var AuthProvider = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShowMessage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -560,9 +559,9 @@ var AppModule = (function () {
                 }, {
                     links: [
                         { loadChildren: '../pages/agree-use-company-chop/agree-use-company-chop.module#AgreeUseCompanyChopModule', name: 'AgreeUseCompanyChop', segment: 'agree-use-company-chop', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/all-meetings/all-meetings.module#IdVerification2Module', name: 'AllMeetingsPage', segment: 'all-meetings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agree-use-telos/agree-use-telos.module#AgreeUseTelosModule', name: 'AgreeUseTelos', segment: 'agree-use-telos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/change-password-page/change-password-page.module#ChangePasswordPageModule', name: 'ChangePasswordPage', segment: 'change-password-page', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/all-meetings/all-meetings.module#IdVerification2Module', name: 'AllMeetingsPage', segment: 'all-meetings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/company-chop/company-chop.module#CompanyChopModule', name: 'CompanyChop', segment: 'company-chop', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/id-verification-1/id-verification-1.module#IdVerification1Module', name: 'IdVerification1', segment: 'id-verification-1', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/noticeboard/noticeboard.module#NoticeboardModule', name: 'Noticeboard', segment: 'noticeboard', priority: 'low', defaultHistory: [] },
@@ -573,8 +572,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/profile-page/profile-page.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterModule', name: 'Register', segment: 'register', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/survey-list/survey-list.module#SurveyListModule', name: 'SurveyList', segment: 'survey-list', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tabs/tabs.module#TabsModule', name: 'Tabs', segment: 'tabs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/surveys/surveys.module#SurveysModule', name: 'Surveys', segment: 'surveys', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tabs/tabs.module#TabsModule', name: 'Tabs', segment: 'tabs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/thank-you-note-2/thank-you-note-2.module#ThankYouNote2Module', name: 'ThankYouNote2', segment: 'thank-you-note-2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/thank-you-note/thank-you-note.module#ThankYouNoteModule', name: 'ThankYouNote', segment: 'thank-you-note', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/upcoming-meetings/upcoming-meetings.module#UpcomingMeetingsModule', name: 'UpcomingMeetings', segment: 'upcoming-meetings', priority: 'low', defaultHistory: [] },

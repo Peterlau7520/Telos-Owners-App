@@ -4,7 +4,7 @@
       <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 padding-bottom>
         <!---Logo-->
         <img src="./assets/images/logo/logo_white.png" style="margin-bottom:0px;">
-        <!-- <form #f="ngForm" (ngSubmit)=""> -->
+        
         <!---Input field username-->
         <ion-item no-padding transparent>
           <ion-label floating no-margin>用戶名 | USERNAME</ion-label>
@@ -19,14 +19,13 @@
         <!---Login button-->
         <ion-row>
           <ion-col col-12 text-center no-padding>
-            <button ion-button button-clear-outline text-center round outline class="login-button" type="submit" [disabled]="!f.valid" color="mytheme" (click)="doLoginFunction()">登入 | Log In</button>
+            <button ion-button button-clear-outline text-center round outline class="login-button" type="submit" color="mytheme" (click)="doLoginFunction()">登入 | Log In</button>
           </ion-col>
           <ion-col col-12 no-padding text-center>
             <a (click)="goToRegister()" class="create-acc">開新帳戶 | Create an account</a>
           </ion-col>
         </ion-row>
         <!---Register button-->
-      <!-- </form> -->
       </ion-col>
     </ion-row>
   </ion-grid>
