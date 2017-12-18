@@ -30,6 +30,15 @@ var HomePage = (function () {
     }
     HomePage.prototype.doLoginFunction = function () {
         this.loadingService.showLoading();
+        //check the 
+        // eg. nature can be 3 types of objects, 
+        //1. is {registered: true}
+        //2. is {registered: false, nature: CorporateOwner}
+        //3. is {registered: false, nature: Owners, numberOfOwners: 1/2/3/4..}
+        //if it's case 1, we go straight to Noticeboard page
+        //if it's case 2, we ask user to upload a company chop
+        //if it's case 3, we ask user to upload hkid cards and input hkid (just like the registration page)m 
+        // and the number of HKID input depends on the numberOfOwners field.
         localStorage.setItem("firstTabPage", "Noticeboard");
         this.navCtrl.push("Tabs");
     };
@@ -40,11 +49,10 @@ var HomePage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-home',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/home/home.html"*/`<ion-content>\n  <ion-grid class="bottom-div">\n    <ion-row wrap padding>\n      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 padding-bottom>\n        <!---Logo-->\n        <img src="./assets/images/logo/logo_white.png" style="margin-bottom:0px;">\n        \n        <!---Input field username-->\n        <ion-item no-padding transparent>\n          <ion-label floating no-margin>用戶名 | USERNAME</ion-label>\n          <ion-input required type="text"></ion-input>\n        </ion-item>\n        <!---Input field password-->\n        <ion-item no-padding transparent>\n          <ion-label floating margin-top>密碼 | PASSWORD</ion-label>\n          <ion-input required type="password"></ion-input>\n        </ion-item>\n\n        <!---Login button-->\n        <ion-row>\n          <ion-col col-12 text-center no-padding>\n            <button ion-button button-clear-outline text-center round outline class="login-button" type="submit" color="mytheme" (click)="doLoginFunction()">登入 | Log In</button>\n          </ion-col>\n          <ion-col col-12 no-padding text-center>\n            <a (click)="goToRegister()" class="create-acc">開新帳戶 | Create an account</a>\n          </ion-col>\n        </ion-row>\n        <!---Register button-->\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__["a" /* LoadingService */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__["a" /* LoadingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__["a" /* LoadingService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */]) === "function" && _c || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -77,11 +85,11 @@ var map = {
 		21
 	],
 	"../pages/agree-use-telos/agree-use-telos.module": [
-		290,
+		289,
 		20
 	],
 	"../pages/all-meetings/all-meetings.module": [
-		289,
+		290,
 		19
 	],
 	"../pages/change-password-page/change-password-page.module": [
@@ -559,8 +567,8 @@ var AppModule = (function () {
                 }, {
                     links: [
                         { loadChildren: '../pages/agree-use-company-chop/agree-use-company-chop.module#AgreeUseCompanyChopModule', name: 'AgreeUseCompanyChop', segment: 'agree-use-company-chop', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/all-meetings/all-meetings.module#IdVerification2Module', name: 'AllMeetingsPage', segment: 'all-meetings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agree-use-telos/agree-use-telos.module#AgreeUseTelosModule', name: 'AgreeUseTelos', segment: 'agree-use-telos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/all-meetings/all-meetings.module#IdVerification2Module', name: 'AllMeetingsPage', segment: 'all-meetings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/change-password-page/change-password-page.module#ChangePasswordPageModule', name: 'ChangePasswordPage', segment: 'change-password-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/company-chop/company-chop.module#CompanyChopModule', name: 'CompanyChop', segment: 'company-chop', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/id-verification-1/id-verification-1.module#IdVerification1Module', name: 'IdVerification1', segment: 'id-verification-1', priority: 'low', defaultHistory: [] },
