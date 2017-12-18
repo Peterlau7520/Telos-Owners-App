@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ActionSheetController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ActionSheetController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+
+import { LoadingService } from '../../providers/loading-service';
+import { DataService } from '../../providers/data-service';
 import { ShowMessage } from '../../providers/show-message';
 
 @IonicPage()
@@ -10,14 +13,22 @@ import { ShowMessage } from '../../providers/show-message';
 })
 export class CompanyChop {
 
-  license_image: any = "";
+  id_image: any = "";
+  token: any;
+  loginResponse: any = {};
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera, public actionSheetCtrl: ActionSheetController, public toastCtrl: ToastController, public showMessage: ShowMessage) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera, public actionSheetCtrl: ActionSheetController, public loadingService: LoadingService,
+    private dataService: DataService,
+    private showMessage: ShowMessage) {
+    this.token = localStorage.getItem("token");
+    this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
+    console.log(this.loginResponse);
   }
 
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CompanyChop');
+
   }
 
   public presentActionSheet() {
@@ -53,14 +64,41 @@ export class CompanyChop {
     }
 
     this.camera.getPicture(options).then((imageData) => {
-      this.license_image = 'data:image/png;base64,' + imageData;
-      this.showMessage.showToastBottom("Uploaded successfully!");
+      this.id_image = 'data:image/png;base64,' + imageData;
+      /* this.showMessage.showToastBottom("Uploaded successfully!"); */
     }, (err) => {
       this.showMessage.showToastBottom("Unable to get image");
     });
   }
 
   goToRegister() {
-    this.navCtrl.push("Register");
+    if (typeof this.id_image == "undefined" || this.id_image == "" || this.id_image == null) {
+      this.showMessage.showToastBottom("Please select/take an picture to upload.");
+      return false;
+    }
+    else {
+      this.loadingService.showLoading();
+      let request_data = {
+        "account": this.loginResponse.user.account,
+        "image": this.id_image
+      };
+      this.dataService.postData("saveChop", request_data, {}).subscribe(results => {
+        if (results.success == true) {
+          this.showMessage.showToastBottom(results.message);
+          this.loadingService.hideLoading();
+          localStorage.setItem("firstTabPage", "Noticeboard");
+          this.navCtrl.push("Tabs");
+          /* this.navCtrl.push("Register"); */
+        }
+        else {
+          this.showMessage.showToastBottom(results.message);
+          this.loadingService.hideLoading();
+        }
+      }, err => {
+        console.log("err", err);
+        this.loadingService.hideLoading();
+        this.showMessage.showToastBottom("Unable to save image, please try again.");
+      });
+    }
   }
 }

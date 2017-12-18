@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ActionSheetController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ActionSheetController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+
+import { LoadingService } from '../../providers/loading-service';
+import { DataService } from '../../providers/data-service';
 import { ShowMessage } from '../../providers/show-message';
 
 @IonicPage()
@@ -12,15 +15,32 @@ export class IdVerification1 {
 
   license_image: any = "";
   owners_list: any = [];
+  owners_list_length: any = 0;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera, public actionSheetCtrl: ActionSheetController, public toastCtrl: ToastController, public showMessage: ShowMessage) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera, public actionSheetCtrl: ActionSheetController, public loadingService: LoadingService,
+    private dataService: DataService,
+    private showMessage: ShowMessage) {
     if (this.navParams.get("owners_list")) {
       console.log("navParams");
       this.owners_list = JSON.parse(this.navParams.get("owners_list"));
+      if (this.owners_list) {
+        this.owners_list_length = this.owners_list.length;
+      }
+      else {
+        this.owners_list_length = localStorage.getItem("owners_list_length");
+        console.log("owners_list Not Found");
+      }
     }
     else {
       console.log("localStorage");
       this.owners_list = JSON.parse(localStorage.getItem("owners_list"));
+      if (this.owners_list) {
+        this.owners_list_length = this.owners_list.length;
+      }
+      else {
+        this.owners_list_length = localStorage.getItem("owners_list_length");
+        console.log("owners_list Not Found");
+      }
     }
     console.log(this.owners_list);
   }
@@ -63,7 +83,7 @@ export class IdVerification1 {
     }
 
     this.camera.getPicture(options).then((imageData) => {
-      this.owners_list[i].license_image = 'data:image/png;base64,' + imageData;
+      this.owners_list[i].image = 'data:image/png;base64,' + imageData;
     }, (err) => {
       this.showMessage.showToastBottom("Unable to get image");
     });
@@ -71,21 +91,54 @@ export class IdVerification1 {
 
   submitData(i) {
     console.log(i);
-    if (i < this.owners_list.length - 1) {
-      this.owners_list[i].is_visible = false;
-      i++;
-      this.owners_list[i].is_visible = true;
+    if (typeof this.owners_list[i].image == "undefined" || this.owners_list[i].image == "" || this.owners_list[i].image == null) {
+      this.showMessage.showToastBottom("Please select/take an picture to upload.");
+      return false;
+    }
+    else if (typeof this.owners_list[i].hkid == "undefined" || this.owners_list[i].hkid == "" || this.owners_list[i].hkid == null) {
+      this.showMessage.showToastBottom("Please enter the HKID number.");
+      return false;
     }
     else {
-      console.log("return");
-      console.log(this.owners_list);
-      this.navCtrl.push("CompanyChop");
+      if (i < this.owners_list.length - 1) {
+        this.owners_list[i].is_visible = false;
+        i++;
+        this.owners_list[i].is_visible = true;
+      }
+      else {
+        this.submitAllHKIDData(this.owners_list);
+        /* this.navCtrl.push("CompanyChop"); */
+      }
     }
-    console.log(this.owners_list.length);
   }
 
-  goToIDVerification2() {
-    this.navCtrl.push("IdVerification2");
+  submitAllHKIDData(owners_list) {
+
+    this.loadingService.showLoading();
+    let request_data = [];
+    for (let i = 0; i < owners_list.length; i++) {
+      request_data.push({
+        "image": owners_list[i].image,
+        "hkid": owners_list[i].hkid
+      });
+    }
+    this.dataService.postData("saveHKID", request_data, {}).subscribe(results => {
+      if (results.success == true) {
+        this.showMessage.showToastBottom(results.message);
+        this.loadingService.hideLoading();
+        localStorage.setItem("firstTabPage", "Noticeboard");
+        this.navCtrl.push("Tabs");
+        /* this.navCtrl.push("Register"); */
+      }
+      else {
+        this.showMessage.showToastBottom(results.message);
+        this.loadingService.hideLoading();
+      }
+    }, err => {
+      console.log("err", err);
+      this.loadingService.hideLoading();
+      this.showMessage.showToastBottom("Unable to save HKID data, please try again.");
+    });
   }
 
 }

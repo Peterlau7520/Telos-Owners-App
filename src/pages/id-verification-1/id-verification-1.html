@@ -9,14 +9,14 @@
     <ion-row wrap padding>
       <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 no-padding *ngFor="let owners_info of owners_list; let i=index;">
         <div class="form" *ngIf="owners_info.is_visible">
-          <h1 title>身分證 | HKID ({{i+1}}/{{owners_list.length}})</h1>
+          <h1 title>身分證 | HKID ({{i+1}}/{{owners_list_length}})</h1>
           <ion-row>
             <ion-col class="p-l-r-10 p-t-b-0">
               <p>請上傳您身分證圖片跟輸入其號碼 | Please upload a photo of your HKID and enter your HKID number below (e.g. R123456)</p>
               <ion-row>
                 <ion-col text-center no-padding class="img-preview-div">
-                  <img *ngIf="!owners_info.license_image" src="./assets/images/logo/sample.png" class="preview-image" alt="">
-                  <img *ngIf="owners_info.license_image" [src]="owners_info.license_image" class="preview-image" alt="">
+                  <img *ngIf="!owners_info.image" src="./assets/images/logo/sample.png" class="preview-image" alt="">
+                  <img *ngIf="owners_info.image" [src]="owners_info.image" class="preview-image" alt="">
                 </ion-col>
               </ion-row>
               <ion-row>
@@ -29,7 +29,7 @@
               <!---Input field username-->
               <ion-item no-padding transparent padding-bottom>
                 <ion-label floating>身分證號碼 | HKID NUMBER (e.g. R123456)</ion-label>
-                <ion-input required type="text"></ion-input>
+                <ion-input required type="text" [(ngModel)]="owners_info.hkid"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
