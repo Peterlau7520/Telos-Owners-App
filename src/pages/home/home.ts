@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { LoadingService } from '../../providers/loading-service';
-import { AuthProvider } from '../../providers/auth/auth';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -14,7 +13,7 @@ export class HomePage {
   constructor(
     public navCtrl: NavController, 
     public loadingService: LoadingService,
-    private authprovider: AuthProvider) {
+    ) {
 
   }
 
