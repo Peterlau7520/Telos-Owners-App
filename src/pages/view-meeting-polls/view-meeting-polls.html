@@ -18,7 +18,7 @@
       <!--Content-->
       <ion-col col-12>
         <!--Info-->
-        <ion-item color-1d1d26 no-lines no-margin padding-right>
+        <ion-item color-1d1d26 no-lines no-margin text-wrap padding-right>
           <ion-label>
             <ion-row>
               <ion-col col-12 no-padding>
@@ -41,14 +41,16 @@
         <!-- Description-->
         <ion-item color-1d1d26 no-lines text-wrap no-margin padding-right>
           <ion-label no-margin>
-            <h3  parallax-description>Summary</h3>
+            <h3 parallax-description>{{meeting_details.meeting_desc}}</h3>
           </ion-label>
         </ion-item>
-        <ion-item color-1d1d26 no-lines no-margin padding-right>
+        <ion-item color-1d1d26 no-lines text-wrap no-margin padding-right>
           <ion-label margin-bottom>
             <div info>
-              <span left>Agenda : {{meeting_details.meeting_fileLinks[0]}}</span>
-              <span>&nbsp;</span>
+              <span left>Agenda :&nbsp;</span>
+              <span c-display-inline-block>
+                <a (click)="openAgendaFile(meeting_details.meeting_fileLinks[0])"> {{meeting_details.meeting_fileLinks[0].name}}</a>
+              </span>
             </div>
             <div info>
               <span left>Vote by : {{meeting_details.meeting_pollEndTime}}</span>
@@ -56,7 +58,7 @@
             </div>
           </ion-label>
         </ion-item>
-        <ion-item color-1d1d26 no-padding padding-bottom no-lines *ngIf="!is_license_accepted">
+        <ion-item color-1d1d26 no-padding text-wrap padding-bottom no-lines *ngIf="!is_license_accepted">
           <ion-label padding no-margin>
             <ion-card c-width-100 no-margin (click)="openViewPoll()">
               <ion-card-content text-center margin>
@@ -65,7 +67,7 @@
             </ion-card>
           </ion-label>
         </ion-item>
-        <ion-item color-1d1d26 no-padding *ngIf="is_license_accepted">
+        <ion-item color-1d1d26 text-wrap no-padding *ngIf="is_license_accepted">
           <ion-label no-margin padding-5px>
             <ion-list>
               <ul no-margin no-padding class="collapsible">
@@ -73,7 +75,7 @@
                   <ion-card>
                     <!-- Expandable Centered with header Header-->
                     <div class="collapsible-header" no-margin no-padding (click)="expandPoll(poll_details)">
-                      <ion-item no-padding text-center no-lines text-center>
+                      <ion-item no-padding text-center text-wrap no-lines text-center>
                         <h3 color-1d1d26 no-margin c-font-bold>{{poll_details.pollNameChn}} | {{poll_details.pollName}}</h3>
                         <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="poll_details.is_complete">
                         </ion-icon>
@@ -82,7 +84,7 @@
                     <!-- Expandable Centered with header Body -->
                     <div class="item-accordion" [ngClass]="{'active': isGroupShown(poll_details) }" [hidden]="!isGroupShown(poll_details)">
                       <ion-card no-margin c-width-100 border-top-e7>
-                        <ion-item color-1d1d26 padding-5px text-wrap>
+                        <ion-item color-1d1d26 text-wrap padding-5px text-wrap>
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">Summary</h2>
                             <h5 color-1d1d26 class="summary-desc">{{poll_details.summaryChn}} | {{poll_details.summary}} </h5>
@@ -90,22 +92,22 @@
                         </ion-item>
                       </ion-card>
                       <ion-card no-margin c-width-100 border-top-e7>
-                        <ion-item color-1d1d26 padding-5px text-wrap>
+                        <ion-item color-1d1d26 text-wrap padding-5px text-wrap>
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">Documents</h2>
-                            <a *ngFor="let documents of poll_details.fileLinks;">
+                            <a *ngFor="let documents of poll_details.fileLinks;" (click)="openAgendaFile(documents)">
                               {{documents.name}}
                             </a>
                           </ion-label>
                         </ion-item>
                       </ion-card>
                       <ion-card no-margin c-width-100 border-top-e7>
-                        <ion-item color-1d1d26 padding-5px text-wrap>
+                        <ion-item color-1d1d26 text-wrap padding-5px text-wrap>
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">Poll Options</h2>
                             <div margin>
                               <ion-card no-margin c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="getHKIDByOption(poll_details, 1)">
-                                <ion-item no-padding>
+                                <ion-item text-wrap no-padding>
                                   <h5 color-1d1d26 text-center> {{option_details}}</h5>
                                 </ion-item>
                               </ion-card>

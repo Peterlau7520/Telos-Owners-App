@@ -8,6 +8,7 @@ export class DataService {
   BASE_URL: any;
   constructor(public http: Http) {
     this.BASE_URL = "https://telos-residents.herokuapp.com/";
+    //this.BASE_URL = "https://4ef35ab8.ngrok.io/";
   }
 
   token: any;

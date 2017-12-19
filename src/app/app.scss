@@ -60,6 +60,7 @@ ion-label {
     }
 }
 
+
 /* .toolbar .toolbar-background {
     background: #00bee4;
     background: linear-gradient(to left, #00bee4 0, #0091d2 100%);
@@ -243,7 +244,7 @@ signature-pad {
     height: 21px;
 }
 
-.radio-ios{
+.radio-ios {
     border: 1px solid #1d1d26;
 }
 
@@ -258,7 +259,7 @@ signature-pad {
     border-color: #1d1d26;
 }
 
-.radio-md .radio-icon{
+.radio-md .radio-icon {
     border-color: #1d1d26;
 }
 
@@ -284,27 +285,27 @@ signature-pad {
     background: #000000 !important;
 }
 
-[card-content]::before{
+[card-content]::before {
     background: rgba(0, 0, 0, 0.8) !important;
 }
 
-.header-background-image::before{
+.header-background-image::before {
     background: rgba(0, 0, 0, 0.8) !important;
 }
 
-.tabs .tabbar{
+.tabs .tabbar {
     background: #000000 !important;
 }
 
-[icon-small]{
+[icon-small] {
     color: #1d1d26 !important;
 }
 
-[card-image]::before{
+[card-image]::before {
     background: rgba(0, 0, 0, 0.8) !important;
 }
 
-[background-size]::before{
+[background-size]::before {
     background: rgba(0, 0, 0, 0.8) !important;
 }
 
@@ -317,14 +318,139 @@ signature-pad {
     border: 1px solid #1d1d26 !important;
 }
 
-[item-color-fff]{
+[item-color-fff] {
     color: #ffffff !important;
 }
 
-[item-color-000]{
+[item-color-000] {
     color: #1d1d26 !important;
 }
 
-[color-1d1d26]{
+[color-1d1d26] {
     color: #1d1d26 !important;
 }
+
+
+/* .tabbar,
+.tabs-ios,
+.tabs-md,
+.tabs-wp {
+    .tab-button-icon {
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 24px;
+        width: 24px;
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.tabs-ios {
+    a[aria-selected=false] {
+        .tab-button-icon[ng-reflect-name=categories],
+        .tab-button-icon[aria-label="categories"] {
+            background-image: url(../assets/imgs/logo.png);
+        }
+        .tab-button-icon[ng-reflect-name=home],
+        .tab-button-icon[aria-label=home] {
+            background-image: url(../assets/img/explore_inactive.png);
+        }
+        .tab-button-icon[ng-reflect-name=hot],
+        .tab-button-icon[aria-label=hot] {
+            background-image: url(../assets/img/hot_inactive.png);
+        }
+    }
+    a[aria-selected=true] {
+        //führ eventuellen text
+        //span {
+        //color: #f00; //whatever colour you want to use for the text
+        //}
+        .tab-button-icon[ng-reflect-name=categories],
+        .tab-button-icon[aria-label=categories] {
+            background-image: url(../assets/images/logo/logo_white.png);
+        }
+        .tab-button-icon[ng-reflect-name=home],
+        .tab-button-icon[aria-label=home] {
+            background-image: url(../assets/img/explore_active.png);
+        }
+        .tab-button-icon[ng-reflect-name=hot],
+        .tab-button-icon[aria-label=hot] {
+            background-image: url(../assets/img/hot_active.png);
+        }
+    }
+}
+
+.tabs-md {
+    a[aria-selected=false] {
+        .tab-button-icon[ng-reflect-name=categories],
+        .tab-button-icon[aria-label="categories"] {
+            background-image: url(../assets/imgs/logo.png);
+        }
+        .tab-button-icon[ng-reflect-name=home],
+        .tab-button-icon[aria-label=home] {
+            background-image: url(../assets/img/explore_inactive.png);
+        }
+        .tab-button-icon[ng-reflect-name=hot],
+        .tab-button-icon[aria-label=hot] {
+            background-image: url(../assets/img/hot_inactive.png);
+        }
+    }
+    a[aria-selected=true] {
+        //führ eventuellen text
+        //span {
+        //color: #f00; //whatever colour you want to use for the text
+        //}
+        .tab-button-icon[ng-reflect-name=categories],
+        .tab-button-icon[aria-label=categories] {
+            background-image: url(../assets/images/logo/logo_white.png);
+        }
+        .tab-button-icon[ng-reflect-name=home],
+        .tab-button-icon[aria-label=home] {
+            background-image: url(../assets/img/explore_active.png);
+        }
+        .tab-button-icon[ng-reflect-name=hot],
+        .tab-button-icon[aria-label=hot] {
+            background-image: url(../assets/img/hot_active.png);
+        }
+    }
+}
+
+.tabs-wp {
+    a[aria-selected=false] {
+        .tab-button-icon[ng-reflect-name=categories],
+        .tab-button-icon[aria-label="categories"] {
+            background-image: url(../assets/imgs/logo.png);
+        }
+        .tab-button-icon[ng-reflect-name=home],
+        .tab-button-icon[aria-label=home] {
+            background-image: url(../assets/img/explore_inactive.png);
+        }
+        .tab-button-icon[ng-reflect-name=hot],
+        .tab-button-icon[aria-label=hot] {
+            background-image: url(../assets/img/hot_inactive.png);
+        }
+    }
+    a[aria-selected=true] {
+        //führ eventuellen text
+        //span {
+        //color: #f00; //whatever colour you want to use for the text
+        //}
+        .tab-button-icon[ng-reflect-name=categories],
+        .tab-button-icon[aria-label=categories] {
+            background-image: url(../assets/images/logo/logo_white.png);
+        }
+        .tab-button-icon[ng-reflect-name=home],
+        .tab-button-icon[aria-label=home] {
+            background-image: url(../assets/img/explore_active.png);
+        }
+        .tab-button-icon[ng-reflect-name=hot],
+        .tab-button-icon[aria-label=hot] {
+            background-image: url(../assets/img/hot_active.png);
+        }
+    }
+} */

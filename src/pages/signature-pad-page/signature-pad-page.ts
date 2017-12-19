@@ -21,6 +21,7 @@ export class SignaturePadPage {
   total_signatures: any;
   current_signature: any;
   signature = '';
+  signaturesArray: any = [];
   isDrawing = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController, public modalCtrl: ModalController) {
@@ -60,7 +61,7 @@ export class SignaturePadPage {
     console.log(this.signature);
     this.signaturePad.clear();
     if (this.current_signature >= this.total_signatures) {
-      this.viewCtrl.dismiss("thankyou");
+      this.viewCtrl.dismiss({ "closeType": "thankyou", "signatureData": this.signature });
       console.log("IF");
       return false;
     }
@@ -77,7 +78,7 @@ export class SignaturePadPage {
         this.viewCtrl.dismiss("thankyou");
       }
       else { */
-      this.viewCtrl.dismiss(this.current_signature);
+      this.viewCtrl.dismiss({ "closeType": "reopen", "current_signature": this.current_signature, "signatureData": this.signature });
       /* } */
     }
   }
@@ -87,7 +88,7 @@ export class SignaturePadPage {
   }
 
   dismiss() {
-    this.viewCtrl.dismiss("outside");
+    this.viewCtrl.dismiss({ "closeType": "outside" });
   }
 
 }

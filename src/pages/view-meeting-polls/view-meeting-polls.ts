@@ -1,8 +1,10 @@
 import { Component, ElementRef, Renderer } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { SignaturePadPage } from '../../pages/signature-pad-page/signature-pad-page';
-import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
+import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+import { File } from '@ionic-native/file';
+import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer';
 /* import { SignaturePageModal } from '../../pages/signature-page-modal/signature-page-modal'; */
 
 @IonicPage()
@@ -26,6 +28,8 @@ export class ViewMeetingPolls {
   events: any = {};
   total_signatures: any = 2;
   current_signature: any = 1;
+  loginResponse: any = {};
+  signatureArray: any = [];
 
   total_HKIDs: any = 2;
   current_HKID: any = 1;
@@ -33,9 +37,13 @@ export class ViewMeetingPolls {
   poll_list: any = [];
   browser: any;
 
-  constructor(public element: ElementRef, public renderer: Renderer, public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, private iab: InAppBrowser, private youtube: YoutubeVideoPlayer) {
+  constructor(public element: ElementRef, public renderer: Renderer, public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, private youtube: YoutubeVideoPlayer,
+    private transfer: FileTransfer,
+    private file: File,
+    private document: DocumentViewer) {
     this.meeting_details = JSON.parse(this.navParams.get("meeting_details"));
-    this.poll_list =  this.meeting_details.meeting_polls;
+    this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
+    this.poll_list = this.meeting_details.meeting_polls;
     console.log(this.meeting_details);
   }
 
@@ -90,7 +98,15 @@ export class ViewMeetingPolls {
     myModal.onDidDismiss(data => {
       console.log(data);
       if (data == "accept") {
-        this.openAgreeUseCompanyChop();
+        console.log(this.loginResponse);
+        if (this.loginResponse.user.nature == "CorporateOwner") {
+          this.openAgreeUseCompanyChop();
+        }
+        else {
+          this.total_signatures = this.loginResponse.user.numberOfOwners;
+          this.current_signature = 1;
+          this.acceptAgreement(this.current_signature, this.total_signatures);
+        }
       }
       else {
 
@@ -104,7 +120,7 @@ export class ViewMeetingPolls {
     myModal1.onDidDismiss(data => {
       console.log(data);
       if (data == "accept") {
-        this.acceptAgreement(this.current_signature);
+        this.acceptAgreement(this.current_signature, this.total_signatures);
       }
       else {
       }
@@ -112,11 +128,11 @@ export class ViewMeetingPolls {
     myModal1.present();
   }
 
-  acceptAgreement(current_signature) {
+  acceptAgreement(current_signature, total_signatures) {
     /* this.navCtrl.push(SignaturePageModal); */
     /* let myModal2 = this.modalCtrl.create(SignaturePageModal); */
     let myModal2 = this.modalCtrl.create(SignaturePadPage, {
-      "signatures": this.total_signatures,
+      "signatures": total_signatures,
       "current_signature": this.current_signature
     });
     myModal2.onDidDismiss(data => {
@@ -124,14 +140,17 @@ export class ViewMeetingPolls {
       if (!data || typeof data == "undefined") {
         return false;
       }
-      else if (data == "thankyou") {
+      else if (data.closeType == "thankyou") {
+        this.signatureArray.push({ "image": data.signatureData });
+        console.log(this.signatureArray);
         this.openThankYouNote();
       }
-      else if (data == "outside") {
+      else if (data.closeType == "outside") {
 
       }
       else {
-        this.acceptAgreement(this.current_signature++);
+        this.signatureArray.push({ "image": data.signatureData });
+        this.acceptAgreement(this.current_signature++, total_signatures);
       }
     });
     myModal2.present();
@@ -184,8 +203,49 @@ export class ViewMeetingPolls {
   }
 
   openMeetingURL() {
-    /* this.browser = this.iab.create("https://www.youtube.com/watch?v=6jiNS_4CEug", '_blank', 'location=no,closebuttoncaption=Cancel,clearcache=yes,clearsessioncache=yes'); */
     this.youtube.openVideo('6jiNS_4CEug');
+  }
+
+  openAgendaFile(agenda_details) {
+    console.log(agenda_details);
+    let file_details = agenda_details;
+    const options: DocumentViewerOptions = {
+      print: { enabled: false },
+      bookmarks: { enabled: false },
+      email: { enabled: false },
+      title: file_details.name
+    };
+    const fileTransfer: FileTransferObject = this.transfer.create();
+    const url = file_details.url;
+    fileTransfer.download(url, this.file.dataDirectory + file_details.name).then((entry) => {
+      console.log('download complete: ' + entry.toURL());
+      this.document.viewDocument(this.file.dataDirectory + file_details.name, "application/pdf",
+        options, onShow, onClose, onMissingApp, onError);
+    }, (error) => {
+      console.log(error);
+      // handle error
+    });
+
+    function onShow() {
+      window.console.log('document shown');
+      //e.g. track document usage
+    }
+
+    function onClose() {
+      window.console.log('document closed');
+      //e.g. remove temp files
+    }
+
+    function onMissingApp(appId, installer) {
+      if (confirm("PDF viewer not available on your device, Do you want to install the free PDF Viewer App to view this document?")) {
+        installer();
+      }
+    }
+    function onError(error) {
+      window.console.log(error);
+      alert("Sorry! Cannot view document.");
+    }
+
   }
 
   openThankYouNote2() {
