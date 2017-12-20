@@ -11,6 +11,7 @@ export class OwnerHkidNumber {
 
   total_HKIDs: any;
   current_HKID: any;
+  hkid_val: any = "";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController, public modalCtrl: ModalController) {
     this.total_HKIDs = this.navParams.get("total_HKIDs");
@@ -25,15 +26,16 @@ export class OwnerHkidNumber {
     this.viewCtrl.dismiss("decline");
   }
 
-  submitHKID() {
+  submitHKID(hkid_val) {
     if (this.current_HKID >= this.total_HKIDs) {
-      this.viewCtrl.dismiss("submitted");
+      this.viewCtrl.dismiss({ "closeType": "submitted", "hkid_val": hkid_val });
       console.log("IF");
       return false;
     }
     else {
       console.log("else");
-      this.viewCtrl.dismiss(this.current_HKID);
+      this.viewCtrl.dismiss({ "closeType": "repeat", "hkid_val": hkid_val, "current_HKID": this.current_HKID });
+      /* this.viewCtrl.dismiss(this.current_HKID); */
     }
   }
 

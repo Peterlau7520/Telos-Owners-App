@@ -5,6 +5,10 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
 import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer';
+
+import { LoadingService } from '../../providers/loading-service';
+import { DataService } from '../../providers/data-service';
+import { ShowMessage } from '../../providers/show-message';
 /* import { SignaturePageModal } from '../../pages/signature-page-modal/signature-page-modal'; */
 
 @IonicPage()
@@ -33,14 +37,20 @@ export class ViewMeetingPolls {
 
   total_HKIDs: any = 2;
   current_HKID: any = 1;
+  HKIDArray: any = [];
 
   poll_list: any = [];
   browser: any;
 
-  constructor(public element: ElementRef, public renderer: Renderer, public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, private youtube: YoutubeVideoPlayer,
+  constructor(public element: ElementRef, public renderer: Renderer, public navCtrl: NavController, public navParams: NavParams,
+    public modalCtrl: ModalController,
+    private youtube: YoutubeVideoPlayer,
     private transfer: FileTransfer,
     private file: File,
-    private document: DocumentViewer) {
+    private document: DocumentViewer,
+    public loadingService: LoadingService,
+    private dataService: DataService,
+    private showMessage: ShowMessage) {
     this.meeting_details = JSON.parse(this.navParams.get("meeting_details"));
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.poll_list = this.meeting_details.meeting_polls;
@@ -120,6 +130,7 @@ export class ViewMeetingPolls {
     myModal1.onDidDismiss(data => {
       console.log(data);
       if (data == "accept") {
+        this.signatureArray = [];
         this.acceptAgreement(this.current_signature, this.total_signatures);
       }
       else {
@@ -141,15 +152,16 @@ export class ViewMeetingPolls {
         return false;
       }
       else if (data.closeType == "thankyou") {
-        this.signatureArray.push({ "image": data.signatureData });
+        this.signatureArray.push({ "image": data.signatureData, "account": this.loginResponse.user.account, "estate": this.loginResponse.user.estateName });
         console.log(this.signatureArray);
         this.openThankYouNote();
+        /* this.saveAllSignatures(this.signatureArray); */
       }
       else if (data.closeType == "outside") {
 
       }
       else {
-        this.signatureArray.push({ "image": data.signatureData });
+        this.signatureArray.push({ "image": data.signatureData, "account": this.loginResponse.user.account, "estate": this.loginResponse.user.estateName });
         this.acceptAgreement(this.current_signature++, total_signatures);
       }
     });
@@ -166,6 +178,26 @@ export class ViewMeetingPolls {
 
   /* End Open modals one by one */
 
+  saveAllSignatures(signatureArray) {
+    console.log(signatureArray);
+    this.loadingService.showLoading();
+    this.dataService.postData("saveSignatures", { "signatures": signatureArray }, {}).subscribe(results => {
+      console.log(results);
+      if (results.success == true) {
+        this.openThankYouNote();
+        this.loadingService.hideLoading();
+      }
+      else {
+        this.loadingService.hideLoading();
+        this.showMessage.showToastBottom(results.message);
+      }
+    }, err => {
+      console.log("err", err);
+      this.loadingService.hideLoading();
+      this.showMessage.showToastBottom("Unable to save signatures, please try again.");
+    });
+  }
+
   expandPoll(poll_details: any) {
     poll_details.show = !poll_details.show;
   }
@@ -179,7 +211,11 @@ export class ViewMeetingPolls {
   }
 
 
-  getHKIDByOption(poll_details, current_HKID) {
+  getHKIDByOption(poll_details, current_HKID, selected_option) {
+    let request_data: any = {};
+    console.log("poll_details", poll_details);
+    console.log("option_details", selected_option);
+    this.total_HKIDs = this.loginResponse.user.numberOfOwners;
     let myModal4 = this.modalCtrl.create("OwnerHkidNumber", {
       "total_HKIDs": this.total_HKIDs,
       "current_HKID": this.current_HKID
@@ -189,17 +225,50 @@ export class ViewMeetingPolls {
       if (!data || typeof data == "undefined") {
         return false;
       }
-      else if (data == "submitted") {
+      else if (data.closeType == "submitted") {
         /* this.getHKIDByOption(); */
-        poll_details.is_complete = true;
-        this.current_HKID = 1;
-        this.openThankYouNote2();
+        this.HKIDArray.push(data.hkid_val);
+        request_data = {
+          pollID: poll_details._id,
+          option: selected_option,
+          account: this.loginResponse.user.account,
+          estate: poll_details.estateName,
+          HKID: this.HKIDArray
+        };
+        console.log("request_data", request_data);
+        this.saveVoteData(request_data, poll_details);
+      }
+      else if (data.closeType == "repeat") {
+        this.HKIDArray.push(data.hkid_val);
+        this.getHKIDByOption(poll_details, this.current_HKID++, selected_option);
       }
       else {
-        this.getHKIDByOption(poll_details, this.current_HKID++);
       }
+
     });
     myModal4.present();
+  }
+
+  saveVoteData(request_data, poll_details) {
+    this.loadingService.showLoading();
+    this.dataService.postData("vote", request_data, {}).subscribe(results => {
+      console.log(results);
+      if (results.success == true) {
+        poll_details.is_complete = true;
+        this.current_HKID = 1;
+        this.HKIDArray = [];
+        this.openThankYouNote2();
+        this.loadingService.hideLoading();
+      }
+      else {
+        this.loadingService.hideLoading();
+        this.showMessage.showToastBottom(results.message);
+      }
+    }, err => {
+      console.log("err", err);
+      this.loadingService.hideLoading();
+      this.showMessage.showToastBottom("Unable to save HKIDs, please try again.");
+    });
   }
 
   openMeetingURL() {

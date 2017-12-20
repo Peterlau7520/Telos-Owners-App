@@ -106,7 +106,7 @@
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">Poll Options</h2>
                             <div margin>
-                              <ion-card no-margin c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="getHKIDByOption(poll_details, 1)">
+                              <ion-card no-margin c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="getHKIDByOption(poll_details, 1, option_details)">
                                 <ion-item text-wrap no-padding>
                                   <h5 color-1d1d26 text-center> {{option_details}}</h5>
                                 </ion-item>
