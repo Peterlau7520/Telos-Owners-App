@@ -155,8 +155,8 @@ export class ViewMeetingPolls {
       else if (data.closeType == "thankyou") {
         this.signatureArray.push({ "image": data.signatureData, "account": this.loginResponse.user.account, "estate": this.loginResponse.user.estateName });
         console.log(this.signatureArray);
-        this.openThankYouNote();
-        /* this.saveAllSignatures(this.signatureArray); */
+        /* this.openThankYouNote(); */
+        this.saveAllSignatures(this.signatureArray);
       }
       else if (data.closeType == "outside") {
 
