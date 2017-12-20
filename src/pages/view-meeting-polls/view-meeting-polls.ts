@@ -54,6 +54,7 @@ export class ViewMeetingPolls {
     this.meeting_details = JSON.parse(this.navParams.get("meeting_details"));
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.poll_list = this.meeting_details.meeting_polls;
+    this.checkIfproxyAppointed(this.loginResponse);
     console.log(this.meeting_details);
   }
 
@@ -181,7 +182,7 @@ export class ViewMeetingPolls {
   saveAllSignatures(signatureArray) {
     console.log(signatureArray);
     this.loadingService.showLoading();
-    this.dataService.postData("saveSignatures", { "signatures": signatureArray }, {}).subscribe(results => {
+    this.dataService.postData("saveSignature", { "signatures": signatureArray }, {}).subscribe(results => {
       console.log(results);
       if (results.success == true) {
         this.openThankYouNote();
@@ -229,11 +230,12 @@ export class ViewMeetingPolls {
         /* this.getHKIDByOption(); */
         this.HKIDArray.push(data.hkid_val);
         request_data = {
-          pollID: poll_details._id,
-          option: selected_option,
-          account: this.loginResponse.user.account,
-          estate: poll_details.estateName,
-          HKID: this.HKIDArray
+          "pollID": poll_details._id,
+          "option": selected_option,
+          "account": this.loginResponse.user.account,
+          "estate": poll_details.estateName,
+          "meeting_id": this.meeting_details._id,
+          "HKID": this.HKIDArray
         };
         console.log("request_data", request_data);
         this.saveVoteData(request_data, poll_details);
@@ -247,6 +249,16 @@ export class ViewMeetingPolls {
 
     });
     myModal4.present();
+  }
+
+  checkIfproxyAppointed(loginResponse) {
+    let proxyAppointed = loginResponse.user.proxyAppointed;
+    proxyAppointed.forEach(element => {
+      if (this.meeting_details.meeting_id == element) {
+        this.is_license_accepted = true;
+        return;
+      }
+    });
   }
 
   saveVoteData(request_data, poll_details) {

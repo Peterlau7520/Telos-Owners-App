@@ -15,9 +15,9 @@
           <ion-card>
             <!-- Expandable Centered with header Header-->
             <div class="collapsible-header" no-margin no-padding (click)="viewSurveyDetails(survey_details)">
-              <ion-item no-padding padding text-center transparent no-lines text-center>
-                <h2 color-1d1d26 text-center class="survey-title-text">{{survey_details.survey_title}}</h2>
-                <h2 color-1d1d26 text-center class="survey-title-text">Complete By:</h2>
+              <ion-item no-padding padding text-center text-wrap transparent no-lines text-center>
+                <h2 color-1d1d26 text-center class="survey-title-text">{{survey_details.titleChn}} | {{survey_details.title}}</h2>
+                <h2 color-1d1d26 text-center class="survey-title-text">Complete By: {{survey_details.effectiveTo}}</h2>
               </ion-item>
             </div>
           </ion-card>

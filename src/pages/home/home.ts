@@ -29,19 +29,23 @@ export class HomePage {
         localStorage.setItem('token', results.token);
         localStorage.setItem('loginResponse', JSON.stringify(results));
         if (results.registered == true) {
-          this.loadingService.hideLoading();
           localStorage.setItem("firstTabPage", "Noticeboard");
-          this.navCtrl.push("Tabs");
+          this.navCtrl.push("Tabs").then(() => {
+            this.loadingService.hideLoading();
+          });
+
         }
         else if (results.registered == false) {
           if (results.nature == "CorporateOwner") {
-            this.loadingService.hideLoading();
-            this.navCtrl.push("CompanyChop");
+            this.navCtrl.push("CompanyChop").then(() => {
+              this.loadingService.hideLoading();
+            });
           }
           else {
             this.addOwnerInfoData(results.numberOfOwners);
-            this.navCtrl.push("IdVerification1");
-            this.loadingService.hideLoading();
+            this.navCtrl.push("IdVerification1").then(() => {
+              this.loadingService.hideLoading();
+            });
           }
         }
         else {

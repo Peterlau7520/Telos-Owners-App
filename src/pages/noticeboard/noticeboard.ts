@@ -38,7 +38,7 @@ export class Noticeboard {
   }
 
   getNoticeBoardData() {
-    this.loadingService.showLoading();
+    /* this.loadingService.showLoading(); */
     this.dataService.getData("noticeBoard", {}).subscribe(results => {
       if (results.success == true) {
         this.notices = results.notices;

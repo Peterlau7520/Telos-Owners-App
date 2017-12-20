@@ -14,7 +14,7 @@ export class Surveys {
   constructor(public navCtrl: NavController, public navParams: NavParams, public showMessage: ShowMessage) {
     this.survey_details = JSON.parse(this.navParams.get("survey_details"));
     console.log(this.survey_details);
-    this.getStaticData();
+    /* this.getStaticData(); */
   }
 
   getStaticData() {
@@ -51,7 +51,7 @@ export class Surveys {
 
   toggleGroup1(group: any, i, survey_details) {
     console.log(group);
-    let tmp_group_list = survey_details.group_list;
+    let tmp_group_list = survey_details.question;
     for (let j = 0; j < tmp_group_list.length; j++) {
       if (j == i) {
         /* tmp_group_list[j].show = true; */
@@ -118,7 +118,7 @@ export class Surveys {
     } */
     if (group.is_complete && group.is_complete > 0) {
       this.toggleGroup(group);
-      let tmp_group_list = survey_details.group_list;
+      let tmp_group_list = survey_details.question;
       i++;
       console.log(i);
       console.log(tmp_group_list.length);

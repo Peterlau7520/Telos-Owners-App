@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-left>屋苑問卷調查 | Surveys</ion-title>
+    <ion-title text-left>{{survey_details.titleChn}} | {{survey_details.title}}</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -12,18 +12,18 @@
     <ion-col col-12>
       <ion-row padding>
         <ion-col col-12 no-padding>
-          <p color-1d1d26 style="font-size: 16px !important;" no-margin>Survey Title: {{survey_details.survey_title}}</p>
-          <p color-1d1d26 style="font-size: 16px !important;" no-margin>Complete By:</p>
+          <p color-1d1d26 style="font-size: 16px !important;" no-margin>Survey Title: {{survey_details.titleChn}} | {{survey_details.title}}</p>
+          <p color-1d1d26 style="font-size: 16px !important;" no-margin>Complete By: {{survey_details.effectiveTo}}</p>
         </ion-col>
       </ion-row>
       <ion-list>
         <ul no-margin no-padding class="collapsible">
-          <li no-margin *ngFor="let group of survey_details.group_list; let i=index;">
+          <li no-margin *ngFor="let group of survey_details.question; let i=index;">
             <ion-card transparent>
               <!-- Expandable Centered with header Header-->
               <div class="collapsible-header" no-margin no-padding (click)="toggleGroup1(group, i, survey_details)">
                 <ion-item color-1d1d26 no-padding text-center transparent no-lines text-center>
-                  <h2 color-1d1d26 text-center item-title>{{group.group_title}}</h2>
+                  <h2 color-1d1d26 text-center item-title>{{group.questionChn}} | {{group.questionEn}}</h2>
                   <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="group.is_complete">
                   </ion-icon>
                 </ion-item>
@@ -32,12 +32,12 @@
               <div class="item-accordion" transparent [ngClass]="{'active': isGroupShown(group) }" [hidden]="!isGroupShown(group)">
 
                 <ion-list radio-group transparent [(ngModel)]="group.is_complete" (ionChange)="valueChanged(group, i, survey_details)">
-                  <ion-card no-margin transparent c-width-100 *ngFor="let option_details of group.option_list; let k=index;" style="box-shadow: none;">
+                  <ion-card no-margin transparent c-width-100 *ngFor="let option_details of group.optionIds; let k=index;" style="box-shadow: none;">
                     <ion-item color-1d1d26 transparent text-wrap>
                       <ion-label margin-vertical item-title>
-                        <p color-1d1d26 under-line>Option 1</p>
-                        <p color-1d1d26>Cost : {{option_details.cost}}</p>
-                        <p color-1d1d26 style="font-family:'avenir'">Description : {{option_details.description}}</p>
+                        <p color-1d1d26 under-line>{{option_details.optionNameChn}} | {{option_details.optionNameEn}}</p>
+                        <p color-1d1d26 *ngFor="let option_data of option_details.optionsChn;">{{option_data.key}} : {{option_data.value}}</p>
+                        <p color-1d1d26 *ngFor="let option_data of option_details.optionsEn;">{{option_data.key}} : {{option_data.value}}</p>
                       </ion-label>
                       <!-- <ion-checkbox [(ngModel)]="option_details.is_checked" (ionChange)="valueChanged($event, group, i, k, survey_details)"></ion-checkbox> -->
                       <ion-radio item-left [value]="k+1" color="mytheme"></ion-radio>
@@ -51,7 +51,7 @@
       </ion-list>
       <ion-row margin-vertical>
         <ion-col text-center margin-top padding-horizontal>
-          <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="submitData(survey_details.group_list)">確定 | Submit</button>
+          <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="submitData(survey_details.question)">確定 | Submit</button>
         </ion-col>
       </ion-row>
     </ion-col>

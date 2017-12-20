@@ -16,6 +16,8 @@ export class IdVerification1 {
   license_image: any = "";
   owners_list: any = [];
   owners_list_length: any = 0;
+  loginResponse: any = {};
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera, public actionSheetCtrl: ActionSheetController, public loadingService: LoadingService,
     private dataService: DataService,
@@ -42,6 +44,7 @@ export class IdVerification1 {
         console.log("owners_list Not Found");
       }
     }
+    this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     console.log(this.owners_list);
   }
 
@@ -115,15 +118,24 @@ export class IdVerification1 {
   submitAllHKIDData(owners_list) {
 
     this.loadingService.showLoading();
-    let request_data = [];
+    let hkidsArray = [];
+    let request_data = {};
     for (let i = 0; i < owners_list.length; i++) {
-      request_data.push({
+      hkidsArray.push({
         "image": owners_list[i].image,
-        "hkid": owners_list[i].hkid
+        "hkid": owners_list[i].hkid,
       });
     }
+
+    request_data = {
+      "hkids": hkidsArray,
+      "account": this.loginResponse.user.account
+    }
+
     this.dataService.postData("saveHKID", request_data, {}).subscribe(results => {
+      console.log(request_data);
       if (results.success == true) {
+        console.log(results);
         this.showMessage.showToastBottom(results.message);
         this.loadingService.hideLoading();
         localStorage.setItem("firstTabPage", "Noticeboard");
