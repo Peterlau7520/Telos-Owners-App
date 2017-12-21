@@ -28,21 +28,22 @@ export class HomePage {
       if (results.success == true) {
         localStorage.setItem('token', results.token);
         localStorage.setItem('loginResponse', JSON.stringify(results));
-        if (results.registered == true) {
+        console.log(results);
+        if (results.user.registered == true) {
           localStorage.setItem("firstTabPage", "Noticeboard");
           this.navCtrl.push("Tabs").then(() => {
             this.loadingService.hideLoading();
           });
 
         }
-        else if (results.registered == false) {
-          if (results.nature == "CorporateOwner") {
+        else if (results.user.registered == false) {
+          if (results.user.nature == "CorporateOwner") {
             this.navCtrl.push("CompanyChop").then(() => {
               this.loadingService.hideLoading();
             });
           }
           else {
-            this.addOwnerInfoData(results.numberOfOwners);
+            this.addOwnerInfoData(results.user.numberOfOwners);
             this.navCtrl.push("IdVerification1").then(() => {
               this.loadingService.hideLoading();
             });

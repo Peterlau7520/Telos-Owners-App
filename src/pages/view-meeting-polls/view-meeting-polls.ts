@@ -182,7 +182,7 @@ export class ViewMeetingPolls {
   saveAllSignatures(signatureArray) {
     console.log(signatureArray);
     this.loadingService.showLoading();
-    this.dataService.postData("saveSignature", { "signatures": signatureArray }, {}).subscribe(results => {
+    this.dataService.postData("saveSignature", { "signatures": signatureArray, "meeting_id": this.meeting_details.meeting_id}, {}).subscribe(results => {
       console.log(results);
       if (results.success == true) {
         this.openThankYouNote();

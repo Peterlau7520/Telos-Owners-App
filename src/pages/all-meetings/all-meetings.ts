@@ -29,11 +29,6 @@ export class AllMeetingsPage {
   ionViewWillEnter() {
     /* this.getMeetingsData(); */
   }
-
-  /* goToCompanyChop() {
-    this.navCtrl.push("CompanyChop");
-  } */
-
   goToUpcomingMeetings() {
     this.navCtrl.push("UpcomingMeetings");
   }
