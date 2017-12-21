@@ -182,9 +182,11 @@ export class ViewMeetingPolls {
   saveAllSignatures(signatureArray) {
     console.log(signatureArray);
     this.loadingService.showLoading();
-    this.dataService.postData("saveSignature", { "signatures": signatureArray, "meeting_id": this.meeting_details.meeting_id}, {}).subscribe(results => {
+    this.dataService.postData("saveSignature", { "signatures": signatureArray, "meeting_id": this.meeting_details.meeting_id }, {}).subscribe(results => {
       console.log(results);
       if (results.success == true) {
+        this.loginResponse.user.proxyAppointed.push(this.meeting_details.meeting_id);
+        localStorage.setItem("loginResponse", JSON.stringify(this.loginResponse));
         this.openThankYouNote();
         this.loadingService.hideLoading();
       }
@@ -259,16 +261,30 @@ export class ViewMeetingPolls {
         return;
       }
     });
+    this.checkIfVoted(this.meeting_details.meeting_polls, loginResponse);
+  }
+
+  checkIfVoted(pollsArray, loginResponse) {
+    pollsArray.forEach(function (element, i) {
+      let votedArray = element.voted;
+      votedArray.forEach(votedElement => {
+        console.log(votedElement);
+        if (loginResponse.user._id == votedElement) {
+          console.log("VOTED TRUE");
+          pollsArray[i].is_complete = true;
+        }
+      });
+    });
   }
 
   saveVoteData(request_data, poll_details) {
     this.loadingService.showLoading();
     this.dataService.postData("vote", request_data, {}).subscribe(results => {
       console.log(results);
+      this.HKIDArray = [];
       if (results.success == true) {
         poll_details.is_complete = true;
         this.current_HKID = 1;
-        this.HKIDArray = [];
         this.openThankYouNote2();
         this.loadingService.hideLoading();
       }

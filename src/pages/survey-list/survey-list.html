@@ -18,6 +18,8 @@
               <ion-item no-padding padding text-center text-wrap transparent no-lines text-center>
                 <h2 color-1d1d26 text-center class="survey-title-text">{{survey_details.titleChn}} | {{survey_details.title}}</h2>
                 <h2 color-1d1d26 text-center class="survey-title-text">Complete By: {{survey_details.effectiveTo}}</h2>
+                <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="survey_details.is_finished">
+                </ion-icon>
               </ion-item>
             </div>
           </ion-card>

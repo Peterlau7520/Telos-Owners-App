@@ -14,10 +14,12 @@ export class PastMeetings {
 
   past_meeting_list: any = [];
   pastMeetings: any = [];
+  loginResponse: any = {};
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage) {
+    this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
   }
 
   ionViewDidLoad() {
@@ -30,7 +32,9 @@ export class PastMeetings {
 
   getPastMeetingsData() {
     this.loadingService.showLoading();
-    this.dataService.getData("pastMeetings", {}).subscribe(results => {
+    this.dataService.postData("pastMeetings", {
+      "estateName": this.loginResponse.user.estateName
+    }, {}).subscribe(results => {
       if (results.success == true) {
         this.pastMeetings = results.pastMeetings;
         const self = this;

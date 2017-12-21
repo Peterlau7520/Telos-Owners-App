@@ -14,10 +14,12 @@ export class UpcomingMeetings {
 
   public upcoming_meeting_list: any = [];
   public currentMeetings: any = [];
+  loginResponse: any = {};
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage) {
     /* this.currentMeetings = this.navParams.data.currentMeetings; */
+    this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
   }
 
   ionViewDidLoad() {
@@ -30,7 +32,9 @@ export class UpcomingMeetings {
 
   getUpcomingMeetingsData() {
     this.loadingService.showLoading();
-    this.dataService.getData("currentMeetings", {}).subscribe(results => {
+    this.dataService.postData("currentMeetings", {
+      "estateName": this.loginResponse.user.estateName
+    }, {}).subscribe(results => {
       if (results.success == true) {
         this.currentMeetings = results.currentMeetings;
         const self = this;

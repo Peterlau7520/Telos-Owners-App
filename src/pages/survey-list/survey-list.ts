@@ -11,10 +11,15 @@ import { ShowMessage } from '../../providers/show-message';
   templateUrl: 'survey-list.html',
 })
 export class SurveyList {
+
   survey_list = [];
+  completed_survey_list = [];
+  loginResponse: any = {};
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage) {
+    this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
   }
 
   ionViewDidLoad() {
@@ -27,9 +32,20 @@ export class SurveyList {
 
   getAllSurves() {
     this.loadingService.showLoading();
-    this.dataService.getData("allSurveys", {}).subscribe(results => {
+    this.dataService.postData("allSurveys", {
+      "estateName": this.loginResponse.user.estateName,
+      "userId": this.loginResponse.user._id
+    }, {}).subscribe(results => {
       if (results.success == true) {
         this.survey_list = results.survey;
+        this.completed_survey_list = results.completedSurveys;
+        this.survey_list.forEach(element => {
+          this.completed_survey_list.forEach(completedElement => {
+            if (element._id == completedElement) {
+              element.is_finished = true;
+            }
+          });
+        });
         this.loadingService.hideLoading();
       }
       else {

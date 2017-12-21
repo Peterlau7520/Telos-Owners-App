@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+import { LoadingService } from '../../providers/loading-service';
+import { DataService } from '../../providers/data-service';
 import { ShowMessage } from '../../providers/show-message';
 
 @IonicPage()
@@ -8,41 +11,20 @@ import { ShowMessage } from '../../providers/show-message';
   templateUrl: 'surveys.html',
 })
 export class Surveys {
+
   group_list: any = [];
   survey_list: any = [];
   survey_details: any = {};
-  constructor(public navCtrl: NavController, public navParams: NavParams, public showMessage: ShowMessage) {
+  questionsArray: any = [];
+  loginResponse: any = {};
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingService: LoadingService,
+    private dataService: DataService,
+    private showMessage: ShowMessage) {
     this.survey_details = JSON.parse(this.navParams.get("survey_details"));
+    this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     console.log(this.survey_details);
     /* this.getStaticData(); */
-  }
-
-  getStaticData() {
-    this.survey_list = [];
-    this.group_list = [];
-    for (let i = 0; i < 3; i++) {
-      let tmp_group_list = [];
-      for (let j = 0; j < 2; j++) {
-        let tmp_option_list = [];
-        tmp_group_list.push({
-          "group_title": "Survey Question"
-        });
-        for (let k = 0; k < 2; k++) {
-          tmp_option_list.push({
-            "cost": "",
-            "description": "sample description sample description sample description sample description",
-            "is_checked": false
-          });
-        }
-        console.log(tmp_option_list);
-        tmp_group_list[j].option_list = tmp_option_list;
-      }
-      this.survey_details.group_list = tmp_group_list;
-      this.survey_details.group_list[0].show = true;
-    }
-    console.log(this.survey_list);
-    let tmp_data = JSON.stringify(this.survey_list);
-    console.log(tmp_data);
   }
 
   ionViewDidLoad() {
@@ -79,6 +61,7 @@ export class Surveys {
 
   submitData(group_list) {
     /* group.is_complete = true; */
+    this.questionsArray = [];
     console.log(group_list);
     /* for (let i = 0; i < group.length; i++) {
       console.log(group[i]);
@@ -102,11 +85,36 @@ export class Surveys {
         this.showMessage.showToastBottom("Please answer each question.");
         return false;
       }
-      else {
-
-      }
+      console.log("element", element);
+      this.questionsArray.push({ "questionId": element.optionIds[element.is_complete - 1].questionId, "optionId": element.optionIds[element.is_complete - 1]._id });
     }
-    this.showMessage.showToastBottom("Answers saved successfully!");
+    console.log("this.questionsArray", this.questionsArray);
+    /* this.showMessage.showToastBottom("Answers saved successfully!"); */
+    this.saveSurveyData(this.questionsArray);
+  }
+
+  saveSurveyData(questionsArray) {
+    let request_data = {
+      surveyId: this.survey_details._id,
+      questions: questionsArray,
+      userId: this.loginResponse.user._id
+    }
+
+    this.loadingService.showLoading();
+    this.dataService.postData("submitSurveys", request_data, {}).subscribe(results => {
+      if (results.success == true) {
+        this.showMessage.showToastBottom(results.message);
+        this.loadingService.hideLoading();
+      }
+      else {
+        this.showMessage.showToastBottom(results.message);
+        this.loadingService.hideLoading();
+      }
+    }, err => {
+      console.log("err", err);
+      this.loadingService.hideLoading();
+      this.showMessage.showToastBottom("Unable to save survey data, please try again.");
+    });
   }
 
   valueChanged(group, i, survey_details) {
