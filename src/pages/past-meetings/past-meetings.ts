@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import * as moment from 'moment';
 
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
@@ -45,8 +46,8 @@ export class PastMeetings {
             "meeting_title": meeting.title,
             "meeting_titleChn": meeting.titleChn,
             "meeting_desc": meeting.meetingSummaryChn + " | " + meeting.meetingSummary,
-            "meeting_startTime": meeting.startTime,
-            "meeting_endTime": meeting.startTime,
+            "meeting_startTime": moment(meeting.startTime).format('YYYY-MM-DD HH:mm'),
+            "meeting_endTime": moment(meeting.endTime).format('YYYY-MM-DD HH:mm'),
             "meeting_venue": meeting.venue,
             "meeting_fileLinks": meeting.fileLinks,
             "meeting_pollEndTime": meeting.pollEndTime,

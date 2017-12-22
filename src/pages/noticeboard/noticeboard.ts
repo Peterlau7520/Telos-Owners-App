@@ -5,6 +5,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
 import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer';
+import * as moment from 'moment';
 
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
@@ -42,6 +43,10 @@ export class Noticeboard {
     this.dataService.getData("noticeBoard", {}).subscribe(results => {
       if (results.success == true) {
         this.notices = results.notices;
+        this.notices.forEach(element => {
+          element.postDate = moment(element.postDate).format('YYYY-MM-DD HH:mm');
+          element.endTime = moment(element.endTime).format('YYYY-MM-DD HH:mm');
+        });
         this.loadingService.hideLoading();
       }
       else {

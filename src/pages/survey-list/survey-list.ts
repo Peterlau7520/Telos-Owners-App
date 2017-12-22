@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import * as moment from 'moment';
 
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
@@ -42,6 +43,7 @@ export class SurveyList {
         this.completed_survey_list = results.completedSurveys;
         console.log(this.completed_survey_list);
         this.survey_list.forEach(element => {
+          element.effectiveTo = moment(element.effectiveTo).format('YYYY-MM-DD HH:mm');
           this.completed_survey_list.forEach(completedElement => {
             if (element._id == completedElement) {
               element.is_finished = true;

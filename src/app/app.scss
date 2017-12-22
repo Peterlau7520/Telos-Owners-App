@@ -12,6 +12,20 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+@font-face {
+    font-family: 'SFRegular' !important;
+    font-style: normal;
+    /* font-weight: 400; */
+    src: url('../assets/fontello/SF-Pro-Text-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SFSemibold' !important;
+    font-style: normal;
+    /* font-weight: 600; */
+    src: url('../assets/fontello/SF-Pro-Text-Semibold.ttf') format('truetype');
+}
+
 .header-background-image {
     background-image: url('../assets/images/background/16.jpg');
     height: 200px;
@@ -330,8 +344,7 @@ signature-pad {
     color: #1d1d26 !important;
 }
 
-
-/* .tabbar,
+.tabbar,
 .tabs-ios,
 .tabs-md,
 .tabs-wp {
@@ -352,17 +365,25 @@ signature-pad {
 
 .tabs-ios {
     a[aria-selected=false] {
-        .tab-button-icon[ng-reflect-name=categories],
-        .tab-button-icon[aria-label="categories"] {
-            background-image: url(../assets/imgs/logo.png);
+        .tab-button-icon[ng-reflect-name=noticeboard],
+        .tab-button-icon[aria-label=noticeboard] {
+            background-image: url(../assets/images/tabicons/noticeboard.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=home],
-        .tab-button-icon[aria-label=home] {
-            background-image: url(../assets/img/explore_inactive.png);
+        .tab-button-icon[ng-reflect-name=meetings],
+        .tab-button-icon[aria-label=meetings] {
+            background-image: url(../assets/images/tabicons/meetings.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=hot],
-        .tab-button-icon[aria-label=hot] {
-            background-image: url(../assets/img/hot_inactive.png);
+        .tab-button-icon[ng-reflect-name=survey],
+        .tab-button-icon[aria-label=survey] {
+            background-image: url(../assets/images/tabicons/survey.png);
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .tab-button-icon[ng-reflect-name=forum],
+        .tab-button-icon[aria-label=forum] {
+            background-image: url(../assets/images/tabicons/forum.png);
+            image-rendering: -webkit-optimize-contrast;
         }
     }
     a[aria-selected=true] {
@@ -370,34 +391,50 @@ signature-pad {
         //span {
         //color: #f00; //whatever colour you want to use for the text
         //}
-        .tab-button-icon[ng-reflect-name=categories],
-        .tab-button-icon[aria-label=categories] {
-            background-image: url(../assets/images/logo/logo_white.png);
+        .tab-button-icon[ng-reflect-name=noticeboard],
+        .tab-button-icon[aria-label=noticeboard] {
+            background-image: url(../assets/images/tabicons/noticeboard_se.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=home],
-        .tab-button-icon[aria-label=home] {
-            background-image: url(../assets/img/explore_active.png);
+        .tab-button-icon[ng-reflect-name=meetings],
+        .tab-button-icon[aria-label=meetings] {
+            background-image: url(../assets/images/tabicons/meetings_se.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=hot],
-        .tab-button-icon[aria-label=hot] {
-            background-image: url(../assets/img/hot_active.png);
+        .tab-button-icon[ng-reflect-name=survey],
+        .tab-button-icon[aria-label=survey] {
+            background-image: url(../assets/images/tabicons/survey_se.png);
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .tab-button-icon[ng-reflect-name=forum],
+        .tab-button-icon[aria-label=forum] {
+            background-image: url(../assets/images/tabicons/forum_se.png);
+            image-rendering: -webkit-optimize-contrast;
         }
     }
 }
 
 .tabs-md {
     a[aria-selected=false] {
-        .tab-button-icon[ng-reflect-name=categories],
-        .tab-button-icon[aria-label="categories"] {
-            background-image: url(../assets/imgs/logo.png);
+        .tab-button-icon[ng-reflect-name=noticeboard],
+        .tab-button-icon[aria-label="noticeboard"] {
+            background-image: url(../assets/images/tabicons/noticeboard.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=home],
-        .tab-button-icon[aria-label=home] {
-            background-image: url(../assets/img/explore_inactive.png);
+        .tab-button-icon[ng-reflect-name=meetings],
+        .tab-button-icon[aria-label=meetings] {
+            background-image: url(../assets/images/tabicons/meetings.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=hot],
-        .tab-button-icon[aria-label=hot] {
-            background-image: url(../assets/img/hot_inactive.png);
+        .tab-button-icon[ng-reflect-name=survey],
+        .tab-button-icon[aria-label=survey] {
+            background-image: url(../assets/images/tabicons/survey.png);
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .tab-button-icon[ng-reflect-name=forum],
+        .tab-button-icon[aria-label=forum] {
+            background-image: url(../assets/images/tabicons/forum.png);
+            image-rendering: -webkit-optimize-contrast;
         }
     }
     a[aria-selected=true] {
@@ -405,34 +442,50 @@ signature-pad {
         //span {
         //color: #f00; //whatever colour you want to use for the text
         //}
-        .tab-button-icon[ng-reflect-name=categories],
-        .tab-button-icon[aria-label=categories] {
-            background-image: url(../assets/images/logo/logo_white.png);
+        .tab-button-icon[ng-reflect-name=noticeboard],
+        .tab-button-icon[aria-label=noticeboard] {
+            background-image: url(../assets/images/tabicons/noticeboard_se.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=home],
-        .tab-button-icon[aria-label=home] {
-            background-image: url(../assets/img/explore_active.png);
+        .tab-button-icon[ng-reflect-name=meetings],
+        .tab-button-icon[aria-label=meetings] {
+            background-image: url(../assets/images/tabicons/meetings_se.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=hot],
-        .tab-button-icon[aria-label=hot] {
-            background-image: url(../assets/img/hot_active.png);
+        .tab-button-icon[ng-reflect-name=survey],
+        .tab-button-icon[aria-label=survey] {
+            background-image: url(../assets/images/tabicons/survey_se.png);
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .tab-button-icon[ng-reflect-name=forum],
+        .tab-button-icon[aria-label=forum] {
+            background-image: url(../assets/images/tabicons/forum_se.png);
+            image-rendering: -webkit-optimize-contrast;
         }
     }
 }
 
 .tabs-wp {
     a[aria-selected=false] {
-        .tab-button-icon[ng-reflect-name=categories],
-        .tab-button-icon[aria-label="categories"] {
-            background-image: url(../assets/imgs/logo.png);
+        .tab-button-icon[ng-reflect-name=noticeboard],
+        .tab-button-icon[aria-label="noticeboard"] {
+            background-image: url(../assets/images/tabicons/noticeboard.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=home],
-        .tab-button-icon[aria-label=home] {
-            background-image: url(../assets/img/explore_inactive.png);
+        .tab-button-icon[ng-reflect-name=meetings],
+        .tab-button-icon[aria-label=meetings] {
+            background-image: url(../assets/images/tabicons/meetings.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=hot],
-        .tab-button-icon[aria-label=hot] {
-            background-image: url(../assets/img/hot_inactive.png);
+        .tab-button-icon[ng-reflect-name=survey],
+        .tab-button-icon[aria-label=survey] {
+            background-image: url(../assets/images/tabicons/survey.png);
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .tab-button-icon[ng-reflect-name=forum],
+        .tab-button-icon[aria-label=forum] {
+            background-image: url(../assets/images/tabicons/forum.png);
+            image-rendering: -webkit-optimize-contrast;
         }
     }
     a[aria-selected=true] {
@@ -440,17 +493,49 @@ signature-pad {
         //span {
         //color: #f00; //whatever colour you want to use for the text
         //}
-        .tab-button-icon[ng-reflect-name=categories],
-        .tab-button-icon[aria-label=categories] {
-            background-image: url(../assets/images/logo/logo_white.png);
+        .tab-button-icon[ng-reflect-name=noticeboard],
+        .tab-button-icon[aria-label=noticeboard] {
+            background-image: url(../assets/images/tabicons/noticeboard_se.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=home],
-        .tab-button-icon[aria-label=home] {
-            background-image: url(../assets/img/explore_active.png);
+        .tab-button-icon[ng-reflect-name=meetings],
+        .tab-button-icon[aria-label=meetings] {
+            background-image: url(../assets/images/tabicons/meetings_se.png);
+            image-rendering: -webkit-optimize-contrast;
         }
-        .tab-button-icon[ng-reflect-name=hot],
-        .tab-button-icon[aria-label=hot] {
-            background-image: url(../assets/img/hot_active.png);
+        .tab-button-icon[ng-reflect-name=survey],
+        .tab-button-icon[aria-label=survey] {
+            background-image: url(../assets/images/tabicons/survey_se.png);
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .tab-button-icon[ng-reflect-name=forum],
+        .tab-button-icon[aria-label=forum] {
+            background-image: url(../assets/images/tabicons/forum_se.png);
+            image-rendering: -webkit-optimize-contrast;
         }
     }
-} */
+}
+
+.tabs .tab-button-icon {
+    transform: none !important;
+}
+
+.label-icons-time {
+    height: 20px;
+    max-width: 20px;
+    vertical-align: middle;
+}
+
+.label-icons-file {
+    height: 20px;
+    width: 16px;
+    max-width: 16px;
+    vertical-align: middle;
+}
+
+.label-icons-poll {
+    height: 20px;
+    width: 20px;
+    max-width: 20px;
+    vertical-align: middle;
+}

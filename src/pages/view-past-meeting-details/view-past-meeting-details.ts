@@ -1,5 +1,8 @@
 import { Component, ElementRef, Renderer } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+import { File } from '@ionic-native/file';
+import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer';
 
 @IonicPage()
 @Component({
@@ -23,7 +26,10 @@ export class ViewPastMeetingDetails {
 
   poll_list: any = [];
 
-  constructor(public element: ElementRef, public renderer: Renderer, public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
+  constructor(public element: ElementRef, public renderer: Renderer, public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController,
+    private transfer: FileTransfer,
+    private file: File,
+    private document: DocumentViewer, ) {
     this.meeting_details = JSON.parse(this.navParams.get("meeting_details"));
   }
 
@@ -104,6 +110,48 @@ export class ViewPastMeetingDetails {
       this.poll_list[i].option_list = tmp_option_list;
     }
     console.log(this.poll_list);
+  }
+
+  openAgendaFile(agenda_details) {
+    console.log(agenda_details);
+    let file_details = agenda_details;
+    const options: DocumentViewerOptions = {
+      print: { enabled: false },
+      bookmarks: { enabled: false },
+      email: { enabled: false },
+      title: file_details.name
+    };
+    const fileTransfer: FileTransferObject = this.transfer.create();
+    const url = file_details.url;
+    fileTransfer.download(url, this.file.dataDirectory + file_details.name).then((entry) => {
+      console.log('download complete: ' + entry.toURL());
+      this.document.viewDocument(this.file.dataDirectory + file_details.name, "application/pdf",
+        options, onShow, onClose, onMissingApp, onError);
+    }, (error) => {
+      console.log(error);
+      // handle error
+    });
+
+    function onShow() {
+      window.console.log('document shown');
+      //e.g. track document usage
+    }
+
+    function onClose() {
+      window.console.log('document closed');
+      //e.g. remove temp files
+    }
+
+    function onMissingApp(appId, installer) {
+      if (confirm("PDF viewer not available on your device, Do you want to install the free PDF Viewer App to view this document?")) {
+        installer();
+      }
+    }
+    function onError(error) {
+      window.console.log(error);
+      alert("Sorry! Cannot view document.");
+    }
+
   }
 
 }

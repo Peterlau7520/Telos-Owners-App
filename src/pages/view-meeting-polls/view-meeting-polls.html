@@ -22,12 +22,15 @@
           <ion-label>
             <ion-row>
               <ion-col col-12 no-padding>
-                <span left>Meeting Time : {{meeting_details.meeting_startTime}} - {{meeting_details.meeting_endTime}}&nbsp;</span>
+                <span left>
+                  <ion-icon>
+                    <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
+                  </ion-icon>
+                  Meeting Time : {{meeting_details.meeting_startTime}} - {{meeting_details.meeting_endTime}}&nbsp;</span>
                 <span c-display-inline-block>&nbsp;</span>
               </ion-col>
               <ion-col col-12 no-padding>
-                <span left>Venue : {{meeting_details.meeting_venue}}&nbsp;</span>
-                <span c-display-inline-block>&nbsp;</span>
+                <span left>Venue : {{meeting_details.meeting_venue}}</span>
               </ion-col>
               <ion-col col-12 no-padding>
                 <span left>Live stream :&nbsp;</span>
@@ -47,14 +50,21 @@
         <ion-item color-1d1d26 no-lines text-wrap no-margin padding-right>
           <ion-label margin-bottom>
             <div info>
-              <span left>Agenda :&nbsp;</span>
+              <span left>
+                <ion-icon>
+                  <img src="./assets/images/icons/document.png" class="label-icons-file" alt="">&nbsp;
+                </ion-icon>
+                Agenda :&nbsp;</span>
               <span c-display-inline-block>
                 <a (click)="openAgendaFile(meeting_details.meeting_fileLinks[0])"> {{meeting_details.meeting_fileLinks[0].name}}</a>
               </span>
             </div>
             <div info>
-              <span left>Vote by : {{meeting_details.meeting_pollEndTime}}</span>
-              <span>&nbsp;</span>
+              <span left>
+                <ion-icon>
+                  <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
+                </ion-icon>
+                Vote by : {{meeting_details.meeting_pollEndTime}}</span>
             </div>
           </ion-label>
         </ion-item>
@@ -76,7 +86,10 @@
                     <!-- Expandable Centered with header Header-->
                     <div class="collapsible-header" no-margin no-padding (click)="expandPoll(poll_details)">
                       <ion-item no-padding text-center text-wrap no-lines text-center>
-                        <h3 color-1d1d26 no-margin c-font-bold>{{poll_details.pollNameChn}} | {{poll_details.pollName}}</h3>
+                        <h3 color-1d1d26 no-margin c-font-bold>
+                          {{poll_details.pollNameChn}} | {{poll_details.pollName}}
+                          <img src="./assets/images/icons/poll.png" c-display-inline-block class="label-icons-poll" alt="">
+                        </h3>
                         <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="poll_details.is_complete">
                         </ion-icon>
                       </ion-item>
@@ -94,7 +107,9 @@
                       <ion-card no-margin c-width-100 border-top-e7>
                         <ion-item color-1d1d26 text-wrap padding-5px text-wrap>
                           <ion-label no-margin>
-                            <h2 color-1d1d26 class="summary-title">Documents</h2>
+                            <h2 color-1d1d26 class="summary-title">Documents
+                              <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt="">&nbsp;
+                            </h2>
                             <a *ngFor="let documents of poll_details.fileLinks;" (click)="openAgendaFile(documents)">
                               {{documents.name}}
                             </a>

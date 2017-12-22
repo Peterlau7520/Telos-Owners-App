@@ -5,36 +5,30 @@
         <!---Logo-->
         <img src="./assets/images/logo/logo_white.png" style="margin-bottom:0px;">
         <form #f="ngForm" (ngSubmit)="doLoginFunction(f)">
-        <!---Input field username-->
-        <ion-item no-padding transparent>
-          <ion-label floating no-margin>用戶名 | USERNAME</ion-label>
-          <ion-input 
-          required 
-          type="text" 
-          ngModel
-          name="account"></ion-input>
-        </ion-item>
-        <!---Input field password-->
-        <ion-item no-padding transparent>
-          <ion-label floating margin-top>密碼 | PASSWORD</ion-label>
-          <ion-input 
-          required 
-          type="password" 
-          ngModel
-          name="password"></ion-input>
-        </ion-item>
+          <!---Input field username-->
+          <ion-item no-padding transparent>
+            <ion-label floating no-margin>用戶名 | USERNAME</ion-label>
+            <ion-input required type="text" ngModel name="account"></ion-input>
+          </ion-item>
+          <!---Input field password-->
+          <ion-item no-padding transparent>
+            <ion-label floating margin-top>密碼 | PASSWORD</ion-label>
+            <ion-input required type="password" ngModel name="password"></ion-input>
+          </ion-item>
 
-        <!---Login button-->
-        <ion-row>
-          <ion-col col-12 text-center no-padding>
-            <button ion-button button-clear-outline text-center round outline class="login-button" type="submit" [disabled]="!f.valid" color="mytheme">登入 | Log In</button>
-          </ion-col>
-          <ion-col col-12 no-padding text-center>
-            <a (click)="goToRegister()" class="create-acc">開新帳戶 | Create an account</a>
-          </ion-col>
-        </ion-row>
-        <!---Register button-->
-      </form>
+          <!---Login button-->
+          <ion-row>
+            <ion-col col-12 text-center no-padding>
+              <button ion-button button-clear-outline text-center round outline class="login-button" type="submit" [disabled]="!f.valid"
+                color="mytheme">登入 | Log In</button>
+              <!-- <button ion-button button-clear-outline text-center round outline class="login-button" type="submit" color="mytheme">登入 | Log In</button> -->
+            </ion-col>
+            <ion-col col-12 no-padding text-center>
+              <a (click)="goToRegister()" class="create-acc">開新帳戶 | Create an account</a>
+            </ion-col>
+          </ion-row>
+          <!---Register button-->
+        </form>
       </ion-col>
     </ion-row>
   </ion-grid>

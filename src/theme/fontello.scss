@@ -7,10 +7,17 @@
 }
 
 @font-face {
-    font-family: 'avenir';
+    font-family: 'SFRegular';
     font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fontello/SF-Pro-Text-Regular.otf?v1');
+    /* font-weight: 400; */
+    src: url('../assets/fontello/SF-Pro-Text-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SFSemibold';
+    font-style: normal;
+    /* font-weight: 400; */
+    src: url('../assets/fontello/SF-Pro-Text-Semibold.ttf') format('truetype');
 }
 
 

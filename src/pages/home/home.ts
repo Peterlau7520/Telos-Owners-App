@@ -23,6 +23,7 @@ export class HomePage {
   doLoginFunction(form: NgForm) {
     /* localStorage.setItem("firstTabPage", "Noticeboard");
     this.navCtrl.push("Tabs"); */
+
     this.loadingService.showLoading();
     this.dataService.postData("login", form.value, {}).subscribe(results => {
       if (results.success == true) {

@@ -10,8 +10,8 @@ export class Tabs {
 
   tab1Root: any = "";
   tab2Root: any = "AllMeetingsPage";
-  tab3Root: any = "PastMeetings";
-  tab4Root: any = "SurveyList";
+  tab3Root: any = "SurveyList";
+  tab4Root: any = "ForumPage";
   public badgeCount = 10;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
