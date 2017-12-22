@@ -38,7 +38,9 @@ export class SurveyList {
     }, {}).subscribe(results => {
       if (results.success == true) {
         this.survey_list = results.survey;
+        console.log(results);
         this.completed_survey_list = results.completedSurveys;
+        console.log(this.completed_survey_list);
         this.survey_list.forEach(element => {
           this.completed_survey_list.forEach(completedElement => {
             if (element._id == completedElement) {

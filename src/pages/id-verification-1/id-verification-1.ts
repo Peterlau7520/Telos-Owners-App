@@ -129,7 +129,8 @@ export class IdVerification1 {
 
     request_data = {
       "hkids": hkidsArray,
-      "account": this.loginResponse.user.account
+      "account": this.loginResponse.user.account,
+      "estateName": this.loginResponse.user.estateName
     }
 
     this.dataService.postData("saveHKID", request_data, {}).subscribe(results => {

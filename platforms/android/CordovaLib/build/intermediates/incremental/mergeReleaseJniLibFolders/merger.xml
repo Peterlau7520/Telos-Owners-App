@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\ionic 2 projects\Projects\Telos-Owners-App-2\platforms\android\CordovaLib\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="D:\ionic 2 projects\Projects\Telos-Owners-App-2\platforms\android\CordovaLib\src\release\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/Peter/Desktop/Telos-Owners-App/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/Users/Peter/Desktop/Telos-Owners-App/platforms/android/CordovaLib/src/release/jniLibs"/></dataSet></merger>

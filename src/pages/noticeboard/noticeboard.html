@@ -15,10 +15,14 @@
         <ion-card padding text-center *ngFor="let notice of notices; let i = index;" (click)="viewPdfFile(notice)">
           <div card-content>
             <img images-filter src="./assets/images/background/{{i+1}}.jpg" />
-            <div card-title>{{notice.title}}</div>
+            <div card-title>{{notice.titleChn}} | {{notice.title}}</div>
             <div card-subtitle>
-              <span c-display-inline-block left>Post date : {{notice.postDate}}</span>
-              <span c-display-inline-block right>Effective until:{{notice.endTime}}</span>
+              <span c-display-inline-block left>
+                通告發出日期 | Post date: {{notice.postDate}}
+              </span>
+              <span c-display-inline-block left>
+                  有效期至 | Effective until:{{notice.endTime}}
+                </span>
             </div>
           </div>
         </ion-card>
