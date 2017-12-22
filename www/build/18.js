@@ -1,1 +1,93 @@
-webpackJsonp([18],{264:function(l,n,u){"use strict";function e(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,58,"ion-content",[["class","main-view"]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,h.b,h.a)),t["ɵdid"](1,4374528,null,0,b.a,[f.a,_.a,y.a,t.ElementRef,t.Renderer,C.a,w.a,t.NgZone,[2,D.a],[2,I.a]],null,null),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](4,0,null,1,0,"div",[["class","overlay"]],null,null,null,null,null)),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](6,0,null,1,51,"div",[["class","modal_content"]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵeld"](8,0,null,null,36,"ion-row",[["class","modal_inner_content row"]],null,null,null,null,null)),t["ɵdid"](9,16384,null,0,R.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](11,0,null,null,8,"ion-col",[["class","col"],["col-12",""]],null,null,null,null,null)),t["ɵdid"](12,16384,null,0,k.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](14,0,null,null,1,"p",[["class","agree-title"],["text-center",""]],null,null,null,null,null)),(l()(),t["ɵted"](15,null,["Owner "," Name"])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](17,0,null,null,1,"p",[["class","agree-title"],["no-margin",""],["text-center",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Please type your HKID number below (e.g. R123456)"])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](21,0,null,null,22,"ion-col",[["class","col"],["col-12",""]],null,null,null,null,null)),t["ɵdid"](22,16384,null,0,k.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](25,0,null,null,16,"ion-item",[["class","item item-block"],["no-padding",""],["transparent",""]],null,null,null,H.b,H.a)),t["ɵdid"](26,1097728,null,3,K.a,[P.a,f.a,t.ElementRef,t.Renderer,[2,N.a]],null,null),t["ɵqud"](335544320,1,{contentLabel:0}),t["ɵqud"](603979776,2,{_buttons:1}),t["ɵqud"](603979776,3,{_icons:1}),t["ɵdid"](30,16384,null,0,x.a,[],null,null),(l()(),t["ɵted"](-1,2,["\n          "])),(l()(),t["ɵeld"](32,0,null,1,2,"ion-label",[["floating",""],["margin-top",""]],null,null,null,null,null)),t["ɵdid"](33,16384,[[1,4]],0,E.a,[f.a,t.ElementRef,t.Renderer,[8,""],[8,null],[8,null],[8,null]],null,null),(l()(),t["ɵted"](-1,null,["身分證號碼 | HKID Number"])),(l()(),t["ɵted"](-1,2,["\n          "])),(l()(),t["ɵeld"](36,0,null,3,4,"ion-input",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var e=!0;if("ngModelChange"===n){e=!1!==(l.component.hkid_val=u)&&e}return e},M.b,M.a)),t["ɵdid"](37,671744,null,0,F.l,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),t["ɵprd"](2048,null,F.h,null,[F.l]),t["ɵdid"](39,16384,null,0,F.i,[F.h],null,null),t["ɵdid"](40,5423104,null,0,L.a,[f.a,_.a,P.a,C.a,t.ElementRef,t.Renderer,[2,b.a],[2,K.a],[2,F.h],y.a],{type:[0,"type"]},null),(l()(),t["ɵted"](-1,2,["\n        "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵeld"](46,0,null,null,10,"ion-row",[["class","row"]],null,null,null,null,null)),t["ɵdid"](47,16384,null,0,R.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](49,0,null,null,6,"ion-col",[["class","col"],["text-center",""]],null,null,null,null,null)),t["ɵdid"](50,16384,null,0,k.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](52,0,null,null,2,"button",[["button-clear-outline",""],["class","next-button login-button"],["color","mytheme"],["ion-button",""],["outline",""],["round",""]],null,[[null,"click"]],function(l,n,u){var e=!0,t=l.component;if("click"===n){e=!1!==t.submitHKID(t.hkid_val)&&e}return e},O.b,O.a)),t["ɵdid"](53,1097728,null,0,q.a,[[8,""],f.a,t.ElementRef,t.Renderer],{color:[0,"color"],outline:[1,"outline"],round:[2,"round"]},null),(l()(),t["ɵted"](-1,0,["Submit"])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵted"](-1,1,["\n"]))],function(l,n){l(n,37,0,n.component.hkid_val);l(n,40,0,"text");l(n,53,0,"mytheme","","")},function(l,n){var u=n.component;l(n,0,0,t["ɵnov"](n,1).statusbarPadding,t["ɵnov"](n,1)._hasRefresher);l(n,15,0,u.current_HKID);l(n,36,0,t["ɵnov"](n,39).ngClassUntouched,t["ɵnov"](n,39).ngClassTouched,t["ɵnov"](n,39).ngClassPristine,t["ɵnov"](n,39).ngClassDirty,t["ɵnov"](n,39).ngClassValid,t["ɵnov"](n,39).ngClassInvalid,t["ɵnov"](n,39).ngClassPending)})}Object.defineProperty(n,"__esModule",{value:!0});var t=u(0),d=(u(2),u(40),function(){function l(l,n,u,e){this.navCtrl=l,this.navParams=n,this.viewCtrl=u,this.modalCtrl=e,this.hkid_val="",this.total_HKIDs=this.navParams.get("total_HKIDs"),this.current_HKID=this.navParams.get("current_HKID")}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad OwnerHkidNumber")},l.prototype.dismiss=function(){this.viewCtrl.dismiss("decline")},l.prototype.submitHKID=function(l){if(this.current_HKID>=this.total_HKIDs)return this.viewCtrl.dismiss({closeType:"submitted",hkid_val:l}),console.log("IF"),!1;console.log("else"),this.viewCtrl.dismiss({closeType:"repeat",hkid_val:l,current_HKID:this.current_HKID})},l}()),o=function(){return function(){}}(),a=u(206),i=u(207),r=u(208),s=u(209),c=u(210),m=u(211),p=u(212),g=u(213),v=u(214),h=u(85),b=u(19),f=u(1),_=u(4),y=u(9),C=u(8),w=u(22),D=u(5),I=u(21),R=u(59),k=u(58),H=u(87),K=u(13),P=u(12),N=u(37),x=u(47),E=u(42),M=u(215),F=u(16),L=u(65),O=u(28),q=u(18),T=u(10),V=u(64),j=t["ɵcrt"]({encapsulation:2,styles:[],data:{}}),A=t["ɵccf"]("page-owner-hkid-number",d,function(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"page-owner-hkid-number",[],null,null,null,e,j)),t["ɵdid"](1,49152,null,0,d,[I.a,T.a,D.a,V.a],null,null)],null,null)},{},{},[]),J=u(15),S=u(129),U=u(41);u.d(n,"OwnerHkidNumberModuleNgFactory",function(){return Z});var Z=t["ɵcmf"](o,[],function(l){return t["ɵmod"]([t["ɵmpd"](512,t.ComponentFactoryResolver,t["ɵCodegenComponentFactoryResolver"],[[8,[a.a,i.a,r.a,s.a,c.a,m.a,p.a,g.a,v.a,A]],[3,t.ComponentFactoryResolver],t.NgModuleRef]),t["ɵmpd"](4608,J.k,J.j,[t.LOCALE_ID,[2,J.s]]),t["ɵmpd"](4608,F.r,F.r,[]),t["ɵmpd"](4608,F.d,F.d,[]),t["ɵmpd"](512,J.b,J.b,[]),t["ɵmpd"](512,F.p,F.p,[]),t["ɵmpd"](512,F.e,F.e,[]),t["ɵmpd"](512,F.n,F.n,[]),t["ɵmpd"](512,S.a,S.a,[]),t["ɵmpd"](512,S.b,S.b,[]),t["ɵmpd"](512,o,o,[]),t["ɵmpd"](256,U.a,d,[])])})}});
+webpackJsonp([18],{
+
+/***/ 299:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChangePasswordPageModule", function() { return ChangePasswordPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__change_password_page__ = __webpack_require__(321);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ChangePasswordPageModule = (function () {
+    function ChangePasswordPageModule() {
+    }
+    ChangePasswordPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__change_password_page__["a" /* ChangePasswordPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__change_password_page__["a" /* ChangePasswordPage */]),
+            ],
+        })
+    ], ChangePasswordPageModule);
+    return ChangePasswordPageModule;
+}());
+
+//# sourceMappingURL=change-password-page.module.js.map
+
+/***/ }),
+
+/***/ 321:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChangePasswordPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_show_message__ = __webpack_require__(104);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ChangePasswordPage = (function () {
+    function ChangePasswordPage(navCtrl, navParams, viewCtrl, showMessage) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.showMessage = showMessage;
+        this.password_data = {};
+    }
+    ChangePasswordPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ChangePasswordPage');
+    };
+    ChangePasswordPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss("decline");
+    };
+    ChangePasswordPage.prototype.savePassword = function (password_data) {
+        this.showMessage.showToastBottom("Password updated successfully!");
+        this.viewCtrl.dismiss("decline");
+    };
+    ChangePasswordPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-change-password-page',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/change-password-page/change-password-page.html"*/`<ion-content class="main-view">\n  <div class="overlay" (click)="dismiss()"></div>\n  <div class="modal_content">\n    <ion-row class="modal_inner_content">\n      <ion-col>\n        <ion-icon name="md-close" class="close-button" (click)="dismiss()"></ion-icon>\n        <ion-row>\n          <p col-12 class="agree-title" text-center no-margin>改密碼 | Reset Password</p>\n          <!-- <button ion-button buttin-clear round> -->\n          <!-- </button> -->\n        </ion-row>\n        <ion-row>\n          <ion-col col-12>\n            <div class="form">\n              <ion-item transparent no-padding>\n                <ion-label floating margin-top>輸入久密碼 | ENTER OLD PASSWORD</ion-label>\n                <ion-input required type="password" [(ngModel)]="password_data.old_password"></ion-input>\n              </ion-item>\n              <ion-item transparent no-padding>\n                <ion-label floating margin-top>輸入新密碼 | ENTER NEW PASSWORD</ion-label>\n                <ion-input required type="password" [(ngModel)]="password_data.new_password"></ion-input>\n              </ion-item>\n              <ion-item transparent no-padding>\n                <ion-label floating margin-top>再次輸入新密碼 | RE-ENTER NEW PASSWORD</ion-label>\n                <ion-input required type="password" [(ngModel)]="password_data.renew_password"></ion-input>\n              </ion-item>\n            </div>\n          </ion-col>\n        </ion-row>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col text-center>\n        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="savePassword(password_data)">確定 | Confirm</button>\n      </ion-col>\n    </ion-row>\n  </div>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/change-password-page/change-password-page.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_show_message__["a" /* ShowMessage */]])
+    ], ChangePasswordPage);
+    return ChangePasswordPage;
+}());
+
+//# sourceMappingURL=change-password-page.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=18.js.map

@@ -1,1 +1,143 @@
-webpackJsonp([3],{275:function(l,n,e){"use strict";function t(l){return i["ɵvid"](0,[(l()(),i["ɵeld"](0,0,null,null,43,"ion-col",[["class","col"],["col-12",""],["col-lg-4",""],["col-md-6",""],["col-sm-6",""],["col-xl-4",""]],null,[[null,"click"]],function(l,n,e){var t=!0;if("click"===n){t=!1!==l.component.goToViewMeetingDetails(l.context.$implicit)&&t}return t},null,null)),i["ɵdid"](1,16384,null,0,R.a,[],null,null),(l()(),i["ɵted"](-1,null,["\n        "])),(l()(),i["ɵeld"](3,0,null,null,39,"ion-card",[["text-left",""]],null,null,null,null,null)),i["ɵdid"](4,16384,null,0,k.a,[y.a,i.ElementRef,i.Renderer],null,null),(l()(),i["ɵted"](-1,null,["\n          "])),(l()(),i["ɵeld"](6,0,null,null,6,"div",[["card-image",""]],null,null,null,null,null)),(l()(),i["ɵted"](-1,null,["\n            "])),(l()(),i["ɵeld"](8,0,null,null,0,"img",[["images-filter",""]],[[8,"src",4]],null,null,null,null)),(l()(),i["ɵted"](-1,null,["\n            "])),(l()(),i["ɵeld"](10,0,null,null,1,"h2",[["card-title",""]],null,null,null,null,null)),(l()(),i["ɵted"](11,null,[""," | ",""])),(l()(),i["ɵted"](-1,null,["\n          "])),(l()(),i["ɵted"](-1,null,["\n          "])),(l()(),i["ɵeld"](14,0,null,null,27,"ion-card-content",[],null,null,null,null,null)),i["ɵdid"](15,16384,null,0,C.a,[y.a,i.ElementRef,i.Renderer],null,null),(l()(),i["ɵted"](-1,null,["\n            "])),(l()(),i["ɵeld"](17,0,null,null,1,"p",[["card-body-text",""]],null,null,null,null,null)),(l()(),i["ɵted"](18,null,["",""])),(l()(),i["ɵted"](-1,null,["\n            "])),(l()(),i["ɵeld"](20,0,null,null,9,"ion-row",[["class","row"],["margin-top",""],["padding-top",""]],null,null,null,null,null)),i["ɵdid"](21,16384,null,0,D.a,[],null,null),(l()(),i["ɵted"](-1,null,["\n              "])),(l()(),i["ɵeld"](23,0,null,null,5,"ion-col",[["class","col"],["no-padding",""]],null,null,null,null,null)),i["ɵdid"](24,16384,null,0,R.a,[],null,null),(l()(),i["ɵted"](-1,null,["\n                "])),(l()(),i["ɵeld"](26,0,null,null,1,"p",[["card-body-text",""],["class","footer-card-txt"]],null,null,null,null,null)),(l()(),i["ɵted"](27,null,["Meeting Date & Time: "," - ",""])),(l()(),i["ɵted"](-1,null,["\n              "])),(l()(),i["ɵted"](-1,null,["\n            "])),(l()(),i["ɵted"](-1,null,["\n            "])),(l()(),i["ɵeld"](31,0,null,null,9,"ion-row",[["class","row"],["padding-top",""]],null,null,null,null,null)),i["ɵdid"](32,16384,null,0,D.a,[],null,null),(l()(),i["ɵted"](-1,null,["\n              "])),(l()(),i["ɵeld"](34,0,null,null,5,"ion-col",[["class","col"],["no-padding",""]],null,null,null,null,null)),i["ɵdid"](35,16384,null,0,R.a,[],null,null),(l()(),i["ɵted"](-1,null,["\n                "])),(l()(),i["ɵeld"](37,0,null,null,1,"p",[["card-body-text",""],["class","footer-card-txt"]],null,null,null,null,null)),(l()(),i["ɵted"](38,null,["Venue: ",""])),(l()(),i["ɵted"](-1,null,["\n              "])),(l()(),i["ɵted"](-1,null,["\n            "])),(l()(),i["ɵted"](-1,null,["\n          "])),(l()(),i["ɵted"](-1,null,["\n        "])),(l()(),i["ɵted"](-1,null,["\n      "]))],null,function(l,n){l(n,8,0,n.context.$implicit.meeting_background);l(n,11,0,n.context.$implicit.meeting_titleChn,n.context.$implicit.meeting_title);l(n,18,0,n.context.$implicit.meeting_desc);l(n,27,0,n.context.$implicit.meeting_startTime,n.context.$implicit.meeting_endTime);l(n,38,0,n.context.$implicit.meeting_venue)})}function u(l){return i["ɵvid"](0,[(l()(),i["ɵeld"](0,0,null,null,10,"ion-header",[],null,null,null,null,null)),i["ɵdid"](1,16384,null,0,w.a,[y.a,i.ElementRef,i.Renderer,[2,x.a]],null,null),(l()(),i["ɵted"](-1,null,["\n  "])),(l()(),i["ɵeld"](3,0,null,null,6,"ion-navbar",[["class","toolbar"],["header-color",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,M.b,M.a)),i["ɵdid"](4,49152,null,0,E.a,[T.a,[2,x.a],[2,V.a],y.a,i.ElementRef,i.Renderer],null,null),(l()(),i["ɵted"](-1,3,["\n    "])),(l()(),i["ɵeld"](6,0,null,3,2,"ion-title",[["text-left",""]],null,null,null,S.b,S.a)),i["ɵdid"](7,49152,null,0,I.a,[y.a,i.ElementRef,i.Renderer,[2,L.a],[2,E.a]],null,null),(l()(),i["ɵted"](-1,0,["近期會議 | Upcoming Meetings"])),(l()(),i["ɵted"](-1,3,["\n  "])),(l()(),i["ɵted"](-1,null,["\n"])),(l()(),i["ɵted"](-1,null,["\n"])),(l()(),i["ɵted"](-1,null,["\n"])),(l()(),i["ɵeld"](13,0,null,null,13,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,$.b,$.a)),i["ɵdid"](14,4374528,null,0,N.a,[y.a,U.a,F.a,i.ElementRef,i.Renderer,T.a,K.a,i.NgZone,[2,x.a],[2,V.a]],null,null),(l()(),i["ɵted"](-1,1,["\n  "])),(l()(),i["ɵeld"](16,0,null,1,9,"ion-grid",[["class","grid"],["no-padding",""]],null,null,null,null,null)),i["ɵdid"](17,16384,null,0,O.a,[],null,null),(l()(),i["ɵted"](-1,null,["\n    "])),(l()(),i["ɵeld"](19,0,null,null,5,"ion-row",[["class","row"],["margin-bottom",""]],null,null,null,null,null)),i["ɵdid"](20,16384,null,0,D.a,[],null,null),(l()(),i["ɵted"](-1,null,["\n      "])),(l()(),i["ɵand"](16777216,null,null,1,null,t)),i["ɵdid"](23,802816,null,0,P.h,[i.ViewContainerRef,i.TemplateRef,i.IterableDiffers],{ngForOf:[0,"ngForOf"]},null),(l()(),i["ɵted"](-1,null,["\n    "])),(l()(),i["ɵted"](-1,null,["\n  "])),(l()(),i["ɵted"](-1,1,["\n"]))],function(l,n){l(n,23,0,n.component.upcoming_meeting_list)},function(l,n){l(n,3,0,i["ɵnov"](n,4)._hidden,i["ɵnov"](n,4)._sbPadding);l(n,13,0,i["ɵnov"](n,14).statusbarPadding,i["ɵnov"](n,14)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var i=e(0),a=(e(2),e(40),e(62)),o=e(63),d=e(61),s=function(){function l(l,n,e,t,u){this.navCtrl=l,this.navParams=n,this.loadingService=e,this.dataService=t,this.showMessage=u,this.upcoming_meeting_list=[],this.currentMeetings=[],this.loginResponse={},this.loginResponse=JSON.parse(localStorage.getItem("loginResponse"))}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad UpcomingMeetings")},l.prototype.ionViewWillEnter=function(){this.getUpcomingMeetingsData()},l.prototype.getUpcomingMeetingsData=function(){var l=this;this.loadingService.showLoading(),this.dataService.postData("currentMeetings",{estateName:this.loginResponse.user.estateName},{}).subscribe(function(n){if(1==n.success){l.currentMeetings=n.currentMeetings;var e=l;e.upcoming_meeting_list=[],l.currentMeetings.forEach(function(l,n){e.upcoming_meeting_list.push({meeting_id:l._id,meeting_title:l.title,meeting_titleChn:l.titleChn,meeting_desc:l.meetingSummaryChn+" | "+l.meetingSummary,meeting_startTime:l.startTime,meeting_endTime:l.startTime,meeting_venue:l.venue,meeting_fileLinks:l.fileLinks,meeting_pollEndTime:l.pollEndTime,meeting_polls:l.polls,meeting_background:"./assets/images/background/"+(n+1)+".jpg"})}),l.loadingService.hideLoading()}else l.showMessage.showToastBottom(n.message),l.loadingService.hideLoading()},function(n){console.log("err",n),l.loadingService.hideLoading(),l.showMessage.showToastBottom("Unable to get Upcoming meetings, please try again.")})},l.prototype.goToViewMeetingDetails=function(l){console.log(l);var n=JSON.stringify(l);localStorage.setItem("meeting_details",n),this.navCtrl.push("ViewMeetingPolls",{meeting_details:n})},l}(),r=function(){return function(){}}(),c=e(206),g=e(207),m=e(208),f=e(209),p=e(210),b=e(211),h=e(212),_=e(213),v=e(214),R=e(58),k=e(131),y=e(1),C=e(138),D=e(59),w=e(86),x=e(5),M=e(279),E=e(46),T=e(8),V=e(21),S=e(280),I=e(130),L=e(60),$=e(85),N=e(19),U=e(4),F=e(9),K=e(22),O=e(88),P=e(15),B=e(10),j=i["ɵcrt"]({encapsulation:2,styles:[],data:{}}),J=i["ɵccf"]("page-upcoming-meetings",s,function(l){return i["ɵvid"](0,[(l()(),i["ɵeld"](0,0,null,null,1,"page-upcoming-meetings",[],null,null,null,u,j)),i["ɵdid"](1,49152,null,0,s,[V.a,B.a,a.a,o.a,d.a],null,null)],null,null)},{},{},[]),A=e(16),W=e(129),Z=e(41);e.d(n,"UpcomingMeetingsModuleNgFactory",function(){return q});var q=i["ɵcmf"](r,[],function(l){return i["ɵmod"]([i["ɵmpd"](512,i.ComponentFactoryResolver,i["ɵCodegenComponentFactoryResolver"],[[8,[c.a,g.a,m.a,f.a,p.a,b.a,h.a,_.a,v.a,J]],[3,i.ComponentFactoryResolver],i.NgModuleRef]),i["ɵmpd"](4608,P.k,P.j,[i.LOCALE_ID,[2,P.s]]),i["ɵmpd"](4608,A.r,A.r,[]),i["ɵmpd"](4608,A.d,A.d,[]),i["ɵmpd"](512,P.b,P.b,[]),i["ɵmpd"](512,A.p,A.p,[]),i["ɵmpd"](512,A.e,A.e,[]),i["ɵmpd"](512,A.n,A.n,[]),i["ɵmpd"](512,W.a,W.a,[]),i["ɵmpd"](512,W.b,W.b,[]),i["ɵmpd"](512,r,r,[]),i["ɵmpd"](256,Z.a,s,[])])})},279:function(l,n,e){"use strict";function t(l){return u["ɵvid"](0,[(l()(),u["ɵeld"](0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),u["ɵdid"](1,278528,null,0,i.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),u["ɵeld"](2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var t=!0;if("click"===n){t=!1!==l.component.backButtonClick(e)&&t}return t},a.b,a.a)),u["ɵdid"](3,278528,null,0,i.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u["ɵdid"](4,1097728,null,0,o.a,[[8,"bar-button"],d.a,u.ElementRef,u.Renderer],null,null),(l()(),u["ɵeld"](5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),u["ɵdid"](6,278528,null,0,i.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u["ɵdid"](7,147456,null,0,s.a,[d.a,u.ElementRef,u.Renderer],{name:[0,"name"]},null),(l()(),u["ɵeld"](8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),u["ɵdid"](9,278528,null,0,i.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),u["ɵted"](10,null,["",""])),u["ɵncd"](null,0),u["ɵncd"](null,1),u["ɵncd"](null,2),(l()(),u["ɵeld"](14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),u["ɵdid"](15,278528,null,0,i.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u["ɵncd"](null,3)],function(l,n){var e=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+e._mode);l(n,3,0,"back-button","back-button-"+e._mode);l(n,6,0,"back-button-icon","back-button-icon-"+e._mode);l(n,7,0,e._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+e._mode);l(n,15,0,"toolbar-content","toolbar-content-"+e._mode)},function(l,n){var e=n.component;l(n,2,0,e._hideBb);l(n,5,0,u["ɵnov"](n,7)._hidden);l(n,10,0,e._backText)})}e.d(n,"a",function(){return r}),n.b=t;var u=e(0),i=e(15),a=e(28),o=e(18),d=e(1),s=e(36),r=(e(46),e(5),e(21),u["ɵcrt"]({encapsulation:2,styles:[],data:{}}))},280:function(l,n,e){"use strict";function t(l){return u["ɵvid"](2,[(l()(),u["ɵeld"](0,0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),u["ɵdid"](1,278528,null,0,i.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u["ɵncd"](null,0)],function(l,n){l(n,1,0,"toolbar-title","toolbar-title-"+n.component._mode)},null)}e.d(n,"a",function(){return a}),n.b=t;var u=e(0),i=e(15),a=(e(130),e(1),e(60),e(46),u["ɵcrt"]({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([3],{
+
+/***/ 313:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UpcomingMeetingsModule", function() { return UpcomingMeetingsModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__upcoming_meetings__ = __webpack_require__(335);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var UpcomingMeetingsModule = (function () {
+    function UpcomingMeetingsModule() {
+    }
+    UpcomingMeetingsModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__upcoming_meetings__["a" /* UpcomingMeetings */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__upcoming_meetings__["a" /* UpcomingMeetings */]),
+            ],
+        })
+    ], UpcomingMeetingsModule);
+    return UpcomingMeetingsModule;
+}());
+
+//# sourceMappingURL=upcoming-meetings.module.js.map
+
+/***/ }),
+
+/***/ 335:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UpcomingMeetings; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_data_service__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_show_message__ = __webpack_require__(104);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var UpcomingMeetings = (function () {
+    function UpcomingMeetings(navCtrl, navParams, loadingService, dataService, showMessage) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.loadingService = loadingService;
+        this.dataService = dataService;
+        this.showMessage = showMessage;
+        this.upcoming_meeting_list = [];
+        this.currentMeetings = [];
+        this.loginResponse = {};
+        /* this.currentMeetings = this.navParams.data.currentMeetings; */
+        this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
+    }
+    UpcomingMeetings.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad UpcomingMeetings');
+    };
+    UpcomingMeetings.prototype.ionViewWillEnter = function () {
+        this.getUpcomingMeetingsData();
+    };
+    UpcomingMeetings.prototype.getUpcomingMeetingsData = function () {
+        var _this = this;
+        this.loadingService.showLoading();
+        this.dataService.postData("currentMeetings", {
+            "estateName": this.loginResponse.user.estateName
+        }, {}).subscribe(function (results) {
+            if (results.success == true) {
+                _this.currentMeetings = results.currentMeetings;
+                var self_1 = _this;
+                self_1.upcoming_meeting_list = [];
+                _this.currentMeetings.forEach(function (meeting, i) {
+                    self_1.upcoming_meeting_list.push({
+                        "meeting_id": meeting._id,
+                        "meeting_title": meeting.title,
+                        "meeting_titleChn": meeting.titleChn,
+                        "meeting_desc": meeting.meetingSummaryChn + " | " + meeting.meetingSummary,
+                        "meeting_startTime": meeting.startTime,
+                        "meeting_endTime": meeting.startTime,
+                        "meeting_venue": meeting.venue,
+                        "meeting_fileLinks": meeting.fileLinks,
+                        "meeting_pollEndTime": meeting.pollEndTime,
+                        "meeting_polls": meeting.polls,
+                        "meeting_background": "./assets/images/background/" + (i + 1) + ".jpg"
+                    });
+                });
+                _this.loadingService.hideLoading();
+            }
+            else {
+                _this.showMessage.showToastBottom(results.message);
+                _this.loadingService.hideLoading();
+            }
+        }, function (err) {
+            console.log("err", err);
+            _this.loadingService.hideLoading();
+            _this.showMessage.showToastBottom("Unable to get Upcoming meetings, please try again.");
+        });
+    };
+    UpcomingMeetings.prototype.goToViewMeetingDetails = function (meeting_details) {
+        console.log(meeting_details);
+        var tmp_meeting_details = JSON.stringify(meeting_details);
+        localStorage.setItem("meeting_details", tmp_meeting_details);
+        this.navCtrl.push("ViewMeetingPolls", { "meeting_details": tmp_meeting_details });
+    };
+    UpcomingMeetings = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-upcoming-meetings',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/upcoming-meetings/upcoming-meetings.html"*/`<ion-header>\n  <ion-navbar header-color>\n    <ion-title text-left>近期會議 | Upcoming Meetings</ion-title>\n  </ion-navbar>\n</ion-header>\n<!--Theme Styled cards 2-->\n<ion-content>\n  <ion-grid no-padding>\n    <ion-row margin-bottom>\n      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 *ngFor="let meeting_details of upcoming_meeting_list;" (click)="goToViewMeetingDetails(meeting_details)">\n        <ion-card text-left>\n          <div card-image>\n            <img images-filter [src]="meeting_details.meeting_background" />\n            <h2 card-title>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</h2>\n          </div>\n          <ion-card-content>\n            <p card-body-text>{{meeting_details.meeting_desc}}</p>\n            <ion-row margin-top padding-top>\n              <ion-col no-padding>\n                <p card-body-text class="footer-card-txt">Meeting Date & Time: {{meeting_details.meeting_startTime}} - {{meeting_details.meeting_endTime}}</p>\n              </ion-col>\n            </ion-row>\n            <ion-row padding-top>\n              <ion-col no-padding>\n                <p card-body-text class="footer-card-txt">Venue: {{meeting_details.meeting_venue}}</p>\n              </ion-col>\n            </ion-row>\n          </ion-card-content>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/upcoming-meetings/upcoming-meetings.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__["a" /* LoadingService */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_data_service__["a" /* DataService */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_show_message__["a" /* ShowMessage */]])
+    ], UpcomingMeetings);
+    return UpcomingMeetings;
+}());
+
+//# sourceMappingURL=upcoming-meetings.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=3.js.map

@@ -1,1 +1,101 @@
-webpackJsonp([14],{261:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,7,"ion-header",[],null,null,null,null,null)),t["ɵdid"](1,16384,null,0,k.a,[y.a,t.ElementRef,t.Renderer,[2,C.a]],null,null),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵeld"](3,0,null,null,3,"ion-navbar",[["class","toolbar"],["header-color",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,w.b,w.a)),t["ɵdid"](4,49152,null,0,_.a,[S.a,[2,C.a],[2,T.a],y.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,3,["\n    "])),(l()(),t["ɵted"](-1,3,["\n  "])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵeld"](10,0,null,null,60,"ion-content",[["background-size",""],["default-background",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,E.b,E.a)),t["ɵdid"](11,4374528,null,0,P.a,[y.a,D.a,I.a,t.ElementRef,t.Renderer,S.a,O.a,t.NgZone,[2,C.a],[2,T.a]],null,null),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](13,0,null,1,56,"ion-grid",[["class","grid"]],null,null,null,null,null)),t["ɵdid"](14,16384,null,0,L.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵeld"](16,0,null,null,52,"ion-row",[["class","row"],["padding",""],["wrap",""]],null,null,null,null,null)),t["ɵdid"](17,16384,null,0,x.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](19,0,null,null,48,"ion-col",[["class","col"],["col-12",""],["col-lg-6",""],["col-md-12",""],["col-sm-12",""],["col-xl-6",""],["no-padding",""],["offset-lg-3",""],["offset-xl-3",""]],null,null,null,null,null)),t["ɵdid"](20,16384,null,0,A.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](22,0,null,null,43,"div",[["class","form"]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](24,0,null,null,1,"h1",[["title",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["印章 | Company Chop"])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](27,0,null,null,25,"ion-row",[["class","row"],["margin-bottom",""],["padding-bottom",""]],null,null,null,null,null)),t["ɵdid"](28,16384,null,0,x.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](30,0,null,null,21,"ion-col",[["class","p-l-r-10 p-t-b-0 col"],["margin-vertical",""],["padding-vertical",""]],null,null,null,null,null)),t["ɵdid"](31,16384,null,0,A.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](33,0,null,null,1,"p",[["margin-bottom",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["如果您單位屬於貴公司，請上傳其印章圖片 | IF YOUR UNIT(S) IS OWNED BY YOUT COMPANY, PLEASE UPLOAD A PHOTO OF THE COMPANY CHOP."])),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](37,0,null,null,13,"ion-row",[["class","row"]],null,null,null,null,null)),t["ɵdid"](38,16384,null,0,x.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n                "])),(l()(),t["ɵeld"](40,0,null,null,9,"ion-col",[["class","col"],["no-padding",""],["text-center",""]],null,null,null,null,null)),t["ɵdid"](41,16384,null,0,A.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n                  "])),(l()(),t["ɵeld"](43,0,null,null,5,"button",[["button-clear-outline",""],["color","mytheme"],["ion-button",""],["outline",""],["round",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.presentActionSheet()&&u}return u},M.b,M.a)),t["ɵdid"](44,1097728,null,0,N.a,[[8,""],y.a,t.ElementRef,t.Renderer],{color:[0,"color"],outline:[1,"outline"],round:[2,"round"]},null),(l()(),t["ɵted"](-1,0,["\n                    "])),(l()(),t["ɵeld"](46,0,null,0,1,"ion-icon",[["class","camera-icon"],["name","ios-camera-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t["ɵdid"](47,147456,null,0,B.a,[y.a,t.ElementRef,t.Renderer],{name:[0,"name"]},null),(l()(),t["ɵted"](-1,0,["\n                    拍 | Take"])),(l()(),t["ɵted"](-1,null,["\n                "])),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](54,0,null,null,10,"ion-row",[["class","row"],["margin-top",""]],null,null,null,null,null)),t["ɵdid"](55,16384,null,0,x.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](57,0,null,null,6,"ion-col",[["class","col"],["margin-top",""],["text-center",""]],null,null,null,null,null)),t["ɵdid"](58,16384,null,0,A.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](60,0,null,null,2,"button",[["button-clear-outline",""],["class","next-button"],["color","mytheme"],["ion-button",""],["outline",""],["round",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.goToRegister()&&u}return u},M.b,M.a)),t["ɵdid"](61,1097728,null,0,N.a,[[8,""],y.a,t.ElementRef,t.Renderer],{color:[0,"color"],outline:[1,"outline"],round:[2,"round"]},null),(l()(),t["ɵted"](-1,0,["下一頁 | Next"])),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵted"](-1,1,["\n"]))],function(l,n){l(n,44,0,"mytheme","","");l(n,47,0,"ios-camera-outline");l(n,61,0,"mytheme","","")},function(l,n){l(n,3,0,t["ɵnov"](n,4)._hidden,t["ɵnov"](n,4)._sbPadding);l(n,10,0,t["ɵnov"](n,11).statusbarPadding,t["ɵnov"](n,11)._hasRefresher);l(n,46,0,t["ɵnov"](n,47)._hidden)})}Object.defineProperty(n,"__esModule",{value:!0});var t=e(0),o=(e(2),e(40),e(134)),a=e(62),i=e(63),d=e(61),s=function(){function l(l,n,e,u,t,o,a){this.navCtrl=l,this.navParams=n,this.camera=e,this.actionSheetCtrl=u,this.loadingService=t,this.dataService=o,this.showMessage=a,this.id_image="",this.loginResponse={},this.token=localStorage.getItem("token"),this.loginResponse=JSON.parse(localStorage.getItem("loginResponse")),console.log(this.loginResponse)}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad CompanyChop")},l.prototype.presentActionSheet=function(){var l=this;this.actionSheetCtrl.create({title:"Select Image Source",buttons:[{text:"Load from Library",handler:function(){l.takePicture(l.camera.PictureSourceType.PHOTOLIBRARY)}},{text:"Use Camera",handler:function(){l.takePicture(l.camera.PictureSourceType.CAMERA)}},{text:"Cancel",role:"cancel"}]}).present()},l.prototype.takePicture=function(l){var n=this;this.camera.getPicture({quality:40,sourceType:l,destinationType:this.camera.DestinationType.DATA_URL}).then(function(l){n.id_image="data:image/png;base64,"+l},function(l){n.showMessage.showToastBottom("Unable to get image")})},l.prototype.goToRegister=function(){var l=this;if(void 0===this.id_image||""==this.id_image||null==this.id_image)return this.showMessage.showToastBottom("Please select/take an picture to upload."),!1;this.loadingService.showLoading();this.dataService.postData("saveChop",{account:this.loginResponse.user.account,image:this.id_image},{}).subscribe(function(n){1==n.success?(l.showMessage.showToastBottom(n.message),l.loadingService.hideLoading(),localStorage.setItem("firstTabPage","Noticeboard"),l.navCtrl.push("Tabs")):(l.showMessage.showToastBottom(n.message),l.loadingService.hideLoading())},function(n){console.log("err",n),l.loadingService.hideLoading(),l.showMessage.showToastBottom("Unable to save image, please try again.")})},l}(),r=function(){return function(){}}(),c=e(206),m=e(207),g=e(208),b=e(209),p=e(210),f=e(211),h=e(212),v=e(213),R=e(214),k=e(86),y=e(1),C=e(5),w=e(279),_=e(46),S=e(8),T=e(21),E=e(85),P=e(19),D=e(4),I=e(9),O=e(22),L=e(88),x=e(59),A=e(58),M=e(28),N=e(18),B=e(36),U=e(10),V=e(90),F=t["ɵcrt"]({encapsulation:2,styles:[],data:{}}),Y=t["ɵccf"]("page-company-chop",s,function(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"page-company-chop",[],null,null,null,u,F)),t["ɵdid"](1,49152,null,0,s,[T.a,U.a,o.a,V.a,a.a,i.a,d.a],null,null)],null,null)},{},{},[]),K=e(15),H=e(16),j=e(129),J=e(41);e.d(n,"CompanyChopModuleNgFactory",function(){return q});var q=t["ɵcmf"](r,[],function(l){return t["ɵmod"]([t["ɵmpd"](512,t.ComponentFactoryResolver,t["ɵCodegenComponentFactoryResolver"],[[8,[c.a,m.a,g.a,b.a,p.a,f.a,h.a,v.a,R.a,Y]],[3,t.ComponentFactoryResolver],t.NgModuleRef]),t["ɵmpd"](4608,K.k,K.j,[t.LOCALE_ID,[2,K.s]]),t["ɵmpd"](4608,H.r,H.r,[]),t["ɵmpd"](4608,H.d,H.d,[]),t["ɵmpd"](512,K.b,K.b,[]),t["ɵmpd"](512,H.p,H.p,[]),t["ɵmpd"](512,H.e,H.e,[]),t["ɵmpd"](512,H.n,H.n,[]),t["ɵmpd"](512,j.a,j.a,[]),t["ɵmpd"](512,j.b,j.b,[]),t["ɵmpd"](512,r,r,[]),t["ɵmpd"](256,J.a,s,[])])})},279:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),t["ɵdid"](1,278528,null,0,o.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵeld"](2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.backButtonClick(e)&&u}return u},a.b,a.a)),t["ɵdid"](3,278528,null,0,o.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](4,1097728,null,0,i.a,[[8,"bar-button"],d.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵeld"](5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t["ɵdid"](6,278528,null,0,o.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](7,147456,null,0,s.a,[d.a,t.ElementRef,t.Renderer],{name:[0,"name"]},null),(l()(),t["ɵeld"](8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),t["ɵdid"](9,278528,null,0,o.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵted"](10,null,["",""])),t["ɵncd"](null,0),t["ɵncd"](null,1),t["ɵncd"](null,2),(l()(),t["ɵeld"](14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),t["ɵdid"](15,278528,null,0,o.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵncd"](null,3)],function(l,n){var e=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+e._mode);l(n,3,0,"back-button","back-button-"+e._mode);l(n,6,0,"back-button-icon","back-button-icon-"+e._mode);l(n,7,0,e._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+e._mode);l(n,15,0,"toolbar-content","toolbar-content-"+e._mode)},function(l,n){var e=n.component;l(n,2,0,e._hideBb);l(n,5,0,t["ɵnov"](n,7)._hidden);l(n,10,0,e._backText)})}e.d(n,"a",function(){return r}),n.b=u;var t=e(0),o=e(15),a=e(28),i=e(18),d=e(1),s=e(36),r=(e(46),e(5),e(21),t["ɵcrt"]({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([14],{
+
+/***/ 302:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OwnerHkidNumberModule", function() { return OwnerHkidNumberModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__owner_hkid_number__ = __webpack_require__(324);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var OwnerHkidNumberModule = (function () {
+    function OwnerHkidNumberModule() {
+    }
+    OwnerHkidNumberModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__owner_hkid_number__["a" /* OwnerHkidNumber */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__owner_hkid_number__["a" /* OwnerHkidNumber */]),
+            ],
+        })
+    ], OwnerHkidNumberModule);
+    return OwnerHkidNumberModule;
+}());
+
+//# sourceMappingURL=owner-hkid-number.module.js.map
+
+/***/ }),
+
+/***/ 324:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OwnerHkidNumber; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var OwnerHkidNumber = (function () {
+    function OwnerHkidNumber(navCtrl, navParams, viewCtrl, modalCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.modalCtrl = modalCtrl;
+        this.hkid_val = "";
+        this.total_HKIDs = this.navParams.get("total_HKIDs");
+        this.current_HKID = this.navParams.get("current_HKID");
+    }
+    OwnerHkidNumber.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad OwnerHkidNumber');
+    };
+    OwnerHkidNumber.prototype.dismiss = function () {
+        this.viewCtrl.dismiss("decline");
+    };
+    OwnerHkidNumber.prototype.submitHKID = function (hkid_val) {
+        if (this.current_HKID >= this.total_HKIDs) {
+            this.viewCtrl.dismiss({ "closeType": "submitted", "hkid_val": hkid_val });
+            console.log("IF");
+            return false;
+        }
+        else {
+            console.log("else");
+            this.viewCtrl.dismiss({ "closeType": "repeat", "hkid_val": hkid_val, "current_HKID": this.current_HKID });
+            /* this.viewCtrl.dismiss(this.current_HKID); */
+        }
+    };
+    OwnerHkidNumber = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-owner-hkid-number',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/owner-hkid-number/owner-hkid-number.html"*/`<ion-content class="main-view">\n  <!-- <div class="overlay" (click)="dismiss()"></div> -->\n  <div class="overlay"></div>\n  <div class="modal_content">\n    <ion-row class="modal_inner_content">\n      <ion-col col-12>\n        <p class="agree-title" text-center>Owner {{current_HKID}} Name</p>\n        <p class="agree-title" no-margin text-center>Please type your HKID number below (e.g. R123456)</p>\n      </ion-col>\n      <ion-col col-12>\n        <!-- <div class="form"> -->\n        <ion-item transparent no-padding>\n          <ion-label floating margin-top>身分證號碼 | HKID Number</ion-label>\n          <ion-input type="text" [(ngModel)]="hkid_val"></ion-input>\n        </ion-item>\n        <!-- </div> -->\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col text-center>\n        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="submitHKID(hkid_val)">Submit</button>\n      </ion-col>\n    </ion-row>\n  </div>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/owner-hkid-number/owner-hkid-number.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
+    ], OwnerHkidNumber);
+    return OwnerHkidNumber;
+}());
+
+//# sourceMappingURL=owner-hkid-number.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=14.js.map

@@ -1,1 +1,95 @@
-webpackJsonp([21],{257:function(l,n,u){"use strict";function e(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,45,"ion-content",[["class","main-view"]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,y.b,y.a)),t["ɵdid"](1,4374528,null,0,b.a,[g.a,h.a,C.a,t.ElementRef,t.Renderer,w.a,R.a,t.NgZone,[2,k.a],[2,A.a]],null,null),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](3,0,null,1,0,"div",[["class","overlay"]],null,[[null,"click"]],function(l,n,u){var e=!0;if("click"===n){e=!1!==l.component.dismiss()&&e}return e},null,null)),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](5,0,null,1,39,"div",[["class","modal_content"]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵeld"](7,0,null,null,16,"ion-row",[["class","modal_inner_content row"]],null,null,null,null,null)),t["ɵdid"](8,16384,null,0,_.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](10,0,null,null,5,"ion-col",[["class","col"],["col-12",""]],null,null,null,null,null)),t["ɵdid"](11,16384,null,0,x.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](13,0,null,null,1,"p",[["class","agree-title"],["text-center",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Agree to use your company's chop to appoint a Telos employee as a proxy : "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](17,0,null,null,5,"ion-col",[["class","col"],["col-12",""]],null,null,null,null,null)),t["ɵdid"](18,16384,null,0,x.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](20,0,null,null,1,"p",[],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n           \n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵeld"](25,0,null,null,18,"ion-row",[["class","row"]],null,null,null,null,null)),t["ɵdid"](26,16384,null,0,_.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](28,0,null,null,6,"ion-col",[["class","col"],["text-center",""]],null,null,null,null,null)),t["ɵdid"](29,16384,null,0,x.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](31,0,null,null,2,"button",[["button-clear-outline",""],["class","next-button login-button"],["color","mytheme"],["ion-button",""],["outline",""],["round",""]],null,[[null,"click"]],function(l,n,u){var e=!0;if("click"===n){e=!1!==l.component.dismiss()&&e}return e},D.b,D.a)),t["ɵdid"](32,1097728,null,0,E.a,[[8,""],g.a,t.ElementRef,t.Renderer],{color:[0,"color"],outline:[1,"outline"],round:[2,"round"]},null),(l()(),t["ɵted"](-1,0,["Decline"])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](36,0,null,null,6,"ion-col",[["class","col"],["text-center",""]],null,null,null,null,null)),t["ɵdid"](37,16384,null,0,x.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](39,0,null,null,2,"button",[["button-clear-outline",""],["class","next-button login-button"],["color","mytheme"],["ion-button",""],["outline",""],["round",""]],null,[[null,"click"]],function(l,n,u){var e=!0;if("click"===n){e=!1!==l.component.acceptAgreement()&&e}return e},D.b,D.a)),t["ɵdid"](40,1097728,null,0,E.a,[[8,""],g.a,t.ElementRef,t.Renderer],{color:[0,"color"],outline:[1,"outline"],round:[2,"round"]},null),(l()(),t["ɵted"](-1,0,["Accept"])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵted"](-1,1,["\n"]))],function(l,n){l(n,32,0,"mytheme","","");l(n,40,0,"mytheme","","")},function(l,n){l(n,0,0,t["ɵnov"](n,1).statusbarPadding,t["ɵnov"](n,1)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var t=u(0),o=(u(2),u(40),function(){function l(l,n,u,e){this.navCtrl=l,this.navParams=n,this.viewCtrl=u,this.modalCtrl=e}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad AgreeUseCompanyChop")},l.prototype.dismiss=function(){this.viewCtrl.dismiss("decline")},l.prototype.acceptAgreement=function(){this.viewCtrl.dismiss("accept")},l}()),d=function(){return function(){}}(),a=u(206),c=u(207),i=u(208),r=u(209),s=u(210),p=u(211),m=u(212),f=u(213),v=u(214),y=u(85),b=u(19),g=u(1),h=u(4),C=u(9),w=u(8),R=u(22),k=u(5),A=u(21),_=u(59),x=u(58),D=u(28),E=u(18),F=u(10),L=u(64),M=t["ɵcrt"]({encapsulation:2,styles:[],data:{}}),N=t["ɵccf"]("page-agree-use-company-chop",o,function(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"page-agree-use-company-chop",[],null,null,null,e,M)),t["ɵdid"](1,49152,null,0,o,[A.a,F.a,k.a,L.a],null,null)],null,null)},{},{},[]),P=u(15),j=u(16),O=u(129),U=u(41);u.d(n,"AgreeUseCompanyChopModuleNgFactory",function(){return V});var V=t["ɵcmf"](d,[],function(l){return t["ɵmod"]([t["ɵmpd"](512,t.ComponentFactoryResolver,t["ɵCodegenComponentFactoryResolver"],[[8,[a.a,c.a,i.a,r.a,s.a,p.a,m.a,f.a,v.a,N]],[3,t.ComponentFactoryResolver],t.NgModuleRef]),t["ɵmpd"](4608,P.k,P.j,[t.LOCALE_ID,[2,P.s]]),t["ɵmpd"](4608,j.r,j.r,[]),t["ɵmpd"](4608,j.d,j.d,[]),t["ɵmpd"](512,P.b,P.b,[]),t["ɵmpd"](512,j.p,j.p,[]),t["ɵmpd"](512,j.e,j.e,[]),t["ɵmpd"](512,j.n,j.n,[]),t["ɵmpd"](512,O.a,O.a,[]),t["ɵmpd"](512,O.b,O.b,[]),t["ɵmpd"](512,d,d,[]),t["ɵmpd"](256,U.a,o,[])])})}});
+webpackJsonp([21],{
+
+/***/ 295:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgreeUseCompanyChopModule", function() { return AgreeUseCompanyChopModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__agree_use_company_chop__ = __webpack_require__(317);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var AgreeUseCompanyChopModule = (function () {
+    function AgreeUseCompanyChopModule() {
+    }
+    AgreeUseCompanyChopModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__agree_use_company_chop__["a" /* AgreeUseCompanyChop */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__agree_use_company_chop__["a" /* AgreeUseCompanyChop */]),
+            ],
+        })
+    ], AgreeUseCompanyChopModule);
+    return AgreeUseCompanyChopModule;
+}());
+
+//# sourceMappingURL=agree-use-company-chop.module.js.map
+
+/***/ }),
+
+/***/ 317:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgreeUseCompanyChop; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/* import { SignaturePadPage } from '../../pages/signature-pad-page/signature-pad-page'; */
+var AgreeUseCompanyChop = (function () {
+    function AgreeUseCompanyChop(navCtrl, navParams, viewCtrl, modalCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.modalCtrl = modalCtrl;
+    }
+    AgreeUseCompanyChop.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AgreeUseCompanyChop');
+    };
+    AgreeUseCompanyChop.prototype.dismiss = function () {
+        this.viewCtrl.dismiss("decline");
+    };
+    AgreeUseCompanyChop.prototype.acceptAgreement = function () {
+        /* let myModal = this.modalCtrl.create(SignaturePadPage, {
+          "signatures": 2,
+          "current_signature": 1
+        });
+        myModal.present(); */
+        this.viewCtrl.dismiss("accept");
+    };
+    AgreeUseCompanyChop = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-agree-use-company-chop',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/agree-use-company-chop/agree-use-company-chop.html"*/`<ion-content class="main-view">\n  <div class="overlay" (click)="dismiss()"></div>\n  <div class="modal_content">\n    <ion-row class="modal_inner_content">\n      <ion-col col-12>\n        <p class="agree-title" text-center>Agree to use your company\'s chop to appoint a Telos employee as a proxy : </p>\n      </ion-col>\n      <ion-col col-12>\n        <p>\n          &nbsp;\n        </p>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col text-center>\n        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="dismiss()">Decline</button>\n      </ion-col>\n      <ion-col text-center>\n        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="acceptAgreement()">Accept</button>\n      </ion-col>\n    </ion-row>\n  </div>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/agree-use-company-chop/agree-use-company-chop.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
+    ], AgreeUseCompanyChop);
+    return AgreeUseCompanyChop;
+}());
+
+//# sourceMappingURL=agree-use-company-chop.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=21.js.map

@@ -1,1 +1,84 @@
-webpackJsonp([9],{259:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,20,"ion-header",[],null,null,null,null,null)),t["ɵdid"](1,16384,null,0,k.a,[h.a,t.ElementRef,t.Renderer,[2,E.a]],null,null),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵeld"](3,0,null,null,16,"ion-navbar",[["class","toolbar"],["header-color",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,y.b,y.a)),t["ɵdid"](4,49152,null,0,_.a,[C.a,[2,E.a],[2,D.a],h.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,3,["\n    "])),(l()(),t["ɵeld"](6,0,null,0,8,"button",[["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==t["ɵnov"](l,8).toggle()&&u}return u},M.b,M.a)),t["ɵdid"](7,1097728,[[1,4]],0,x.a,[[8,""],h.a,t.ElementRef,t.Renderer],null,null),t["ɵdid"](8,1064960,null,0,V.a,[I.a,[2,E.a],[2,x.a],[2,_.a]],{menuToggle:[0,"menuToggle"]},null),t["ɵdid"](9,16384,null,1,P.a,[h.a,t.ElementRef,t.Renderer,[2,T.a],[2,_.a]],null,null),t["ɵqud"](603979776,1,{_buttons:1}),(l()(),t["ɵted"](-1,0,["\n      "])),(l()(),t["ɵeld"](12,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t["ɵdid"](13,147456,null,0,q.a,[h.a,t.ElementRef,t.Renderer],{name:[0,"name"]},null),(l()(),t["ɵted"](-1,0,["\n    "])),(l()(),t["ɵted"](-1,3,["\n    "])),(l()(),t["ɵeld"](16,0,null,3,2,"ion-title",[["text-left",""]],null,null,null,w.b,w.a)),t["ɵdid"](17,49152,null,0,K.a,[h.a,t.ElementRef,t.Renderer,[2,T.a],[2,_.a]],null,null),(l()(),t["ɵted"](-1,0,["會議 | Meetings"])),(l()(),t["ɵted"](-1,3,["\n  "])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵeld"](23,0,null,null,63,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,L.b,L.a)),t["ɵdid"](24,4374528,null,0,F.a,[h.a,U.a,N.a,t.ElementRef,t.Renderer,C.a,j.a,t.NgZone,[2,E.a],[2,D.a]],null,null),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](26,0,null,1,59,"ion-row",[["class","row"],["margin-bottom",""]],null,null,null,null,null)),t["ɵdid"](27,16384,null,0,B.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵeld"](29,0,null,null,55,"ion-col",[["class","col"],["col-12",""]],null,null,null,null,null)),t["ɵdid"](30,16384,null,0,O.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](32,0,null,null,51,"ul",[["class","collapsible"],["no-margin",""],["no-padding",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](34,0,null,null,23,"li",[["no-margin",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](36,0,null,null,20,"ion-card",[],null,null,null,null,null)),t["ɵdid"](37,16384,null,0,S.a,[h.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](39,0,null,null,16,"div",[["class","collapsible-header"],["no-margin",""],["no-padding",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.goToUpcomingMeetings()&&u}return u},null,null)),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](41,0,null,null,13,"ion-item",[["class","item item-block"],["no-lines",""],["no-padding",""],["padding",""],["text-center",""],["transparent",""]],null,null,null,A.b,A.a)),t["ɵdid"](42,1097728,null,3,H.a,[J.a,h.a,t.ElementRef,t.Renderer,[2,W.a]],null,null),t["ɵqud"](335544320,2,{contentLabel:0}),t["ɵqud"](603979776,3,{_buttons:1}),t["ɵqud"](603979776,4,{_icons:1}),t["ɵdid"](46,16384,null,0,Z.a,[],null,null),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](48,0,null,1,5,"ion-label",[["style","margin-right: 0; margin-left: 0;"]],null,null,null,null,null)),t["ɵdid"](49,16384,[[2,4]],0,z.a,[h.a,t.ElementRef,t.Renderer,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),t["ɵted"](-1,null,["\n                  "])),(l()(),t["ɵeld"](51,0,null,null,1,"h2",[["class","survey-title-text"],["color-1d1d26",""],["no-margin",""],["text-center",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["近期會議 | Upcoming Meetings"])),(l()(),t["ɵted"](-1,null,["\n                "])),(l()(),t["ɵted"](-1,2,["\n              "])),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](59,0,null,null,23,"li",[["no-margin",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](61,0,null,null,20,"ion-card",[],null,null,null,null,null)),t["ɵdid"](62,16384,null,0,S.a,[h.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](64,0,null,null,16,"div",[["class","collapsible-header"],["no-margin",""],["no-padding",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.goToPastMeetings()&&u}return u},null,null)),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](66,0,null,null,13,"ion-item",[["class","item item-block"],["no-lines",""],["no-padding",""],["padding",""],["text-center",""],["transparent",""]],null,null,null,A.b,A.a)),t["ɵdid"](67,1097728,null,3,H.a,[J.a,h.a,t.ElementRef,t.Renderer,[2,W.a]],null,null),t["ɵqud"](335544320,5,{contentLabel:0}),t["ɵqud"](603979776,6,{_buttons:1}),t["ɵqud"](603979776,7,{_icons:1}),t["ɵdid"](71,16384,null,0,Z.a,[],null,null),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](73,0,null,1,5,"ion-label",[["style","margin-right: 0; margin-left: 0;"]],null,null,null,null,null)),t["ɵdid"](74,16384,[[5,4]],0,z.a,[h.a,t.ElementRef,t.Renderer,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),t["ɵted"](-1,null,["\n                  "])),(l()(),t["ɵeld"](76,0,null,null,1,"h2",[["class","survey-title-text"],["color-1d1d26",""],["no-margin",""],["text-center",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["過往會議 | Past Meetings"])),(l()(),t["ɵted"](-1,null,["\n                "])),(l()(),t["ɵted"](-1,2,["\n              "])),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵted"](-1,1,["\n"]))],function(l,n){l(n,8,0,"");l(n,13,0,"menu")},function(l,n){l(n,3,0,t["ɵnov"](n,4)._hidden,t["ɵnov"](n,4)._sbPadding);l(n,6,0,t["ɵnov"](n,8).isHidden);l(n,12,0,t["ɵnov"](n,13)._hidden);l(n,23,0,t["ɵnov"](n,24).statusbarPadding,t["ɵnov"](n,24)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var t=e(0),a=(e(2),e(40),e(62)),d=e(63),o=e(61),i=function(){function l(l,n,e,u,t){this.navCtrl=l,this.navParams=n,this.loadingService=e,this.dataService=u,this.showMessage=t,this.currentMeetings=[]}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad IdVerification1")},l.prototype.ionViewWillEnter=function(){},l.prototype.goToUpcomingMeetings=function(){this.navCtrl.push("UpcomingMeetings")},l.prototype.goToPastMeetings=function(){this.navCtrl.push("PastMeetings")},l}(),r=function(){return function(){}}(),s=e(206),c=e(207),f=e(208),m=e(209),g=e(210),b=e(211),p=e(212),R=e(213),v=e(214),k=e(86),h=e(1),E=e(5),y=e(279),_=e(46),C=e(8),D=e(21),M=e(28),x=e(18),V=e(132),I=e(23),P=e(133),T=e(60),q=e(36),w=e(280),K=e(130),L=e(85),F=e(19),U=e(4),N=e(9),j=e(22),B=e(59),O=e(58),S=e(131),A=e(87),H=e(13),J=e(12),W=e(37),Z=e(47),z=e(42),G=e(10),Q=t["ɵcrt"]({encapsulation:2,styles:[],data:{}}),X=t["ɵccf"]("page-all-meetings",i,function(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"page-all-meetings",[],null,null,null,u,Q)),t["ɵdid"](1,49152,null,0,i,[D.a,G.a,a.a,d.a,o.a],null,null)],null,null)},{},{},[]),Y=e(15),$=e(16),ll=e(129),nl=e(41);e.d(n,"IdVerification2ModuleNgFactory",function(){return el});var el=t["ɵcmf"](r,[],function(l){return t["ɵmod"]([t["ɵmpd"](512,t.ComponentFactoryResolver,t["ɵCodegenComponentFactoryResolver"],[[8,[s.a,c.a,f.a,m.a,g.a,b.a,p.a,R.a,v.a,X]],[3,t.ComponentFactoryResolver],t.NgModuleRef]),t["ɵmpd"](4608,Y.k,Y.j,[t.LOCALE_ID,[2,Y.s]]),t["ɵmpd"](4608,$.r,$.r,[]),t["ɵmpd"](4608,$.d,$.d,[]),t["ɵmpd"](512,Y.b,Y.b,[]),t["ɵmpd"](512,$.p,$.p,[]),t["ɵmpd"](512,$.e,$.e,[]),t["ɵmpd"](512,$.n,$.n,[]),t["ɵmpd"](512,ll.a,ll.a,[]),t["ɵmpd"](512,ll.b,ll.b,[]),t["ɵmpd"](512,r,r,[]),t["ɵmpd"](256,nl.a,i,[])])})},279:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),t["ɵdid"](1,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵeld"](2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.backButtonClick(e)&&u}return u},d.b,d.a)),t["ɵdid"](3,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](4,1097728,null,0,o.a,[[8,"bar-button"],i.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵeld"](5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t["ɵdid"](6,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](7,147456,null,0,r.a,[i.a,t.ElementRef,t.Renderer],{name:[0,"name"]},null),(l()(),t["ɵeld"](8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),t["ɵdid"](9,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵted"](10,null,["",""])),t["ɵncd"](null,0),t["ɵncd"](null,1),t["ɵncd"](null,2),(l()(),t["ɵeld"](14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),t["ɵdid"](15,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵncd"](null,3)],function(l,n){var e=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+e._mode);l(n,3,0,"back-button","back-button-"+e._mode);l(n,6,0,"back-button-icon","back-button-icon-"+e._mode);l(n,7,0,e._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+e._mode);l(n,15,0,"toolbar-content","toolbar-content-"+e._mode)},function(l,n){var e=n.component;l(n,2,0,e._hideBb);l(n,5,0,t["ɵnov"](n,7)._hidden);l(n,10,0,e._backText)})}e.d(n,"a",function(){return s}),n.b=u;var t=e(0),a=e(15),d=e(28),o=e(18),i=e(1),r=e(36),s=(e(46),e(5),e(21),t["ɵcrt"]({encapsulation:2,styles:[],data:{}}))},280:function(l,n,e){"use strict";function u(l){return t["ɵvid"](2,[(l()(),t["ɵeld"](0,0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),t["ɵdid"](1,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵncd"](null,0)],function(l,n){l(n,1,0,"toolbar-title","toolbar-title-"+n.component._mode)},null)}e.d(n,"a",function(){return d}),n.b=u;var t=e(0),a=e(15),d=(e(130),e(1),e(60),e(46),t["ɵcrt"]({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([9],{
+
+/***/ 307:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterModule", function() { return RegisterModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(329);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var RegisterModule = (function () {
+    function RegisterModule() {
+    }
+    RegisterModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__register__["a" /* Register */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__register__["a" /* Register */]),
+            ],
+        })
+    ], RegisterModule);
+    return RegisterModule;
+}());
+
+//# sourceMappingURL=register.module.js.map
+
+/***/ }),
+
+/***/ 329:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Register; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Register = (function () {
+    function Register(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    Register.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Register');
+    };
+    Register.prototype.goToPersonalDetails = function () {
+        this.navCtrl.push("PersonalDetails");
+    };
+    Register = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-register',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/register/register.html"*/`<ion-header>\n  <ion-navbar header-color>\n  </ion-navbar>\n</ion-header>\n<ion-content background-size default-background>\n  <ion-grid>\n    <ion-row wrap padding>\n      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 no-padding>\n        <div class="form">\n          <h1 title>註冊 | Register</h1>\n          <ion-row>\n            <ion-col class="p-l-r-10 p-t-b-0">\n              <ion-item transparent no-padding>\n                <ion-label floating margin-top>用戶名 | USERNAME</ion-label>\n                <ion-input required type="text"></ion-input>\n              </ion-item>\n              <ion-item transparent no-padding>\n                <ion-label floating margin-top>密碼 | PASSWORD</ion-label>\n                <ion-input required type="password"></ion-input>\n              </ion-item>\n              <ion-item transparent no-padding>\n                <ion-label floating margin-top>再次輸入密碼 | RE-ENTER PASSWORD</ion-label>\n                <ion-input required type="password"></ion-input>\n              </ion-item>\n              <ion-row margin-top>\n                <ion-col text-center margin-top padding-top>\n                  <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="goToPersonalDetails()">下一頁 | Next</button>\n                </ion-col>\n              </ion-row>\n            </ion-col>\n          </ion-row>\n        </div>\n        <!-- <div logo>\n            <img left src="./assets/images/logo/login_3.png">\n          </div> -->\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/register/register.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
+    ], Register);
+    return Register;
+}());
+
+//# sourceMappingURL=register.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=9.js.map

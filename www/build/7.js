@@ -1,1 +1,200 @@
-webpackJsonp([7],{266:function(l,n,e){"use strict";function t(l){return a["ɵvid"](0,[(l()(),a["ɵeld"](0,0,null,null,46,"ion-col",[["class","col"],["col-12",""],["col-lg-4",""],["col-md-6",""],["col-sm-6",""],["col-xl-4",""]],null,[[null,"click"]],function(l,n,e){var t=!0;if("click"===n){t=!1!==l.component.goToViewMeetingDetails(l.context.$implicit)&&t}return t},null,null)),a["ɵdid"](1,16384,null,0,R.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n        "])),(l()(),a["ɵeld"](3,0,null,null,42,"ion-card",[["text-left",""]],null,null,null,null,null)),a["ɵdid"](4,16384,null,0,k.a,[y.a,a.ElementRef,a.Renderer],null,null),(l()(),a["ɵted"](-1,null,["\n          "])),(l()(),a["ɵeld"](6,0,null,null,6,"div",[["card-image",""]],null,null,null,null,null)),(l()(),a["ɵted"](-1,null,["\n            "])),(l()(),a["ɵeld"](8,0,null,null,0,"img",[["images-filter",""]],[[8,"src",4]],null,null,null,null)),(l()(),a["ɵted"](-1,null,["\n            "])),(l()(),a["ɵeld"](10,0,null,null,1,"h2",[["card-title",""]],null,null,null,null,null)),(l()(),a["ɵted"](11,null,[""," | ",""])),(l()(),a["ɵted"](-1,null,["\n          "])),(l()(),a["ɵted"](-1,null,["\n          "])),(l()(),a["ɵeld"](14,0,null,null,30,"ion-card-content",[],null,null,null,null,null)),a["ɵdid"](15,16384,null,0,C.a,[y.a,a.ElementRef,a.Renderer],null,null),(l()(),a["ɵted"](-1,null,["\n            "])),(l()(),a["ɵeld"](17,0,null,null,1,"p",[["card-body-text",""]],null,null,null,null,null)),(l()(),a["ɵted"](18,null,["",""])),(l()(),a["ɵted"](-1,null,["\n            "])),(l()(),a["ɵeld"](20,0,null,null,23,"ion-row",[["class","row"],["margin-top",""],["padding-top",""]],null,null,null,null,null)),a["ɵdid"](21,16384,null,0,D.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵeld"](23,0,null,null,5,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),a["ɵdid"](24,16384,null,0,R.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n                "])),(l()(),a["ɵeld"](26,0,null,null,1,"p",[["card-body-text",""],["class","footer-card-txt"]],null,null,null,null,null)),(l()(),a["ɵted"](-1,null,["Meeting Date & Time:"])),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵeld"](30,0,null,null,5,"ion-col",[["class","col"],["col-3",""],["no-padding",""]],null,null,null,null,null)),a["ɵdid"](31,16384,null,0,R.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n                "])),(l()(),a["ɵeld"](33,0,null,null,1,"p",[["card-body-text",""],["class","footer-card-txt"]],null,null,null,null,null)),(l()(),a["ɵted"](-1,null,["Verdict:"])),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵeld"](37,0,null,null,5,"ion-col",[["class","col"],["col-3",""],["no-padding",""]],null,null,null,null,null)),a["ɵdid"](38,16384,null,0,R.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n                "])),(l()(),a["ɵeld"](40,0,null,null,1,"p",[["card-body-text",""],["class","footer-card-txt"]],null,null,null,null,null)),(l()(),a["ɵted"](-1,null,["Voted:"])),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵted"](-1,null,["\n            "])),(l()(),a["ɵted"](-1,null,["\n          "])),(l()(),a["ɵted"](-1,null,["\n        "])),(l()(),a["ɵted"](-1,null,["\n      "]))],null,function(l,n){l(n,8,0,n.context.$implicit.meeting_background);l(n,11,0,n.context.$implicit.meeting_titleChn,n.context.$implicit.meeting_title);l(n,18,0,n.context.$implicit.meeting_desc)})}function u(l){return a["ɵvid"](0,[(l()(),a["ɵeld"](0,0,null,null,10,"ion-header",[],null,null,null,null,null)),a["ɵdid"](1,16384,null,0,M.a,[y.a,a.ElementRef,a.Renderer,[2,x.a]],null,null),(l()(),a["ɵted"](-1,null,["\n  "])),(l()(),a["ɵeld"](3,0,null,null,6,"ion-navbar",[["class","toolbar"],["header-color",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,E.b,E.a)),a["ɵdid"](4,49152,null,0,w.a,[V.a,[2,x.a],[2,S.a],y.a,a.ElementRef,a.Renderer],null,null),(l()(),a["ɵted"](-1,3,["\n    "])),(l()(),a["ɵeld"](6,0,null,3,2,"ion-title",[["text-left",""]],null,null,null,T.b,T.a)),a["ɵdid"](7,49152,null,0,I.a,[y.a,a.ElementRef,a.Renderer,[2,P.a],[2,w.a]],null,null),(l()(),a["ɵted"](-1,0,[" 過往會議 | Past Meetings"])),(l()(),a["ɵted"](-1,3,["\n  "])),(l()(),a["ɵted"](-1,null,["\n"])),(l()(),a["ɵted"](-1,null,["\n\n"])),(l()(),a["ɵeld"](12,0,null,null,13,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,L.b,L.a)),a["ɵdid"](13,4374528,null,0,N.a,[y.a,F.a,K.a,a.ElementRef,a.Renderer,V.a,O.a,a.NgZone,[2,x.a],[2,S.a]],null,null),(l()(),a["ɵted"](-1,1,["\n  "])),(l()(),a["ɵeld"](15,0,null,1,9,"ion-grid",[["class","grid"],["no-padding",""]],null,null,null,null,null)),a["ɵdid"](16,16384,null,0,$.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n    "])),(l()(),a["ɵeld"](18,0,null,null,5,"ion-row",[["class","row"],["margin-bottom",""]],null,null,null,null,null)),a["ɵdid"](19,16384,null,0,D.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n      "])),(l()(),a["ɵand"](16777216,null,null,1,null,t)),a["ɵdid"](22,802816,null,0,B.h,[a.ViewContainerRef,a.TemplateRef,a.IterableDiffers],{ngForOf:[0,"ngForOf"]},null),(l()(),a["ɵted"](-1,null,["\n    "])),(l()(),a["ɵted"](-1,null,["\n  "])),(l()(),a["ɵted"](-1,1,["\n"]))],function(l,n){l(n,22,0,n.component.past_meeting_list)},function(l,n){l(n,3,0,a["ɵnov"](n,4)._hidden,a["ɵnov"](n,4)._sbPadding);l(n,12,0,a["ɵnov"](n,13).statusbarPadding,a["ɵnov"](n,13)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var a=e(0),i=(e(2),e(40),e(62)),o=e(63),d=e(61),s=function(){function l(l,n,e,t,u){this.navCtrl=l,this.navParams=n,this.loadingService=e,this.dataService=t,this.showMessage=u,this.past_meeting_list=[],this.pastMeetings=[],this.loginResponse={},this.loginResponse=JSON.parse(localStorage.getItem("loginResponse"))}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad PastMeetings")},l.prototype.ionViewWillEnter=function(){this.getPastMeetingsData()},l.prototype.getPastMeetingsData=function(){var l=this;this.loadingService.showLoading(),this.dataService.postData("pastMeetings",{estateName:this.loginResponse.user.estateName},{}).subscribe(function(n){if(1==n.success){l.pastMeetings=n.pastMeetings;var e=l;e.past_meeting_list=[],l.pastMeetings.forEach(function(l,n){e.past_meeting_list.push({meeting_id:l._id,meeting_title:l.title,meeting_titleChn:l.titleChn,meeting_desc:l.meetingSummaryChn+" | "+l.meetingSummary,meeting_startTime:l.startTime,meeting_endTime:l.startTime,meeting_venue:l.venue,meeting_fileLinks:l.fileLinks,meeting_pollEndTime:l.pollEndTime,meeting_polls:l.polls,meeting_background:"./assets/images/background/"+(n+1)+".jpg"})}),l.loadingService.hideLoading()}else l.showMessage.showToastBottom(n.message),l.loadingService.hideLoading()},function(n){console.log("err",n),l.loadingService.hideLoading(),l.showMessage.showToastBottom("Unable to get Past meetings, please try again.")})},l.prototype.goToViewMeetingDetails=function(l){console.log(l);var n=JSON.stringify(l);localStorage.setItem("meeting_details",n),this.navCtrl.push("ViewPastMeetingDetails",{meeting_details:n})},l}(),r=function(){return function(){}}(),c=e(206),g=e(207),m=e(208),f=e(209),p=e(210),b=e(211),h=e(212),v=e(213),_=e(214),R=e(58),k=e(131),y=e(1),C=e(138),D=e(59),M=e(86),x=e(5),E=e(279),w=e(46),V=e(8),S=e(21),T=e(280),I=e(130),P=e(60),L=e(85),N=e(19),F=e(4),K=e(9),O=e(22),$=e(88),B=e(15),j=e(10),J=a["ɵcrt"]({encapsulation:2,styles:[],data:{}}),A=a["ɵccf"]("page-past-meetings",s,function(l){return a["ɵvid"](0,[(l()(),a["ɵeld"](0,0,null,null,1,"page-past-meetings",[],null,null,null,u,J)),a["ɵdid"](1,49152,null,0,s,[S.a,j.a,i.a,o.a,d.a],null,null)],null,null)},{},{},[]),U=e(16),W=e(129),Z=e(41);e.d(n,"PastMeetingsModuleNgFactory",function(){return q});var q=a["ɵcmf"](r,[],function(l){return a["ɵmod"]([a["ɵmpd"](512,a.ComponentFactoryResolver,a["ɵCodegenComponentFactoryResolver"],[[8,[c.a,g.a,m.a,f.a,p.a,b.a,h.a,v.a,_.a,A]],[3,a.ComponentFactoryResolver],a.NgModuleRef]),a["ɵmpd"](4608,B.k,B.j,[a.LOCALE_ID,[2,B.s]]),a["ɵmpd"](4608,U.r,U.r,[]),a["ɵmpd"](4608,U.d,U.d,[]),a["ɵmpd"](512,B.b,B.b,[]),a["ɵmpd"](512,U.p,U.p,[]),a["ɵmpd"](512,U.e,U.e,[]),a["ɵmpd"](512,U.n,U.n,[]),a["ɵmpd"](512,W.a,W.a,[]),a["ɵmpd"](512,W.b,W.b,[]),a["ɵmpd"](512,r,r,[]),a["ɵmpd"](256,Z.a,s,[])])})},279:function(l,n,e){"use strict";function t(l){return u["ɵvid"](0,[(l()(),u["ɵeld"](0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),u["ɵdid"](1,278528,null,0,a.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),u["ɵeld"](2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var t=!0;if("click"===n){t=!1!==l.component.backButtonClick(e)&&t}return t},i.b,i.a)),u["ɵdid"](3,278528,null,0,a.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u["ɵdid"](4,1097728,null,0,o.a,[[8,"bar-button"],d.a,u.ElementRef,u.Renderer],null,null),(l()(),u["ɵeld"](5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),u["ɵdid"](6,278528,null,0,a.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u["ɵdid"](7,147456,null,0,s.a,[d.a,u.ElementRef,u.Renderer],{name:[0,"name"]},null),(l()(),u["ɵeld"](8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),u["ɵdid"](9,278528,null,0,a.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),u["ɵted"](10,null,["",""])),u["ɵncd"](null,0),u["ɵncd"](null,1),u["ɵncd"](null,2),(l()(),u["ɵeld"](14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),u["ɵdid"](15,278528,null,0,a.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u["ɵncd"](null,3)],function(l,n){var e=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+e._mode);l(n,3,0,"back-button","back-button-"+e._mode);l(n,6,0,"back-button-icon","back-button-icon-"+e._mode);l(n,7,0,e._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+e._mode);l(n,15,0,"toolbar-content","toolbar-content-"+e._mode)},function(l,n){var e=n.component;l(n,2,0,e._hideBb);l(n,5,0,u["ɵnov"](n,7)._hidden);l(n,10,0,e._backText)})}e.d(n,"a",function(){return r}),n.b=t;var u=e(0),a=e(15),i=e(28),o=e(18),d=e(1),s=e(36),r=(e(46),e(5),e(21),u["ɵcrt"]({encapsulation:2,styles:[],data:{}}))},280:function(l,n,e){"use strict";function t(l){return u["ɵvid"](2,[(l()(),u["ɵeld"](0,0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),u["ɵdid"](1,278528,null,0,a.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u["ɵncd"](null,0)],function(l,n){l(n,1,0,"toolbar-title","toolbar-title-"+n.component._mode)},null)}e.d(n,"a",function(){return i}),n.b=t;var u=e(0),a=e(15),i=(e(130),e(1),e(60),e(46),u["ɵcrt"]({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([7],{
+
+/***/ 310:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SurveysModule", function() { return SurveysModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__surveys__ = __webpack_require__(332);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var SurveysModule = (function () {
+    function SurveysModule() {
+    }
+    SurveysModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__surveys__["a" /* Surveys */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__surveys__["a" /* Surveys */]),
+            ],
+        })
+    ], SurveysModule);
+    return SurveysModule;
+}());
+
+//# sourceMappingURL=surveys.module.js.map
+
+/***/ }),
+
+/***/ 332:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Surveys; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_data_service__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_show_message__ = __webpack_require__(104);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var Surveys = (function () {
+    function Surveys(navCtrl, navParams, loadingService, dataService, showMessage) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.loadingService = loadingService;
+        this.dataService = dataService;
+        this.showMessage = showMessage;
+        this.group_list = [];
+        this.survey_list = [];
+        this.survey_details = {};
+        this.questionsArray = [];
+        this.loginResponse = {};
+        this.survey_details = JSON.parse(this.navParams.get("survey_details"));
+        this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
+        console.log(this.survey_details);
+        /* this.getStaticData(); */
+    }
+    Surveys.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Surveys');
+    };
+    Surveys.prototype.toggleGroup1 = function (group, i, survey_details) {
+        console.log(group);
+        var tmp_group_list = survey_details.question;
+        for (var j = 0; j < tmp_group_list.length; j++) {
+            if (j == i) {
+                /* tmp_group_list[j].show = true; */
+                if (tmp_group_list[j].show == true) {
+                    tmp_group_list[j].show = false;
+                }
+                else {
+                    tmp_group_list[j].show = true;
+                }
+            }
+            else {
+                tmp_group_list[j].show = false;
+            }
+        }
+        /* group.show = !group.show; */
+    };
+    Surveys.prototype.toggleGroup = function (group) {
+        group.show = !group.show;
+    };
+    Surveys.prototype.isGroupShown = function (group) {
+        return group.show;
+    };
+    Surveys.prototype.submitData = function (group_list) {
+        /* group.is_complete = true; */
+        this.questionsArray = [];
+        console.log(group_list);
+        /* for (let i = 0; i < group.length; i++) {
+          console.log(group[i]);
+          let tmp_option_list = group[i].option_list;
+          for (let j = 0; j < tmp_option_list.length; j++) {
+            if (tmp_option_list[j].is_checked == true) {
+              console.log("TRUE");
+              group[i].is_complete = true;
+              j++;
+            }
+            else {
+              console.log("FALSE");
+              group[i].is_complete = false;
+            }
+          }
+        } */
+        for (var l = 0; l < group_list.length; l++) {
+            var element = group_list[l];
+            if (!element.is_complete || element.is_complete == false) {
+                console.log(element);
+                this.showMessage.showToastBottom("Please answer each question.");
+                return false;
+            }
+            console.log("element", element);
+            this.questionsArray.push({ "questionId": element.optionIds[element.is_complete - 1].questionId, "optionId": element.optionIds[element.is_complete - 1]._id });
+        }
+        console.log("this.questionsArray", this.questionsArray);
+        /* this.showMessage.showToastBottom("Answers saved successfully!"); */
+        this.saveSurveyData(this.questionsArray);
+    };
+    Surveys.prototype.saveSurveyData = function (questionsArray) {
+        var _this = this;
+        var request_data = {
+            surveyId: this.survey_details._id,
+            questions: questionsArray,
+            userId: this.loginResponse.user._id
+        };
+        this.loadingService.showLoading();
+        this.dataService.postData("submitSurveys", request_data, {}).subscribe(function (results) {
+            if (results.success == true) {
+                _this.showMessage.showToastBottom(results.message);
+                _this.loadingService.hideLoading();
+            }
+            else {
+                _this.showMessage.showToastBottom(results.message);
+                _this.loadingService.hideLoading();
+            }
+        }, function (err) {
+            console.log("err", err);
+            _this.loadingService.hideLoading();
+            _this.showMessage.showToastBottom("Unable to save survey data, please try again.");
+        });
+    };
+    Surveys.prototype.valueChanged = function (group, i, survey_details) {
+        console.log(group);
+        console.log(i);
+        console.log(survey_details);
+        /* for (let j = 0; j < survey_details.length; j++) {
+          console.log(survey_details[j].is_complete);
+        } */
+        if (group.is_complete && group.is_complete > 0) {
+            this.toggleGroup(group);
+            var tmp_group_list = survey_details.question;
+            i++;
+            console.log(i);
+            console.log(tmp_group_list.length);
+            if (i < tmp_group_list.length) {
+                this.toggleGroup(tmp_group_list[i]);
+            }
+        }
+    };
+    Surveys = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-surveys',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/surveys/surveys.html"*/`<ion-header>\n  <ion-navbar header-color>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-left>{{survey_details.titleChn}} | {{survey_details.title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-row margin-bottom>\n    <ion-col col-12>\n      <ion-row padding>\n        <ion-col col-12 no-padding>\n          <p color-1d1d26 style="font-size: 16px !important;" no-margin>Survey Title: {{survey_details.titleChn}} | {{survey_details.title}}</p>\n          <p color-1d1d26 style="font-size: 16px !important;" no-margin>Complete By: {{survey_details.effectiveTo}}</p>\n        </ion-col>\n      </ion-row>\n      <ion-list>\n        <ul no-margin no-padding class="collapsible">\n          <li no-margin *ngFor="let group of survey_details.question; let i=index;">\n            <ion-card transparent>\n              <!-- Expandable Centered with header Header-->\n              <div class="collapsible-header" no-margin no-padding (click)="toggleGroup1(group, i, survey_details)">\n                <ion-item color-1d1d26 no-padding text-center transparent no-lines text-center>\n                  <h2 color-1d1d26 text-center item-title>{{group.questionChn}} | {{group.questionEn}}</h2>\n                  <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="group.is_complete">\n                  </ion-icon>\n                </ion-item>\n              </div>\n              <!-- Expandable Centered with header Body -->\n              <div class="item-accordion" transparent [ngClass]="{\'active\': isGroupShown(group) }" [hidden]="!isGroupShown(group)">\n\n                <ion-list radio-group transparent [(ngModel)]="group.is_complete" (ionChange)="valueChanged(group, i, survey_details)">\n                  <ion-card no-margin transparent c-width-100 *ngFor="let option_details of group.optionIds; let k=index;" style="box-shadow: none;">\n                    <ion-item color-1d1d26 transparent text-wrap>\n                      <ion-label margin-vertical item-title>\n                        <p color-1d1d26 under-line>{{option_details.optionNameChn}} | {{option_details.optionNameEn}}</p>\n                        <p color-1d1d26 *ngFor="let option_data of option_details.optionsChn;">{{option_data.key}} : {{option_data.value}}</p>\n                        <p color-1d1d26 *ngFor="let option_data of option_details.optionsEn;">{{option_data.key}} : {{option_data.value}}</p>\n                      </ion-label>\n                      <!-- <ion-checkbox [(ngModel)]="option_details.is_checked" (ionChange)="valueChanged($event, group, i, k, survey_details)"></ion-checkbox> -->\n                      <ion-radio item-left [value]="k+1" color="mytheme"></ion-radio>\n                    </ion-item>\n                  </ion-card>\n                </ion-list>\n              </div>\n            </ion-card>\n          </li>\n        </ul>\n      </ion-list>\n      <ion-row margin-vertical>\n        <ion-col text-center margin-top padding-horizontal>\n          <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="submitData(survey_details.question)">確定 | Submit</button>\n        </ion-col>\n      </ion-row>\n    </ion-col>\n  </ion-row>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/surveys/surveys.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__["a" /* LoadingService */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_data_service__["a" /* DataService */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_show_message__["a" /* ShowMessage */]])
+    ], Surveys);
+    return Surveys;
+}());
+
+//# sourceMappingURL=surveys.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=7.js.map
