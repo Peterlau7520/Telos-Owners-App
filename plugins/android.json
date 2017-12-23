@@ -13,6 +13,12 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.ionicframework.telos782183"
         },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ionicframework.telos782183"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.ionicframework.telos782183"
+        },
         "cordova-plugin-ionic-webview": {
             "PACKAGE_NAME": "com.ionicframework.telos782183"
         },
