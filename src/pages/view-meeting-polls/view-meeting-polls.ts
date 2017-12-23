@@ -9,6 +9,7 @@ import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-vi
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
 import { ShowMessage } from '../../providers/show-message';
+import { HomePage } from '../../pages/home/home';
 /* import { SignaturePageModal } from '../../pages/signature-page-modal/signature-page-modal'; */
 
 @IonicPage()
@@ -41,6 +42,7 @@ export class ViewMeetingPolls {
 
   poll_list: any = [];
   browser: any;
+  token: any = "";
 
   constructor(public element: ElementRef, public renderer: Renderer, public navCtrl: NavController, public navParams: NavParams,
     public modalCtrl: ModalController,
@@ -53,6 +55,7 @@ export class ViewMeetingPolls {
     private showMessage: ShowMessage) {
     this.meeting_details = JSON.parse(this.navParams.get("meeting_details"));
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
+    this.token = localStorage.getItem("token");
     this.poll_list = this.meeting_details.meeting_polls;
     this.checkIfproxyAppointed(this.loginResponse);
     console.log(this.meeting_details);
@@ -182,7 +185,11 @@ export class ViewMeetingPolls {
   saveAllSignatures(signatureArray) {
     console.log(signatureArray);
     this.loadingService.showLoading();
-    this.dataService.postData("saveSignature", { "signatures": signatureArray, "meeting_id": this.meeting_details.meeting_id }, {}).subscribe(results => {
+    this.dataService.postData("saveSignature", { "signatures": signatureArray, "meeting_id": this.meeting_details.meeting_id }, {
+      headers: {
+        'authorization': this.token
+      }
+    }).subscribe(results => {
       console.log(results);
       if (results.success == true) {
         this.loginResponse.user.proxyAppointed.push(this.meeting_details.meeting_id);
@@ -193,6 +200,9 @@ export class ViewMeetingPolls {
       else {
         this.loadingService.hideLoading();
         this.showMessage.showToastBottom(results.message);
+        if (results.message == "Invalid token" || results.message == "Please login") {
+          this.navCtrl.setRoot(HomePage);
+        }
       }
     }, err => {
       console.log("err", err);
@@ -279,7 +289,11 @@ export class ViewMeetingPolls {
 
   saveVoteData(request_data, poll_details) {
     this.loadingService.showLoading();
-    this.dataService.postData("vote", request_data, {}).subscribe(results => {
+    this.dataService.postData("vote", request_data, {
+      headers: {
+        'authorization': this.token
+      }
+    }).subscribe(results => {
       console.log(results);
       this.HKIDArray = [];
       if (results.success == true) {
@@ -291,6 +305,9 @@ export class ViewMeetingPolls {
       else {
         this.loadingService.hideLoading();
         this.showMessage.showToastBottom(results.message);
+        if (results.message == "Invalid token" || results.message == "Please login") {
+          this.navCtrl.setRoot(HomePage);
+        }
       }
     }, err => {
       console.log("err", err);

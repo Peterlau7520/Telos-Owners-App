@@ -5,6 +5,7 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
 import { ShowMessage } from '../../providers/show-message';
+import { HomePage } from '../../pages/home/home';
 
 @IonicPage()
 @Component({
@@ -82,7 +83,11 @@ export class CompanyChop {
         "account": this.loginResponse.user.account,
         "image": this.id_image
       };
-      this.dataService.postData("saveChop", request_data, {}).subscribe(results => {
+      this.dataService.postData("saveChop", request_data, {
+        headers: {
+          'authorization': this.token
+        }
+      }).subscribe(results => {
         if (results.success == true) {
           this.showMessage.showToastBottom(results.message);
           this.loadingService.hideLoading();
@@ -91,8 +96,12 @@ export class CompanyChop {
           /* this.navCtrl.push("Register"); */
         }
         else {
-          this.showMessage.showToastBottom(results.message);
           this.loadingService.hideLoading();
+          this.showMessage.showToastBottom(results.message);
+          if (results.message == "Invalid token" || results.message == "Please login") {
+            this.navCtrl.setRoot(HomePage);
+          }
+
         }
       }, err => {
         console.log("err", err);

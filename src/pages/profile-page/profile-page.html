@@ -15,7 +15,7 @@
         <div logo>
           <ion-item transparent>
             <ion-label no-margin>
-              <h5 user-f-l-name color="mytheme">{{user_info.first_name}} {{user_info.last_name}}</h5>
+              <h5 user-f-l-name color="mytheme">{{loginResponse.user.name}}</h5>
               <h5 user-f-l-name color="mytheme">何雨霽</h5>
               <!-- <img [src]="user_info.profile_pic" *ngIf="user_info.profile_pic" />
               <div class="short-name-wrapper" *ngIf="!user_info.profile_pic">
@@ -49,7 +49,7 @@
             </ion-icon>
             <!---Input field username-->
             <ion-label floating margin-top>用戶名 | USERNAME</ion-label>
-            <ion-input required type="text" disabled="true" [(ngModel)]="user_info.username"></ion-input>
+            <ion-input required type="text" disabled="true" [(ngModel)]="loginResponse.user.account"></ion-input>
           </ion-item>
           <ion-item no-padding transparent (click)="openChangePassword()">
             <!--Icon for password-->

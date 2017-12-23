@@ -51,10 +51,11 @@
           <ion-label margin-bottom>
             <div info>
               <span left>
-                <ion-icon>
-                  <img src="./assets/images/icons/document.png" class="label-icons-file" alt="">&nbsp;
-                </ion-icon>
-                Agenda :&nbsp;</span>
+                <!-- <ion-icon> -->
+                <img src="./assets/images/icons/document.png" class="label-icons-file" alt="">&nbsp;
+                <!-- </ion-icon> -->
+              </span>
+              <span left>Agenda :&nbsp;</span>
               <span c-display-inline-block>
                 <a (click)="openAgendaFile(meeting_details.meeting_fileLinks[0])"> {{meeting_details.meeting_fileLinks[0].name}}</a>
               </span>
@@ -88,7 +89,6 @@
                       <ion-item no-padding text-center text-wrap no-lines text-center>
                         <h3 color-1d1d26 no-margin c-font-bold>
                           {{poll_details.pollNameChn}} | {{poll_details.pollName}}
-                          <img src="./assets/images/icons/poll.png" c-display-inline-block class="label-icons-poll" alt="">
                         </h3>
                         <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="poll_details.is_complete">
                         </ion-icon>
@@ -107,8 +107,10 @@
                       <ion-card no-margin c-width-100 border-top-e7>
                         <ion-item color-1d1d26 text-wrap padding-5px text-wrap>
                           <ion-label no-margin>
-                            <h2 color-1d1d26 class="summary-title">Documents
-                              <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt="">&nbsp;
+                            <h2 color-1d1d26 class="summary-title">
+                              <span>
+                                <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt=""> Documents
+                              </span>
                             </h2>
                             <a *ngFor="let documents of poll_details.fileLinks;" (click)="openAgendaFile(documents)">
                               {{documents.name}}
@@ -119,7 +121,8 @@
                       <ion-card no-margin c-width-100 border-top-e7>
                         <ion-item color-1d1d26 text-wrap padding-5px text-wrap>
                           <ion-label no-margin>
-                            <h2 color-1d1d26 class="summary-title">Poll Options</h2>
+                            <h2 color-1d1d26 class="summary-title">
+                              <img src="./assets/images/icons/poll.png" c-display-inline-block class="label-icons-poll" alt=""> Poll Options</h2>
                             <div margin>
                               <ion-card no-margin c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="getHKIDByOption(poll_details, 1, option_details)">
                                 <ion-item text-wrap no-padding>

@@ -14,8 +14,10 @@ export class ProfilePage {
     "last_name": "HO"
   };
   short_name: any = "";
+  loginResponse: any = {};
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
+    this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.getUserNameFirstChar(this.user_info.first_name, this.user_info.last_name);
   }
 

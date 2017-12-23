@@ -10,6 +10,7 @@ import * as moment from 'moment';
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
 import { ShowMessage } from '../../providers/show-message';
+import { HomePage } from '../../pages/home/home';
 
 @IonicPage()
 @Component({
@@ -20,6 +21,8 @@ export class Noticeboard {
 
   browser: any;
   public notices: any = [];
+  loginResponse: any = {};
+  token: any = "";
 
   constructor(
     public navCtrl: NavController,
@@ -29,6 +32,8 @@ export class Noticeboard {
     private document: DocumentViewer, private fileOpener: FileOpener, public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage) {
+    this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
+    this.token = localStorage.getItem("token");
   };
   ionViewDidLoad() {
     console.log('ionViewDidLoad Noticeboard');
@@ -40,24 +45,33 @@ export class Noticeboard {
 
   getNoticeBoardData() {
     /* this.loadingService.showLoading(); */
-    this.dataService.getData("noticeBoard", {}).subscribe(results => {
-      if (results.success == true) {
-        this.notices = results.notices;
-        this.notices.forEach(element => {
-          element.postDate = moment(element.postDate).format('YYYY-MM-DD HH:mm');
-          element.endTime = moment(element.endTime).format('YYYY-MM-DD HH:mm');
-        });
-        this.loadingService.hideLoading();
-      }
-      else {
-        this.showMessage.showToastBottom(results.message);
-        this.loadingService.hideLoading();
-      }
-    }, err => {
-      console.log("err", err);
-      this.loadingService.hideLoading();
-      this.showMessage.showToastBottom("Unable to get Noticeboard data, please try again.");
-    });
+    this.dataService.postData("noticeBoard", {
+      "estateName": this.loginResponse.user.estateName
+    }, {
+        headers: {
+          'authorization': this.token
+        }
+      }).subscribe(results => {
+        if (results.success == true) {
+          this.notices = results.notices;
+          this.notices.forEach(element => {
+            element.postDate = moment(element.postDate).format('YYYY-MM-DD HH:mm');
+            element.endTime = moment(element.endTime).format('YYYY-MM-DD HH:mm');
+          });
+          /* this.loadingService.hideLoading(); */
+        }
+        else {
+          this.showMessage.showToastBottom(results.message);
+          if (results.message == "Invalid token" || results.message == "Please login") {
+            this.navCtrl.setRoot(HomePage);
+          }
+          /* this.loadingService.hideLoading(); */
+        }
+      }, err => {
+        console.log("err", err);
+        /* this.loadingService.hideLoading(); */
+        this.showMessage.showToastBottom("Unable to get Noticeboard data, please try again.");
+      });
 
   }
 

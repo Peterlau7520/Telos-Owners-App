@@ -5,6 +5,7 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
 import { ShowMessage } from '../../providers/show-message';
+import { HomePage } from '../../pages/home/home';
 
 @IonicPage()
 @Component({
@@ -17,6 +18,7 @@ export class IdVerification1 {
   owners_list: any = [];
   owners_list_length: any = 0;
   loginResponse: any = {};
+  token: any = "";
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera, public actionSheetCtrl: ActionSheetController, public loadingService: LoadingService,
@@ -45,6 +47,7 @@ export class IdVerification1 {
       }
     }
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
+    this.token = localStorage.getItem("token");
     console.log(this.owners_list);
   }
 
@@ -133,7 +136,11 @@ export class IdVerification1 {
       "estateName": this.loginResponse.user.estateName
     }
 
-    this.dataService.postData("saveHKID", request_data, {}).subscribe(results => {
+    this.dataService.postData("saveHKID", request_data, {
+      headers: {
+        'authorization': this.token
+      }
+    }).subscribe(results => {
       console.log(request_data);
       if (results.success == true) {
         console.log(results);
@@ -146,6 +153,9 @@ export class IdVerification1 {
       else {
         this.showMessage.showToastBottom(results.message);
         this.loadingService.hideLoading();
+        if (results.message == "Invalid token" || results.message == "Please login") {
+          this.navCtrl.setRoot(HomePage);
+        }
       }
     }, err => {
       console.log("err", err);

@@ -99,8 +99,9 @@
                       <ion-card no-margin c-width-100 border-top-e7>
                         <ion-item color-1d1d26 padding-5px text-wrap>
                           <ion-label no-margin>
-                            <h2 color-1d1d26 class="summary-title">Documents
-                              <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt="">&nbsp;
+                            <h2 color-1d1d26 class="summary-title">
+                              <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file"
+                                alt=""> Documents
                             </h2>
                             <a *ngFor="let documents of poll_details.fileLinks;" (click)="openAgendaFile(documents)">
                               {{documents.name}}

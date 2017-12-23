@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
 import { ShowMessage } from '../../providers/show-message';
+import { HomePage } from '../../pages/home/home';
 
 @IonicPage()
 @Component({
@@ -17,12 +18,14 @@ export class Surveys {
   survey_details: any = {};
   questionsArray: any = [];
   loginResponse: any = {};
+  token: any = "";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage) {
     this.survey_details = JSON.parse(this.navParams.get("survey_details"));
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
+    this.token = localStorage.getItem("token");
     console.log(this.survey_details);
     /* this.getStaticData(); */
   }
@@ -101,7 +104,11 @@ export class Surveys {
     }
 
     this.loadingService.showLoading();
-    this.dataService.postData("submitSurveys", request_data, {}).subscribe(results => {
+    this.dataService.postData("submitSurveys", request_data, {
+      headers: {
+        'authorization': this.token
+      }
+    }).subscribe(results => {
       if (results.success == true) {
         this.showMessage.showToastBottom(results.message);
         this.loadingService.hideLoading();
@@ -109,6 +116,9 @@ export class Surveys {
       else {
         this.showMessage.showToastBottom(results.message);
         this.loadingService.hideLoading();
+        if (results.message == "Invalid token" || results.message == "Please login") {
+          this.navCtrl.setRoot(HomePage);
+        }
       }
     }, err => {
       console.log("err", err);
