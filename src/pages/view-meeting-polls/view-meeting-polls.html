@@ -11,7 +11,7 @@
     <ion-row>
       <!--Parallax Rateing-->
       <ion-col col-12>
-        <ion-item no-lines header-bcg no-padding>
+        <ion-item no-lines header-bcg no-padding text-wrap>
           <h1 parallax-title text-center margin-bottom padding-vertical>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}} </h1>
         </ion-item>
       </ion-col>
@@ -30,10 +30,18 @@
                 <span c-display-inline-block>&nbsp;</span>
               </ion-col>
               <ion-col col-12 no-padding>
-                <span left>Venue : {{meeting_details.meeting_venue}}</span>
+                <span left>
+                  <ion-icon>
+                    <img src="./assets/images/icons/venue.png" class="label-icons-venue" alt="">&nbsp;
+                  </ion-icon>
+                  Venue : {{meeting_details.meeting_venue}}</span>
               </ion-col>
               <ion-col col-12 no-padding>
-                <span left>Live stream :&nbsp;</span>
+                <span left>
+                  <ion-icon>
+                    <img src="./assets/images/icons/live_stream.png" class="label-icons-live-stream" alt="">&nbsp;
+                  </ion-icon>
+                  Live stream :&nbsp;</span>
                 <span c-display-inline-block>
                   <a (click)="openMeetingURL()">Meeting URL</a>
                 </span>
@@ -99,7 +107,11 @@
                       <ion-card no-margin c-width-100 border-top-e7>
                         <ion-item color-1d1d26 text-wrap padding-5px text-wrap>
                           <ion-label no-margin>
-                            <h2 color-1d1d26 class="summary-title">Summary</h2>
+                            <h2 color-1d1d26 class="summary-title">
+                              <span>
+                                <img src="./assets/images/icons/summary.png" c-display-inline-block class="label-icons-live-summary" alt=""> Summary
+                              </span>
+                            </h2>
                             <h5 color-1d1d26 class="summary-desc">{{poll_details.summaryChn}} | {{poll_details.summary}} </h5>
                           </ion-label>
                         </ion-item>
@@ -109,7 +121,7 @@
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">
                               <span>
-                                <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt=""> Documents
+                                <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt="">&nbsp; Documents
                               </span>
                             </h2>
                             <a *ngFor="let documents of poll_details.fileLinks;" (click)="openAgendaFile(documents)">
@@ -126,7 +138,9 @@
                             <div margin>
                               <ion-card no-margin c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="getHKIDByOption(poll_details, 1, option_details)">
                                 <ion-item text-wrap no-padding>
-                                  <h5 color-1d1d26 text-center> {{option_details}}</h5>
+                                  <ion-icon name="md-checkmark" class="check-mark-style" item-start *ngIf="option_details.choice">
+                                  </ion-icon>
+                                  <h5 color-1d1d26 text-center> {{option_details.label}}</h5>
                                 </ion-item>
                               </ion-card>
                             </div>

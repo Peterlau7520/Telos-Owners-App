@@ -45,7 +45,10 @@
         "ionicons": "3.0.0",
         "rxjs": "5.5.2",
         "sw-toolbox": "3.6.0",
-        "zone.js": "0.8.18"
+        "zone.js": "0.8.18",
+        "cordova-plugin-file": "~5.0.0",
+        "cordova-plugin-file-transfer": "~1.7.0",
+        "onesignal-cordova-plugin": "~2.2.5"
     },
     "devDependencies": {
         "@ionic/app-scripts": "3.1.0",
@@ -68,7 +71,14 @@
             "cordova-plugin-splashscreen": {},
             "cordova-plugin-whitelist": {},
             "ionic-plugin-keyboard": {},
-            "cordova-plugin-camera": {}
-        }
+            "cordova-plugin-camera": {},
+            "cordova-plugin-file": {},
+            "cordova-plugin-file-transfer": {},
+            "onesignal-cordova-plugin": {},
+            "cordova-plugin-local-notification": {}
+        },
+        "platforms": [
+            "android"
+        ]
     }
 }

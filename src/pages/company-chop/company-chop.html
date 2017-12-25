@@ -12,15 +12,15 @@
           <h1 title>印章 | Company Chop</h1>
           <ion-row margin-bottom padding-bottom>
             <ion-col class="p-l-r-10 p-t-b-0" margin-vertical padding-vertical>
-              <p margin-bottom>如果您單位屬於貴公司，請上傳其印章圖片 | IF YOUR UNIT(S) IS OWNED BY YOUT COMPANY, PLEASE UPLOAD A PHOTO OF THE COMPANY CHOP.</p>
-              <!-- <ion-row>
-                  <ion-col text-center no-padding class="img-preview-div">
-                    <img *ngIf="!license_image" src="./assets/images/logo/login.png" class="preview-image" alt="">
-                    <img *ngIf="license_image" [src]="license_image" class="preview-image" alt="">
-                  </ion-col>
-                </ion-row> -->
+              <p margin-bottom>如果您單位屬於貴公司，請上傳其印章圖片 | IF YOUR UNIT(S) IS OWNED BY YOUR COMPANY, PLEASE UPLOAD A PHOTO OF THE COMPANY CHOP.</p>
               <ion-row>
-                <ion-col text-center no-padding>
+                <ion-col text-center no-padding class="img-preview-div">
+                  <img *ngIf="!chop_image" src="./assets/images/logo/chop_sample.jpg" class="preview-image" alt="">
+                  <img *ngIf="chop_image" [src]="chop_image" class="preview-image" alt="">
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col text-center no-padding margin-top>
                   <button ion-button button-clear-outline round outline color="mytheme" (click)="presentActionSheet()">
                     <ion-icon name="ios-camera-outline" class="camera-icon"></ion-icon>
                     拍 | Take</button>
@@ -30,7 +30,7 @@
           </ion-row>
           <ion-row margin-top>
             <ion-col text-center margin-top>
-              <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="goToRegister()">下一頁 | Next</button>
+              <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="goToRegister(chop_image)">下一頁 | Next</button>
             </ion-col>
           </ion-row>
         </div>

@@ -85,7 +85,8 @@ export class IdVerification1 {
     let options: CameraOptions = {
       quality: 40,
       sourceType: sourceType,
-      destinationType: this.camera.DestinationType.DATA_URL
+      destinationType: this.camera.DestinationType.DATA_URL,
+      correctOrientation: true
     }
 
     this.camera.getPicture(options).then((imageData) => {

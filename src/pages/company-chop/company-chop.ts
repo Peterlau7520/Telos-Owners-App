@@ -14,7 +14,7 @@ import { HomePage } from '../../pages/home/home';
 })
 export class CompanyChop {
 
-  id_image: any = "";
+  chop_image: any = "";
   token: any;
   loginResponse: any = {};
 
@@ -29,7 +29,6 @@ export class CompanyChop {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CompanyChop');
-
   }
 
   public presentActionSheet() {
@@ -61,19 +60,20 @@ export class CompanyChop {
     let options: CameraOptions = {
       quality: 40,
       sourceType: sourceType,
-      destinationType: this.camera.DestinationType.DATA_URL
+      destinationType: this.camera.DestinationType.DATA_URL,
+      correctOrientation: true
     }
 
     this.camera.getPicture(options).then((imageData) => {
-      this.id_image = 'data:image/png;base64,' + imageData;
+      this.chop_image = 'data:image/png;base64,' + imageData;
       /* this.showMessage.showToastBottom("Uploaded successfully!"); */
     }, (err) => {
       this.showMessage.showToastBottom("Unable to get image");
     });
   }
 
-  goToRegister() {
-    if (typeof this.id_image == "undefined" || this.id_image == "" || this.id_image == null) {
+  goToRegister(chop_image) {
+    if (typeof this.chop_image == "undefined" || this.chop_image == "" || this.chop_image == null) {
       this.showMessage.showToastBottom("Please select/take an picture to upload.");
       return false;
     }
@@ -81,7 +81,8 @@ export class CompanyChop {
       this.loadingService.showLoading();
       let request_data = {
         "account": this.loginResponse.user.account,
-        "image": this.id_image
+        "image": this.chop_image,
+        "estateName": this.loginResponse.user.estateName
       };
       this.dataService.postData("saveChop", request_data, {
         headers: {
@@ -90,10 +91,13 @@ export class CompanyChop {
       }).subscribe(results => {
         if (results.success == true) {
           this.showMessage.showToastBottom(results.message);
+
           this.loadingService.hideLoading();
-          localStorage.setItem("firstTabPage", "Noticeboard");
-          this.navCtrl.push("Tabs");
+
+          /* localStorage.setItem("firstTabPage", "Noticeboard");
+          this.navCtrl.push("Tabs"); */
           /* this.navCtrl.push("Register"); */
+          this.navCtrl.push("IdVerification1");
         }
         else {
           this.loadingService.hideLoading();

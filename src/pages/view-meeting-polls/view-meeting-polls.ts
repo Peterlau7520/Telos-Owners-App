@@ -225,6 +225,9 @@ export class ViewMeetingPolls {
 
 
   getHKIDByOption(poll_details, current_HKID, selected_option) {
+    if (poll_details.is_complete == true) {
+      return false;
+    }
     let request_data: any = {};
     console.log("poll_details", poll_details);
     console.log("option_details", selected_option);
@@ -243,14 +246,14 @@ export class ViewMeetingPolls {
         this.HKIDArray.push(data.hkid_val);
         request_data = {
           "pollID": poll_details._id,
-          "option": selected_option,
+          "option": selected_option.label,
           "account": this.loginResponse.user.account,
           "estate": poll_details.estateName,
-          "meeting_id": this.meeting_details._id,
+          "meeting_id": this.meeting_details.meeting_id,
           "HKID": this.HKIDArray
         };
         console.log("request_data", request_data);
-        this.saveVoteData(request_data, poll_details);
+        this.saveVoteData(request_data, poll_details, selected_option);
       }
       else if (data.closeType == "repeat") {
         this.HKIDArray.push(data.hkid_val);
@@ -265,6 +268,9 @@ export class ViewMeetingPolls {
 
   checkIfproxyAppointed(loginResponse) {
     let proxyAppointed = loginResponse.user.proxyAppointed;
+    /* this.poll_list.forEach(pollElement => {
+      console.log("pollElement", pollElement);
+    }); */
     proxyAppointed.forEach(element => {
       if (this.meeting_details.meeting_id == element) {
         this.is_license_accepted = true;
@@ -276,6 +282,18 @@ export class ViewMeetingPolls {
 
   checkIfVoted(pollsArray, loginResponse) {
     pollsArray.forEach(function (element, i) {
+      let tmp_options = [];
+      console.log(element.options);
+      element.options.forEach(optionElement => {
+        if (optionElement == element.votingResults.choice) {
+          tmp_options.push({ "label": optionElement, choice: true });
+        }
+        else {
+          tmp_options.push({ "label": optionElement, choice: false });
+        }
+        element.options = tmp_options;
+      });
+      console.log(tmp_options);
       let votedArray = element.voted;
       votedArray.forEach(votedElement => {
         console.log(votedElement);
@@ -287,7 +305,8 @@ export class ViewMeetingPolls {
     });
   }
 
-  saveVoteData(request_data, poll_details) {
+  saveVoteData(request_data, poll_details, selected_option) {
+    console.log(poll_details);
     this.loadingService.showLoading();
     this.dataService.postData("vote", request_data, {
       headers: {
@@ -299,6 +318,9 @@ export class ViewMeetingPolls {
       if (results.success == true) {
         poll_details.is_complete = true;
         this.current_HKID = 1;
+        /* poll_details.votingResults = {};
+        poll_details.votingResults.choice = ""; */
+        selected_option.choice = true;
         this.openThankYouNote2();
         this.loadingService.hideLoading();
       }

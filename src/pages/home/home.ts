@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Platform, NavController } from 'ionic-angular';
+import { OneSignal } from '@ionic-native/onesignal';
+import { Device } from '@ionic-native/device';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
@@ -13,11 +16,39 @@ import { NgForm } from '@angular/forms';
 export class HomePage {
 
   constructor(
+    platform: Platform,
     public navCtrl: NavController,
     public loadingService: LoadingService,
     private dataService: DataService,
-    private showMessage: ShowMessage, ) {
+    private showMessage: ShowMessage,
+    private device: Device,
+    public oneSignal: OneSignal,
+    private localNotifications: LocalNotifications) {
+    platform.ready().then(() => {
+      this.oneSignal.startInit('72ae436c-554c-4364-bd3e-03af71505447', '709611482439');
+      this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
 
+      this.oneSignal.handleNotificationReceived().subscribe((data) => {
+        // do something when notification is received
+        this.localNotifications.schedule({
+          title: "data",
+          text: "data"
+        });
+        console.log("NOTIFICATION RECEIVED", data);
+      }, (err) => {
+        console.log("NOTIFICATION ERROR", err);
+      });
+
+      this.oneSignal.handleNotificationOpened().subscribe(() => {
+        // do something when a notification is opened
+        console.log("NOTIFICATION OPENED");
+      }, (err) => {
+        console.log(err);
+        console.log("NOTIFICATION OPENING ERROR", err);
+      });
+
+      this.oneSignal.endInit();
+    });
   }
 
   doLoginFunction(form: NgForm) {
@@ -25,20 +56,28 @@ export class HomePage {
     this.navCtrl.push("Tabs"); */
 
     this.loadingService.showLoading();
+    let deviceInfo = this.getdeviceInfo();
+    form.value.deviceToken = deviceInfo.device_udid;
+    console.log(form.value);
     this.dataService.postData("login", form.value, {}).subscribe(results => {
       if (results.success == true) {
         localStorage.setItem('token', results.token);
         localStorage.setItem('loginResponse', JSON.stringify(results));
+        let userCredentials = {
+          "account": form.value.account,
+          "password": form.value.password
+        }
         console.log(results);
         if (results.user.registered == true) {
+          localStorage.setItem('userCredentials', JSON.stringify(userCredentials));
           localStorage.setItem("firstTabPage", "Noticeboard");
           this.navCtrl.push("Tabs").then(() => {
             this.loadingService.hideLoading();
           });
-
         }
         else if (results.user.registered == false) {
           if (results.user.nature == "CorporateOwner") {
+            this.addOwnerInfoData(results.user.numberOfOwners);
             this.navCtrl.push("CompanyChop").then(() => {
               this.loadingService.hideLoading();
             });
@@ -84,6 +123,16 @@ export class HomePage {
 
   goToRegister() {
     this.navCtrl.push("Ownership");
+  }
+
+  getdeviceInfo() {
+    let deviceInfo: any = {};
+    deviceInfo.device_model_name = this.device.model;
+    deviceInfo.device_vendor_name = this.device.manufacturer;
+    deviceInfo.device_os_version = this.device.version;
+    deviceInfo.device_platform = this.device.platform;
+    deviceInfo.device_udid = this.device.uuid;
+    return deviceInfo;
   }
 
 }

@@ -9,7 +9,7 @@ import { HomePage } from '../pages/home/home';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage: any = HomePage;
+  rootPage: any = this.checkIfLoggedIn();
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public menu: MenuController) {
     platform.ready().then(() => {
@@ -21,6 +21,16 @@ export class MyApp {
       splashScreen.hide();
       this.menu.swipeEnable(false);
     });
+  }
+
+  checkIfLoggedIn() {
+    if (localStorage.getItem("userCredentials") && localStorage.getItem("loginResponse") && localStorage.getItem("token")) {
+      localStorage.setItem("firstTabPage", "Noticeboard");
+      return "Tabs";
+    }
+    else {
+      return HomePage;
+    }
   }
 
   openNoticeboard(page) {
@@ -41,7 +51,15 @@ export class MyApp {
   }
 
   doLogout() {
-    this.nav.setRoot(HomePage);
+    this.nav.setRoot(HomePage).then(() => {
+      this.clearLocalStorage();
+    });
+  }
+
+  clearLocalStorage() {
+    localStorage.removeItem("loginResponse");
+    localStorage.removeItem("token");
+    localStorage.removeItem("userCredentials");
   }
 }
 
