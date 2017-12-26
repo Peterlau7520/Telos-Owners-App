@@ -10,7 +10,7 @@
       <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 *ngFor="let meeting_details of upcoming_meeting_list;" (click)="goToViewMeetingDetails(meeting_details)">
         <ion-card text-left>
           <div card-image>
-            <img images-filter [src]="meeting_details.meeting_background" />
+            <img images-filter src="./assets/images/background/1.jpg" />
             <h2 card-title>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</h2>
           </div>
           <ion-card-content>

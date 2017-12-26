@@ -13,16 +13,16 @@
     <ion-row margin-bottom>
       <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
         <ion-card padding text-center margin-bottom *ngFor="let notice of notices; let i = index;" (click)="viewPdfFile(notice)">
-          <div card-content>
-            <img images-filter src="./assets/images/background/{{i+1}}.jpg" style="min-height: 220px;" />
+          <div card-content text-wrap ion-button>
+            <!-- <img images-filter src="./assets/images/background/{{i+1}}.jpg" style="min-height: 220px;" /> -->
             <div card-title>{{notice.titleChn}} | {{notice.title}}</div>
             <div card-subtitle>
               <span c-display-inline-block left>
                 通告發出日期 | Post date: {{notice.postDate}}
               </span>
               <span c-display-inline-block left>
-                  有效期至 | Effective until: {{notice.endTime}}
-                </span>
+                有效期至 | Effective until: {{notice.endTime}}
+              </span>
             </div>
           </div>
         </ion-card>

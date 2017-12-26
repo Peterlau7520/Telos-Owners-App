@@ -1,20 +1,21 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>近期會議 | Upcoming Meeting</ion-title>
+    <ion-title>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content>
-  <ion-item no-lines background-size [ngStyle]="{'background-image': 'url(' + meeting_details.meeting_background + ')'}">
-  </ion-item>
+  <!-- <ion-item no-lines background-size [ngStyle]="{'background-image': 'url(' + meeting_details.meeting_background + ')'}"> -->
+  <!-- <ion-item no-lines background-size>
+  </ion-item> -->
 
   <ion-grid no-padding>
     <ion-row>
       <!--Parallax Rateing-->
-      <ion-col col-12>
+      <!-- <ion-col col-12>
         <ion-item no-lines header-bcg no-padding text-wrap>
           <h1 parallax-title text-center margin-bottom padding-vertical>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}} </h1>
         </ion-item>
-      </ion-col>
+      </ion-col> -->
       <!--Content-->
       <ion-col col-12>
         <!--Info-->
@@ -38,13 +39,12 @@
               </ion-col>
               <ion-col col-12 no-padding>
                 <span left>
-                  <ion-icon>
-                    <img src="./assets/images/icons/live_stream.png" class="label-icons-live-stream" alt="">&nbsp;
-                  </ion-icon>
+                  <!-- <ion-icon> -->
+                  <img src="./assets/images/icons/live_stream.png" class="label-icons-live-stream" alt="">&nbsp;
+                  <!-- </ion-icon> -->
                   Live stream :&nbsp;</span>
-                <span c-display-inline-block>
-                  <a (click)="openMeetingURL()">Meeting URL</a>
-                </span>
+                <a c-display-inline-block *ngIf="meeting_details.meeting_youtubelink" (click)="openMeetingURL(meeting_details.meeting_youtubelink)">{{meeting_details.meeting_youtubelink}}</a>
+                <a c-display-inline-block *ngIf="!meeting_details.meeting_youtubelink">N/A</a>
               </ion-col>
             </ion-row>
           </ion-label>
@@ -135,10 +135,19 @@
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">
                               <img src="./assets/images/icons/poll.png" c-display-inline-block class="label-icons-poll" alt=""> Poll Options</h2>
-                            <div margin>
+                            <div margin *ngIf="poll_details.is_complete">
+                              <ion-card no-margin transparent c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="getHKIDByOption(poll_details, 1, option_details)">
+                                <ion-item text-wrap no-padding style="background-color:#eeeeee;">
+                                  <ion-icon name="md-checkmark" style="position: absolute; top: 10px;" class="check-mark-style" item-start *ngIf="option_details.choice">
+                                  </ion-icon>
+                                  <h5 color-1d1d26 text-center> {{option_details.label}}</h5>
+                                </ion-item>
+                              </ion-card>
+                            </div>
+                            <div margin *ngIf="!poll_details.is_complete">
                               <ion-card no-margin c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="getHKIDByOption(poll_details, 1, option_details)">
                                 <ion-item text-wrap no-padding>
-                                  <ion-icon name="md-checkmark" class="check-mark-style" item-start *ngIf="option_details.choice">
+                                  <ion-icon name="md-checkmark" style="position: absolute; top: 10px;" class="check-mark-style" item-start *ngIf="option_details.choice">
                                   </ion-icon>
                                   <h5 color-1d1d26 text-center> {{option_details.label}}</h5>
                                 </ion-item>

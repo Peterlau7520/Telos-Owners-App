@@ -1,20 +1,21 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Past Meeting</ion-title>
+    <ion-title>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content>
-  <ion-item no-lines background-size [ngStyle]="{'background-image': 'url(' + meeting_details.meeting_background + ')'}">
-  </ion-item>
+  <!-- <ion-item no-lines background-size [ngStyle]="{'background-image': 'url(' + meeting_details.meeting_background + ')'}"> -->
+  <!-- <ion-item no-lines background-size>
+  </ion-item> -->
 
   <ion-grid no-padding>
     <ion-row>
       <!--Parallax Rateing-->
-      <ion-col col-12>
-        <ion-item no-lines header-bcg no-padding>
+      <!-- <ion-col col-12>
+        <ion-item no-lines text-wrap header-bcg no-padding>
           <h1 parallax-title text-center margin-bottom padding-vertical>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</h1>
         </ion-item>
-      </ion-col>
+      </ion-col> -->
       <!--Content-->
       <ion-col col-12>
         <!--Info-->
@@ -29,7 +30,11 @@
               <span>&nbsp;</span>
             </div>
             <div info>
-              <span left>Venue : {{meeting_details.meeting_venue}}</span>
+              <span left>
+                <ion-icon>
+                  <img src="./assets/images/icons/venue.png" class="label-icons-venue" alt="">&nbsp;
+                </ion-icon>
+                Venue : {{meeting_details.meeting_venue}}</span>
             </div>
           </ion-label>
         </ion-item>
@@ -57,7 +62,6 @@
                   <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
                 </ion-icon>
                 Vote by : {{meeting_details.meeting_pollEndTime}}</span>
-              <span>&nbsp;</span>
             </div>
           </ion-label>
         </ion-item>
@@ -70,8 +74,8 @@
                     <!-- Expandable Centered with header Header-->
                     <div class="collapsible-header" no-margin no-padding (click)="expandPoll(poll_details)">
                       <ion-item color-1d1d26 no-padding text-center no-lines text-center>
-                        <h3 no-margin c-font-bold>{{poll_details.poll_title}}</h3>
-                        <h3 no-margin c-font-bold>Final Result : Option 1</h3>
+                        <h3 no-margin c-font-bold>{{poll_details.pollNameChn}} | {{poll_details.pollName}}</h3>
+                        <h3 no-margin c-font-bold>Final Result : {{poll_details.finalResult}}</h3>
                         <!-- <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="poll_details.is_complete">
                         </ion-icon> -->
                       </ion-item>
@@ -81,9 +85,10 @@
                       <ion-card no-margin c-width-100 border-top-e7>
                         <ion-item color-1d1d26 padding-5px text-wrap>
                           <ion-label no-margin>
-                            <h2 color-1d1d26 class="summary-title">Poll Results</h2>
-                            <h3 color-1d1d26 *ngFor="let option_details of poll_details.option_list;">{{option_details.option_title}} :
-                              <span color-1d1d26 c-font-bold>{{option_details.option_value}}</span>
+                            <h2 color-1d1d26 class="summary-title">
+                              <img src="./assets/images/icons/poll.png" c-display-inline-block class="label-icons-poll" alt=""> Poll Results</h2>
+                            <h3 color-1d1d26 *ngFor="let result_details of poll_details.results;">{{result_details.choice}} :
+                              <span color-1d1d26 c-font-bold>{{result_details.percentage}}%</span>
                             </h3>
                           </ion-label>
                         </ion-item>
@@ -91,8 +96,13 @@
                       <ion-card no-margin c-width-100 border-top-e7>
                         <ion-item color-1d1d26 padding-5px text-wrap>
                           <ion-label no-margin>
-                            <h2 color-1d1d26 class="summary-title">Summary</h2>
-                            <h5 color-1d1d26 class="summary-desc">{{poll_details.summaryChn}} | {{poll_details.summary}} </h5>
+                            <h2 color-1d1d26 class="summary-title">
+                              <span>
+                                <img src="./assets/images/icons/summary.png" c-display-inline-block class="label-icons-live-summary" alt=""> Summary
+                              </span>
+                            </h2>
+                            <h5 color-1d1d26 class="summary-desc">{{poll_details.summaryChn}}</h5>
+                            <h5 color-1d1d26 class="summary-desc">{{poll_details.summary}} </h5>
                           </ion-label>
                         </ion-item>
                       </ion-card>
@@ -100,8 +110,7 @@
                         <ion-item color-1d1d26 padding-5px text-wrap>
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">
-                              <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file"
-                                alt=""> Documents
+                              <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt=""> &nbsp;Documents
                             </h2>
                             <a *ngFor="let documents of poll_details.fileLinks;" (click)="openAgendaFile(documents)">
                               {{documents.name}}

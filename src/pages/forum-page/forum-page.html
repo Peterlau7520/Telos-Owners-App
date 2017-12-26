@@ -7,7 +7,55 @@
   </ion-navbar>
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content no-padding>
+  <ion-row>
+    <ion-col col-12 no-padding>
+      <ion-card (click)="openWritePostPage()">
+        <ion-card-content>
+          <ion-item no-padding>
+            <ion-label no-margin>
+              <ion-icon item-start no-margin name="ios-create-outline"></ion-icon>
+              <p c-display-inline-block no-margin>Post something here...</p>
+            </ion-label>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row margin-bottom>
+    <ion-col col-12 no-padding *ngFor="let forum_details of forumsList; let i=index;">
+      <ion-card>
+        <ion-item (click)="openForumDetailsPage()">
+          <h2 left>HKU00{{i+2}}</h2>
+          <p right>12/8/17 00:10</p>
+        </ion-item>
+        <ion-card-content (click)="openForumDetailsPage()">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+            a type specimen book.
+          </p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col text-center>
+            <button ion-button icon-left clear small>
+              <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+              <div>{{forum_details.likes}}</div>
+            </button>
+          </ion-col>
+          <ion-col text-center>
+            <button ion-button icon-left clear small (click)="openForumDetailsPage()">
+              <ion-icon name="ios-text-outline"></ion-icon>
+              <div>{{forum_details.comments}}</div>
+            </button>
+          </ion-col>
+          <ion-col text-center>
+            <button ion-button icon-left clear small (click)="openReportPage()">
+              <ion-icon name="ios-flag-outline"></ion-icon>
+              <div>Report</div>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-content>

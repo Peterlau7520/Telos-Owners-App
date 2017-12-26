@@ -60,7 +60,8 @@ export class UpcomingMeetings {
               "meeting_fileLinks": meeting.fileLinks,
               "meeting_pollEndTime": meeting.pollEndTime,
               "meeting_polls": meeting.polls,
-              "meeting_background": "./assets/images/background/" + (i + 1) + ".jpg"
+              "meeting_background": "./assets/images/background/1.jpg",
+              "meeting_youtubelink": meeting.youtubelink
             })
           })
           this.loadingService.hideLoading();

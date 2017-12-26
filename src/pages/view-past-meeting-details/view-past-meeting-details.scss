@@ -4,6 +4,9 @@ page-view-past-meeting-details {
         position: relative;
         z-index: 999;
         @include darkening-blend-mode;
+        &::before {
+            background: #161616 !important;
+        }
     }
     ion-thumbnail img {
         border-radius: 50%;

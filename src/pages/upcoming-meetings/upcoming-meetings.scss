@@ -2,11 +2,16 @@ page-upcoming-meetings {
     [card-image] {
         position: relative;
         @include darkening-blend-mode;
-        &::before {
+        &:before {
             z-index: 3;
+            background: #161616 !important;
+        }
+        &::before {
+            background: #161616 !important;
         }
         img {
             width: 100% !important;
+            visibility: hidden;
         }
         [card-title] {
             color: #f2f2f2 !important;

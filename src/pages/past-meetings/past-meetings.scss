@@ -4,9 +4,11 @@ page-past-meetings {
         @include darkening-blend-mode;
         &::before {
             z-index: 3;
+            background: #161616 !important;
         }
         img {
             width: 100% !important;
+            visibility: hidden;
         }
         [card-title] {
             color: #f2f2f2 !important;

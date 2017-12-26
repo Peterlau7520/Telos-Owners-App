@@ -4,6 +4,9 @@ page-view-meeting-polls {
         position: relative;
         z-index: 999;
         @include darkening-blend-mode;
+        &::before {
+            background: #161616 !important;
+        }
     }
     ion-thumbnail img {
         border-radius: 50%;
@@ -105,5 +108,11 @@ page-view-meeting-polls {
     }
     .check-mark-style {
         color: #69BB7B;
+    }
+    .item-md ion-icon[item-left]+.item-inner,
+    .item-md ion-icon[item-left]+.item-input,
+    .item-md ion-icon[item-start]+.item-inner,
+    .item-md ion-icon[item-start]+.item-input {
+        margin-left: 0 !important;
     }
 }

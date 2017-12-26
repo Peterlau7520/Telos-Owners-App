@@ -14,19 +14,26 @@ page-noticeboard {
             width: 90%;
             left: 5%;
             z-index: 9;
-            color: #f2f2f2 !important;
+            color: #979797 !important;
         }
     }
     [card-content] {
         position: relative;
+        box-shadow: 1px 3px 7px #000000;
         @include darkening-blend-mode;
+        min-height: 220px;
+        width: 100% !important;
+        text-transform: initial !important;
         border-radius: $border-radius !important;
         &:before {
             z-index: 3;
+            background: #161616 !important;
+        }
+        &::before {
+            background: #161616 !important;
         }
     }
     [header-color] {
-          background-color: black 
-      }
-
+        background-color: black
+    }
 }

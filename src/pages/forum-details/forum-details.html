@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Forum</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-row>
+    <ion-col no-padding>
+      <ion-card no-margin c-width-100>
+        <ion-item>
+          <ion-label no-margin>
+            <h2 left>HKU001</h2>
+            <p right>12/8/17 00:10</p>
+          </ion-label>
+        </ion-item>
+        <ion-card-content>
+          <p post-text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+            a type specimen book.
+          </p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col text-center>
+            <button ion-button icon-left clear small>
+              <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+              <div>12</div>
+            </button>
+          </ion-col>
+          <ion-col text-center>
+            <button ion-button icon-left clear small (click)="openReportPage()">
+              <ion-icon name="ios-flag-outline"></ion-icon>
+              <div>Report</div>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-item-group>
+    <ion-item-divider no-lines color="light">
+      <ion-label no-margin>Comments</ion-label>
+    </ion-item-divider>
+  </ion-item-group>
+  <ion-row>
+    <ion-col col-12 no-padding>
+      <ion-card no-margin c-box-shadow-none border-bottom-ee c-width-100>
+        <ion-item>
+          <ion-label no-margin>
+            <h2 left>HKU0023</h2>
+            <p right>12/8/17 00:10</p>
+          </ion-label>
+        </ion-item>
+        <ion-card-content>
+          <p comment-text>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col text-center>
+            <button ion-button icon-left clear small>
+              <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+              <div>7</div>
+            </button>
+          </ion-col>
+          <ion-col text-center>
+            <button ion-button icon-left clear small (click)="openReportPage()">
+              <ion-icon name="ios-flag-outline"></ion-icon>
+              <div>Report</div>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+    <ion-col col-12 no-padding>
+      <ion-card no-margin c-box-shadow-none border-bottom-ee c-width-100>
+        <ion-item>
+          <ion-label no-margin>
+            <h2 left>HKU0021</h2>
+            <p right>12/8/17 00:10</p>
+          </ion-label>
+        </ion-item>
+        <ion-card-content>
+          <p comment-text>when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col text-center>
+            <button ion-button icon-left clear small>
+              <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+              <div>5</div>
+            </button>
+          </ion-col>
+          <ion-col text-center>
+            <button ion-button icon-left clear small (click)="openReportPage()">
+              <ion-icon name="ios-flag-outline"></ion-icon>
+              <div>Report</div>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

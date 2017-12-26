@@ -338,8 +338,9 @@ export class ViewMeetingPolls {
     });
   }
 
-  openMeetingURL() {
-    this.youtube.openVideo('6jiNS_4CEug');
+  openMeetingURL(videoID) {
+    console.log(videoID);
+    this.youtube.openVideo(videoID);
   }
 
   openAgendaFile(agenda_details) {
