@@ -11,7 +11,10 @@
         <ion-card text-left>
           <div card-image>
             <img images-filter src="./assets/images/background/1.jpg" />
-            <h2 card-title>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</h2>
+            <div card-title-div>
+              <h2 card-title>{{meeting_details.meeting_titleChn}}</h2>
+              <h2 card-title>{{meeting_details.meeting_title}}</h2>
+            </div>
           </div>
           <ion-card-content>
             <p card-body-text>{{meeting_details.meeting_desc}}</p>

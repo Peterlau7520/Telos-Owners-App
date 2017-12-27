@@ -10,21 +10,18 @@
       <ion-card no-margin c-width-100>
         <ion-item>
           <ion-label no-margin>
-            <h2 left>HKU001</h2>
-            <p right>12/8/17 00:10</p>
+            <h2 left>{{forum_details.account}}</h2>
+            <p right>{{forum_details.postTime}}</p>
           </ion-label>
         </ion-item>
         <ion-card-content>
-          <p post-text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-            a type specimen book.
-          </p>
+          <p post-text>{{forum_details.content}}</p>
         </ion-card-content>
         <ion-row>
           <ion-col text-center>
-            <button ion-button icon-left clear small>
+            <button ion-button icon-left clear small (click)="likePostFunction(forum_details)">
               <ion-icon name="ios-thumbs-up-outline"></ion-icon>
-              <div>12</div>
+              <div>{{forum_details.totalLikes}}</div>
             </button>
           </ion-col>
           <ion-col text-center>
@@ -42,56 +39,27 @@
       <ion-label no-margin>Comments</ion-label>
     </ion-item-divider>
   </ion-item-group>
-  <ion-row>
-    <ion-col col-12 no-padding>
+  <ion-row margin-bottom>
+    <ion-col col-12 no-padding *ngFor="let comment_details of forum_details.comments">
       <ion-card no-margin c-box-shadow-none border-bottom-ee c-width-100>
         <ion-item>
           <ion-label no-margin>
-            <h2 left>HKU0023</h2>
-            <p right>12/8/17 00:10</p>
+            <h2 left>{{comment_details.account}}</h2>
+            <p right>{{comment_details.commentedTime}}</p>
           </ion-label>
         </ion-item>
         <ion-card-content>
-          <p comment-text>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          </p>
+          <p comment-text>{{comment_details.content}}</p>
         </ion-card-content>
         <ion-row>
           <ion-col text-center>
-            <button ion-button icon-left clear small>
+            <button ion-button icon-left clear small (click)="likeCommentFunction(comment_details)">
               <ion-icon name="ios-thumbs-up-outline"></ion-icon>
-              <div>7</div>
+              <div>{{comment_details.likesForComment}}</div>
             </button>
           </ion-col>
-          <ion-col text-center>
-            <button ion-button icon-left clear small (click)="openReportPage()">
-              <ion-icon name="ios-flag-outline"></ion-icon>
-              <div>Report</div>
-            </button>
-          </ion-col>
-        </ion-row>
-      </ion-card>
-    </ion-col>
-    <ion-col col-12 no-padding>
-      <ion-card no-margin c-box-shadow-none border-bottom-ee c-width-100>
-        <ion-item>
-          <ion-label no-margin>
-            <h2 left>HKU0021</h2>
-            <p right>12/8/17 00:10</p>
-          </ion-label>
-        </ion-item>
-        <ion-card-content>
-          <p comment-text>when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </p>
-        </ion-card-content>
-        <ion-row>
           <ion-col text-center>
             <button ion-button icon-left clear small>
-              <ion-icon name="ios-thumbs-up-outline"></ion-icon>
-              <div>5</div>
-            </button>
-          </ion-col>
-          <ion-col text-center>
-            <button ion-button icon-left clear small (click)="openReportPage()">
               <ion-icon name="ios-flag-outline"></ion-icon>
               <div>Report</div>
             </button>
@@ -101,3 +69,9 @@
     </ion-col>
   </ion-row>
 </ion-content>
+<ion-footer>
+  <ion-item no-padding>
+    <ion-textarea text-area-style placeholder="Add comment..." [(ngModel)]="commentText"></ion-textarea>
+    <ion-icon item-end name="md-send" (click)="addCommentFunction(commentText, forum_details)"></ion-icon>
+  </ion-item>
+</ion-footer>

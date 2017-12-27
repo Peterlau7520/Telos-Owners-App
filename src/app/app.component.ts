@@ -60,6 +60,8 @@ export class MyApp {
     localStorage.removeItem("loginResponse");
     localStorage.removeItem("token");
     localStorage.removeItem("userCredentials");
+    localStorage.removeItem("meeting_details");
+    localStorage.removeItem("owners_list");
   }
 }
 

@@ -12,19 +12,64 @@ import { ShowMessage } from '../../providers/show-message';
 })
 export class ForumPostModal {
 
+  loginResponse: any = {};
+  content: any = "";
+  token: any = "";
+
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public viewCtrl: ViewController,
     public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage) {
+    this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
+    this.token = localStorage.getItem("token");
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ForumPostModal');
   }
 
+  trim(str) {
+    return str.replace(/ /g, '');
+  }
+
+  sendPostData(content) {
+    if (typeof content == "undefined" || this.trim(content) == "" || content == null) {
+      this.showMessage.showToastBottom("Please enter text to post");
+      return false;
+    }
+    else {
+      this.token = localStorage.getItem("token");
+      this.loadingService.showLoading();
+      this.dataService.postData("newPost", {
+        "estateName": this.loginResponse.user.estateName,
+        "account": this.loginResponse.user.account,
+        "content": content
+      }, {
+          headers: {
+            'authorization': this.token
+          }
+        }).subscribe(results => {
+          console.log(results);
+          if (results.success == true) {
+            this.loadingService.hideLoading();
+            this.viewCtrl.dismiss({ "closeType": "refresh" });
+          }
+          else {
+            this.showMessage.showToastBottom(results.message);
+            this.loadingService.hideLoading();
+          }
+        }, err => {
+          console.log("err", err);
+          this.loadingService.hideLoading();
+          this.showMessage.showToastBottom("Unable to post, please try again.");
+        });
+
+    }
+  }
+
   dismiss() {
-    this.viewCtrl.dismiss();
+    this.viewCtrl.dismiss({ "closeType": "decline" });
   }
 
 }

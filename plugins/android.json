@@ -25,6 +25,9 @@
     "cordova-plugin-ionic-webview": {
       "PACKAGE_NAME": "com.ionicframework.telos782183"
     },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.ionicframework.telos782183"
     },
@@ -38,9 +41,6 @@
       "PACKAGE_NAME": "com.ionicframework.telos782183"
     },
     "onesignal-cordova-plugin": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
-    },
-    "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.ionicframework.telos782183"
     }
   },

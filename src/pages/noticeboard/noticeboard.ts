@@ -44,7 +44,7 @@ export class Noticeboard {
   }
 
   getNoticeBoardData() {
-    /* this.loadingService.showLoading(); */
+    this.loadingService.showLoading();
     this.dataService.postData("noticeBoard", {
       "estateName": this.loginResponse.user.estateName
     }, {
@@ -58,18 +58,18 @@ export class Noticeboard {
             element.postDate = moment(element.postDate).format('YYYY-MM-DD HH:mm');
             element.endTime = moment(element.endTime).format('YYYY-MM-DD HH:mm');
           });
-          /* this.loadingService.hideLoading(); */
+          this.loadingService.hideLoading();
         }
         else {
           this.showMessage.showToastBottom(results.message);
           if (results.message == "Invalid token" || results.message == "Please login") {
             this.navCtrl.setRoot(HomePage);
           }
-          /* this.loadingService.hideLoading(); */
+          this.loadingService.hideLoading();
         }
       }, err => {
         console.log("err", err);
-        /* this.loadingService.hideLoading(); */
+        this.loadingService.hideLoading();
         this.showMessage.showToastBottom("Unable to get Noticeboard data, please try again.");
       });
 

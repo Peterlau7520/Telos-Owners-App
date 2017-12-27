@@ -25,31 +25,29 @@
   <ion-row margin-bottom>
     <ion-col col-12 no-padding *ngFor="let forum_details of forumsList; let i=index;">
       <ion-card>
-        <ion-item (click)="openForumDetailsPage()">
-          <h2 left>HKU00{{i+2}}</h2>
-          <p right>12/8/17 00:10</p>
+        <ion-item (click)="openForumDetailsPage(forum_details)">
+          <h2 left>{{forum_details.account}}</h2>
+          <p right>{{forum_details.postTime}}</p>
         </ion-item>
-        <ion-card-content (click)="openForumDetailsPage()">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-            a type specimen book.
+        <ion-card-content (click)="openForumDetailsPage(forum_details)">
+          <p>{{forum_details.content}}
           </p>
         </ion-card-content>
         <ion-row>
           <ion-col text-center>
-            <button ion-button icon-left clear small>
+            <button ion-button icon-left clear small (click)="likePostFunction(forum_details)">
               <ion-icon name="ios-thumbs-up-outline"></ion-icon>
-              <div>{{forum_details.likes}}</div>
+              <div>{{forum_details.totalLikes}}</div>
             </button>
           </ion-col>
           <ion-col text-center>
-            <button ion-button icon-left clear small (click)="openForumDetailsPage()">
+            <button ion-button icon-left clear small (click)="openForumDetailsPage(forum_details)">
               <ion-icon name="ios-text-outline"></ion-icon>
-              <div>{{forum_details.comments}}</div>
+              <div>{{forum_details.totalComments}}</div>
             </button>
           </ion-col>
           <ion-col text-center>
-            <button ion-button icon-left clear small (click)="openReportPage()">
+            <button ion-button icon-left clear small (click)="openReportPage(forum_details)">
               <ion-icon name="ios-flag-outline"></ion-icon>
               <div>投訴 | Report</div>
             </button>

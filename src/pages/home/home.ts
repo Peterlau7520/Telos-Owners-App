@@ -15,8 +15,10 @@ import { NgForm } from '@angular/forms';
 })
 export class HomePage {
 
+  deviceToken: any;
+
   constructor(
-    platform: Platform,
+    private platform: Platform,
     public navCtrl: NavController,
     public loadingService: LoadingService,
     private dataService: DataService,
@@ -24,30 +26,9 @@ export class HomePage {
     private device: Device,
     public oneSignal: OneSignal,
     private localNotifications: LocalNotifications) {
-    platform.ready().then(() => {
-      this.oneSignal.startInit('72ae436c-554c-4364-bd3e-03af71505447', '709611482439');
-      this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
+    this.platform.ready().then(() => {
 
-      this.oneSignal.handleNotificationReceived().subscribe((data) => {
-        // do something when notification is received
-        this.localNotifications.schedule({
-          title: "data",
-          text: "data"
-        });
-        console.log("NOTIFICATION RECEIVED", data);
-      }, (err) => {
-        console.log("NOTIFICATION ERROR", err);
-      });
-
-      this.oneSignal.handleNotificationOpened().subscribe(() => {
-        // do something when a notification is opened
-        console.log("NOTIFICATION OPENED");
-      }, (err) => {
-        console.log(err);
-        console.log("NOTIFICATION OPENING ERROR", err);
-      });
-
-      this.oneSignal.endInit();
+      this.initPushNotification();
     });
   }
 
@@ -57,7 +38,8 @@ export class HomePage {
 
     this.loadingService.showLoading();
     let deviceInfo = this.getdeviceInfo();
-    form.value.deviceToken = deviceInfo.device_udid;
+    form.value.deviceToken = this.deviceToken;
+    console.log(deviceInfo);
     console.log(form.value);
     this.dataService.postData("login", form.value, {}).subscribe(results => {
       if (results.success == true) {
@@ -71,8 +53,8 @@ export class HomePage {
         if (results.user.registered == true) {
           localStorage.setItem('userCredentials', JSON.stringify(userCredentials));
           localStorage.setItem("firstTabPage", "Noticeboard");
+          this.loadingService.hideLoading();
           this.navCtrl.push("Tabs").then(() => {
-            this.loadingService.hideLoading();
           });
         }
         else if (results.user.registered == false) {
@@ -133,6 +115,40 @@ export class HomePage {
     deviceInfo.device_platform = this.device.platform;
     deviceInfo.device_udid = this.device.uuid;
     return deviceInfo;
+  }
+
+  initPushNotification() {
+    if (!this.platform.is('cordova')) {
+      console.warn('Push notifications not initialized. Cordova is not available - Run in physical device');
+      return;
+    }
+    this.oneSignal.startInit('72ae436c-554c-4364-bd3e-03af71505447', '709611482439');
+    this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
+    this.oneSignal.registerForPushNotifications();
+    this.oneSignal.getIds().then((data) => {
+      console.log("GETIDS DATA", data);
+      this.deviceToken = data.pushToken;
+    });
+    this.oneSignal.handleNotificationReceived().subscribe((data) => {
+      // do something when notification is received
+      this.localNotifications.schedule({
+        title: "data",
+        text: "data"
+      });
+      console.log("NOTIFICATION RECEIVED", data);
+    }, (err) => {
+      console.log("NOTIFICATION ERROR", err);
+    });
+
+    this.oneSignal.handleNotificationOpened().subscribe(() => {
+      // do something when a notification is opened
+      console.log("NOTIFICATION OPENED");
+    }, (err) => {
+      console.log(err);
+      console.log("NOTIFICATION OPENING ERROR", err);
+    });
+
+    this.oneSignal.endInit();
   }
 
 }

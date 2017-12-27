@@ -215,7 +215,7 @@ signature-pad {
 
 .close-button {
     font-size: 20px;
-    padding: 3px;
+    padding: 3px 2px;
     background: #1d1d26;
     color: #ffffff;
     border-radius: 50%;
@@ -576,4 +576,9 @@ signature-pad {
 
 [border-bottom-ee] {
     border-bottom: 1px solid #eeeeee;
+}
+
+[c-height-90] {
+    height: 90% !important;
+    max-height: 100%;
 }

@@ -1,0 +1,25 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss()"></div>
+  <div class="modal_content">
+    <ion-row class="modal_inner_content">
+      <ion-col>
+        <ion-icon name="md-close" class="close-button" (click)="dismiss()"></ion-icon>
+        <ion-row>
+          <p col-12 class="agree-title" text-center no-margin>Report</p>
+        </ion-row>
+        <ion-row c-height-90>
+          <ion-col col-12>
+            <!-- <div class="form"> -->
+            <ion-textarea rows="10" text-area-style placeholder="Type here..." [(ngModel)]="postReport"></ion-textarea>
+            <!-- </div> -->
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <button ion-button button-clear-outline round outline class="next-button login-button" color="mytheme" (click)="submitReportData(postReport)">Send</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
