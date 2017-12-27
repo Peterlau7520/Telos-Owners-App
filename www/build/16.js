@@ -1,1 +1,232 @@
-webpackJsonp([16],{268:function(l,n,e){"use strict";function t(l){return s["ɵvid"](0,[(l()(),s["ɵeld"](0,0,null,null,0,"img",[["alt",""],["class","preview-image"],["src","./assets/images/logo/sample.png"]],null,null,null,null,null))],null,null)}function u(l){return s["ɵvid"](0,[(l()(),s["ɵeld"](0,0,null,null,0,"img",[["alt",""],["class","preview-image"]],[[8,"src",4]],null,null,null,null))],null,function(l,n){l(n,0,0,n.parent.parent.context.$implicit.image)})}function o(l){return s["ɵvid"](0,[(l()(),s["ɵeld"](0,0,null,null,77,"div",[["class","form"]],null,null,null,null,null)),(l()(),s["ɵted"](-1,null,["\n          "])),(l()(),s["ɵeld"](2,0,null,null,1,"h1",[["title",""]],null,null,null,null,null)),(l()(),s["ɵted"](3,null,["身分證 | HKID (","/",")"])),(l()(),s["ɵted"](-1,null,["\n          "])),(l()(),s["ɵeld"](5,0,null,null,59,"ion-row",[["class","row"]],null,null,null,null,null)),s["ɵdid"](6,16384,null,0,I.a,[],null,null),(l()(),s["ɵted"](-1,null,["\n            "])),(l()(),s["ɵeld"](8,0,null,null,55,"ion-col",[["class","p-l-r-10 p-t-b-0 col"]],null,null,null,null,null)),s["ɵdid"](9,16384,null,0,D.a,[],null,null),(l()(),s["ɵted"](-1,null,["\n              "])),(l()(),s["ɵeld"](11,0,null,null,1,"p",[],null,null,null,null,null)),(l()(),s["ɵted"](-1,null,["請上傳您身分證圖片跟輸入其號碼 | Please upload a photo of your HKID and enter your HKID number below (e.g. R123456)"])),(l()(),s["ɵted"](-1,null,["\n              "])),(l()(),s["ɵeld"](14,0,null,null,12,"ion-row",[["class","row"]],null,null,null,null,null)),s["ɵdid"](15,16384,null,0,I.a,[],null,null),(l()(),s["ɵted"](-1,null,["\n                "])),(l()(),s["ɵeld"](17,0,null,null,8,"ion-col",[["class","img-preview-div col"],["no-padding",""],["text-center",""]],null,null,null,null,null)),s["ɵdid"](18,16384,null,0,D.a,[],null,null),(l()(),s["ɵted"](-1,null,["\n                  "])),(l()(),s["ɵand"](16777216,null,null,1,null,t)),s["ɵdid"](21,16384,null,0,x.i,[s.ViewContainerRef,s.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),s["ɵted"](-1,null,["\n                  "])),(l()(),s["ɵand"](16777216,null,null,1,null,u)),s["ɵdid"](24,16384,null,0,x.i,[s.ViewContainerRef,s.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),s["ɵted"](-1,null,["\n                "])),(l()(),s["ɵted"](-1,null,["\n              "])),(l()(),s["ɵted"](-1,null,["\n              "])),(l()(),s["ɵeld"](28,0,null,null,13,"ion-row",[["class","row"]],null,null,null,null,null)),s["ɵdid"](29,16384,null,0,I.a,[],null,null),(l()(),s["ɵted"](-1,null,["\n                "])),(l()(),s["ɵeld"](31,0,null,null,9,"ion-col",[["class","col"],["margin-top",""],["no-padding",""],["text-center",""]],null,null,null,null,null)),s["ɵdid"](32,16384,null,0,D.a,[],null,null),(l()(),s["ɵted"](-1,null,["\n                  "])),(l()(),s["ɵeld"](34,0,null,null,5,"button",[["button-clear-outline",""],["color","mytheme"],["ion-button",""],["outline",""],["round",""]],null,[[null,"click"]],function(l,n,e){var t=!0;if("click"===n){t=!1!==l.component.presentActionSheet(l.parent.context.index)&&t}return t},S.b,S.a)),s["ɵdid"](35,1097728,null,0,T.a,[[8,""],P.a,s.ElementRef,s.Renderer],{color:[0,"color"],outline:[1,"outline"],round:[2,"round"]},null),(l()(),s["ɵted"](-1,0,["\n                    "])),(l()(),s["ɵeld"](37,0,null,0,1,"ion-icon",[["class","camera-icon"],["name","ios-camera-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),s["ɵdid"](38,147456,null,0,E.a,[P.a,s.ElementRef,s.Renderer],{name:[0,"name"]},null),(l()(),s["ɵted"](-1,0,["\n                    拍 | Take"])),(l()(),s["ɵted"](-1,null,["\n                "])),(l()(),s["ɵted"](-1,null,["\n              "])),(l()(),s["ɵted"](-1,null,["\n              "])),(l()(),s["ɵted"](-1,null,["\n              "])),(l()(),s["ɵeld"](44,0,null,null,18,"ion-item",[["class","item item-block"],["no-padding",""],["padding-bottom",""],["transparent",""]],null,null,null,M.b,M.a)),s["ɵdid"](45,1097728,null,3,K.a,[V.a,P.a,s.ElementRef,s.Renderer,[2,L.a]],null,null),s["ɵqud"](335544320,1,{contentLabel:0}),s["ɵqud"](603979776,2,{_buttons:1}),s["ɵqud"](603979776,3,{_icons:1}),s["ɵdid"](49,16384,null,0,N.a,[],null,null),(l()(),s["ɵted"](-1,2,["\n                "])),(l()(),s["ɵeld"](51,0,null,1,2,"ion-label",[["floating",""]],null,null,null,null,null)),s["ɵdid"](52,16384,[[1,4]],0,A.a,[P.a,s.ElementRef,s.Renderer,[8,""],[8,null],[8,null],[8,null]],null,null),(l()(),s["ɵted"](-1,null,["身分證號碼 | HKID NUMBER (e.g. R123456)"])),(l()(),s["ɵted"](-1,2,["\n                "])),(l()(),s["ɵeld"](55,0,null,3,6,"ion-input",[["required",""],["type","text"]],[[1,"required",0],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,e){var t=!0;if("ngModelChange"===n){t=!1!==(l.parent.context.$implicit.hkid=e)&&t}return t},B.b,B.a)),s["ɵdid"](56,16384,null,0,H.o,[],{required:[0,"required"]},null),s["ɵprd"](1024,null,H.f,function(l){return[l]},[H.o]),s["ɵdid"](58,671744,null,0,H.l,[[8,null],[2,H.f],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),s["ɵprd"](2048,null,H.h,null,[H.l]),s["ɵdid"](60,16384,null,0,H.i,[H.h],null,null),s["ɵdid"](61,5423104,null,0,O.a,[P.a,q.a,V.a,F.a,s.ElementRef,s.Renderer,[2,U.a],[2,K.a],[2,H.h],$.a],{type:[0,"type"]},null),(l()(),s["ɵted"](-1,2,["\n              "])),(l()(),s["ɵted"](-1,null,["\n            "])),(l()(),s["ɵted"](-1,null,["\n          "])),(l()(),s["ɵted"](-1,null,["\n          "])),(l()(),s["ɵeld"](66,0,null,null,10,"ion-row",[["class","row"],["margin-top",""]],null,null,null,null,null)),s["ɵdid"](67,16384,null,0,I.a,[],null,null),(l()(),s["ɵted"](-1,null,["\n            "])),(l()(),s["ɵeld"](69,0,null,null,6,"ion-col",[["class","col"],["margin-top",""],["text-center",""]],null,null,null,null,null)),s["ɵdid"](70,16384,null,0,D.a,[],null,null),(l()(),s["ɵted"](-1,null,["\n              "])),(l()(),s["ɵeld"](72,0,null,null,2,"button",[["button-clear-outline",""],["class","next-button"],["color","mytheme"],["ion-button",""],["outline",""],["round",""]],null,[[null,"click"]],function(l,n,e){var t=!0;if("click"===n){t=!1!==l.component.submitData(l.parent.context.index)&&t}return t},S.b,S.a)),s["ɵdid"](73,1097728,null,0,T.a,[[8,""],P.a,s.ElementRef,s.Renderer],{color:[0,"color"],outline:[1,"outline"],round:[2,"round"]},null),(l()(),s["ɵted"](-1,0,["確定 | Submit"])),(l()(),s["ɵted"](-1,null,["\n            "])),(l()(),s["ɵted"](-1,null,["\n          "])),(l()(),s["ɵted"](-1,null,["\n        "]))],function(l,n){l(n,21,0,!n.parent.context.$implicit.image);l(n,24,0,n.parent.context.$implicit.image);l(n,35,0,"mytheme","","");l(n,38,0,"ios-camera-outline");l(n,56,0,"");l(n,58,0,n.parent.context.$implicit.hkid);l(n,61,0,"text");l(n,73,0,"mytheme","","")},function(l,n){l(n,3,0,n.parent.context.index+1,n.component.owners_list_length);l(n,37,0,s["ɵnov"](n,38)._hidden);l(n,55,0,s["ɵnov"](n,56).required?"":null,s["ɵnov"](n,60).ngClassUntouched,s["ɵnov"](n,60).ngClassTouched,s["ɵnov"](n,60).ngClassPristine,s["ɵnov"](n,60).ngClassDirty,s["ɵnov"](n,60).ngClassValid,s["ɵnov"](n,60).ngClassInvalid,s["ɵnov"](n,60).ngClassPending)})}function i(l){return s["ɵvid"](0,[(l()(),s["ɵeld"](0,0,null,null,6,"ion-col",[["class","col"],["col-12",""],["col-lg-6",""],["col-md-12",""],["col-sm-12",""],["col-xl-6",""],["no-padding",""],["offset-lg-3",""],["offset-xl-3",""]],null,null,null,null,null)),s["ɵdid"](1,16384,null,0,D.a,[],null,null),(l()(),s["ɵted"](-1,null,["\n        "])),(l()(),s["ɵand"](16777216,null,null,1,null,o)),s["ɵdid"](4,16384,null,0,x.i,[s.ViewContainerRef,s.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),s["ɵted"](-1,null,["\n        "])),(l()(),s["ɵted"](-1,null,["\n      "]))],function(l,n){l(n,4,0,n.context.$implicit.is_visible)},null)}function a(l){return s["ɵvid"](0,[(l()(),s["ɵeld"](0,0,null,null,7,"ion-header",[],null,null,null,null,null)),s["ɵdid"](1,16384,null,0,J.a,[P.a,s.ElementRef,s.Renderer,[2,j.a]],null,null),(l()(),s["ɵted"](-1,null,["\n  "])),(l()(),s["ɵeld"](3,0,null,null,3,"ion-navbar",[["class","toolbar"],["header-color",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,z.b,z.a)),s["ɵdid"](4,49152,null,0,Y.a,[F.a,[2,j.a],[2,Z.a],P.a,s.ElementRef,s.Renderer],null,null),(l()(),s["ɵted"](-1,3,["\n    "])),(l()(),s["ɵted"](-1,3,["\n  "])),(l()(),s["ɵted"](-1,null,["\n"])),(l()(),s["ɵted"](-1,null,["\n"])),(l()(),s["ɵted"](-1,null,["\n"])),(l()(),s["ɵeld"](10,0,null,null,13,"ion-content",[["background-size",""],["default-background",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,G.b,G.a)),s["ɵdid"](11,4374528,null,0,U.a,[P.a,q.a,$.a,s.ElementRef,s.Renderer,F.a,Q.a,s.NgZone,[2,j.a],[2,Z.a]],null,null),(l()(),s["ɵted"](-1,1,["\n  "])),(l()(),s["ɵeld"](13,0,null,1,9,"ion-grid",[["class","grid"]],null,null,null,null,null)),s["ɵdid"](14,16384,null,0,W.a,[],null,null),(l()(),s["ɵted"](-1,null,["\n    "])),(l()(),s["ɵeld"](16,0,null,null,5,"ion-row",[["class","row"],["padding",""],["wrap",""]],null,null,null,null,null)),s["ɵdid"](17,16384,null,0,I.a,[],null,null),(l()(),s["ɵted"](-1,null,["\n      "])),(l()(),s["ɵand"](16777216,null,null,1,null,i)),s["ɵdid"](20,802816,null,0,x.h,[s.ViewContainerRef,s.TemplateRef,s.IterableDiffers],{ngForOf:[0,"ngForOf"]},null),(l()(),s["ɵted"](-1,null,["\n    "])),(l()(),s["ɵted"](-1,null,["\n  "])),(l()(),s["ɵted"](-1,1,["\n"]))],function(l,n){l(n,20,0,n.component.owners_list)},function(l,n){l(n,3,0,s["ɵnov"](n,4)._hidden,s["ɵnov"](n,4)._sbPadding);l(n,10,0,s["ɵnov"](n,11).statusbarPadding,s["ɵnov"](n,11)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var s=e(0),d=(e(2),e(40),e(141)),r=e(59),c=e(60),g=e(61),m=e(92),h=function(){function l(l,n,e,t,u,o,i){this.navCtrl=l,this.navParams=n,this.camera=e,this.actionSheetCtrl=t,this.loadingService=u,this.dataService=o,this.showMessage=i,this.license_image="",this.owners_list=[],this.owners_list_length=0,this.loginResponse={},this.token="",this.navParams.get("owners_list")?(console.log("navParams"),this.owners_list=JSON.parse(this.navParams.get("owners_list")),this.owners_list?this.owners_list_length=this.owners_list.length:(this.owners_list_length=localStorage.getItem("owners_list_length"),console.log("owners_list Not Found"))):(console.log("localStorage"),this.owners_list=JSON.parse(localStorage.getItem("owners_list")),this.owners_list?this.owners_list_length=this.owners_list.length:(this.owners_list_length=localStorage.getItem("owners_list_length"),console.log("owners_list Not Found"))),this.loginResponse=JSON.parse(localStorage.getItem("loginResponse")),this.token=localStorage.getItem("token"),console.log(this.owners_list)}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad IdVerification1")},l.prototype.presentActionSheet=function(l){var n=this;this.actionSheetCtrl.create({title:"Select Image Source",buttons:[{text:"Load from Library",handler:function(){n.takePicture(n.camera.PictureSourceType.PHOTOLIBRARY,l)}},{text:"Use Camera",handler:function(){n.takePicture(n.camera.PictureSourceType.CAMERA,l)}},{text:"Cancel",role:"cancel"}]}).present()},l.prototype.takePicture=function(l,n){var e=this;this.camera.getPicture({quality:40,sourceType:l,destinationType:this.camera.DestinationType.DATA_URL,correctOrientation:!0}).then(function(l){e.owners_list[n].image="data:image/png;base64,"+l},function(l){e.showMessage.showToastBottom("Unable to get image")})},l.prototype.submitData=function(l){return console.log(l),void 0===this.owners_list[l].image||""==this.owners_list[l].image||null==this.owners_list[l].image?(this.showMessage.showToastBottom("Please select/take an picture to upload."),!1):void 0===this.owners_list[l].hkid||""==this.owners_list[l].hkid||null==this.owners_list[l].hkid?(this.showMessage.showToastBottom("Please enter the HKID number."),!1):void(l<this.owners_list.length-1?(this.owners_list[l].is_visible=!1,this.owners_list[++l].is_visible=!0):this.submitAllHKIDData(this.owners_list))},l.prototype.submitAllHKIDData=function(l){var n=this;this.loadingService.showLoading();for(var e=[],t={},u=0;u<l.length;u++)e.push({image:l[u].image,hkid:l[u].hkid});this.dataService.postData("saveHKID",t={hkids:e,account:this.loginResponse.user.account,estateName:this.loginResponse.user.estateName},{headers:{authorization:this.token}}).subscribe(function(l){console.log(t),1==l.success?(console.log(l),n.showMessage.showToastBottom(l.message),n.loadingService.hideLoading(),localStorage.setItem("firstTabPage","Noticeboard"),n.navCtrl.push("Tabs")):(n.showMessage.showToastBottom(l.message),n.loadingService.hideLoading(),"Invalid token"!=l.message&&"Please login"!=l.message||n.navCtrl.setRoot(m.a))},function(l){console.log("err",l),n.loadingService.hideLoading(),n.showMessage.showToastBottom("Unable to save HKID data, please try again.")})},l}(),f=function(){return function(){}}(),p=e(209),b=e(210),v=e(211),w=e(212),_=e(213),R=e(214),k=e(215),C=e(216),y=e(217),I=e(63),D=e(62),x=e(15),S=e(28),T=e(18),P=e(1),E=e(36),M=e(90),K=e(13),V=e(12),L=e(37),N=e(47),A=e(42),B=e(218),H=e(16),O=e(65),q=e(4),F=e(8),U=e(19),$=e(9),J=e(89),j=e(5),z=e(286),Y=e(46),Z=e(21),G=e(88),Q=e(23),W=e(91),X=e(11),ll=e(94),nl=s["ɵcrt"]({encapsulation:2,styles:[],data:{}}),el=s["ɵccf"]("page-id-verification-1",h,function(l){return s["ɵvid"](0,[(l()(),s["ɵeld"](0,0,null,null,1,"page-id-verification-1",[],null,null,null,a,nl)),s["ɵdid"](1,49152,null,0,h,[Z.a,X.a,d.a,ll.a,r.a,c.a,g.a],null,null)],null,null)},{},{},[]),tl=e(133),ul=e(41);e.d(n,"IdVerification1ModuleNgFactory",function(){return ol});var ol=s["ɵcmf"](f,[],function(l){return s["ɵmod"]([s["ɵmpd"](512,s.ComponentFactoryResolver,s["ɵCodegenComponentFactoryResolver"],[[8,[p.a,b.a,v.a,w.a,_.a,R.a,k.a,C.a,y.a,el]],[3,s.ComponentFactoryResolver],s.NgModuleRef]),s["ɵmpd"](4608,x.k,x.j,[s.LOCALE_ID,[2,x.s]]),s["ɵmpd"](4608,H.r,H.r,[]),s["ɵmpd"](4608,H.d,H.d,[]),s["ɵmpd"](512,x.b,x.b,[]),s["ɵmpd"](512,H.p,H.p,[]),s["ɵmpd"](512,H.e,H.e,[]),s["ɵmpd"](512,H.n,H.n,[]),s["ɵmpd"](512,tl.a,tl.a,[]),s["ɵmpd"](512,tl.b,tl.b,[]),s["ɵmpd"](512,f,f,[]),s["ɵmpd"](256,ul.a,h,[])])})},286:function(l,n,e){"use strict";function t(l){return u["ɵvid"](0,[(l()(),u["ɵeld"](0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),u["ɵdid"](1,278528,null,0,o.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),u["ɵeld"](2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var t=!0;if("click"===n){t=!1!==l.component.backButtonClick(e)&&t}return t},i.b,i.a)),u["ɵdid"](3,278528,null,0,o.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u["ɵdid"](4,1097728,null,0,a.a,[[8,"bar-button"],s.a,u.ElementRef,u.Renderer],null,null),(l()(),u["ɵeld"](5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),u["ɵdid"](6,278528,null,0,o.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u["ɵdid"](7,147456,null,0,d.a,[s.a,u.ElementRef,u.Renderer],{name:[0,"name"]},null),(l()(),u["ɵeld"](8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),u["ɵdid"](9,278528,null,0,o.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),u["ɵted"](10,null,["",""])),u["ɵncd"](null,0),u["ɵncd"](null,1),u["ɵncd"](null,2),(l()(),u["ɵeld"](14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),u["ɵdid"](15,278528,null,0,o.g,[u.IterableDiffers,u.KeyValueDiffers,u.ElementRef,u.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u["ɵncd"](null,3)],function(l,n){var e=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+e._mode);l(n,3,0,"back-button","back-button-"+e._mode);l(n,6,0,"back-button-icon","back-button-icon-"+e._mode);l(n,7,0,e._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+e._mode);l(n,15,0,"toolbar-content","toolbar-content-"+e._mode)},function(l,n){var e=n.component;l(n,2,0,e._hideBb);l(n,5,0,u["ɵnov"](n,7)._hidden);l(n,10,0,e._backText)})}e.d(n,"a",function(){return r}),n.b=t;var u=e(0),o=e(15),i=e(28),a=e(18),s=e(1),d=e(36),r=(e(46),e(5),e(21),u["ɵcrt"]({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([16],{
+
+/***/ 306:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IdVerification1Module", function() { return IdVerification1Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__id_verification_1__ = __webpack_require__(453);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var IdVerification1Module = (function () {
+    function IdVerification1Module() {
+    }
+    IdVerification1Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__id_verification_1__["a" /* IdVerification1 */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__id_verification_1__["a" /* IdVerification1 */]),
+            ],
+        })
+    ], IdVerification1Module);
+    return IdVerification1Module;
+}());
+
+//# sourceMappingURL=id-verification-1.module.js.map
+
+/***/ }),
+
+/***/ 453:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IdVerification1; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_loading_service__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_data_service__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_show_message__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(107);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var IdVerification1 = (function () {
+    function IdVerification1(navCtrl, navParams, camera, actionSheetCtrl, loadingService, dataService, showMessage) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.camera = camera;
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.loadingService = loadingService;
+        this.dataService = dataService;
+        this.showMessage = showMessage;
+        this.license_image = "";
+        this.owners_list = [];
+        this.owners_list_length = 0;
+        this.loginResponse = {};
+        this.token = "";
+        if (this.navParams.get("owners_list")) {
+            console.log("navParams");
+            this.owners_list = JSON.parse(this.navParams.get("owners_list"));
+            if (this.owners_list) {
+                this.owners_list_length = this.owners_list.length;
+            }
+            else {
+                this.owners_list_length = localStorage.getItem("owners_list_length");
+                console.log("owners_list Not Found");
+            }
+        }
+        else {
+            console.log("localStorage");
+            this.owners_list = JSON.parse(localStorage.getItem("owners_list"));
+            if (this.owners_list) {
+                this.owners_list_length = this.owners_list.length;
+            }
+            else {
+                this.owners_list_length = localStorage.getItem("owners_list_length");
+                console.log("owners_list Not Found");
+            }
+        }
+        this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
+        this.token = localStorage.getItem("token");
+        console.log(this.owners_list);
+    }
+    IdVerification1.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad IdVerification1');
+    };
+    IdVerification1.prototype.presentActionSheet = function (i) {
+        var _this = this;
+        var actionSheet = this.actionSheetCtrl.create({
+            title: 'Select Image Source',
+            buttons: [
+                {
+                    text: 'Load from Library',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.PHOTOLIBRARY, i);
+                    }
+                },
+                {
+                    text: 'Use Camera',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.CAMERA, i);
+                    }
+                },
+                {
+                    text: 'Cancel',
+                    role: 'cancel'
+                }
+            ]
+        });
+        actionSheet.present();
+    };
+    IdVerification1.prototype.takePicture = function (sourceType, i) {
+        var _this = this;
+        var options = {
+            quality: 40,
+            sourceType: sourceType,
+            destinationType: this.camera.DestinationType.DATA_URL,
+            correctOrientation: true
+        };
+        this.camera.getPicture(options).then(function (imageData) {
+            _this.owners_list[i].image = 'data:image/png;base64,' + imageData;
+        }, function (err) {
+            _this.showMessage.showToastBottom("Unable to get image");
+        });
+    };
+    IdVerification1.prototype.submitData = function (i) {
+        console.log(i);
+        if (typeof this.owners_list[i].image == "undefined" || this.owners_list[i].image == "" || this.owners_list[i].image == null) {
+            this.showMessage.showToastBottom("Please select/take an picture to upload.");
+            return false;
+        }
+        else if (typeof this.owners_list[i].hkid == "undefined" || this.owners_list[i].hkid == "" || this.owners_list[i].hkid == null) {
+            this.showMessage.showToastBottom("Please enter the HKID number.");
+            return false;
+        }
+        else {
+            if (i < this.owners_list.length - 1) {
+                this.owners_list[i].is_visible = false;
+                i++;
+                this.owners_list[i].is_visible = true;
+            }
+            else {
+                this.submitAllHKIDData(this.owners_list);
+                /* this.navCtrl.push("CompanyChop"); */
+            }
+        }
+    };
+    IdVerification1.prototype.submitAllHKIDData = function (owners_list) {
+        var _this = this;
+        this.loadingService.showLoading();
+        var hkidsArray = [];
+        var request_data = {};
+        for (var i = 0; i < owners_list.length; i++) {
+            hkidsArray.push({
+                "image": owners_list[i].image,
+                "hkid": owners_list[i].hkid,
+            });
+        }
+        request_data = {
+            "hkids": hkidsArray,
+            "account": this.loginResponse.user.account,
+            "estateName": this.loginResponse.user.estateName
+        };
+        this.dataService.postData("saveHKID", request_data, {
+            headers: {
+                'authorization': this.token
+            }
+        }).subscribe(function (results) {
+            console.log(request_data);
+            if (results.success == true) {
+                console.log(results);
+                _this.showMessage.showToastBottom(results.message);
+                _this.loadingService.hideLoading();
+                localStorage.setItem("firstTabPage", "Noticeboard");
+                _this.navCtrl.push("Tabs");
+                /* this.navCtrl.push("Register"); */
+            }
+            else {
+                _this.showMessage.showToastBottom(results.message);
+                _this.loadingService.hideLoading();
+                if (results.message == "Invalid token" || results.message == "Please login") {
+                    _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */]);
+                }
+            }
+        }, function (err) {
+            console.log("err", err);
+            _this.loadingService.hideLoading();
+            _this.showMessage.showToastBottom("Unable to save HKID data, please try again.");
+        });
+    };
+    IdVerification1 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-id-verification-1',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/id-verification-1/id-verification-1.html"*/`<ion-header>\n  <ion-navbar header-color>\n    <!-- <ion-title text-left>HKID (1/2)</ion-title> -->\n  </ion-navbar>\n</ion-header>\n<!-- Themes Register + logo -->\n<ion-content background-size default-background>\n  <ion-grid>\n    <ion-row wrap padding>\n      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 no-padding *ngFor="let owners_info of owners_list; let i=index;">\n        <div class="form" *ngIf="owners_info.is_visible">\n          <h1 title>身分證 | HKID ({{i+1}}/{{owners_list_length}})</h1>\n          <ion-row>\n            <ion-col class="p-l-r-10 p-t-b-0">\n              <p>請上傳您身分證圖片跟輸入其號碼 | Please upload a photo of your HKID and enter your HKID number below (e.g. R123456)</p>\n              <ion-row>\n                <ion-col text-center no-padding class="img-preview-div">\n                  <img *ngIf="!owners_info.image" src="./assets/images/logo/sample.png" class="preview-image" alt="">\n                  <img *ngIf="owners_info.image" [src]="owners_info.image" class="preview-image" alt="">\n                </ion-col>\n              </ion-row>\n              <ion-row>\n                <ion-col text-center margin-top no-padding>\n                  <button ion-button button-clear-outline round outline color="mytheme" (click)="presentActionSheet(i)">\n                    <ion-icon name="ios-camera-outline" class="camera-icon"></ion-icon>\n                    拍 | Take</button>\n                </ion-col>\n              </ion-row>\n              <!---Input field username-->\n              <ion-item no-padding transparent padding-bottom>\n                <ion-label floating>身分證號碼 | HKID NUMBER (e.g. R123456)</ion-label>\n                <ion-input required type="text" [(ngModel)]="owners_info.hkid"></ion-input>\n              </ion-item>\n            </ion-col>\n          </ion-row>\n          <ion-row margin-top>\n            <ion-col text-center margin-top>\n              <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="submitData(i)">確定 | Submit</button>\n            </ion-col>\n          </ion-row>\n        </div>\n        <!-- <div logo>\n          <img left src="./assets/images/logo/login_3.png">\n        </div> -->\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/id-verification-1/id-verification-1.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */], __WEBPACK_IMPORTED_MODULE_3__providers_loading_service__["a" /* LoadingService */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_data_service__["a" /* DataService */],
+            __WEBPACK_IMPORTED_MODULE_5__providers_show_message__["a" /* ShowMessage */]])
+    ], IdVerification1);
+    return IdVerification1;
+}());
+
+//# sourceMappingURL=id-verification-1.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=16.js.map

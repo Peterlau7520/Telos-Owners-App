@@ -1,1 +1,98 @@
-webpackJsonp([17],{263:function(l,n,e){"use strict";function u(l){return a["ɵvid"](0,[(l()(),a["ɵeld"](0,0,null,null,0,"img",[["alt",""],["class","preview-image"],["src","./assets/images/logo/chop_sample.jpg"]],null,null,null,null,null))],null,null)}function t(l){return a["ɵvid"](0,[(l()(),a["ɵeld"](0,0,null,null,0,"img",[["alt",""],["class","preview-image"]],[[8,"src",4]],null,null,null,null))],null,function(l,n){l(n,0,0,n.component.chop_image)})}function o(l){return a["ɵvid"](0,[(l()(),a["ɵeld"](0,0,null,null,7,"ion-header",[],null,null,null,null,null)),a["ɵdid"](1,16384,null,0,w.a,[_.a,a.ElementRef,a.Renderer,[2,S.a]],null,null),(l()(),a["ɵted"](-1,null,["\n  "])),(l()(),a["ɵeld"](3,0,null,null,3,"ion-navbar",[["class","toolbar"],["header-color",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,T.b,T.a)),a["ɵdid"](4,49152,null,0,I.a,[E.a,[2,S.a],[2,P.a],_.a,a.ElementRef,a.Renderer],null,null),(l()(),a["ɵted"](-1,3,["\n    "])),(l()(),a["ɵted"](-1,3,["\n  "])),(l()(),a["ɵted"](-1,null,["\n"])),(l()(),a["ɵted"](-1,null,["\n"])),(l()(),a["ɵted"](-1,null,["\n"])),(l()(),a["ɵeld"](10,0,null,null,73,"ion-content",[["background-size",""],["default-background",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,D.b,D.a)),a["ɵdid"](11,4374528,null,0,O.a,[_.a,x.a,L.a,a.ElementRef,a.Renderer,E.a,A.a,a.NgZone,[2,S.a],[2,P.a]],null,null),(l()(),a["ɵted"](-1,1,["\n  "])),(l()(),a["ɵeld"](13,0,null,1,69,"ion-grid",[["class","grid"]],null,null,null,null,null)),a["ɵdid"](14,16384,null,0,M.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n    "])),(l()(),a["ɵeld"](16,0,null,null,65,"ion-row",[["class","row"],["padding",""],["wrap",""]],null,null,null,null,null)),a["ɵdid"](17,16384,null,0,N.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n      "])),(l()(),a["ɵeld"](19,0,null,null,61,"ion-col",[["class","col"],["col-12",""],["col-lg-6",""],["col-md-12",""],["col-sm-12",""],["col-xl-6",""],["no-padding",""],["offset-lg-3",""],["offset-xl-3",""]],null,null,null,null,null)),a["ɵdid"](20,16384,null,0,V.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n        "])),(l()(),a["ɵeld"](22,0,null,null,56,"div",[["class","form"]],null,null,null,null,null)),(l()(),a["ɵted"](-1,null,["\n          "])),(l()(),a["ɵeld"](24,0,null,null,1,"h1",[["title",""]],null,null,null,null,null)),(l()(),a["ɵted"](-1,null,["印章 | Company Chop"])),(l()(),a["ɵted"](-1,null,["\n          "])),(l()(),a["ɵeld"](27,0,null,null,38,"ion-row",[["class","row"],["margin-bottom",""],["padding-bottom",""]],null,null,null,null,null)),a["ɵdid"](28,16384,null,0,N.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n            "])),(l()(),a["ɵeld"](30,0,null,null,34,"ion-col",[["class","p-l-r-10 p-t-b-0 col"],["margin-vertical",""],["padding-vertical",""]],null,null,null,null,null)),a["ɵdid"](31,16384,null,0,V.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵeld"](33,0,null,null,1,"p",[["margin-bottom",""]],null,null,null,null,null)),(l()(),a["ɵted"](-1,null,["如果您單位屬於貴公司，請上傳其印章圖片 | IF YOUR UNIT(S) IS OWNED BY YOUR COMPANY, PLEASE UPLOAD A PHOTO OF THE COMPANY CHOP."])),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵeld"](36,0,null,null,12,"ion-row",[["class","row"]],null,null,null,null,null)),a["ɵdid"](37,16384,null,0,N.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n                "])),(l()(),a["ɵeld"](39,0,null,null,8,"ion-col",[["class","img-preview-div col"],["no-padding",""],["text-center",""]],null,null,null,null,null)),a["ɵdid"](40,16384,null,0,V.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n                  "])),(l()(),a["ɵand"](16777216,null,null,1,null,u)),a["ɵdid"](43,16384,null,0,B.i,[a.ViewContainerRef,a.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),a["ɵted"](-1,null,["\n                  "])),(l()(),a["ɵand"](16777216,null,null,1,null,t)),a["ɵdid"](46,16384,null,0,B.i,[a.ViewContainerRef,a.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),a["ɵted"](-1,null,["\n                "])),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵeld"](50,0,null,null,13,"ion-row",[["class","row"]],null,null,null,null,null)),a["ɵdid"](51,16384,null,0,N.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n                "])),(l()(),a["ɵeld"](53,0,null,null,9,"ion-col",[["class","col"],["margin-top",""],["no-padding",""],["text-center",""]],null,null,null,null,null)),a["ɵdid"](54,16384,null,0,V.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n                  "])),(l()(),a["ɵeld"](56,0,null,null,5,"button",[["button-clear-outline",""],["color","mytheme"],["ion-button",""],["outline",""],["round",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.presentActionSheet()&&u}return u},U.b,U.a)),a["ɵdid"](57,1097728,null,0,F.a,[[8,""],_.a,a.ElementRef,a.Renderer],{color:[0,"color"],outline:[1,"outline"],round:[2,"round"]},null),(l()(),a["ɵted"](-1,0,["\n                    "])),(l()(),a["ɵeld"](59,0,null,0,1,"ion-icon",[["class","camera-icon"],["name","ios-camera-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),a["ɵdid"](60,147456,null,0,Y.a,[_.a,a.ElementRef,a.Renderer],{name:[0,"name"]},null),(l()(),a["ɵted"](-1,0,["\n                    拍 | Take"])),(l()(),a["ɵted"](-1,null,["\n                "])),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵted"](-1,null,["\n            "])),(l()(),a["ɵted"](-1,null,["\n          "])),(l()(),a["ɵted"](-1,null,["\n          "])),(l()(),a["ɵeld"](67,0,null,null,10,"ion-row",[["class","row"],["margin-top",""]],null,null,null,null,null)),a["ɵdid"](68,16384,null,0,N.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n            "])),(l()(),a["ɵeld"](70,0,null,null,6,"ion-col",[["class","col"],["margin-top",""],["text-center",""]],null,null,null,null,null)),a["ɵdid"](71,16384,null,0,V.a,[],null,null),(l()(),a["ɵted"](-1,null,["\n              "])),(l()(),a["ɵeld"](73,0,null,null,2,"button",[["button-clear-outline",""],["class","next-button"],["color","mytheme"],["ion-button",""],["outline",""],["round",""]],null,[[null,"click"]],function(l,n,e){var u=!0,t=l.component;if("click"===n){u=!1!==t.goToRegister(t.chop_image)&&u}return u},U.b,U.a)),a["ɵdid"](74,1097728,null,0,F.a,[[8,""],_.a,a.ElementRef,a.Renderer],{color:[0,"color"],outline:[1,"outline"],round:[2,"round"]},null),(l()(),a["ɵted"](-1,0,["下一頁 | Next"])),(l()(),a["ɵted"](-1,null,["\n            "])),(l()(),a["ɵted"](-1,null,["\n          "])),(l()(),a["ɵted"](-1,null,["\n        "])),(l()(),a["ɵted"](-1,null,["\n        "])),(l()(),a["ɵted"](-1,null,["\n      "])),(l()(),a["ɵted"](-1,null,["\n    "])),(l()(),a["ɵted"](-1,null,["\n  "])),(l()(),a["ɵted"](-1,1,["\n"]))],function(l,n){var e=n.component;l(n,43,0,!e.chop_image);l(n,46,0,e.chop_image);l(n,57,0,"mytheme","","");l(n,60,0,"ios-camera-outline");l(n,74,0,"mytheme","","")},function(l,n){l(n,3,0,a["ɵnov"](n,4)._hidden,a["ɵnov"](n,4)._sbPadding);l(n,10,0,a["ɵnov"](n,11).statusbarPadding,a["ɵnov"](n,11)._hasRefresher);l(n,59,0,a["ɵnov"](n,60)._hidden)})}Object.defineProperty(n,"__esModule",{value:!0});var a=e(0),i=(e(2),e(40),e(141)),d=e(59),s=e(60),r=e(61),c=e(92),m=function(){function l(l,n,e,u,t,o,a){this.navCtrl=l,this.navParams=n,this.camera=e,this.actionSheetCtrl=u,this.loadingService=t,this.dataService=o,this.showMessage=a,this.chop_image="",this.loginResponse={},this.token=localStorage.getItem("token"),this.loginResponse=JSON.parse(localStorage.getItem("loginResponse")),console.log(this.loginResponse)}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad CompanyChop")},l.prototype.presentActionSheet=function(){var l=this;this.actionSheetCtrl.create({title:"Select Image Source",buttons:[{text:"Load from Library",handler:function(){l.takePicture(l.camera.PictureSourceType.PHOTOLIBRARY)}},{text:"Use Camera",handler:function(){l.takePicture(l.camera.PictureSourceType.CAMERA)}},{text:"Cancel",role:"cancel"}]}).present()},l.prototype.takePicture=function(l){var n=this;this.camera.getPicture({quality:40,sourceType:l,destinationType:this.camera.DestinationType.DATA_URL,correctOrientation:!0}).then(function(l){n.chop_image="data:image/png;base64,"+l},function(l){n.showMessage.showToastBottom("Unable to get image")})},l.prototype.goToRegister=function(l){var n=this;if(void 0===this.chop_image||""==this.chop_image||null==this.chop_image)return this.showMessage.showToastBottom("Please select/take an picture to upload."),!1;this.loadingService.showLoading();this.dataService.postData("saveChop",{account:this.loginResponse.user.account,image:this.chop_image,estateName:this.loginResponse.user.estateName},{headers:{authorization:this.token}}).subscribe(function(l){1==l.success?(n.showMessage.showToastBottom(l.message),n.loadingService.hideLoading(),n.navCtrl.push("IdVerification1")):(n.loadingService.hideLoading(),n.showMessage.showToastBottom(l.message),"Invalid token"!=l.message&&"Please login"!=l.message||n.navCtrl.setRoot(c.a))},function(l){console.log("err",l),n.loadingService.hideLoading(),n.showMessage.showToastBottom("Unable to save image, please try again.")})},l}(),g=function(){return function(){}}(),p=e(209),f=e(210),h=e(211),b=e(212),v=e(213),R=e(214),k=e(215),C=e(216),y=e(217),w=e(89),_=e(1),S=e(5),T=e(286),I=e(46),E=e(8),P=e(21),D=e(88),O=e(19),x=e(4),L=e(9),A=e(23),M=e(91),N=e(63),V=e(62),B=e(15),U=e(28),F=e(18),Y=e(36),K=e(11),H=e(94),j=a["ɵcrt"]({encapsulation:2,styles:[],data:{}}),z=a["ɵccf"]("page-company-chop",m,function(l){return a["ɵvid"](0,[(l()(),a["ɵeld"](0,0,null,null,1,"page-company-chop",[],null,null,null,o,j)),a["ɵdid"](1,49152,null,0,m,[P.a,K.a,i.a,H.a,d.a,s.a,r.a],null,null)],null,null)},{},{},[]),J=e(16),q=e(133),W=e(41);e.d(n,"CompanyChopModuleNgFactory",function(){return Z});var Z=a["ɵcmf"](g,[],function(l){return a["ɵmod"]([a["ɵmpd"](512,a.ComponentFactoryResolver,a["ɵCodegenComponentFactoryResolver"],[[8,[p.a,f.a,h.a,b.a,v.a,R.a,k.a,C.a,y.a,z]],[3,a.ComponentFactoryResolver],a.NgModuleRef]),a["ɵmpd"](4608,B.k,B.j,[a.LOCALE_ID,[2,B.s]]),a["ɵmpd"](4608,J.r,J.r,[]),a["ɵmpd"](4608,J.d,J.d,[]),a["ɵmpd"](512,B.b,B.b,[]),a["ɵmpd"](512,J.p,J.p,[]),a["ɵmpd"](512,J.e,J.e,[]),a["ɵmpd"](512,J.n,J.n,[]),a["ɵmpd"](512,q.a,q.a,[]),a["ɵmpd"](512,q.b,q.b,[]),a["ɵmpd"](512,g,g,[]),a["ɵmpd"](256,W.a,m,[])])})},286:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),t["ɵdid"](1,278528,null,0,o.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵeld"](2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.backButtonClick(e)&&u}return u},a.b,a.a)),t["ɵdid"](3,278528,null,0,o.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](4,1097728,null,0,i.a,[[8,"bar-button"],d.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵeld"](5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t["ɵdid"](6,278528,null,0,o.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](7,147456,null,0,s.a,[d.a,t.ElementRef,t.Renderer],{name:[0,"name"]},null),(l()(),t["ɵeld"](8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),t["ɵdid"](9,278528,null,0,o.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵted"](10,null,["",""])),t["ɵncd"](null,0),t["ɵncd"](null,1),t["ɵncd"](null,2),(l()(),t["ɵeld"](14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),t["ɵdid"](15,278528,null,0,o.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵncd"](null,3)],function(l,n){var e=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+e._mode);l(n,3,0,"back-button","back-button-"+e._mode);l(n,6,0,"back-button-icon","back-button-icon-"+e._mode);l(n,7,0,e._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+e._mode);l(n,15,0,"toolbar-content","toolbar-content-"+e._mode)},function(l,n){var e=n.component;l(n,2,0,e._hideBb);l(n,5,0,t["ɵnov"](n,7)._hidden);l(n,10,0,e._backText)})}e.d(n,"a",function(){return r}),n.b=u;var t=e(0),o=e(15),a=e(28),i=e(18),d=e(1),s=e(36),r=(e(46),e(5),e(21),t["ɵcrt"]({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([17],{
+
+/***/ 305:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForumPostModalModule", function() { return ForumPostModalModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forum_post_modal__ = __webpack_require__(452);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ForumPostModalModule = (function () {
+    function ForumPostModalModule() {
+    }
+    ForumPostModalModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__forum_post_modal__["a" /* ForumPostModal */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__forum_post_modal__["a" /* ForumPostModal */]),
+            ],
+        })
+    ], ForumPostModalModule);
+    return ForumPostModalModule;
+}());
+
+//# sourceMappingURL=forum-post-modal.module.js.map
+
+/***/ }),
+
+/***/ 452:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ForumPostModal; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_data_service__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_show_message__ = __webpack_require__(106);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var ForumPostModal = (function () {
+    function ForumPostModal(navCtrl, navParams, viewCtrl, loadingService, dataService, showMessage) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.loadingService = loadingService;
+        this.dataService = dataService;
+        this.showMessage = showMessage;
+    }
+    ForumPostModal.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ForumPostModal');
+    };
+    ForumPostModal.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    ForumPostModal = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-forum-post-modal',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/forum-post-modal/forum-post-modal.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title center>Forum</ion-title>\n    <ion-buttons end>\n      <button ion-button color="ffffff" (click)="dismiss()">\n        cancel\n      </button>\n      <button ion-button color="ffffff">\n        Post\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content no-padding white-background>\n  <ion-list>\n    <ion-item no-padding>\n      <ion-textarea rows="20" placeholder="Enter text to post"></ion-textarea>\n    </ion-item>\n  </ion-list>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/forum-post-modal/forum-post-modal.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__["a" /* LoadingService */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_data_service__["a" /* DataService */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_show_message__["a" /* ShowMessage */]])
+    ], ForumPostModal);
+    return ForumPostModal;
+}());
+
+//# sourceMappingURL=forum-post-modal.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=17.js.map

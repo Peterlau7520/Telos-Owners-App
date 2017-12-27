@@ -1,1 +1,97 @@
-webpackJsonp([9],{267:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,23,"ion-header",[],null,null,null,null,null)),t["ɵdid"](1,16384,null,0,v.a,[h.a,t.ElementRef,t.Renderer,[2,C.a]],null,null),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵeld"](3,0,null,null,19,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,E.b,E.a)),t["ɵdid"](4,49152,null,0,_.a,[y.a,[2,C.a],[2,D.a],h.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,3,["\n    "])),(l()(),t["ɵeld"](6,0,null,3,2,"ion-title",[["center",""]],null,null,null,w.b,w.a)),t["ɵdid"](7,49152,null,0,I.a,[h.a,t.ElementRef,t.Renderer,[2,V.a],[2,_.a]],null,null),(l()(),t["ɵted"](-1,0,["Forum"])),(l()(),t["ɵted"](-1,3,["\n    "])),(l()(),t["ɵeld"](10,0,null,2,11,"ion-buttons",[["end",""]],null,null,null,null,null)),t["ɵdid"](11,16384,null,1,x.a,[h.a,t.ElementRef,t.Renderer,[2,V.a],[2,_.a]],null,null),t["ɵqud"](603979776,1,{_buttons:1}),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](14,0,null,null,2,"button",[["color","ffffff"],["ion-button",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.dismiss()&&u}return u},F.b,F.a)),t["ɵdid"](15,1097728,[[1,4]],0,P.a,[[8,""],h.a,t.ElementRef,t.Renderer],{color:[0,"color"]},null),(l()(),t["ɵted"](-1,0,["\n        cancel\n      "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](18,0,null,null,2,"button",[["color","ffffff"],["ion-button",""]],null,null,null,F.b,F.a)),t["ɵdid"](19,1097728,[[1,4]],0,P.a,[[8,""],h.a,t.ElementRef,t.Renderer],{color:[0,"color"]},null),(l()(),t["ɵted"](-1,0,["\n        Post\n      "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵted"](-1,3,["\n  "])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵted"](-1,null,["\n\n\n"])),(l()(),t["ɵeld"](25,0,null,null,17,"ion-content",[["no-padding",""],["white-background",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,K.b,K.a)),t["ɵdid"](26,4374528,null,0,M.a,[h.a,L.a,q.a,t.ElementRef,t.Renderer,y.a,N.a,t.NgZone,[2,C.a],[2,D.a]],null,null),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](28,0,null,1,13,"ion-list",[],null,null,null,null,null)),t["ɵdid"](29,16384,null,0,j.a,[h.a,t.ElementRef,t.Renderer,L.a,B.l,q.a],null,null),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵeld"](31,0,null,null,9,"ion-item",[["class","item item-block"],["no-padding",""]],null,null,null,O.b,O.a)),t["ɵdid"](32,1097728,null,3,S.a,[A.a,h.a,t.ElementRef,t.Renderer,[2,J.a]],null,null),t["ɵqud"](335544320,2,{contentLabel:0}),t["ɵqud"](603979776,3,{_buttons:1}),t["ɵqud"](603979776,4,{_icons:1}),t["ɵdid"](36,16384,null,0,T.a,[],null,null),(l()(),t["ɵted"](-1,2,["\n      "])),(l()(),t["ɵeld"](38,0,null,3,1,"ion-textarea",[["placeholder","Enter text to post"],["rows","20"]],null,null,null,Z.b,Z.a)),t["ɵdid"](39,5423104,null,0,z.a,[h.a,L.a,A.a,y.a,t.ElementRef,t.Renderer,[2,M.a],[2,S.a],[2,G.h],q.a],{placeholder:[0,"placeholder"]},null),(l()(),t["ɵted"](-1,2,["\n    "])),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵted"](-1,1,["\n"]))],function(l,n){l(n,15,0,"ffffff");l(n,19,0,"ffffff");l(n,39,0,"Enter text to post")},function(l,n){l(n,3,0,t["ɵnov"](n,4)._hidden,t["ɵnov"](n,4)._sbPadding);l(n,25,0,t["ɵnov"](n,26).statusbarPadding,t["ɵnov"](n,26)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var t=e(0),a=(e(2),e(40),e(59)),o=e(60),d=e(61),r=function(){function l(l,n,e,u,t,a){this.navCtrl=l,this.navParams=n,this.viewCtrl=e,this.loadingService=u,this.dataService=t,this.showMessage=a}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad ForumPostModal")},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l}(),s=function(){return function(){}}(),i=e(209),c=e(210),f=e(211),b=e(212),m=e(213),p=e(214),R=e(215),g=e(216),k=e(217),v=e(89),h=e(1),C=e(5),E=e(286),_=e(46),y=e(8),D=e(21),w=e(287),I=e(132),V=e(58),x=e(135),F=e(28),P=e(18),K=e(88),M=e(19),L=e(4),q=e(9),N=e(23),j=e(48),B=e(6),O=e(90),S=e(13),A=e(12),J=e(37),T=e(47),Z=e(218),z=e(65),G=e(16),H=e(11),Q=t["ɵcrt"]({encapsulation:2,styles:[],data:{}}),U=t["ɵccf"]("page-forum-post-modal",r,function(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"page-forum-post-modal",[],null,null,null,u,Q)),t["ɵdid"](1,49152,null,0,r,[D.a,H.a,C.a,a.a,o.a,d.a],null,null)],null,null)},{},{},[]),W=e(15),X=e(133),Y=e(41);e.d(n,"ForumPostModalModuleNgFactory",function(){return $});var $=t["ɵcmf"](s,[],function(l){return t["ɵmod"]([t["ɵmpd"](512,t.ComponentFactoryResolver,t["ɵCodegenComponentFactoryResolver"],[[8,[i.a,c.a,f.a,b.a,m.a,p.a,R.a,g.a,k.a,U]],[3,t.ComponentFactoryResolver],t.NgModuleRef]),t["ɵmpd"](4608,W.k,W.j,[t.LOCALE_ID,[2,W.s]]),t["ɵmpd"](4608,G.r,G.r,[]),t["ɵmpd"](4608,G.d,G.d,[]),t["ɵmpd"](512,W.b,W.b,[]),t["ɵmpd"](512,G.p,G.p,[]),t["ɵmpd"](512,G.e,G.e,[]),t["ɵmpd"](512,G.n,G.n,[]),t["ɵmpd"](512,X.a,X.a,[]),t["ɵmpd"](512,X.b,X.b,[]),t["ɵmpd"](512,s,s,[]),t["ɵmpd"](256,Y.a,r,[])])})},286:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),t["ɵdid"](1,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵeld"](2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.backButtonClick(e)&&u}return u},o.b,o.a)),t["ɵdid"](3,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](4,1097728,null,0,d.a,[[8,"bar-button"],r.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵeld"](5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t["ɵdid"](6,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](7,147456,null,0,s.a,[r.a,t.ElementRef,t.Renderer],{name:[0,"name"]},null),(l()(),t["ɵeld"](8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),t["ɵdid"](9,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵted"](10,null,["",""])),t["ɵncd"](null,0),t["ɵncd"](null,1),t["ɵncd"](null,2),(l()(),t["ɵeld"](14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),t["ɵdid"](15,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵncd"](null,3)],function(l,n){var e=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+e._mode);l(n,3,0,"back-button","back-button-"+e._mode);l(n,6,0,"back-button-icon","back-button-icon-"+e._mode);l(n,7,0,e._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+e._mode);l(n,15,0,"toolbar-content","toolbar-content-"+e._mode)},function(l,n){var e=n.component;l(n,2,0,e._hideBb);l(n,5,0,t["ɵnov"](n,7)._hidden);l(n,10,0,e._backText)})}e.d(n,"a",function(){return i}),n.b=u;var t=e(0),a=e(15),o=e(28),d=e(18),r=e(1),s=e(36),i=(e(46),e(5),e(21),t["ɵcrt"]({encapsulation:2,styles:[],data:{}}))},287:function(l,n,e){"use strict";function u(l){return t["ɵvid"](2,[(l()(),t["ɵeld"](0,0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),t["ɵdid"](1,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵncd"](null,0)],function(l,n){l(n,1,0,"toolbar-title","toolbar-title-"+n.component._mode)},null)}e.d(n,"a",function(){return o}),n.b=u;var t=e(0),a=e(15),o=(e(132),e(1),e(58),e(46),t["ɵcrt"]({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([9],{
+
+/***/ 316:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabsModule", function() { return TabsModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(463);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var TabsModule = (function () {
+    function TabsModule() {
+    }
+    TabsModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__tabs__["a" /* Tabs */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__tabs__["a" /* Tabs */]),
+            ],
+        })
+    ], TabsModule);
+    return TabsModule;
+}());
+
+//# sourceMappingURL=tabs.module.js.map
+
+/***/ }),
+
+/***/ 463:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Tabs; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Tabs = (function () {
+    function Tabs(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.tab1Root = "";
+        this.tab2Root = "AllMeetingsPage";
+        this.tab3Root = "SurveyList";
+        this.tab4Root = "ForumPage";
+        this.badgeCount = 10;
+        console.log("tab Changed const");
+        this.tab1Root = localStorage.getItem("firstTabPage");
+    }
+    Tabs.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Tabs');
+        this.tab1Root = localStorage.getItem("firstTabPage");
+    };
+    Tabs.prototype.getBadgesCounts = function () {
+    };
+    Tabs.prototype.tabChanged = function (event) {
+        console.log("TAB CHANGED...");
+        console.log(event);
+        /* this.showMessage.changeTabButtonColor(this.theme_settings.Theme); */
+        /* event.color = this.theme_settings.Theme; */
+    };
+    Tabs = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-tabs',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/tabs/tabs.html"*/`<ion-tabs (ionChange)="tabChanged($event)">\n  <ion-tab [root]="tab1Root" tabTitle="通告 Noticaboard" tabIcon="noticeboard"></ion-tab>\n  <!-- <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="ios-calendar" [tabBadge]="badgeCount" tabBadgeStyle="danger"></ion-tab> -->\n  <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="meetings"></ion-tab>\n  <!-- <ion-tab [root]="tab3Root" tabTitle="以往會議 Past&nbsp;Meetings" tabIcon="ios-paper"></ion-tab> -->\n  <ion-tab [root]="tab3Root" tabTitle="問卷 Surveys" tabIcon="survey"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="論壇 Forum" tabIcon="forum"></ion-tab>\n</ion-tabs>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/tabs/tabs.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
+    ], Tabs);
+    return Tabs;
+}());
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=9.js.map

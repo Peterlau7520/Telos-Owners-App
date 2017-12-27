@@ -1,1 +1,117 @@
-webpackJsonp([18],{280:function(l,n,u){"use strict";function e(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,22,"ion-content",[["class","main-view"]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,h.b,h.a)),t["ɵdid"](1,4374528,null,0,y.a,[w.a,g.a,k.a,t.ElementRef,t.Renderer,b.a,C.a,t.NgZone,[2,R.a],[2,_.a]],null,null),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](3,0,null,1,0,"div",[["class","overlay"]],null,[[null,"click"]],function(l,n,u){var e=!0;if("click"===n){e=!1!==l.component.dismiss()&&e}return e},null,null)),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](5,0,null,1,16,"div",[["class","modal_content"]],null,[[null,"click"]],function(l,n,u){var e=!0;if("click"===n){e=!1!==l.component.dismiss()&&e}return e},null,null)),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵeld"](7,0,null,null,13,"ion-row",[["class","modal_inner_content row"]],null,null,null,null,null)),t["ɵdid"](8,16384,null,0,N.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](10,0,null,null,9,"ion-col",[["class","col"]],null,null,null,null,null)),t["ɵdid"](11,16384,null,0,F.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](13,0,null,null,5,"ion-row",[["class","row"]],null,null,null,null,null)),t["ɵdid"](14,16384,null,0,N.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](16,0,null,null,1,"p",[["class","agree-title"],["col-12",""],["no-margin",""],["text-center",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["Thank you, you are now welcome to vote."])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵted"](-1,1,["\n"]))],null,function(l,n){l(n,0,0,t["ɵnov"](n,1).statusbarPadding,t["ɵnov"](n,1)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var t=u(0),o=(u(2),u(40),function(){function l(l,n,u,e){this.navCtrl=l,this.navParams=n,this.viewCtrl=u,this.modalCtrl=e}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad ThankYouNote")},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l}()),a=function(){return function(){}}(),d=u(209),i=u(210),r=u(211),c=u(212),s=u(213),m=u(214),p=u(215),f=u(216),v=u(217),h=u(88),y=u(19),w=u(1),g=u(4),k=u(9),b=u(8),C=u(23),R=u(5),_=u(21),N=u(63),F=u(62),L=u(11),D=u(64),M=t["ɵcrt"]({encapsulation:2,styles:[],data:{}}),P=t["ɵccf"]("page-thank-you-note",o,function(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"page-thank-you-note",[],null,null,null,e,M)),t["ɵdid"](1,49152,null,0,o,[_.a,L.a,R.a,D.a],null,null)],null,null)},{},{},[]),T=u(15),j=u(16),E=u(133),O=u(41);u.d(n,"ThankYouNoteModuleNgFactory",function(){return V});var V=t["ɵcmf"](a,[],function(l){return t["ɵmod"]([t["ɵmpd"](512,t.ComponentFactoryResolver,t["ɵCodegenComponentFactoryResolver"],[[8,[d.a,i.a,r.a,c.a,s.a,m.a,p.a,f.a,v.a,P]],[3,t.ComponentFactoryResolver],t.NgModuleRef]),t["ɵmpd"](4608,T.k,T.j,[t.LOCALE_ID,[2,T.s]]),t["ɵmpd"](4608,j.r,j.r,[]),t["ɵmpd"](4608,j.d,j.d,[]),t["ɵmpd"](512,T.b,T.b,[]),t["ɵmpd"](512,j.p,j.p,[]),t["ɵmpd"](512,j.e,j.e,[]),t["ɵmpd"](512,j.n,j.n,[]),t["ɵmpd"](512,E.a,E.a,[]),t["ɵmpd"](512,E.b,E.b,[]),t["ɵmpd"](512,a,a,[]),t["ɵmpd"](256,O.a,o,[])])})}});
+webpackJsonp([18],{
+
+/***/ 304:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForumPageModule", function() { return ForumPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forum_page__ = __webpack_require__(451);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ForumPageModule = (function () {
+    function ForumPageModule() {
+    }
+    ForumPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__forum_page__["a" /* ForumPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__forum_page__["a" /* ForumPage */]),
+            ],
+        })
+    ], ForumPageModule);
+    return ForumPageModule;
+}());
+
+//# sourceMappingURL=forum-page.module.js.map
+
+/***/ }),
+
+/***/ 451:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ForumPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_data_service__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_show_message__ = __webpack_require__(106);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var ForumPage = (function () {
+    function ForumPage(navCtrl, navParams, loadingService, dataService, showMessage, modalCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.loadingService = loadingService;
+        this.dataService = dataService;
+        this.showMessage = showMessage;
+        this.modalCtrl = modalCtrl;
+        this.forumsList = [];
+        this.getStaticData();
+    }
+    ForumPage.prototype.getStaticData = function () {
+        for (var i = 0; i < 5; i++) {
+            this.forumsList.push({
+                "likes": i * 4,
+                "comments": 3,
+            });
+        }
+    };
+    ForumPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ForumPage');
+    };
+    ForumPage.prototype.openForumDetailsPage = function () {
+        this.navCtrl.push("ForumDetails");
+    };
+    ForumPage.prototype.openReportPage = function () {
+    };
+    ForumPage.prototype.openWritePostPage = function () {
+        var myModal = this.modalCtrl.create("ForumPostModal");
+        myModal.onDidDismiss(function (data) {
+        });
+        myModal.present();
+    };
+    ForumPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-forum-page',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/forum-page/forum-page.html"*/`<ion-header>\n  <ion-navbar header-color>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-left> 論壇 | FORUM</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-padding>\n  <ion-row>\n    <ion-col col-12 no-padding>\n      <ion-card (click)="openWritePostPage()">\n        <ion-card-content>\n          <ion-item no-padding>\n            <ion-label no-margin>\n              <ion-icon item-start no-margin name="ios-create-outline"></ion-icon>\n              <p c-display-inline-block no-margin>您最近在想什麼 ？Post something here :)</p>\n            </ion-label>\n          </ion-item>\n        </ion-card-content>\n      </ion-card>\n    </ion-col>\n  </ion-row>\n  <ion-row margin-bottom>\n    <ion-col col-12 no-padding *ngFor="let forum_details of forumsList; let i=index;">\n      <ion-card>\n        <ion-item (click)="openForumDetailsPage()">\n          <h2 left>HKU00{{i+2}}</h2>\n          <p right>12/8/17 00:10</p>\n        </ion-item>\n        <ion-card-content (click)="openForumDetailsPage()">\n          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s\n            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n            a type specimen book.\n          </p>\n        </ion-card-content>\n        <ion-row>\n          <ion-col text-center>\n            <button ion-button icon-left clear small>\n              <ion-icon name="ios-thumbs-up-outline"></ion-icon>\n              <div>{{forum_details.likes}}</div>\n            </button>\n          </ion-col>\n          <ion-col text-center>\n            <button ion-button icon-left clear small (click)="openForumDetailsPage()">\n              <ion-icon name="ios-text-outline"></ion-icon>\n              <div>{{forum_details.comments}}</div>\n            </button>\n          </ion-col>\n          <ion-col text-center>\n            <button ion-button icon-left clear small (click)="openReportPage()">\n              <ion-icon name="ios-flag-outline"></ion-icon>\n              <div>投訴 | Report</div>\n            </button>\n          </ion-col>\n        </ion-row>\n      </ion-card>\n    </ion-col>\n  </ion-row>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/forum-page/forum-page.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_loading_service__["a" /* LoadingService */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_data_service__["a" /* DataService */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_show_message__["a" /* ShowMessage */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
+    ], ForumPage);
+    return ForumPage;
+}());
+
+//# sourceMappingURL=forum-page.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=18.js.map

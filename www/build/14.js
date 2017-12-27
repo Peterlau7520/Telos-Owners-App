@@ -1,1 +1,115 @@
-webpackJsonp([14],{273:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,8,"ion-header",[],null,null,null,null,null)),t["ɵdid"](1,16384,null,0,g.a,[k.a,t.ElementRef,t.Renderer,[2,y.a]],null,null),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵeld"](3,0,null,null,4,"ion-navbar",[["class","toolbar"],["header-color",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,E.b,E.a)),t["ɵdid"](4,49152,null,0,h.a,[v.a,[2,y.a],[2,_.a],k.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵted"](-1,3,["\n    "])),(l()(),t["ɵted"](-1,3,["\n    "])),(l()(),t["ɵted"](-1,3,["\n  "])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵted"](-1,null,["\n"])),(l()(),t["ɵeld"](11,0,null,null,121,"ion-content",[["background-size",""],["default-background",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,q.b,q.a)),t["ɵdid"](12,4374528,null,0,C.a,[k.a,x.a,D.a,t.ElementRef,t.Renderer,v.a,w.a,t.NgZone,[2,y.a],[2,_.a]],null,null),(l()(),t["ɵted"](-1,1,["\n  "])),(l()(),t["ɵeld"](14,0,null,1,117,"ion-grid",[["class","grid"]],null,null,null,null,null)),t["ɵdid"](15,16384,null,0,L.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵeld"](17,0,null,null,113,"ion-row",[["class","row"],["padding",""],["wrap",""]],null,null,null,null,null)),t["ɵdid"](18,16384,null,0,I.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵeld"](20,0,null,null,109,"ion-col",[["class","col"],["col-12",""],["col-lg-6",""],["col-md-12",""],["col-sm-12",""],["col-xl-6",""],["no-padding",""],["offset-lg-3",""],["offset-xl-3",""]],null,null,null,null,null)),t["ɵdid"](21,16384,null,0,O.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵeld"](24,0,null,null,103,"div",[["class","form"]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](27,0,null,null,1,"h1",[["title",""]],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["個人資料 | Personal details"])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵeld"](30,0,null,null,96,"ion-row",[["class","row"]],null,null,null,null,null)),t["ɵdid"](31,16384,null,0,I.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵeld"](33,0,null,null,92,"ion-col",[["class","p-l-r-10 p-t-b-0 col"]],null,null,null,null,null)),t["ɵdid"](34,16384,null,0,O.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](36,0,null,null,1,"p",[],null,null,null,null,null)),(l()(),t["ɵted"](-1,null,["請按照管理公司發表的信之說明來填表 | Please fill out the form according to the instructions sent to you by your building management"])),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](39,0,null,null,13,"ion-item",[["class","item item-block"],["no-padding",""],["transparent",""]],null,null,null,P.b,P.a)),t["ɵdid"](40,1097728,null,3,T.a,[V.a,k.a,t.ElementRef,t.Renderer,[2,K.a]],null,null),t["ɵqud"](335544320,1,{contentLabel:0}),t["ɵqud"](603979776,2,{_buttons:1}),t["ɵqud"](603979776,3,{_icons:1}),t["ɵdid"](44,16384,null,0,B.a,[],null,null),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](46,0,null,1,2,"ion-label",[["floating",""],["no-margin",""]],null,null,null,null,null)),t["ɵdid"](47,16384,[[1,4]],0,F.a,[k.a,t.ElementRef,t.Renderer,[8,""],[8,null],[8,null],[8,null]],null,null),(l()(),t["ɵted"](-1,null,["AUTHORIZATION CODE"])),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](50,0,null,3,1,"ion-input",[["required",""],["type","text"]],null,null,null,N.b,N.a)),t["ɵdid"](51,5423104,null,0,A.a,[k.a,x.a,V.a,v.a,t.ElementRef,t.Renderer,[2,C.a],[2,T.a],[2,M.h],D.a],{type:[0,"type"]},null),(l()(),t["ɵted"](-1,2,["\n              "])),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](54,0,null,null,13,"ion-item",[["class","item item-block"],["no-padding",""],["transparent",""]],null,null,null,P.b,P.a)),t["ɵdid"](55,1097728,null,3,T.a,[V.a,k.a,t.ElementRef,t.Renderer,[2,K.a]],null,null),t["ɵqud"](335544320,4,{contentLabel:0}),t["ɵqud"](603979776,5,{_buttons:1}),t["ɵqud"](603979776,6,{_icons:1}),t["ɵdid"](59,16384,null,0,B.a,[],null,null),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](61,0,null,1,2,"ion-label",[["floating",""],["margin-top",""]],null,null,null,null,null)),t["ɵdid"](62,16384,[[4,4]],0,F.a,[k.a,t.ElementRef,t.Renderer,[8,""],[8,null],[8,null],[8,null]],null,null),(l()(),t["ɵted"](-1,null,["屋苑 | ESTATE"])),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](65,0,null,3,1,"ion-input",[["required",""],["type","text"]],null,null,null,N.b,N.a)),t["ɵdid"](66,5423104,null,0,A.a,[k.a,x.a,V.a,v.a,t.ElementRef,t.Renderer,[2,C.a],[2,T.a],[2,M.h],D.a],{type:[0,"type"]},null),(l()(),t["ɵted"](-1,2,["\n              "])),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](69,0,null,null,13,"ion-item",[["class","item item-block"],["no-padding",""],["transparent",""]],null,null,null,P.b,P.a)),t["ɵdid"](70,1097728,null,3,T.a,[V.a,k.a,t.ElementRef,t.Renderer,[2,K.a]],null,null),t["ɵqud"](335544320,7,{contentLabel:0}),t["ɵqud"](603979776,8,{_buttons:1}),t["ɵqud"](603979776,9,{_icons:1}),t["ɵdid"](74,16384,null,0,B.a,[],null,null),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](76,0,null,1,2,"ion-label",[["floating",""],["no-margin",""],["style","white-space: pre-line;"]],null,null,null,null,null)),t["ɵdid"](77,16384,[[7,4]],0,F.a,[k.a,t.ElementRef,t.Renderer,[8,""],[8,null],[8,null],[8,null]],null,null),(l()(),t["ɵted"](-1,null,["座 | BLOCK/TOWER (要是您屋苑沒分座數請輸入 | Block | if only one block/tower, enter: Block):"])),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](80,0,null,3,1,"ion-input",[["required",""],["type","text"]],null,null,null,N.b,N.a)),t["ɵdid"](81,5423104,null,0,A.a,[k.a,x.a,V.a,v.a,t.ElementRef,t.Renderer,[2,C.a],[2,T.a],[2,M.h],D.a],{type:[0,"type"]},null),(l()(),t["ɵted"](-1,2,["\n              "])),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](84,0,null,null,13,"ion-item",[["class","item item-block"],["no-padding",""],["transparent",""]],null,null,null,P.b,P.a)),t["ɵdid"](85,1097728,null,3,T.a,[V.a,k.a,t.ElementRef,t.Renderer,[2,K.a]],null,null),t["ɵqud"](335544320,10,{contentLabel:0}),t["ɵqud"](603979776,11,{_buttons:1}),t["ɵqud"](603979776,12,{_icons:1}),t["ɵdid"](89,16384,null,0,B.a,[],null,null),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](91,0,null,1,2,"ion-label",[["floating",""],["margin-top",""]],null,null,null,null,null)),t["ɵdid"](92,16384,[[10,4]],0,F.a,[k.a,t.ElementRef,t.Renderer,[8,""],[8,null],[8,null],[8,null]],null,null),(l()(),t["ɵted"](-1,null,["樓 | FLOOR"])),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](95,0,null,3,1,"ion-input",[["required",""],["type","text"]],null,null,null,N.b,N.a)),t["ɵdid"](96,5423104,null,0,A.a,[k.a,x.a,V.a,v.a,t.ElementRef,t.Renderer,[2,C.a],[2,T.a],[2,M.h],D.a],{type:[0,"type"]},null),(l()(),t["ɵted"](-1,2,["\n              "])),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](99,0,null,null,13,"ion-item",[["class","item item-block"],["no-padding",""],["transparent",""]],null,null,null,P.b,P.a)),t["ɵdid"](100,1097728,null,3,T.a,[V.a,k.a,t.ElementRef,t.Renderer,[2,K.a]],null,null),t["ɵqud"](335544320,13,{contentLabel:0}),t["ɵqud"](603979776,14,{_buttons:1}),t["ɵqud"](603979776,15,{_icons:1}),t["ɵdid"](104,16384,null,0,B.a,[],null,null),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](106,0,null,1,2,"ion-label",[["floating",""],["margin-top",""]],null,null,null,null,null)),t["ɵdid"](107,16384,[[13,4]],0,F.a,[k.a,t.ElementRef,t.Renderer,[8,""],[8,null],[8,null],[8,null]],null,null),(l()(),t["ɵted"](-1,null,["單位 | UNIT"])),(l()(),t["ɵted"](-1,2,["\n                "])),(l()(),t["ɵeld"](110,0,null,3,1,"ion-input",[["required",""],["type","text"]],null,null,null,N.b,N.a)),t["ɵdid"](111,5423104,null,0,A.a,[k.a,x.a,V.a,v.a,t.ElementRef,t.Renderer,[2,C.a],[2,T.a],[2,M.h],D.a],{type:[0,"type"]},null),(l()(),t["ɵted"](-1,2,["\n              "])),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵeld"](114,0,null,null,10,"ion-row",[["class","row"],["margin-top",""]],null,null,null,null,null)),t["ɵdid"](115,16384,null,0,I.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n                "])),(l()(),t["ɵeld"](117,0,null,null,6,"ion-col",[["class","col"],["margin-top",""],["text-center",""]],null,null,null,null,null)),t["ɵdid"](118,16384,null,0,O.a,[],null,null),(l()(),t["ɵted"](-1,null,["\n                  "])),(l()(),t["ɵeld"](120,0,null,null,2,"button",[["button-clear-outline",""],["class","next-button"],["color","mytheme"],["ion-button",""],["outline",""],["round",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.finishRegistration()&&u}return u},j.b,j.a)),t["ɵdid"](121,1097728,null,0,U.a,[[8,""],k.a,t.ElementRef,t.Renderer],{color:[0,"color"],outline:[1,"outline"],round:[2,"round"]},null),(l()(),t["ɵted"](-1,0,["完成 | Done"])),(l()(),t["ɵted"](-1,null,["\n                "])),(l()(),t["ɵted"](-1,null,["\n              "])),(l()(),t["ɵted"](-1,null,["\n            "])),(l()(),t["ɵted"](-1,null,["\n          "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n        "])),(l()(),t["ɵted"](-1,null,["\n      "])),(l()(),t["ɵted"](-1,null,["\n    "])),(l()(),t["ɵted"](-1,null,["\n  "])),(l()(),t["ɵted"](-1,1,["\n"]))],function(l,n){l(n,51,0,"text");l(n,66,0,"text");l(n,81,0,"text");l(n,96,0,"text");l(n,111,0,"text");l(n,121,0,"mytheme","","")},function(l,n){l(n,3,0,t["ɵnov"](n,4)._hidden,t["ɵnov"](n,4)._sbPadding);l(n,11,0,t["ɵnov"](n,12).statusbarPadding,t["ɵnov"](n,12)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var t=e(0),a=(e(2),e(40),e(92)),d=function(){function l(l,n){this.navCtrl=l,this.navParams=n}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad PersonalDetails")},l.prototype.finishRegistration=function(){console.log("finishRegistration"),this.navCtrl.setRoot(a.a)},l}(),o=function(){return function(){}}(),i=e(209),r=e(210),s=e(211),c=e(212),b=e(213),f=e(214),m=e(215),p=e(216),R=e(217),g=e(89),k=e(1),y=e(5),E=e(286),h=e(46),v=e(8),_=e(21),q=e(88),C=e(19),x=e(4),D=e(9),w=e(23),L=e(91),I=e(63),O=e(62),P=e(90),T=e(13),V=e(12),K=e(37),B=e(47),F=e(42),N=e(218),A=e(65),M=e(16),j=e(28),U=e(18),Z=e(11),z=t["ɵcrt"]({encapsulation:2,styles:[],data:{}}),H=t["ɵccf"]("page-personal-details",d,function(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"page-personal-details",[],null,null,null,u,z)),t["ɵdid"](1,49152,null,0,d,[_.a,Z.a],null,null)],null,null)},{},{},[]),J=e(15),S=e(133),W=e(41);e.d(n,"PersonalDetailsModuleNgFactory",function(){return G});var G=t["ɵcmf"](o,[],function(l){return t["ɵmod"]([t["ɵmpd"](512,t.ComponentFactoryResolver,t["ɵCodegenComponentFactoryResolver"],[[8,[i.a,r.a,s.a,c.a,b.a,f.a,m.a,p.a,R.a,H]],[3,t.ComponentFactoryResolver],t.NgModuleRef]),t["ɵmpd"](4608,J.k,J.j,[t.LOCALE_ID,[2,J.s]]),t["ɵmpd"](4608,M.r,M.r,[]),t["ɵmpd"](4608,M.d,M.d,[]),t["ɵmpd"](512,J.b,J.b,[]),t["ɵmpd"](512,M.p,M.p,[]),t["ɵmpd"](512,M.e,M.e,[]),t["ɵmpd"](512,M.n,M.n,[]),t["ɵmpd"](512,S.a,S.a,[]),t["ɵmpd"](512,S.b,S.b,[]),t["ɵmpd"](512,o,o,[]),t["ɵmpd"](256,W.a,d,[])])})},286:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),t["ɵdid"](1,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵeld"](2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.backButtonClick(e)&&u}return u},d.b,d.a)),t["ɵdid"](3,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](4,1097728,null,0,o.a,[[8,"bar-button"],i.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵeld"](5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t["ɵdid"](6,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](7,147456,null,0,r.a,[i.a,t.ElementRef,t.Renderer],{name:[0,"name"]},null),(l()(),t["ɵeld"](8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),t["ɵdid"](9,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵted"](10,null,["",""])),t["ɵncd"](null,0),t["ɵncd"](null,1),t["ɵncd"](null,2),(l()(),t["ɵeld"](14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),t["ɵdid"](15,278528,null,0,a.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵncd"](null,3)],function(l,n){var e=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+e._mode);l(n,3,0,"back-button","back-button-"+e._mode);l(n,6,0,"back-button-icon","back-button-icon-"+e._mode);l(n,7,0,e._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+e._mode);l(n,15,0,"toolbar-content","toolbar-content-"+e._mode)},function(l,n){var e=n.component;l(n,2,0,e._hideBb);l(n,5,0,t["ɵnov"](n,7)._hidden);l(n,10,0,e._backText)})}e.d(n,"a",function(){return s}),n.b=u;var t=e(0),a=e(15),d=e(28),o=e(18),i=e(1),r=e(36),s=(e(46),e(5),e(21),t["ɵcrt"]({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([14],{
+
+/***/ 309:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OwnershipModule", function() { return OwnershipModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ownership__ = __webpack_require__(456);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var OwnershipModule = (function () {
+    function OwnershipModule() {
+    }
+    OwnershipModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__ownership__["a" /* Ownership */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__ownership__["a" /* Ownership */]),
+            ],
+        })
+    ], OwnershipModule);
+    return OwnershipModule;
+}());
+
+//# sourceMappingURL=ownership.module.js.map
+
+/***/ }),
+
+/***/ 456:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ownership; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Ownership = (function () {
+    function Ownership(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.data = {};
+        this.owners_list = [];
+        this.pushDefaultItemIntoArray();
+    }
+    Ownership.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Ownership');
+    };
+    Ownership.prototype.pushDefaultItemIntoArray = function () {
+        for (var i = 0; i < 1; i++) {
+            this.owners_list.push({
+                "owner_full_name": ""
+            });
+        }
+    };
+    Ownership.prototype.removeItemFromArray = function (i) {
+        console.log(i);
+        this.owners_list.splice(i, 1);
+        /* console.log(this.owners_list); */
+    };
+    Ownership.prototype.pushItemIntoArray = function () {
+        this.owners_list.push({
+            "owner_full_name": ""
+        });
+    };
+    Ownership.prototype.goToIDVerification1 = function () {
+        for (var i = 0; i < this.owners_list.length; i++) {
+            var tmp_owner_info = this.owners_list[i];
+            if (i == 0) {
+                tmp_owner_info.is_visible = true;
+            }
+            else {
+                tmp_owner_info.is_visible = false;
+            }
+        }
+        var tmp_owner_list = JSON.stringify(this.owners_list);
+        localStorage.setItem("owners_list", tmp_owner_list);
+        this.navCtrl.push("IdVerification1", { "owners_list": tmp_owner_list });
+    };
+    Ownership = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-ownership',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/ownership/ownership.html"*/`<ion-header>\n  <ion-navbar header-color>\n    <!-- <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button> -->\n    <!-- <ion-title text-left>Ownership</ion-title> -->\n  </ion-navbar>\n</ion-header>\n<!-- Themes Register + logo -->\n<ion-content background-size default-background>\n  <ion-grid>\n    <ion-row wrap padding>\n      <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 no-padding>\n        <!--Form-->\n        <div class="form">\n          <!--Form Title-->\n          <h1 title>業主資料 | Ownership</h1>\n          <ion-row>\n            <ion-col class="p-l-r-10 p-t-b-0">\n              <p>請輸入您單位的每一位業主之全名 | Please enter the full names of all the owners of your unit:</p>\n              <ion-item transparent no-padding *ngFor="let owners_info of owners_list; let i = index;">\n                <ion-label floating margin-top>全名 | FULL NAME ({{i+1}})</ion-label>\n                <ion-input required type="text" [(ngModel)]="owners_info.owner_full_name"></ion-input>\n                <button ion-button clear item-end no-margin no-padding class="close-btn">\n                  <ion-icon name="md-close" (click)="removeItemFromArray(i)" *ngIf="owners_list.length>1">\n                  </ion-icon>\n                </button>\n                <!-- <ion-icon item-end name="md-close" class="close-icon">\n                </ion-icon> -->\n              </ion-item>\n              <!-- <ion-item no-padding>\n                <ion-label floating margin-top>全名 | FULL NAME</ion-label>\n                <ion-input required type="text"></ion-input>\n              </ion-item> -->\n              <!---Register button-->\n              <ion-row margin-vertical>\n                <ion-col text-center margin-bottom>\n                  <button ion-button button-clear-outline round outline color="mytheme" (click)="pushItemIntoArray()">加業主 | Add Owner</button>\n                </ion-col>\n              </ion-row>\n            </ion-col>\n          </ion-row>\n          <ion-row margin-top>\n            <ion-col text-center margin-top>\n              <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="goToIDVerification1()">下一頁 | Next</button>\n            </ion-col>\n          </ion-row>\n        </div>\n        <!-- <div logo>\n          <img left src="./assets/images/logo/login_3.png">\n        </div> -->\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/ownership/ownership.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
+    ], Ownership);
+    return Ownership;
+}());
+
+//# sourceMappingURL=ownership.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=14.js.map

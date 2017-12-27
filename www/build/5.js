@@ -1,1 +1,446 @@
-webpackJsonp([5],{283:function(l,n,e){"use strict";function u(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,1,"a",[["c-display-inline-block",""]],null,[[null,"click"]],function(l,n,e){var u=!0,t=l.component;if("click"===n){u=!1!==t.openMeetingURL(t.meeting_details.meeting_youtubelink)&&u}return u},null,null)),(l()(),b["ɵted"](1,null,["",""]))],null,function(l,n){l(n,1,0,n.component.meeting_details.meeting_youtubelink)})}function t(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,1,"a",[["c-display-inline-block",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["N/A"]))],null,null)}function i(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,21,"ion-item",[["class","item item-block"],["color-1d1d26",""],["no-lines",""],["no-padding",""],["padding-bottom",""],["text-wrap",""]],null,null,null,$.b,$.a)),b["ɵdid"](1,1097728,null,3,N.a,[P.a,F.a,b.ElementRef,b.Renderer,[2,M.a]],null,null),b["ɵqud"](335544320,10,{contentLabel:0}),b["ɵqud"](603979776,11,{_buttons:1}),b["ɵqud"](603979776,12,{_icons:1}),b["ɵdid"](5,16384,null,0,B.a,[],null,null),(l()(),b["ɵted"](-1,2,["\n          "])),(l()(),b["ɵeld"](7,0,null,1,13,"ion-label",[["no-margin",""],["padding",""]],null,null,null,null,null)),b["ɵdid"](8,16384,[[10,4]],0,U.a,[F.a,b.ElementRef,b.Renderer,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),b["ɵted"](-1,null,["\n            "])),(l()(),b["ɵeld"](10,0,null,null,9,"ion-card",[["c-width-100",""],["no-margin",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.openViewPoll()&&u}return u},null,null)),b["ɵdid"](11,16384,null,0,Y.a,[F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵeld"](13,0,null,null,5,"ion-card-content",[["margin",""],["text-center",""]],null,null,null,null,null)),b["ɵdid"](14,16384,null,0,G.a,[F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵeld"](16,0,null,null,1,"h3",[["c-font-bold",""],["color-1d1d26",""],["no-margin",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["View Polls"])),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵted"](-1,null,["\n            "])),(l()(),b["ɵted"](-1,null,["\n          "])),(l()(),b["ɵted"](-1,2,["\n        "]))],null,null)}function o(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,2,"ion-icon",[["class","check-mark-style"],["item-end",""],["name","md-checkmark"],["role","img"]],[[2,"hide",null]],null,null,null,null)),b["ɵdid"](1,147456,[[18,4]],0,J.a,[F.a,b.ElementRef,b.Renderer],{name:[0,"name"]},null),(l()(),b["ɵted"](-1,null,["\n                        "]))],function(l,n){l(n,1,0,"md-checkmark")},function(l,n){l(n,0,0,b["ɵnov"](n,1)._hidden)})}function a(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,1,"a",[],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.openAgendaFile(l.context.$implicit)&&u}return u},null,null)),(l()(),b["ɵted"](1,null,["\n                              ","\n                            "]))],null,function(l,n){l(n,1,0,n.context.$implicit.name)})}function d(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,2,"ion-icon",[["class","check-mark-style"],["item-start",""],["name","md-checkmark"],["role","img"],["style","position: absolute; top: 10px;"]],[[2,"hide",null]],null,null,null,null)),b["ɵdid"](1,147456,[[30,4]],0,J.a,[F.a,b.ElementRef,b.Renderer],{name:[0,"name"]},null),(l()(),b["ɵted"](-1,null,["\n                                  "]))],function(l,n){l(n,1,0,"md-checkmark")},function(l,n){l(n,0,0,b["ɵnov"](n,1)._hidden)})}function s(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,16,"ion-card",[["c-width-100",""],["class","margin-top-10"],["no-margin",""],["transparent",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.getHKIDByOption(l.parent.parent.context.$implicit,1,l.context.$implicit)&&u}return u},null,null)),b["ɵdid"](1,16384,null,0,Y.a,[F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,null,["\n                                "])),(l()(),b["ɵeld"](3,0,null,null,12,"ion-item",[["class","item item-block"],["no-padding",""],["style","background-color:#eeeeee;"],["text-wrap",""]],null,null,null,$.b,$.a)),b["ɵdid"](4,1097728,null,3,N.a,[P.a,F.a,b.ElementRef,b.Renderer,[2,M.a]],null,null),b["ɵqud"](335544320,28,{contentLabel:0}),b["ɵqud"](603979776,29,{_buttons:1}),b["ɵqud"](603979776,30,{_icons:1}),b["ɵdid"](8,16384,null,0,B.a,[],null,null),(l()(),b["ɵted"](-1,2,["\n                                  "])),(l()(),b["ɵand"](16777216,null,0,1,null,d)),b["ɵdid"](11,16384,null,0,z.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵted"](-1,2,["\n                                  "])),(l()(),b["ɵeld"](13,0,null,2,1,"h5",[["color-1d1d26",""],["text-center",""]],null,null,null,null,null)),(l()(),b["ɵted"](14,null,[" ",""])),(l()(),b["ɵted"](-1,2,["\n                                "])),(l()(),b["ɵted"](-1,null,["\n                              "]))],function(l,n){l(n,11,0,n.context.$implicit.choice)},function(l,n){l(n,14,0,n.context.$implicit.label)})}function r(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,4,"div",[["margin",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                              "])),(l()(),b["ɵand"](16777216,null,null,1,null,s)),b["ɵdid"](3,802816,null,0,z.h,[b.ViewContainerRef,b.TemplateRef,b.IterableDiffers],{ngForOf:[0,"ngForOf"]},null),(l()(),b["ɵted"](-1,null,["\n                            "]))],function(l,n){l(n,3,0,n.parent.context.$implicit.options)},null)}function c(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,2,"ion-icon",[["class","check-mark-style"],["item-start",""],["name","md-checkmark"],["role","img"],["style","position: absolute; top: 10px;"]],[[2,"hide",null]],null,null,null,null)),b["ɵdid"](1,147456,[[33,4]],0,J.a,[F.a,b.ElementRef,b.Renderer],{name:[0,"name"]},null),(l()(),b["ɵted"](-1,null,["\n                                  "]))],function(l,n){l(n,1,0,"md-checkmark")},function(l,n){l(n,0,0,b["ɵnov"](n,1)._hidden)})}function m(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,16,"ion-card",[["c-width-100",""],["class","margin-top-10"],["no-margin",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.getHKIDByOption(l.parent.parent.context.$implicit,1,l.context.$implicit)&&u}return u},null,null)),b["ɵdid"](1,16384,null,0,Y.a,[F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,null,["\n                                "])),(l()(),b["ɵeld"](3,0,null,null,12,"ion-item",[["class","item item-block"],["no-padding",""],["text-wrap",""]],null,null,null,$.b,$.a)),b["ɵdid"](4,1097728,null,3,N.a,[P.a,F.a,b.ElementRef,b.Renderer,[2,M.a]],null,null),b["ɵqud"](335544320,31,{contentLabel:0}),b["ɵqud"](603979776,32,{_buttons:1}),b["ɵqud"](603979776,33,{_icons:1}),b["ɵdid"](8,16384,null,0,B.a,[],null,null),(l()(),b["ɵted"](-1,2,["\n                                  "])),(l()(),b["ɵand"](16777216,null,0,1,null,c)),b["ɵdid"](11,16384,null,0,z.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵted"](-1,2,["\n                                  "])),(l()(),b["ɵeld"](13,0,null,2,1,"h5",[["color-1d1d26",""],["text-center",""]],null,null,null,null,null)),(l()(),b["ɵted"](14,null,[" ",""])),(l()(),b["ɵted"](-1,2,["\n                                "])),(l()(),b["ɵted"](-1,null,["\n                              "]))],function(l,n){l(n,11,0,n.context.$implicit.choice)},function(l,n){l(n,14,0,n.context.$implicit.label)})}function p(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,4,"div",[["margin",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                              "])),(l()(),b["ɵand"](16777216,null,null,1,null,m)),b["ɵdid"](3,802816,null,0,z.h,[b.ViewContainerRef,b.TemplateRef,b.IterableDiffers],{ngForOf:[0,"ngForOf"]},null),(l()(),b["ɵted"](-1,null,["\n                            "]))],function(l,n){l(n,3,0,n.parent.context.$implicit.options)},null)}function g(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,110,"li",[["no-margin",""],["padding-bottom",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                  "])),(l()(),b["ɵeld"](2,0,null,null,107,"ion-card",[],null,null,null,null,null)),b["ɵdid"](3,16384,null,0,Y.a,[F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,null,["\n                    "])),(l()(),b["ɵted"](-1,null,["\n                    "])),(l()(),b["ɵeld"](6,0,null,null,15,"div",[["class","collapsible-header"],["no-margin",""],["no-padding",""]],null,[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.expandPoll(l.context.$implicit)&&u}return u},null,null)),(l()(),b["ɵted"](-1,null,["\n                      "])),(l()(),b["ɵeld"](8,0,null,null,12,"ion-item",[["class","item item-block"],["no-lines",""],["no-padding",""],["text-center",""],["text-wrap",""]],null,null,null,$.b,$.a)),b["ɵdid"](9,1097728,null,3,N.a,[P.a,F.a,b.ElementRef,b.Renderer,[2,M.a]],null,null),b["ɵqud"](335544320,16,{contentLabel:0}),b["ɵqud"](603979776,17,{_buttons:1}),b["ɵqud"](603979776,18,{_icons:1}),b["ɵdid"](13,16384,null,0,B.a,[],null,null),(l()(),b["ɵted"](-1,2,["\n                        "])),(l()(),b["ɵeld"](15,0,null,2,1,"h3",[["c-font-bold",""],["color-1d1d26",""],["no-margin",""]],null,null,null,null,null)),(l()(),b["ɵted"](16,null,["\n                          "," | ","\n                        "])),(l()(),b["ɵted"](-1,2,["\n                        "])),(l()(),b["ɵand"](16777216,null,4,1,null,o)),b["ɵdid"](19,16384,null,0,z.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵted"](-1,2,["\n                      "])),(l()(),b["ɵted"](-1,null,["\n                    "])),(l()(),b["ɵted"](-1,null,["\n                    "])),(l()(),b["ɵted"](-1,null,["\n                    "])),(l()(),b["ɵeld"](24,0,null,null,84,"div",[["class","item-accordion"]],[[8,"hidden",0]],null,null,null,null)),b["ɵdid"](25,278528,null,0,z.g,[b.IterableDiffers,b.KeyValueDiffers,b.ElementRef,b.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),b["ɵpod"](26,{active:0}),(l()(),b["ɵted"](-1,null,["\n                      "])),(l()(),b["ɵeld"](28,0,null,null,25,"ion-card",[["border-top-e7",""],["c-width-100",""],["no-margin",""]],null,null,null,null,null)),b["ɵdid"](29,16384,null,0,Y.a,[F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,null,["\n                        "])),(l()(),b["ɵeld"](31,0,null,null,21,"ion-item",[["class","item item-block"],["color-1d1d26",""],["padding-5px",""],["text-wrap",""]],null,null,null,$.b,$.a)),b["ɵdid"](32,1097728,null,3,N.a,[P.a,F.a,b.ElementRef,b.Renderer,[2,M.a]],null,null),b["ɵqud"](335544320,19,{contentLabel:0}),b["ɵqud"](603979776,20,{_buttons:1}),b["ɵqud"](603979776,21,{_icons:1}),b["ɵdid"](36,16384,null,0,B.a,[],null,null),(l()(),b["ɵted"](-1,2,["\n                          "])),(l()(),b["ɵeld"](38,0,null,1,13,"ion-label",[["no-margin",""]],null,null,null,null,null)),b["ɵdid"](39,16384,[[19,4],[13,4]],0,U.a,[F.a,b.ElementRef,b.Renderer,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),b["ɵted"](-1,null,["\n                            "])),(l()(),b["ɵeld"](41,0,null,null,6,"h2",[["class","summary-title"],["color-1d1d26",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                              "])),(l()(),b["ɵeld"](43,0,null,null,3,"span",[],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                                "])),(l()(),b["ɵeld"](45,0,null,null,0,"img",[["alt",""],["c-display-inline-block",""],["class","label-icons-live-summary"],["src","./assets/images/icons/summary.png"]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,[" Summary\n                              "])),(l()(),b["ɵted"](-1,null,["\n                            "])),(l()(),b["ɵted"](-1,null,["\n                            "])),(l()(),b["ɵeld"](49,0,null,null,1,"h5",[["class","summary-desc"],["color-1d1d26",""]],null,null,null,null,null)),(l()(),b["ɵted"](50,null,[""," | "," "])),(l()(),b["ɵted"](-1,null,["\n                          "])),(l()(),b["ɵted"](-1,2,["\n                        "])),(l()(),b["ɵted"](-1,null,["\n                      "])),(l()(),b["ɵted"](-1,null,["\n                      "])),(l()(),b["ɵeld"](55,0,null,null,25,"ion-card",[["border-top-e7",""],["c-width-100",""],["no-margin",""]],null,null,null,null,null)),b["ɵdid"](56,16384,null,0,Y.a,[F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,null,["\n                        "])),(l()(),b["ɵeld"](58,0,null,null,21,"ion-item",[["class","item item-block"],["color-1d1d26",""],["padding-5px",""],["text-wrap",""]],null,null,null,$.b,$.a)),b["ɵdid"](59,1097728,null,3,N.a,[P.a,F.a,b.ElementRef,b.Renderer,[2,M.a]],null,null),b["ɵqud"](335544320,22,{contentLabel:0}),b["ɵqud"](603979776,23,{_buttons:1}),b["ɵqud"](603979776,24,{_icons:1}),b["ɵdid"](63,16384,null,0,B.a,[],null,null),(l()(),b["ɵted"](-1,2,["\n                          "])),(l()(),b["ɵeld"](65,0,null,1,13,"ion-label",[["no-margin",""]],null,null,null,null,null)),b["ɵdid"](66,16384,[[22,4],[13,4]],0,U.a,[F.a,b.ElementRef,b.Renderer,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),b["ɵted"](-1,null,["\n                            "])),(l()(),b["ɵeld"](68,0,null,null,6,"h2",[["class","summary-title"],["color-1d1d26",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                              "])),(l()(),b["ɵeld"](70,0,null,null,3,"span",[],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                                "])),(l()(),b["ɵeld"](72,0,null,null,0,"img",[["alt",""],["c-display-inline-block",""],["class","label-icons-file"],["src","./assets/images/icons/document.png"]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["  Documents\n                              "])),(l()(),b["ɵted"](-1,null,["\n                            "])),(l()(),b["ɵted"](-1,null,["\n                            "])),(l()(),b["ɵand"](16777216,null,null,1,null,a)),b["ɵdid"](77,802816,null,0,z.h,[b.ViewContainerRef,b.TemplateRef,b.IterableDiffers],{ngForOf:[0,"ngForOf"]},null),(l()(),b["ɵted"](-1,null,["\n                          "])),(l()(),b["ɵted"](-1,2,["\n                        "])),(l()(),b["ɵted"](-1,null,["\n                      "])),(l()(),b["ɵted"](-1,null,["\n                      "])),(l()(),b["ɵeld"](82,0,null,null,25,"ion-card",[["border-top-e7",""],["c-width-100",""],["no-margin",""]],null,null,null,null,null)),b["ɵdid"](83,16384,null,0,Y.a,[F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,null,["\n                        "])),(l()(),b["ɵeld"](85,0,null,null,21,"ion-item",[["class","item item-block"],["color-1d1d26",""],["padding-5px",""],["text-wrap",""]],null,null,null,$.b,$.a)),b["ɵdid"](86,1097728,null,3,N.a,[P.a,F.a,b.ElementRef,b.Renderer,[2,M.a]],null,null),b["ɵqud"](335544320,25,{contentLabel:0}),b["ɵqud"](603979776,26,{_buttons:1}),b["ɵqud"](603979776,27,{_icons:1}),b["ɵdid"](90,16384,null,0,B.a,[],null,null),(l()(),b["ɵted"](-1,2,["\n                          "])),(l()(),b["ɵeld"](92,0,null,1,13,"ion-label",[["no-margin",""]],null,null,null,null,null)),b["ɵdid"](93,16384,[[25,4],[13,4]],0,U.a,[F.a,b.ElementRef,b.Renderer,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),b["ɵted"](-1,null,["\n                            "])),(l()(),b["ɵeld"](95,0,null,null,3,"h2",[["class","summary-title"],["color-1d1d26",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                              "])),(l()(),b["ɵeld"](97,0,null,null,0,"img",[["alt",""],["c-display-inline-block",""],["class","label-icons-poll"],["src","./assets/images/icons/poll.png"]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,[" Poll Options"])),(l()(),b["ɵted"](-1,null,["\n                            "])),(l()(),b["ɵand"](16777216,null,null,1,null,r)),b["ɵdid"](101,16384,null,0,z.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵted"](-1,null,["\n                            "])),(l()(),b["ɵand"](16777216,null,null,1,null,p)),b["ɵdid"](104,16384,null,0,z.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵted"](-1,null,["\n                          "])),(l()(),b["ɵted"](-1,2,["\n                        "])),(l()(),b["ɵted"](-1,null,["\n                      "])),(l()(),b["ɵted"](-1,null,["\n                    "])),(l()(),b["ɵted"](-1,null,["\n                  "])),(l()(),b["ɵted"](-1,null,["\n                "]))],function(l,n){var e=n.component;l(n,19,0,n.context.$implicit.is_complete);l(n,25,0,"item-accordion",l(n,26,0,e.isGroupShown(n.context.$implicit)));l(n,77,0,n.context.$implicit.fileLinks);l(n,101,0,n.context.$implicit.is_complete);l(n,104,0,!n.context.$implicit.is_complete)},function(l,n){var e=n.component;l(n,16,0,n.context.$implicit.pollNameChn,n.context.$implicit.pollName);l(n,24,0,!e.isGroupShown(n.context.$implicit));l(n,50,0,n.context.$implicit.summaryChn,n.context.$implicit.summary)})}function f(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,20,"ion-item",[["class","item item-block"],["color-1d1d26",""],["no-padding",""],["text-wrap",""]],null,null,null,$.b,$.a)),b["ɵdid"](1,1097728,null,3,N.a,[P.a,F.a,b.ElementRef,b.Renderer,[2,M.a]],null,null),b["ɵqud"](603979776,13,{contentLabel:0}),b["ɵqud"](603979776,14,{_buttons:1}),b["ɵqud"](603979776,15,{_icons:1}),b["ɵdid"](5,16384,null,0,B.a,[],null,null),(l()(),b["ɵted"](-1,2,["\n          "])),(l()(),b["ɵeld"](7,0,null,1,12,"ion-label",[["no-margin",""],["padding-5px",""]],null,null,null,null,null)),b["ɵdid"](8,16384,[[13,4]],0,U.a,[F.a,b.ElementRef,b.Renderer,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),b["ɵted"](-1,null,["\n            "])),(l()(),b["ɵeld"](10,0,null,null,8,"ion-list",[],null,null,null,null,null)),b["ɵdid"](11,16384,null,0,j.a,[F.a,b.ElementRef,b.Renderer,W.a,Z.l,Q.a],null,null),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵeld"](13,0,null,null,4,"ul",[["class","collapsible"],["no-margin",""],["no-padding",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵand"](16777216,null,null,1,null,g)),b["ɵdid"](16,802816,null,0,z.h,[b.ViewContainerRef,b.TemplateRef,b.IterableDiffers],{ngForOf:[0,"ngForOf"]},null),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵted"](-1,null,["\n            "])),(l()(),b["ɵted"](-1,null,["\n          "])),(l()(),b["ɵted"](-1,2,["\n\n        "]))],function(l,n){l(n,16,0,n.component.poll_list)},null)}function h(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,10,"ion-header",[],null,null,null,null,null)),b["ɵdid"](1,16384,null,0,X.a,[F.a,b.ElementRef,b.Renderer,[2,ll.a]],null,null),(l()(),b["ɵted"](-1,null,["\n  "])),(l()(),b["ɵeld"](3,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,nl.b,nl.a)),b["ɵdid"](4,49152,null,0,el.a,[ul.a,[2,ll.a],[2,tl.a],F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,3,["\n    "])),(l()(),b["ɵeld"](6,0,null,3,2,"ion-title",[],null,null,null,il.b,il.a)),b["ɵdid"](7,49152,null,0,ol.a,[F.a,b.ElementRef,b.Renderer,[2,al.a],[2,el.a]],null,null),(l()(),b["ɵted"](8,0,[""," | ",""])),(l()(),b["ɵted"](-1,3,["\n  "])),(l()(),b["ɵted"](-1,null,["\n"])),(l()(),b["ɵted"](-1,null,["\n"])),(l()(),b["ɵeld"](12,0,null,null,147,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,dl.b,dl.a)),b["ɵdid"](13,4374528,null,0,sl.a,[F.a,W.a,Q.a,b.ElementRef,b.Renderer,ul.a,rl.a,b.NgZone,[2,ll.a],[2,tl.a]],null,null),(l()(),b["ɵted"](-1,1,["\n  "])),(l()(),b["ɵted"](-1,1,["\n  "])),(l()(),b["ɵted"](-1,1,["\n\n  "])),(l()(),b["ɵeld"](17,0,null,1,141,"ion-grid",[["class","grid"],["no-padding",""]],null,null,null,null,null)),b["ɵdid"](18,16384,null,0,cl.a,[],null,null),(l()(),b["ɵted"](-1,null,["\n    "])),(l()(),b["ɵeld"](20,0,null,null,137,"ion-row",[["class","row"]],null,null,null,null,null)),b["ɵdid"](21,16384,null,0,ml.a,[],null,null),(l()(),b["ɵted"](-1,null,["\n      "])),(l()(),b["ɵted"](-1,null,["\n      "])),(l()(),b["ɵted"](-1,null,["\n      "])),(l()(),b["ɵted"](-1,null,["\n      "])),(l()(),b["ɵeld"](26,0,null,null,130,"ion-col",[["class","col"],["col-12",""]],null,null,null,null,null)),b["ɵdid"](27,16384,null,0,pl.a,[],null,null),(l()(),b["ɵted"](-1,null,["\n        "])),(l()(),b["ɵted"](-1,null,["\n        "])),(l()(),b["ɵeld"](30,0,null,null,60,"ion-item",[["class","item item-block"],["color-1d1d26",""],["no-lines",""],["no-margin",""],["padding-right",""],["text-wrap",""]],null,null,null,$.b,$.a)),b["ɵdid"](31,1097728,null,3,N.a,[P.a,F.a,b.ElementRef,b.Renderer,[2,M.a]],null,null),b["ɵqud"](335544320,1,{contentLabel:0}),b["ɵqud"](603979776,2,{_buttons:1}),b["ɵqud"](603979776,3,{_icons:1}),b["ɵdid"](35,16384,null,0,B.a,[],null,null),(l()(),b["ɵted"](-1,2,["\n          "])),(l()(),b["ɵeld"](37,0,null,1,52,"ion-label",[],null,null,null,null,null)),b["ɵdid"](38,16384,[[1,4]],0,U.a,[F.a,b.ElementRef,b.Renderer,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),b["ɵted"](-1,null,["\n            "])),(l()(),b["ɵeld"](40,0,null,null,48,"ion-row",[["class","row"]],null,null,null,null,null)),b["ɵdid"](41,16384,null,0,ml.a,[],null,null),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵeld"](43,0,null,null,14,"ion-col",[["class","col"],["col-12",""],["no-padding",""]],null,null,null,null,null)),b["ɵdid"](44,16384,null,0,pl.a,[],null,null),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵeld"](46,0,null,null,7,"span",[["left",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                  "])),(l()(),b["ɵeld"](48,0,null,null,4,"ion-icon",[["role","img"]],[[2,"hide",null]],null,null,null,null)),b["ɵdid"](49,147456,null,0,J.a,[F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,null,["\n                    "])),(l()(),b["ɵeld"](51,0,null,null,0,"img",[["alt",""],["class","label-icons-time"],["src","./assets/images/icons/date_time.png"]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,[" \n                  "])),(l()(),b["ɵted"](53,null,["\n                  Meeting Time : "," - "," "])),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵeld"](55,0,null,null,1,"span",[["c-display-inline-block",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,[" "])),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵeld"](59,0,null,null,11,"ion-col",[["class","col"],["col-12",""],["no-padding",""]],null,null,null,null,null)),b["ɵdid"](60,16384,null,0,pl.a,[],null,null),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵeld"](62,0,null,null,7,"span",[["left",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                  "])),(l()(),b["ɵeld"](64,0,null,null,4,"ion-icon",[["role","img"]],[[2,"hide",null]],null,null,null,null)),b["ɵdid"](65,147456,null,0,J.a,[F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,null,["\n                    "])),(l()(),b["ɵeld"](67,0,null,null,0,"img",[["alt",""],["class","label-icons-venue"],["src","./assets/images/icons/venue.png"]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,[" \n                  "])),(l()(),b["ɵted"](69,null,["\n                  Venue : ",""])),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵeld"](72,0,null,null,15,"ion-col",[["class","col"],["col-12",""],["no-padding",""]],null,null,null,null,null)),b["ɵdid"](73,16384,null,0,pl.a,[],null,null),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵeld"](75,0,null,null,5,"span",[["left",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                  "])),(l()(),b["ɵted"](-1,null,["\n                  "])),(l()(),b["ɵeld"](78,0,null,null,0,"img",[["alt",""],["class","label-icons-live-stream"],["src","./assets/images/icons/live_stream.png"]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,[" \n                  "])),(l()(),b["ɵted"](-1,null,["\n                  Live stream : "])),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵand"](16777216,null,null,1,null,u)),b["ɵdid"](83,16384,null,0,z.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵand"](16777216,null,null,1,null,t)),b["ɵdid"](86,16384,null,0,z.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵted"](-1,null,["\n            "])),(l()(),b["ɵted"](-1,null,["\n          "])),(l()(),b["ɵted"](-1,2,["\n        "])),(l()(),b["ɵted"](-1,null,["\n        "])),(l()(),b["ɵted"](-1,null,["\n        "])),(l()(),b["ɵeld"](93,0,null,null,13,"ion-item",[["class","item item-block"],["color-1d1d26",""],["no-lines",""],["no-margin",""],["padding-right",""],["text-wrap",""]],null,null,null,$.b,$.a)),b["ɵdid"](94,1097728,null,3,N.a,[P.a,F.a,b.ElementRef,b.Renderer,[2,M.a]],null,null),b["ɵqud"](335544320,4,{contentLabel:0}),b["ɵqud"](603979776,5,{_buttons:1}),b["ɵqud"](603979776,6,{_icons:1}),b["ɵdid"](98,16384,null,0,B.a,[],null,null),(l()(),b["ɵted"](-1,2,["\n          "])),(l()(),b["ɵeld"](100,0,null,1,5,"ion-label",[["no-margin",""]],null,null,null,null,null)),b["ɵdid"](101,16384,[[4,4]],0,U.a,[F.a,b.ElementRef,b.Renderer,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),b["ɵted"](-1,null,["\n            "])),(l()(),b["ɵeld"](103,0,null,null,1,"h3",[["parallax-description",""]],null,null,null,null,null)),(l()(),b["ɵted"](104,null,["",""])),(l()(),b["ɵted"](-1,null,["\n          "])),(l()(),b["ɵted"](-1,2,["\n        "])),(l()(),b["ɵted"](-1,null,["\n        "])),(l()(),b["ɵeld"](108,0,null,null,41,"ion-item",[["class","item item-block"],["color-1d1d26",""],["no-lines",""],["no-margin",""],["padding-right",""],["text-wrap",""]],null,null,null,$.b,$.a)),b["ɵdid"](109,1097728,null,3,N.a,[P.a,F.a,b.ElementRef,b.Renderer,[2,M.a]],null,null),b["ɵqud"](335544320,7,{contentLabel:0}),b["ɵqud"](603979776,8,{_buttons:1}),b["ɵqud"](603979776,9,{_icons:1}),b["ɵdid"](113,16384,null,0,B.a,[],null,null),(l()(),b["ɵted"](-1,2,["\n          "])),(l()(),b["ɵeld"](115,0,null,1,33,"ion-label",[["margin-bottom",""]],null,null,null,null,null)),b["ɵdid"](116,16384,[[7,4]],0,U.a,[F.a,b.ElementRef,b.Renderer,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),b["ɵted"](-1,null,["\n            "])),(l()(),b["ɵeld"](118,0,null,null,17,"div",[["info",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵeld"](120,0,null,null,5,"span",[["left",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵeld"](123,0,null,null,0,"img",[["alt",""],["class","label-icons-file"],["src","./assets/images/icons/document.png"]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,[" \n                "])),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵeld"](127,0,null,null,1,"span",[["left",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["Agenda : "])),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵeld"](130,0,null,null,4,"span",[["c-display-inline-block",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵeld"](132,0,null,null,1,"a",[],null,[[null,"click"]],function(l,n,e){var u=!0,t=l.component;if("click"===n){u=!1!==t.openAgendaFile(t.meeting_details.meeting_fileLinks[0])&&u}return u},null,null)),(l()(),b["ɵted"](133,null,[" ",""])),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵted"](-1,null,["\n            "])),(l()(),b["ɵted"](-1,null,["\n            "])),(l()(),b["ɵeld"](137,0,null,null,10,"div",[["info",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n              "])),(l()(),b["ɵeld"](139,0,null,null,7,"span",[["left",""]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,["\n                "])),(l()(),b["ɵeld"](141,0,null,null,4,"ion-icon",[["role","img"]],[[2,"hide",null]],null,null,null,null)),b["ɵdid"](142,147456,null,0,J.a,[F.a,b.ElementRef,b.Renderer],null,null),(l()(),b["ɵted"](-1,null,["\n                  "])),(l()(),b["ɵeld"](144,0,null,null,0,"img",[["alt",""],["class","label-icons-time"],["src","./assets/images/icons/date_time.png"]],null,null,null,null,null)),(l()(),b["ɵted"](-1,null,[" \n                "])),(l()(),b["ɵted"](146,null,["\n                Vote by : ",""])),(l()(),b["ɵted"](-1,null,["\n            "])),(l()(),b["ɵted"](-1,null,["\n          "])),(l()(),b["ɵted"](-1,2,["\n        "])),(l()(),b["ɵted"](-1,null,["\n        "])),(l()(),b["ɵand"](16777216,null,null,1,null,i)),b["ɵdid"](152,16384,null,0,z.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵted"](-1,null,["\n        "])),(l()(),b["ɵand"](16777216,null,null,1,null,f)),b["ɵdid"](155,16384,null,0,z.i,[b.ViewContainerRef,b.TemplateRef],{ngIf:[0,"ngIf"]},null),(l()(),b["ɵted"](-1,null,["\n      "])),(l()(),b["ɵted"](-1,null,["\n    "])),(l()(),b["ɵted"](-1,null,["\n  "])),(l()(),b["ɵted"](-1,1,["\n"]))],function(l,n){var e=n.component;l(n,83,0,e.meeting_details.meeting_youtubelink);l(n,86,0,!e.meeting_details.meeting_youtubelink);l(n,152,0,!e.is_license_accepted);l(n,155,0,e.is_license_accepted)},function(l,n){var e=n.component;l(n,3,0,b["ɵnov"](n,4)._hidden,b["ɵnov"](n,4)._sbPadding);l(n,8,0,e.meeting_details.meeting_titleChn,e.meeting_details.meeting_title);l(n,12,0,b["ɵnov"](n,13).statusbarPadding,b["ɵnov"](n,13)._hasRefresher);l(n,48,0,b["ɵnov"](n,49)._hidden);l(n,53,0,e.meeting_details.meeting_startTime,e.meeting_details.meeting_endTime);l(n,64,0,b["ɵnov"](n,65)._hidden);l(n,69,0,e.meeting_details.meeting_venue);l(n,104,0,e.meeting_details.meeting_desc);l(n,133,0,e.meeting_details.meeting_fileLinks[0].name);l(n,141,0,b["ɵnov"](n,142)._hidden);l(n,146,0,e.meeting_details.meeting_pollEndTime)})}Object.defineProperty(n,"__esModule",{value:!0});var b=e(0),R=(e(2),e(40),e(150)),_=e(146),v=e(137),k=e(138),y=e(139),w=e(59),D=e(60),E=e(61),I=e(92),x=function(){function l(l,n,e,u,t,i,o,a,d,s,r,c){this.element=l,this.renderer=n,this.navCtrl=e,this.navParams=u,this.modalCtrl=t,this.youtube=i,this.transfer=o,this.file=a,this.document=d,this.loadingService=s,this.dataService=r,this.showMessage=c,this.is_license_accepted=!1,this.meeting_details={},this.data={},this.events={},this.total_signatures=2,this.current_signature=1,this.loginResponse={},this.signatureArray=[],this.total_HKIDs=2,this.current_HKID=1,this.HKIDArray=[],this.poll_list=[],this.token="",this.meeting_details=JSON.parse(this.navParams.get("meeting_details")),this.loginResponse=JSON.parse(localStorage.getItem("loginResponse")),this.token=localStorage.getItem("token"),this.poll_list=this.meeting_details.meeting_polls,this.checkIfproxyAppointed(this.loginResponse),console.log(this.meeting_details)}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad ViewMeetingPolls"),this.initParallax()},l.prototype.ionViewWillEnter=function(){console.log("ionViewDidEnter ViewMeetingPolls")},l.prototype.initParallax=function(){var l=this;this.scrollerHandle=this.element.nativeElement.getElementsByClassName("scroll-content")[0],this.header=this.scrollerHandle.firstElementChild,this.headerHeight=this.scrollerHandle.clientHeight,this.ticking=!1,this.renderer.setElementStyle(this.header,"webkitTransformOrigin","center bottom"),window.addEventListener("resize",function(){l.headerHeight=l.scrollerHandle.clientHeight},!1),this.scrollerHandle.addEventListener("scroll",function(){l.ticking||window.requestAnimationFrame(function(){l.updateElasticHeader()}),l.ticking=!0})},l.prototype.updateElasticHeader=function(){this.scrollTop=this.scrollerHandle.scrollTop,this.scrollTop>=0?(this.translateAmt=this.scrollTop/2,this.scaleAmt=1):(this.translateAmt=0,this.scaleAmt=-this.scrollTop/this.headerHeight+1),this.renderer.setElementStyle(this.header,"webkitTransform","translate3d(0,"+this.translateAmt+"px,0) scale("+this.scaleAmt+","+this.scaleAmt+")"),this.ticking=!1},l.prototype.openViewPoll=function(){var l=this,n=this.modalCtrl.create("AgreeUseTelos");n.onDidDismiss(function(n){console.log(n),"accept"==n&&(console.log(l.loginResponse),"CorporateOwner"==l.loginResponse.user.nature?l.openAgreeUseCompanyChop():(l.total_signatures=l.loginResponse.user.numberOfOwners,l.current_signature=1,l.acceptAgreement(l.current_signature,l.total_signatures)))}),n.present()},l.prototype.openAgreeUseCompanyChop=function(){var l=this,n=this.modalCtrl.create("AgreeUseCompanyChop");n.onDidDismiss(function(n){console.log(n),"accept"==n&&(l.signatureArray=[],l.acceptAgreement(l.current_signature,l.total_signatures))}),n.present()},l.prototype.acceptAgreement=function(l,n){var e=this,u=this.modalCtrl.create(R.a,{signatures:n,current_signature:this.current_signature});u.onDidDismiss(function(l){if(console.log(l),!l||void 0===l)return!1;"thankyou"==l.closeType?(e.signatureArray.push({image:l.signatureData,account:e.loginResponse.user.account,estate:e.loginResponse.user.estateName}),console.log(e.signatureArray),e.saveAllSignatures(e.signatureArray)):"outside"==l.closeType||(e.signatureArray.push({image:l.signatureData,account:e.loginResponse.user.account,estate:e.loginResponse.user.estateName}),e.acceptAgreement(e.current_signature++,n))}),u.present()},l.prototype.openThankYouNote=function(){var l=this,n=this.modalCtrl.create("ThankYouNote");n.onDidDismiss(function(n){l.is_license_accepted=!0}),n.present()},l.prototype.saveAllSignatures=function(l){var n=this;console.log(l),this.loadingService.showLoading(),this.dataService.postData("saveSignature",{signatures:l,meeting_id:this.meeting_details.meeting_id},{headers:{authorization:this.token}}).subscribe(function(l){console.log(l),1==l.success?(n.loginResponse.user.proxyAppointed.push(n.meeting_details.meeting_id),localStorage.setItem("loginResponse",JSON.stringify(n.loginResponse)),n.openThankYouNote(),n.loadingService.hideLoading()):(n.loadingService.hideLoading(),n.showMessage.showToastBottom(l.message),"Invalid token"!=l.message&&"Please login"!=l.message||n.navCtrl.setRoot(I.a))},function(l){console.log("err",l),n.loadingService.hideLoading(),n.showMessage.showToastBottom("Unable to save signatures, please try again.")})},l.prototype.expandPoll=function(l){l.show=!l.show},l.prototype.toggleGroup=function(l){l.show=!l.show},l.prototype.isGroupShown=function(l){return l.show},l.prototype.getHKIDByOption=function(l,n,e){var u=this;if(1==l.is_complete)return!1;var t={};console.log("poll_details",l),console.log("option_details",e),this.total_HKIDs=this.loginResponse.user.numberOfOwners;var i=this.modalCtrl.create("OwnerHkidNumber",{total_HKIDs:this.total_HKIDs,current_HKID:this.current_HKID});i.onDidDismiss(function(n){if(console.log(n),!n||void 0===n)return!1;"submitted"==n.closeType?(u.HKIDArray.push(n.hkid_val),t={pollID:l._id,option:e.label,account:u.loginResponse.user.account,estate:l.estateName,meeting_id:u.meeting_details.meeting_id,HKID:u.HKIDArray},console.log("request_data",t),u.saveVoteData(t,l,e)):"repeat"==n.closeType&&(u.HKIDArray.push(n.hkid_val),u.getHKIDByOption(l,u.current_HKID++,e))}),i.present()},l.prototype.checkIfproxyAppointed=function(l){var n=this;l.user.proxyAppointed.forEach(function(l){n.meeting_details.meeting_id!=l||(n.is_license_accepted=!0)}),this.checkIfVoted(this.meeting_details.meeting_polls,l)},l.prototype.checkIfVoted=function(l,n){l.forEach(function(e,u){var t=[];console.log(e.options),e.options.forEach(function(l){t.push(l==e.votingResults.choice?{label:l,choice:!0}:{label:l,choice:!1}),e.options=t}),console.log(t);e.voted.forEach(function(e){console.log(e),n.user._id==e&&(console.log("VOTED TRUE"),l[u].is_complete=!0)})})},l.prototype.saveVoteData=function(l,n,e){var u=this;console.log(n),this.loadingService.showLoading(),this.dataService.postData("vote",l,{headers:{authorization:this.token}}).subscribe(function(l){console.log(l),u.HKIDArray=[],1==l.success?(n.is_complete=!0,u.current_HKID=1,e.choice=!0,u.openThankYouNote2(),u.loadingService.hideLoading()):(u.loadingService.hideLoading(),u.showMessage.showToastBottom(l.message),"Invalid token"!=l.message&&"Please login"!=l.message||u.navCtrl.setRoot(I.a))},function(l){console.log("err",l),u.loadingService.hideLoading(),u.showMessage.showToastBottom("Unable to save HKIDs, please try again.")})},l.prototype.openMeetingURL=function(l){console.log(l),this.youtube.openVideo(l)},l.prototype.openAgendaFile=function(l){function n(){window.console.log("document shown")}function e(){window.console.log("document closed")}function u(l,n){confirm("PDF viewer not available on your device, Do you want to install the free PDF Viewer App to view this document?")&&n()}function t(l){window.console.log(l),alert("Sorry! Cannot view document.")}var i=this;console.log(l);var o=l,a={print:{enabled:!1},bookmarks:{enabled:!1},email:{enabled:!1},title:o.name};this.transfer.create().download(o.url,this.file.dataDirectory+o.name).then(function(l){console.log("download complete: "+l.toURL()),i.document.viewDocument(i.file.dataDirectory+o.name,"application/pdf",a,n,e,u,t)},function(l){console.log(l)})},l.prototype.openThankYouNote2=function(){var l=this.modalCtrl.create("ThankYouNote2");l.onDidDismiss(function(l){}),l.present()},l}(),C=function(){return function(){}}(),T=e(209),A=e(210),V=e(211),q=e(212),H=e(213),L=e(214),S=e(215),K=e(216),O=e(217),$=e(90),N=e(13),P=e(12),F=e(1),M=e(37),B=e(47),U=e(42),Y=e(134),G=e(140),J=e(36),z=e(15),j=e(48),W=e(4),Z=e(6),Q=e(9),X=e(89),ll=e(5),nl=e(286),el=e(46),ul=e(8),tl=e(21),il=e(287),ol=e(132),al=e(58),dl=e(88),sl=e(19),rl=e(23),cl=e(91),ml=e(63),pl=e(62),gl=e(11),fl=e(64),hl=b["ɵcrt"]({encapsulation:2,styles:[],data:{}}),bl=b["ɵccf"]("page-view-meeting-polls",x,function(l){return b["ɵvid"](0,[(l()(),b["ɵeld"](0,0,null,null,1,"page-view-meeting-polls",[],null,null,null,h,hl)),b["ɵdid"](1,49152,null,0,x,[b.ElementRef,b.Renderer,tl.a,gl.a,fl.a,_.a,v.a,k.a,y.a,w.a,D.a,E.a],null,null)],null,null)},{},{},[]),Rl=e(16),_l=e(133),vl=e(41);e.d(n,"ViewMeetingPollsModuleNgFactory",function(){return kl});var kl=b["ɵcmf"](C,[],function(l){return b["ɵmod"]([b["ɵmpd"](512,b.ComponentFactoryResolver,b["ɵCodegenComponentFactoryResolver"],[[8,[T.a,A.a,V.a,q.a,H.a,L.a,S.a,K.a,O.a,bl]],[3,b.ComponentFactoryResolver],b.NgModuleRef]),b["ɵmpd"](4608,z.k,z.j,[b.LOCALE_ID,[2,z.s]]),b["ɵmpd"](4608,Rl.r,Rl.r,[]),b["ɵmpd"](4608,Rl.d,Rl.d,[]),b["ɵmpd"](512,z.b,z.b,[]),b["ɵmpd"](512,Rl.p,Rl.p,[]),b["ɵmpd"](512,Rl.e,Rl.e,[]),b["ɵmpd"](512,Rl.n,Rl.n,[]),b["ɵmpd"](512,_l.a,_l.a,[]),b["ɵmpd"](512,_l.b,_l.b,[]),b["ɵmpd"](512,C,C,[]),b["ɵmpd"](256,vl.a,x,[])])})},286:function(l,n,e){"use strict";function u(l){return t["ɵvid"](0,[(l()(),t["ɵeld"](0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),t["ɵdid"](1,278528,null,0,i.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵeld"](2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,e){var u=!0;if("click"===n){u=!1!==l.component.backButtonClick(e)&&u}return u},o.b,o.a)),t["ɵdid"](3,278528,null,0,i.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](4,1097728,null,0,a.a,[[8,"bar-button"],d.a,t.ElementRef,t.Renderer],null,null),(l()(),t["ɵeld"](5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t["ɵdid"](6,278528,null,0,i.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵdid"](7,147456,null,0,s.a,[d.a,t.ElementRef,t.Renderer],{name:[0,"name"]},null),(l()(),t["ɵeld"](8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),t["ɵdid"](9,278528,null,0,i.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t["ɵted"](10,null,["",""])),t["ɵncd"](null,0),t["ɵncd"](null,1),t["ɵncd"](null,2),(l()(),t["ɵeld"](14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),t["ɵdid"](15,278528,null,0,i.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵncd"](null,3)],function(l,n){var e=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+e._mode);l(n,3,0,"back-button","back-button-"+e._mode);l(n,6,0,"back-button-icon","back-button-icon-"+e._mode);l(n,7,0,e._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+e._mode);l(n,15,0,"toolbar-content","toolbar-content-"+e._mode)},function(l,n){var e=n.component;l(n,2,0,e._hideBb);l(n,5,0,t["ɵnov"](n,7)._hidden);l(n,10,0,e._backText)})}e.d(n,"a",function(){return r}),n.b=u;var t=e(0),i=e(15),o=e(28),a=e(18),d=e(1),s=e(36),r=(e(46),e(5),e(21),t["ɵcrt"]({encapsulation:2,styles:[],data:{}}))},287:function(l,n,e){"use strict";function u(l){return t["ɵvid"](2,[(l()(),t["ɵeld"](0,0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),t["ɵdid"](1,278528,null,0,i.g,[t.IterableDiffers,t.KeyValueDiffers,t.ElementRef,t.Renderer2],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t["ɵncd"](null,0)],function(l,n){l(n,1,0,"toolbar-title","toolbar-title-"+n.component._mode)},null)}e.d(n,"a",function(){return o}),n.b=u;var t=e(0),i=e(15),o=(e(132),e(1),e(58),e(46),t["ɵcrt"]({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([5],{
+
+/***/ 321:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewMeetingPollsModule", function() { return ViewMeetingPollsModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__view_meeting_polls__ = __webpack_require__(468);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ViewMeetingPollsModule = (function () {
+    function ViewMeetingPollsModule() {
+    }
+    ViewMeetingPollsModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__view_meeting_polls__["a" /* ViewMeetingPolls */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__view_meeting_polls__["a" /* ViewMeetingPolls */]),
+            ],
+        })
+    ], ViewMeetingPollsModule);
+    return ViewMeetingPollsModule;
+}());
+
+//# sourceMappingURL=view-meeting-polls.module.js.map
+
+/***/ }),
+
+/***/ 468:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ViewMeetingPolls; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_signature_pad_page_signature_pad_page__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_youtube_video_player__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_transfer__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_document_viewer__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_loading_service__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_data_service__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_show_message__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(107);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+/* import { SignaturePageModal } from '../../pages/signature-page-modal/signature-page-modal'; */
+var ViewMeetingPolls = (function () {
+    function ViewMeetingPolls(element, renderer, navCtrl, navParams, modalCtrl, youtube, transfer, file, document, loadingService, dataService, showMessage) {
+        this.element = element;
+        this.renderer = renderer;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
+        this.youtube = youtube;
+        this.transfer = transfer;
+        this.file = file;
+        this.document = document;
+        this.loadingService = loadingService;
+        this.dataService = dataService;
+        this.showMessage = showMessage;
+        this.is_license_accepted = false;
+        this.meeting_details = {};
+        this.data = {};
+        this.events = {};
+        this.total_signatures = 2;
+        this.current_signature = 1;
+        this.loginResponse = {};
+        this.signatureArray = [];
+        this.total_HKIDs = 2;
+        this.current_HKID = 1;
+        this.HKIDArray = [];
+        this.poll_list = [];
+        this.token = "";
+        this.meeting_details = JSON.parse(this.navParams.get("meeting_details"));
+        this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
+        this.token = localStorage.getItem("token");
+        this.poll_list = this.meeting_details.meeting_polls;
+        this.checkIfproxyAppointed(this.loginResponse);
+        console.log(this.meeting_details);
+    }
+    ViewMeetingPolls.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ViewMeetingPolls');
+        this.initParallax();
+    };
+    ViewMeetingPolls.prototype.ionViewWillEnter = function () {
+        console.log('ionViewDidEnter ViewMeetingPolls');
+    };
+    /* Start Parallax */
+    ViewMeetingPolls.prototype.initParallax = function () {
+        var _this = this;
+        this.scrollerHandle = this.element.nativeElement.getElementsByClassName('scroll-content')[0];
+        this.header = this.scrollerHandle.firstElementChild;
+        this.headerHeight = this.scrollerHandle.clientHeight;
+        this.ticking = false;
+        this.renderer.setElementStyle(this.header, 'webkitTransformOrigin', 'center bottom');
+        window.addEventListener('resize', function () {
+            _this.headerHeight = _this.scrollerHandle.clientHeight;
+        }, false);
+        this.scrollerHandle.addEventListener('scroll', function () {
+            if (!_this.ticking) {
+                window.requestAnimationFrame(function () {
+                    _this.updateElasticHeader();
+                });
+            }
+            _this.ticking = true;
+        });
+    };
+    ViewMeetingPolls.prototype.updateElasticHeader = function () {
+        this.scrollTop = this.scrollerHandle.scrollTop;
+        if (this.scrollTop >= 0) {
+            this.translateAmt = this.scrollTop / 2;
+            this.scaleAmt = 1;
+        }
+        else {
+            this.translateAmt = 0;
+            this.scaleAmt = -this.scrollTop / this.headerHeight + 1;
+        }
+        this.renderer.setElementStyle(this.header, 'webkitTransform', 'translate3d(0,' + this.translateAmt + 'px,0) scale(' + this.scaleAmt + ',' + this.scaleAmt + ')');
+        this.ticking = false;
+    };
+    /* End Parallax */
+    /* Open modal one by one */
+    ViewMeetingPolls.prototype.openViewPoll = function () {
+        var _this = this;
+        var myModal = this.modalCtrl.create("AgreeUseTelos");
+        myModal.onDidDismiss(function (data) {
+            console.log(data);
+            if (data == "accept") {
+                console.log(_this.loginResponse);
+                if (_this.loginResponse.user.nature == "CorporateOwner") {
+                    _this.openAgreeUseCompanyChop();
+                }
+                else {
+                    _this.total_signatures = _this.loginResponse.user.numberOfOwners;
+                    _this.current_signature = 1;
+                    _this.acceptAgreement(_this.current_signature, _this.total_signatures);
+                }
+            }
+            else {
+            }
+        });
+        myModal.present();
+    };
+    ViewMeetingPolls.prototype.openAgreeUseCompanyChop = function () {
+        var _this = this;
+        var myModal1 = this.modalCtrl.create("AgreeUseCompanyChop");
+        myModal1.onDidDismiss(function (data) {
+            console.log(data);
+            if (data == "accept") {
+                _this.signatureArray = [];
+                _this.acceptAgreement(_this.current_signature, _this.total_signatures);
+            }
+            else {
+            }
+        });
+        myModal1.present();
+    };
+    ViewMeetingPolls.prototype.acceptAgreement = function (current_signature, total_signatures) {
+        var _this = this;
+        /* this.navCtrl.push(SignaturePageModal); */
+        /* let myModal2 = this.modalCtrl.create(SignaturePageModal); */
+        var myModal2 = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__pages_signature_pad_page_signature_pad_page__["a" /* SignaturePadPage */], {
+            "signatures": total_signatures,
+            "current_signature": this.current_signature
+        });
+        myModal2.onDidDismiss(function (data) {
+            console.log(data);
+            if (!data || typeof data == "undefined") {
+                return false;
+            }
+            else if (data.closeType == "thankyou") {
+                _this.signatureArray.push({ "image": data.signatureData, "account": _this.loginResponse.user.account, "estate": _this.loginResponse.user.estateName });
+                console.log(_this.signatureArray);
+                /* this.openThankYouNote(); */
+                _this.saveAllSignatures(_this.signatureArray);
+            }
+            else if (data.closeType == "outside") {
+            }
+            else {
+                _this.signatureArray.push({ "image": data.signatureData, "account": _this.loginResponse.user.account, "estate": _this.loginResponse.user.estateName });
+                _this.acceptAgreement(_this.current_signature++, total_signatures);
+            }
+        });
+        myModal2.present();
+    };
+    ViewMeetingPolls.prototype.openThankYouNote = function () {
+        var _this = this;
+        var myModal3 = this.modalCtrl.create("ThankYouNote");
+        myModal3.onDidDismiss(function (data) {
+            _this.is_license_accepted = true;
+        });
+        myModal3.present();
+    };
+    /* End Open modals one by one */
+    ViewMeetingPolls.prototype.saveAllSignatures = function (signatureArray) {
+        var _this = this;
+        console.log(signatureArray);
+        this.loadingService.showLoading();
+        this.dataService.postData("saveSignature", { "signatures": signatureArray, "meeting_id": this.meeting_details.meeting_id }, {
+            headers: {
+                'authorization': this.token
+            }
+        }).subscribe(function (results) {
+            console.log(results);
+            if (results.success == true) {
+                _this.loginResponse.user.proxyAppointed.push(_this.meeting_details.meeting_id);
+                localStorage.setItem("loginResponse", JSON.stringify(_this.loginResponse));
+                _this.openThankYouNote();
+                _this.loadingService.hideLoading();
+            }
+            else {
+                _this.loadingService.hideLoading();
+                _this.showMessage.showToastBottom(results.message);
+                if (results.message == "Invalid token" || results.message == "Please login") {
+                    _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_10__pages_home_home__["a" /* HomePage */]);
+                }
+            }
+        }, function (err) {
+            console.log("err", err);
+            _this.loadingService.hideLoading();
+            _this.showMessage.showToastBottom("Unable to save signatures, please try again.");
+        });
+    };
+    ViewMeetingPolls.prototype.expandPoll = function (poll_details) {
+        poll_details.show = !poll_details.show;
+    };
+    ViewMeetingPolls.prototype.toggleGroup = function (poll_details) {
+        poll_details.show = !poll_details.show;
+    };
+    ViewMeetingPolls.prototype.isGroupShown = function (poll_details) {
+        return poll_details.show;
+    };
+    ViewMeetingPolls.prototype.getHKIDByOption = function (poll_details, current_HKID, selected_option) {
+        var _this = this;
+        if (poll_details.is_complete == true) {
+            return false;
+        }
+        var request_data = {};
+        console.log("poll_details", poll_details);
+        console.log("option_details", selected_option);
+        this.total_HKIDs = this.loginResponse.user.numberOfOwners;
+        var myModal4 = this.modalCtrl.create("OwnerHkidNumber", {
+            "total_HKIDs": this.total_HKIDs,
+            "current_HKID": this.current_HKID
+        });
+        myModal4.onDidDismiss(function (data) {
+            console.log(data);
+            if (!data || typeof data == "undefined") {
+                return false;
+            }
+            else if (data.closeType == "submitted") {
+                /* this.getHKIDByOption(); */
+                _this.HKIDArray.push(data.hkid_val);
+                request_data = {
+                    "pollID": poll_details._id,
+                    "option": selected_option.label,
+                    "account": _this.loginResponse.user.account,
+                    "estate": poll_details.estateName,
+                    "meeting_id": _this.meeting_details.meeting_id,
+                    "HKID": _this.HKIDArray
+                };
+                console.log("request_data", request_data);
+                _this.saveVoteData(request_data, poll_details, selected_option);
+            }
+            else if (data.closeType == "repeat") {
+                _this.HKIDArray.push(data.hkid_val);
+                _this.getHKIDByOption(poll_details, _this.current_HKID++, selected_option);
+            }
+            else {
+            }
+        });
+        myModal4.present();
+    };
+    ViewMeetingPolls.prototype.checkIfproxyAppointed = function (loginResponse) {
+        var _this = this;
+        var proxyAppointed = loginResponse.user.proxyAppointed;
+        /* this.poll_list.forEach(pollElement => {
+          console.log("pollElement", pollElement);
+        }); */
+        proxyAppointed.forEach(function (element) {
+            if (_this.meeting_details.meeting_id == element) {
+                _this.is_license_accepted = true;
+                return;
+            }
+        });
+        this.checkIfVoted(this.meeting_details.meeting_polls, loginResponse);
+    };
+    ViewMeetingPolls.prototype.checkIfVoted = function (pollsArray, loginResponse) {
+        pollsArray.forEach(function (element, i) {
+            var tmp_options = [];
+            console.log(element.options);
+            element.options.forEach(function (optionElement) {
+                if (optionElement == element.votingResults.choice) {
+                    tmp_options.push({ "label": optionElement, choice: true });
+                }
+                else {
+                    tmp_options.push({ "label": optionElement, choice: false });
+                }
+                element.options = tmp_options;
+            });
+            console.log(tmp_options);
+            var votedArray = element.voted;
+            votedArray.forEach(function (votedElement) {
+                console.log(votedElement);
+                if (loginResponse.user._id == votedElement) {
+                    console.log("VOTED TRUE");
+                    pollsArray[i].is_complete = true;
+                }
+            });
+        });
+    };
+    ViewMeetingPolls.prototype.saveVoteData = function (request_data, poll_details, selected_option) {
+        var _this = this;
+        console.log(poll_details);
+        this.loadingService.showLoading();
+        this.dataService.postData("vote", request_data, {
+            headers: {
+                'authorization': this.token
+            }
+        }).subscribe(function (results) {
+            console.log(results);
+            _this.HKIDArray = [];
+            if (results.success == true) {
+                poll_details.is_complete = true;
+                _this.current_HKID = 1;
+                /* poll_details.votingResults = {};
+                poll_details.votingResults.choice = ""; */
+                selected_option.choice = true;
+                _this.openThankYouNote2();
+                _this.loadingService.hideLoading();
+            }
+            else {
+                _this.loadingService.hideLoading();
+                _this.showMessage.showToastBottom(results.message);
+                if (results.message == "Invalid token" || results.message == "Please login") {
+                    _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_10__pages_home_home__["a" /* HomePage */]);
+                }
+            }
+        }, function (err) {
+            console.log("err", err);
+            _this.loadingService.hideLoading();
+            _this.showMessage.showToastBottom("Unable to save HKIDs, please try again.");
+        });
+    };
+    ViewMeetingPolls.prototype.openMeetingURL = function (videoID) {
+        console.log(videoID);
+        this.youtube.openVideo(videoID);
+    };
+    ViewMeetingPolls.prototype.openAgendaFile = function (agenda_details) {
+        var _this = this;
+        console.log(agenda_details);
+        var file_details = agenda_details;
+        var options = {
+            print: { enabled: false },
+            bookmarks: { enabled: false },
+            email: { enabled: false },
+            title: file_details.name
+        };
+        var fileTransfer = this.transfer.create();
+        var url = file_details.url;
+        fileTransfer.download(url, this.file.dataDirectory + file_details.name).then(function (entry) {
+            console.log('download complete: ' + entry.toURL());
+            _this.document.viewDocument(_this.file.dataDirectory + file_details.name, "application/pdf", options, onShow, onClose, onMissingApp, onError);
+        }, function (error) {
+            console.log(error);
+            // handle error
+        });
+        function onShow() {
+            window.console.log('document shown');
+            //e.g. track document usage
+        }
+        function onClose() {
+            window.console.log('document closed');
+            //e.g. remove temp files
+        }
+        function onMissingApp(appId, installer) {
+            if (confirm("PDF viewer not available on your device, Do you want to install the free PDF Viewer App to view this document?")) {
+                installer();
+            }
+        }
+        function onError(error) {
+            window.console.log(error);
+            alert("Sorry! Cannot view document.");
+        }
+    };
+    ViewMeetingPolls.prototype.openThankYouNote2 = function () {
+        var myModal5 = this.modalCtrl.create("ThankYouNote2");
+        myModal5.onDidDismiss(function (data) {
+            /* this.is_license_accepted = true; */
+        });
+        myModal5.present();
+    };
+    ViewMeetingPolls = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-view-meeting-polls',template:/*ion-inline-start:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/view-meeting-polls/view-meeting-polls.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <!-- <ion-item no-lines background-size [ngStyle]="{\'background-image\': \'url(\' + meeting_details.meeting_background + \')\'}"> -->\n  <!-- <ion-item no-lines background-size>\n  </ion-item> -->\n\n  <ion-grid no-padding>\n    <ion-row>\n      <!--Parallax Rateing-->\n      <!-- <ion-col col-12>\n        <ion-item no-lines header-bcg no-padding text-wrap>\n          <h1 parallax-title text-center margin-bottom padding-vertical>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}} </h1>\n        </ion-item>\n      </ion-col> -->\n      <!--Content-->\n      <ion-col col-12>\n        <!--Info-->\n        <ion-item color-1d1d26 no-lines no-margin text-wrap padding-right>\n          <ion-label>\n            <ion-row>\n              <ion-col col-12 no-padding>\n                <span left>\n                  <ion-icon>\n                    <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;\n                  </ion-icon>\n                  Meeting Time : {{meeting_details.meeting_startTime}} - {{meeting_details.meeting_endTime}}&nbsp;</span>\n                <span c-display-inline-block>&nbsp;</span>\n              </ion-col>\n              <ion-col col-12 no-padding>\n                <span left>\n                  <ion-icon>\n                    <img src="./assets/images/icons/venue.png" class="label-icons-venue" alt="">&nbsp;\n                  </ion-icon>\n                  Venue : {{meeting_details.meeting_venue}}</span>\n              </ion-col>\n              <ion-col col-12 no-padding>\n                <span left>\n                  <!-- <ion-icon> -->\n                  <img src="./assets/images/icons/live_stream.png" class="label-icons-live-stream" alt="">&nbsp;\n                  <!-- </ion-icon> -->\n                  Live stream :&nbsp;</span>\n                <a c-display-inline-block *ngIf="meeting_details.meeting_youtubelink" (click)="openMeetingURL(meeting_details.meeting_youtubelink)">{{meeting_details.meeting_youtubelink}}</a>\n                <a c-display-inline-block *ngIf="!meeting_details.meeting_youtubelink">N/A</a>\n              </ion-col>\n            </ion-row>\n          </ion-label>\n        </ion-item>\n        <!-- Description-->\n        <ion-item color-1d1d26 no-lines text-wrap no-margin padding-right>\n          <ion-label no-margin>\n            <h3 parallax-description>{{meeting_details.meeting_desc}}</h3>\n          </ion-label>\n        </ion-item>\n        <ion-item color-1d1d26 no-lines text-wrap no-margin padding-right>\n          <ion-label margin-bottom>\n            <div info>\n              <span left>\n                <!-- <ion-icon> -->\n                <img src="./assets/images/icons/document.png" class="label-icons-file" alt="">&nbsp;\n                <!-- </ion-icon> -->\n              </span>\n              <span left>Agenda :&nbsp;</span>\n              <span c-display-inline-block>\n                <a (click)="openAgendaFile(meeting_details.meeting_fileLinks[0])"> {{meeting_details.meeting_fileLinks[0].name}}</a>\n              </span>\n            </div>\n            <div info>\n              <span left>\n                <ion-icon>\n                  <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;\n                </ion-icon>\n                Vote by : {{meeting_details.meeting_pollEndTime}}</span>\n            </div>\n          </ion-label>\n        </ion-item>\n        <ion-item color-1d1d26 no-padding text-wrap padding-bottom no-lines *ngIf="!is_license_accepted">\n          <ion-label padding no-margin>\n            <ion-card c-width-100 no-margin (click)="openViewPoll()">\n              <ion-card-content text-center margin>\n                <h3 color-1d1d26 no-margin c-font-bold>View Polls</h3>\n              </ion-card-content>\n            </ion-card>\n          </ion-label>\n        </ion-item>\n        <ion-item color-1d1d26 text-wrap no-padding *ngIf="is_license_accepted">\n          <ion-label no-margin padding-5px>\n            <ion-list>\n              <ul no-margin no-padding class="collapsible">\n                <li no-margin padding-bottom *ngFor="let poll_details of poll_list;">\n                  <ion-card>\n                    <!-- Expandable Centered with header Header-->\n                    <div class="collapsible-header" no-margin no-padding (click)="expandPoll(poll_details)">\n                      <ion-item no-padding text-center text-wrap no-lines text-center>\n                        <h3 color-1d1d26 no-margin c-font-bold>\n                          {{poll_details.pollNameChn}} | {{poll_details.pollName}}\n                        </h3>\n                        <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="poll_details.is_complete">\n                        </ion-icon>\n                      </ion-item>\n                    </div>\n                    <!-- Expandable Centered with header Body -->\n                    <div class="item-accordion" [ngClass]="{\'active\': isGroupShown(poll_details) }" [hidden]="!isGroupShown(poll_details)">\n                      <ion-card no-margin c-width-100 border-top-e7>\n                        <ion-item color-1d1d26 text-wrap padding-5px text-wrap>\n                          <ion-label no-margin>\n                            <h2 color-1d1d26 class="summary-title">\n                              <span>\n                                <img src="./assets/images/icons/summary.png" c-display-inline-block class="label-icons-live-summary" alt=""> Summary\n                              </span>\n                            </h2>\n                            <h5 color-1d1d26 class="summary-desc">{{poll_details.summaryChn}} | {{poll_details.summary}} </h5>\n                          </ion-label>\n                        </ion-item>\n                      </ion-card>\n                      <ion-card no-margin c-width-100 border-top-e7>\n                        <ion-item color-1d1d26 text-wrap padding-5px text-wrap>\n                          <ion-label no-margin>\n                            <h2 color-1d1d26 class="summary-title">\n                              <span>\n                                <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt="">&nbsp; Documents\n                              </span>\n                            </h2>\n                            <a *ngFor="let documents of poll_details.fileLinks;" (click)="openAgendaFile(documents)">\n                              {{documents.name}}\n                            </a>\n                          </ion-label>\n                        </ion-item>\n                      </ion-card>\n                      <ion-card no-margin c-width-100 border-top-e7>\n                        <ion-item color-1d1d26 text-wrap padding-5px text-wrap>\n                          <ion-label no-margin>\n                            <h2 color-1d1d26 class="summary-title">\n                              <img src="./assets/images/icons/poll.png" c-display-inline-block class="label-icons-poll" alt=""> Poll Options</h2>\n                            <div margin *ngIf="poll_details.is_complete">\n                              <ion-card no-margin transparent c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="getHKIDByOption(poll_details, 1, option_details)">\n                                <ion-item text-wrap no-padding style="background-color:#eeeeee;">\n                                  <ion-icon name="md-checkmark" style="position: absolute; top: 10px;" class="check-mark-style" item-start *ngIf="option_details.choice">\n                                  </ion-icon>\n                                  <h5 color-1d1d26 text-center> {{option_details.label}}</h5>\n                                </ion-item>\n                              </ion-card>\n                            </div>\n                            <div margin *ngIf="!poll_details.is_complete">\n                              <ion-card no-margin c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="getHKIDByOption(poll_details, 1, option_details)">\n                                <ion-item text-wrap no-padding>\n                                  <ion-icon name="md-checkmark" style="position: absolute; top: 10px;" class="check-mark-style" item-start *ngIf="option_details.choice">\n                                  </ion-icon>\n                                  <h5 color-1d1d26 text-center> {{option_details.label}}</h5>\n                                </ion-item>\n                              </ion-card>\n                            </div>\n                          </ion-label>\n                        </ion-item>\n                      </ion-card>\n                    </div>\n                  </ion-card>\n                </li>\n              </ul>\n            </ion-list>\n          </ion-label>\n\n        </ion-item>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>`/*ion-inline-end:"/Users/Peter/Desktop/Telos-Owners-App/src/pages/view-meeting-polls/view-meeting-polls.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_youtube_video_player__["a" /* YoutubeVideoPlayer */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_transfer__["a" /* FileTransfer */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__["a" /* File */],
+            __WEBPACK_IMPORTED_MODULE_6__ionic_native_document_viewer__["a" /* DocumentViewer */],
+            __WEBPACK_IMPORTED_MODULE_7__providers_loading_service__["a" /* LoadingService */],
+            __WEBPACK_IMPORTED_MODULE_8__providers_data_service__["a" /* DataService */],
+            __WEBPACK_IMPORTED_MODULE_9__providers_show_message__["a" /* ShowMessage */]])
+    ], ViewMeetingPolls);
+    return ViewMeetingPolls;
+}());
+
+//# sourceMappingURL=view-meeting-polls.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=5.js.map
