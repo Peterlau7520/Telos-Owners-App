@@ -7,14 +7,14 @@ import { ShowMessage } from '../../providers/show-message';
 
 @IonicPage()
 @Component({
-  selector: 'page-forum-report-modal',
-  templateUrl: 'forum-report-modal.html',
+  selector: 'page-forum-comment-report-modal',
+  templateUrl: 'forum-comment-report-modal.html',
 })
-export class ForumReportModal {
+export class ForumCommentReportModal {
 
-  forum_details: any = {};
+  comment_details: any = {};
   loginResponse: any = {};
-  postReport: any = "";
+  commentReport: any = "";
   token: any = "";
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
@@ -22,31 +22,31 @@ export class ForumReportModal {
     public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage) {
-    this.forum_details = JSON.parse(this.navParams.get("forum_details"));
+    this.comment_details = JSON.parse(this.navParams.get("comment_details"));
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.token = localStorage.getItem("token");
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ForumReportModal');
+    console.log('ionViewDidLoad ForumCommentReportModal');
   }
 
   trim(str) {
     return str.replace(/ /g, '');
   }
 
-  submitReportData(postReport) {
-    if (typeof postReport == "undefined" || this.trim(postReport) == "" || postReport == null) {
+  submitReportData(commentReport) {
+    if (typeof commentReport == "undefined" || this.trim(commentReport) == "" || commentReport == null) {
       this.showMessage.showToastBottom("Please enter report text");
       return false;
     }
     else {
       this.token = localStorage.getItem("token");
       this.loadingService.showLoading();
-      this.dataService.postData("reportPost", {
-        "postId": this.forum_details._id,
+      this.dataService.postData("reportComment", {
+        "commentId": this.comment_details._id,
         "account": this.loginResponse.user.account,
-        "postReport": postReport
+        "commentReport": commentReport
       }, {
           headers: {
             'authorization': this.token

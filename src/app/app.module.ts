@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { Keyboard } from '@ionic-native/keyboard';
 import { Device } from '@ionic-native/device';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import { Camera } from '@ionic-native/camera';
@@ -53,6 +54,7 @@ import { NoticesProvider } from '../providers/notices/notices';
     StatusBar,
     SplashScreen,
     Device,
+    Keyboard,
     HttpModule,
     Camera,
     LocalNotifications,

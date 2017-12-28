@@ -59,7 +59,7 @@
             </button>
           </ion-col>
           <ion-col text-center>
-            <button ion-button icon-left clear small>
+            <button ion-button icon-left clear small (click)="openCommentReportPage(comment_details)">
               <ion-icon name="ios-flag-outline"></ion-icon>
               <div>Report</div>
             </button>
@@ -70,8 +70,14 @@
   </ion-row>
 </ion-content>
 <ion-footer>
-  <ion-item no-padding>
-    <ion-textarea text-area-style placeholder="Add comment..." [(ngModel)]="commentText"></ion-textarea>
-    <ion-icon item-end name="md-send" (click)="addCommentFunction(commentText, forum_details)"></ion-icon>
-  </ion-item>
+  <!-- <ion-item no-padding> -->
+  <ion-row>
+    <ion-col no-padding col-10 col-sm-11>
+      <ion-textarea text-area-style placeholder="Add comment..." [(ngModel)]="commentText"></ion-textarea>
+    </ion-col>
+    <ion-col no-padding col-2 text-center col-sm-1>
+      <ion-icon send-button-ic name="md-send" (click)="addCommentFunction(commentText, forum_details)"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <!-- </ion-item> -->
 </ion-footer>

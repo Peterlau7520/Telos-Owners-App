@@ -582,3 +582,7 @@ signature-pad {
     height: 90% !important;
     max-height: 100%;
 }
+
+body.keyboard-is-open .hideElementOnKeyboardShown {
+    display: none;
+}

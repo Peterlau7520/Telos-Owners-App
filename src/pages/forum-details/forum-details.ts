@@ -12,10 +12,10 @@ import { ShowMessage } from '../../providers/show-message';
   templateUrl: 'forum-details.html',
 })
 export class ForumDetails {
-
+  tabBarElement: any;
   forum_details: any = {};
   loginResponse: any = {};
-  userComment: any = "";
+  commentText: any = "";
   token: any = "";
 
   constructor(public navCtrl: NavController,
@@ -26,7 +26,16 @@ export class ForumDetails {
     public modalCtrl: ModalController) {
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.token = localStorage.getItem("token");
+    this.tabBarElement = document.querySelector('.tabbar.show-tabbar');
     this.getForumDetails(this.loginResponse);
+  }
+
+  ionViewWillEnter() {
+    this.tabBarElement.style.display = 'none';
+  }
+
+  ionViewWillLeave() {
+    this.tabBarElement.style.display = 'flex';
   }
 
   ionViewDidLoad() {
@@ -56,6 +65,12 @@ export class ForumDetails {
       }).subscribe(results => {
         console.log(results);
         if (results.success == true) {
+          this.forum_details = results.post[0];
+          this.forum_details.comments.forEach(element => {
+            element.commentedTime = moment(element.commentedTime).format('YYYY-MM-DD HH:mm');
+            element.likesForComment = element.likedBy.length;
+          });
+          this.forum_details.postTime = moment(this.forum_details.postTime).format('YYYY-MM-DD HH:mm');
           this.loadingService.hideLoading();
         }
         else {
@@ -65,7 +80,7 @@ export class ForumDetails {
       }, err => {
         console.log("err", err);
         this.loadingService.hideLoading();
-        this.showMessage.showToastBottom("Unable to get forums, please try again.");
+        this.showMessage.showToastBottom("Unable to get comments, please try again.");
       });
   }
 
@@ -77,13 +92,20 @@ export class ForumDetails {
     myModal.present();
   }
 
+  openCommentReportPage(comment_details) {
+    let myModal = this.modalCtrl.create("ForumCommentReportModal", { "comment_details": JSON.stringify(comment_details) });
+    myModal.onDidDismiss(data => {
+    });
+    myModal.present();
+  }
+
   trim(str) {
     return str.replace(/ /g, '');
   }
 
-  addCommentFunction(userComment, forum_details) {
-    console.log(userComment);
-    if (typeof userComment == "undefined" || this.trim(userComment) == "" || userComment == null) {
+  addCommentFunction(commentText, forum_details) {
+    console.log(commentText);
+    if (typeof commentText == "undefined" || this.trim(commentText) == "" || commentText == null) {
       this.showMessage.showToastBottom("Please enter comment text");
       return false;
     }
@@ -94,7 +116,7 @@ export class ForumDetails {
         "postId": forum_details._id,
         "estateName": this.loginResponse.user.estateName,
         "account": this.loginResponse.user.account,
-        "comment": userComment
+        "comment": commentText
       }, {
           headers: {
             'authorization': this.token
@@ -102,6 +124,8 @@ export class ForumDetails {
         }).subscribe(results => {
           console.log(results);
           if (results.success == true) {
+            this.commentText = "";
+            this.getCommentsByPostIdFunction(this.forum_details, this.loginResponse);
             this.showMessage.showToastBottom(results.message);
           }
           else {

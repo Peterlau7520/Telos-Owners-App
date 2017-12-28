@@ -40,6 +40,7 @@ export class Noticeboard {
   }
 
   ionViewWillEnter() {
+    this.notices = [];
     this.getNoticeBoardData();
   }
 
