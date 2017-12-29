@@ -315,6 +315,7 @@ export class ViewMeetingPolls {
     }).subscribe(results => {
       console.log(results);
       this.HKIDArray = [];
+      this.current_HKID = 1;
       if (results.success == true) {
         poll_details.is_complete = true;
         this.current_HKID = 1;

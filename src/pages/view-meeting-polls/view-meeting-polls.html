@@ -95,10 +95,14 @@
                     <!-- Expandable Centered with header Header-->
                     <div class="collapsible-header" no-margin no-padding (click)="expandPoll(poll_details)">
                       <ion-item no-padding text-center text-wrap no-lines text-center>
+                        <ion-icon name="md-checkmark" class="check-mark-style" style="visibility:hidden !important;" item-start>
+                        </ion-icon>
                         <h3 color-1d1d26 no-margin c-font-bold>
                           {{poll_details.pollNameChn}} | {{poll_details.pollName}}
                         </h3>
                         <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="poll_details.is_complete">
+                        </ion-icon>
+                        <ion-icon name="md-checkmark" class="check-mark-style" style="visibility:hidden !important;" item-end *ngIf="!poll_details.is_complete">
                         </ion-icon>
                       </ion-item>
                     </div>

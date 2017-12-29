@@ -66,6 +66,8 @@ export class ForumDetails {
         console.log(results);
         if (results.success == true) {
           this.forum_details = results.post[0];
+          this.forum_details.totalLikes = this.forum_details.likedBy.length;
+          this.forum_details.totalComments = this.forum_details.comments.length;
           this.forum_details.comments.forEach(element => {
             element.commentedTime = moment(element.commentedTime).format('YYYY-MM-DD HH:mm');
             element.likesForComment = element.likedBy.length;

@@ -3,7 +3,7 @@ page-forum-details {
         font-size: 15px;
     }
     [comment-text] {
-        font-size: 13px;
+        font-size: 14px;
     }
     [text-area-style] {
         height: 100%;
@@ -19,6 +19,9 @@ page-forum-details {
     }
     [send-button-ic] {
         font-size: 38px;
+    }
+    .item-inner {
+        padding: 0 !important;
     }
     /*  .item-input-has-value {
         [text-area-style] {

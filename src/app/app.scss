@@ -205,12 +205,32 @@ signature-pad {
     border-top: 1px solid #e7e7e7 !important;
 }
 
+[border-bottom-f2] {
+    border-bottom: 1px solid #f2f2f2 !important;
+}
+
+[padding-bottom-2px] {
+    padding-bottom: 2px !important;
+}
+
 [padding-5px] {
     padding: 5px;
 }
 
 .margin-top-10 {
     margin-top: 10px !important;
+}
+
+[margin-5] {
+    margin: 5px !important;
+}
+
+[border-left-f2] {
+    border-left: 1px solid #f2f2f2 !important;
+}
+
+[border-right-f2] {
+    border-right: 1px solid #f2f2f2 !important;
 }
 
 .close-button {
@@ -347,8 +367,16 @@ signature-pad {
     color: #1d1d26 !important;
 }
 
+[color-grey] {
+    color: grey !important;
+}
+
 [color-1d1d26] {
     color: #1d1d26 !important;
+}
+
+[font-size-16] {
+    font-size: 16px !important;
 }
 
 .tabbar,

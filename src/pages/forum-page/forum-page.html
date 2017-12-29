@@ -15,7 +15,7 @@
           <ion-item no-padding>
             <ion-label no-margin>
               <ion-icon item-start no-margin name="ios-create-outline"></ion-icon>
-              <p c-display-inline-block no-margin>您最近在想什麼 ？Post something here :)</p>
+              <p c-display-inline-block no-margin color-grey>您最近在想什麼 ？Post something here :)</p>
             </ion-label>
           </ion-item>
         </ion-card-content>
@@ -26,31 +26,41 @@
     <ion-col col-12 no-padding *ngFor="let forum_details of forumsList; let i=index;">
       <ion-card>
         <ion-item (click)="openForumDetailsPage(forum_details)">
-          <h2 left>{{forum_details.account}}</h2>
-          <p right>{{forum_details.postTime}}</p>
+          <ion-label margin-bottom>
+            <p border-bottom-f2 no-margin padding-bottom-2px>
+              <span color-1d1d26 c-font-bold left>{{forum_details.account}}</span>
+              <span right color-grey>{{forum_details.postTime}}</span>
+            </p>
+          </ion-label>
         </ion-item>
         <ion-card-content (click)="openForumDetailsPage(forum_details)">
-          <p>{{forum_details.content}}
+          <p font-size-16 color-1d1d26 c-font-bold>{{forum_details.content}}
           </p>
         </ion-card-content>
         <ion-row>
-          <ion-col text-center>
-            <button ion-button icon-left clear small (click)="likePostFunction(forum_details)">
-              <ion-icon name="ios-thumbs-up-outline"></ion-icon>
-              <div>{{forum_details.totalLikes}}</div>
-            </button>
+          <ion-col text-center col-4>
+            <div>
+              <button color-grey ion-button text-wrap icon-left clear small (click)="likePostFunction(forum_details)">
+                <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+                <div>{{forum_details.totalLikes}}</div>
+              </button>
+            </div>
           </ion-col>
-          <ion-col text-center>
-            <button ion-button icon-left clear small (click)="openForumDetailsPage(forum_details)">
-              <ion-icon name="ios-text-outline"></ion-icon>
-              <div>{{forum_details.totalComments}}</div>
-            </button>
+          <ion-col text-center col-4>
+            <div border-left-f2>
+              <button color-grey ion-button text-wrap icon-left clear small (click)="openForumDetailsPage(forum_details)">
+                <ion-icon name="ios-text-outline"></ion-icon>
+                <div>{{forum_details.totalComments}}</div>
+              </button>
+            </div>
           </ion-col>
-          <ion-col text-center>
-            <button ion-button icon-left clear small (click)="openReportPage(forum_details)">
-              <ion-icon name="ios-flag-outline"></ion-icon>
-              <div>投訴 | Report</div>
-            </button>
+          <ion-col text-center col-4>
+            <div border-left-f2>
+              <button color-grey ion-button text-wrap icon-left clear small (click)="openReportPage(forum_details)">
+                <ion-icon name="ios-flag-outline"></ion-icon>
+                <div>投訴 | Report</div>
+              </button>
+            </div>
           </ion-col>
         </ion-row>
       </ion-card>
