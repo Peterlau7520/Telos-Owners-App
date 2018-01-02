@@ -73,7 +73,7 @@ export class Noticeboard {
       }, err => {
         console.log("err", err);
         this.loadingService.hideLoading();
-        this.showMessage.showToastBottom("Unable to get Noticeboard data, please try again.");
+        this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get Noticeboard data, please try again.");
       });
 
   }

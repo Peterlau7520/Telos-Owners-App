@@ -92,18 +92,18 @@ export class IdVerification1 {
     this.camera.getPicture(options).then((imageData) => {
       this.owners_list[i].image = 'data:image/png;base64,' + imageData;
     }, (err) => {
-      this.showMessage.showToastBottom("Unable to get image");
+      this.showMessage.showToastBottom(" 無法獲取圖片 | Unable to get image");
     });
   }
 
   submitData(i) {
     console.log(i);
     if (typeof this.owners_list[i].image == "undefined" || this.owners_list[i].image == "" || this.owners_list[i].image == null) {
-      this.showMessage.showToastBottom("Please select/take an picture to upload.");
+      this.showMessage.showToastBottom("請選擇圖片 | Please select/take an picture to upload.");
       return false;
     }
     else if (typeof this.owners_list[i].hkid == "undefined" || this.owners_list[i].hkid == "" || this.owners_list[i].hkid == null) {
-      this.showMessage.showToastBottom("Please enter the HKID number.");
+      this.showMessage.showToastBottom("請輸入HKID 號碼 | Please enter the HKID number.");
       return false;
     }
     else {
@@ -161,7 +161,7 @@ export class IdVerification1 {
     }, err => {
       console.log("err", err);
       this.loadingService.hideLoading();
-      this.showMessage.showToastBottom("Unable to save HKID data, please try again.");
+      this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to save HKID data, please try again.");
     });
   }
 

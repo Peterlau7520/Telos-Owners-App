@@ -35,7 +35,7 @@ export class ForumPostModal {
 
   sendPostData(content) {
     if (typeof content == "undefined" || this.trim(content) == "" || content == null) {
-      this.showMessage.showToastBottom("Please enter text to post");
+      this.showMessage.showToastBottom(" 請輸入內容 | Please enter text to post");
       return false;
     }
     else {
@@ -62,7 +62,7 @@ export class ForumPostModal {
         }, err => {
           console.log("err", err);
           this.loadingService.hideLoading();
-          this.showMessage.showToastBottom("Unable to post, please try again.");
+          this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to post, please try again.");
         });
 
     }

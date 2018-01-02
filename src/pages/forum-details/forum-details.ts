@@ -82,7 +82,7 @@ export class ForumDetails {
       }, err => {
         console.log("err", err);
         this.loadingService.hideLoading();
-        this.showMessage.showToastBottom("Unable to get comments, please try again.");
+        this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get comments, please try again.");
       });
   }
 
@@ -108,7 +108,7 @@ export class ForumDetails {
   addCommentFunction(commentText, forum_details) {
     console.log(commentText);
     if (typeof commentText == "undefined" || this.trim(commentText) == "" || commentText == null) {
-      this.showMessage.showToastBottom("Please enter comment text");
+      this.showMessage.showToastBottom(" 請輸入 | Please enter comment text");
       return false;
     }
     else {
@@ -135,7 +135,7 @@ export class ForumDetails {
           }
         }, err => {
           console.log("err", err);
-          this.showMessage.showToastBottom("Unable to add comment, please try again.");
+          this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to add comment, please try again.");
         });
     }
 
@@ -162,7 +162,7 @@ export class ForumDetails {
         }
       }, err => {
         console.log("err", err);
-        this.showMessage.showToastBottom("Unable to like post, please try again.");
+        this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to like post, please try again.");
       });
   }
 
@@ -187,7 +187,7 @@ export class ForumDetails {
         }
       }, err => {
         console.log("err", err);
-        this.showMessage.showToastBottom("Unable to like post, please try again.");
+        this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to like post, please try again.");
       });
   }
 

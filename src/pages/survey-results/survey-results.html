@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-left>Survey Results</ion-title>
+    <ion-title text-left> 問卷結果 | Survey Results</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -19,7 +19,7 @@
                 <ion-icon name="md-checkmark" class="check-mark-style" style="visibility:hidden !important;" item-start>
                 </ion-icon>
                 <h2 text-center color-f2f2f2 class="survey-title-text">{{survey_details.titleChn}} | {{survey_details.title}}</h2>
-                <h2 text-center color-f2f2f2 class="survey-title-text">Complete By: {{survey_details.effectiveTo}}</h2>
+                <h2 text-center color-f2f2f2 class="survey-title-text"> 截止日期 | Complete by: {{survey_details.effectiveTo}}</h2>
                 <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="survey_details.is_finished">
                 </ion-icon>
                 <ion-icon name="md-checkmark" class="check-mark-style" style="visibility:hidden !important;" item-end *ngIf="!survey_details.is_finished">

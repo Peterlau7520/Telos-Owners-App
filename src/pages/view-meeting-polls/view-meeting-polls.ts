@@ -207,7 +207,7 @@ export class ViewMeetingPolls {
     }, err => {
       console.log("err", err);
       this.loadingService.hideLoading();
-      this.showMessage.showToastBottom("Unable to save signatures, please try again.");
+      this.showMessage.showToastBottom("無法儲存簽名 | Unable to save signatures, please try again.");
     });
   }
 
@@ -335,7 +335,7 @@ export class ViewMeetingPolls {
     }, err => {
       console.log("err", err);
       this.loadingService.hideLoading();
-      this.showMessage.showToastBottom("Unable to save HKIDs, please try again.");
+      this.showMessage.showToastBottom("無法儲存hkids | Unable to save HKIDs, please try again.");
     });
   }
 

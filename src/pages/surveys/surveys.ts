@@ -85,7 +85,7 @@ export class Surveys {
       const element = group_list[l];
       if (!element.is_complete || element.is_complete == false) {
         console.log(element);
-        this.showMessage.showToastBottom("Please answer each question.");
+        this.showMessage.showToastBottom("請回答每一項問題 :) | Please answer each question.");
         return false;
       }
       console.log("element", element);
@@ -123,7 +123,7 @@ export class Surveys {
     }, err => {
       console.log("err", err);
       this.loadingService.hideLoading();
-      this.showMessage.showToastBottom("Unable to save survey data, please try again.");
+      this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to save survey data, please try again.");
     });
   }
 
@@ -131,9 +131,6 @@ export class Surveys {
     console.log(group);
     console.log(i);
     console.log(survey_details);
-    /* for (let j = 0; j < survey_details.length; j++) {
-      console.log(survey_details[j].is_complete);
-    } */
     if (group.is_complete && group.is_complete > 0) {
       this.toggleGroup(group);
       let tmp_group_list = survey_details.question;

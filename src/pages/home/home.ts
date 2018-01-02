@@ -82,7 +82,7 @@ export class HomePage {
     }, err => {
       console.log("err", err);
       this.loadingService.hideLoading();
-      this.showMessage.showToastBottom("Unable to login, please try again.");
+      this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to login, please try again.");
     });
   }
 

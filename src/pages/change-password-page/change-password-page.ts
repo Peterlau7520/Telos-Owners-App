@@ -60,7 +60,7 @@ export class ChangePasswordPage {
       }, err => {
         console.log("err", err);
         this.loadingService.hideLoading();
-        this.showMessage.showToastBottom("Unable to save password, please try again.");
+        this.showMessage.showToastBottom(" 網絡連接問題 | Unable to save password, please try again.");
       });
   }
 

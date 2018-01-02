@@ -37,7 +37,7 @@ export class ForumCommentReportModal {
 
   submitReportData(commentReport) {
     if (typeof commentReport == "undefined" || this.trim(commentReport) == "" || commentReport == null) {
-      this.showMessage.showToastBottom("Please enter report text");
+      this.showMessage.showToastBottom(" 請輸入 | Please enter report text");
       return false;
     }
     else {
@@ -65,7 +65,7 @@ export class ForumCommentReportModal {
         }, err => {
           console.log("err", err);
           this.loadingService.hideLoading();
-          this.showMessage.showToastBottom("Unable to send report, please try again.");
+          this.showMessage.showToastBottom("網絡連接問題 | Unable to send report, please try again.");
         });
     }
   }

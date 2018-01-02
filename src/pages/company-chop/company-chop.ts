@@ -68,13 +68,13 @@ export class CompanyChop {
       this.chop_image = 'data:image/png;base64,' + imageData;
       /* this.showMessage.showToastBottom("Uploaded successfully!"); */
     }, (err) => {
-      this.showMessage.showToastBottom("Unable to get image");
+      this.showMessage.showToastBottom("無法選取圖片 | Unable to get image");
     });
   }
 
   goToRegister(chop_image) {
     if (typeof this.chop_image == "undefined" || this.chop_image == "" || this.chop_image == null) {
-      this.showMessage.showToastBottom("Please select/take an picture to upload.");
+      this.showMessage.showToastBottom("請選擇至少一張照片 | Please select/take an picture to upload.");
       return false;
     }
     else {
