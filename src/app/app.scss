@@ -306,10 +306,10 @@ signature-pad {
     text-align: center;
     border-radius: 0px !important;
     max-width: 100% !important;
-    /* height: 100%; */
+    height: 100%;
     width: 100%;
-    height: 83%;
-    margin-bottom: 4%;
+    /* height: 83%; */
+    /* margin-bottom: 4%; */
     max-height: 100% !important;
     color: rgba(0, 0, 0, 0.5);
     background: #fafafa;
@@ -373,6 +373,10 @@ signature-pad {
 
 [color-1d1d26] {
     color: #1d1d26 !important;
+}
+
+[color-f2f2f2] {
+    color: #f2f2f2 !important
 }
 
 [font-size-16] {
@@ -613,4 +617,14 @@ signature-pad {
 
 body.keyboard-is-open .hideElementOnKeyboardShown {
     display: none;
+}
+
+.loading-ios {
+    top: 44px;
+    bottom: 70px;
+}
+
+.loading-md {
+    top: 56px;
+    bottom: 69px;
 }

@@ -32,6 +32,7 @@ export class Noticeboard {
     private document: DocumentViewer, private fileOpener: FileOpener, public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage) {
+    this.notices = [];
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.token = localStorage.getItem("token");
   };
@@ -40,6 +41,7 @@ export class Noticeboard {
   }
 
   ionViewWillEnter() {
+    console.log('ionViewWillEnter Noticeboard');
     this.notices = [];
     this.getNoticeBoardData();
   }

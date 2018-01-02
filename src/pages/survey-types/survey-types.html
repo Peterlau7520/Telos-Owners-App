@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-left>會議 | Meetings</ion-title>
+    <ion-title text-left>屋苑問卷調查 | Surveys</ion-title>
   </ion-navbar>
 </ion-header>
 <!-- Themes Register + logo -->
@@ -13,10 +13,10 @@
       <ul no-margin no-padding class="collapsible">
         <li no-margin>
           <ion-card>
-            <div class="collapsible-header" no-margin no-padding (click)="goToUpcomingMeetings()">
+            <div class="collapsible-header" no-margin no-padding (click)="goToNewSurveys()">
               <ion-item no-padding padding text-center transparent no-lines text-center>
                 <ion-label style="margin-right: 0; margin-left: 0;">
-                  <h2 text-center no-margin color-f2f2f2 class="survey-title-text">近期會議 | Upcoming Meetings</h2>
+                  <h2 text-center no-margin color-f2f2f2 class="survey-title-text">New Surveys</h2>
                 </ion-label>
               </ion-item>
             </div>
@@ -24,10 +24,10 @@
         </li>
         <li no-margin>
           <ion-card>
-            <div class="collapsible-header" no-margin no-padding (click)="goToPastMeetings()">
+            <div class="collapsible-header" no-margin no-padding (click)="goToSurveyResults()">
               <ion-item no-padding padding text-center transparent no-lines text-center>
                 <ion-label style="margin-right: 0; margin-left: 0;">
-                  <h2 text-center no-margin color-f2f2f2 class="survey-title-text">過往會議 | Past Meetings</h2>
+                  <h2 text-center no-margin color-f2f2f2 class="survey-title-text">Survey Results</h2>
                 </ion-label>
               </ion-item>
             </div>

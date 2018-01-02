@@ -9,33 +9,37 @@ import { HomePage } from '../../pages/home/home';
 
 @IonicPage()
 @Component({
-  selector: 'page-survey-list',
-  templateUrl: 'survey-list.html',
+  selector: 'page-survey-types',
+  templateUrl: 'survey-types.html',
 })
-export class SurveyList {
+export class SurveyTypes {
 
-  new_survey_list = [];
+  survey_list = [];
   completed_survey_list = [];
+  new_survey_list: any = [];
+  past_survey_list: any = [];
   loginResponse: any = {};
   token: any = "";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingService: LoadingService,
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams, public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage) {
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
-    this.new_survey_list = JSON.parse(this.navParams.get("new_surveys"));
     this.token = localStorage.getItem("token");
   }
 
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SurveyList');
+    console.log('ionViewDidLoad SurveyTypes');
   }
 
   ionViewWillEnter() {
-    /* this.getAllSurves(); */
+    this.getAllSurves();
   }
 
-  /* getAllSurves() {
+  getAllSurves() {
     this.loadingService.showLoading();
     this.dataService.postData("allSurveys", {
       "estateName": this.loginResponse.user.estateName,
@@ -46,6 +50,8 @@ export class SurveyList {
         }
       }).subscribe(results => {
         if (results.success == true) {
+          this.new_survey_list = [];
+          this.past_survey_list = [];
           this.survey_list = results.survey;
           console.log(results);
           this.completed_survey_list = results.completedSurveys;
@@ -57,7 +63,15 @@ export class SurveyList {
                 element.is_finished = true;
               }
             });
+            if (element.status == "expired") {
+              this.past_survey_list.push(element);
+            }
+            else {
+              this.new_survey_list.push(element);
+            }
           });
+          console.log(this.past_survey_list);
+          console.log(this.new_survey_list);
           this.loadingService.hideLoading();
         }
         else {
@@ -72,19 +86,14 @@ export class SurveyList {
         this.loadingService.hideLoading();
         this.showMessage.showToastBottom("Unable to get Surveys, please try again.");
       });
-  } */
-
-  toggleGroup(group: any) {
-    group.show = !group.show;
   }
 
-  isGroupShown(group: any) {
-    return group.show;
+  goToNewSurveys() {
+    this.navCtrl.push("SurveyList", { "new_surveys": JSON.stringify(this.new_survey_list) });
   }
 
-  viewSurveyDetails(survey_details) {
-    let tmp_survey_details = JSON.stringify(survey_details);
-    this.navCtrl.push("Surveys", { "survey_details": tmp_survey_details });
+  goToSurveyResults() {
+    this.navCtrl.push("SurveyResults", { "past_surveys": JSON.stringify(this.past_survey_list) });
   }
 
 }

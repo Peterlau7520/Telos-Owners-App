@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-left>New Surveys</ion-title>
+    <ion-title text-left>Survey Results</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -11,7 +11,7 @@
   <ion-row margin-bottom>
     <ion-col col-12>
       <ul no-margin no-padding class="collapsible">
-        <li no-margin *ngFor="let survey_details of new_survey_list;">
+        <li no-margin *ngFor="let survey_details of past_survey_list;">
           <ion-card>
             <!-- Expandable Centered with header Header-->
             <div class="collapsible-header" no-margin no-padding (click)="viewSurveyDetails(survey_details)">

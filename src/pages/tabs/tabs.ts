@@ -10,7 +10,7 @@ export class Tabs {
 
   tab1Root: any = "";
   tab2Root: any = "AllMeetingsPage";
-  tab3Root: any = "SurveyList";
+  tab3Root: any = "SurveyTypes";
   tab4Root: any = "ForumPage";
   public badgeCount = 10;
 
