@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ViewChildren } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import * as moment from 'moment';
 import { Chart } from 'chart.js';
@@ -15,13 +15,14 @@ import { HomePage } from '../../pages/home/home';
 })
 export class SurveyResultDetails {
 
-  @ViewChild('doughnutCanvas') doughnutCanvas;
+  /* @ViewChild('doughnutCanvas') doughnutCanvas; */
+  @ViewChildren('doughnutCanvas') doughnutCanvas;
 
   doughnutChart: any;
   question_list: any = [];
   allAnswersArray: any = [];
-  labelsArray: any = [];
-  countsArray: any = [];
+  allGraphsArray: any = [];
+  allGraphsArray_length: any;
   survey_details: any = {};
   loginResponse: any = {};
   token: any = "";
@@ -36,7 +37,6 @@ export class SurveyResultDetails {
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.token = localStorage.getItem("token");
     console.log(this.survey_details);
-    this.getAllSurves(this.survey_details);
     /* this.getStaticData(); */
   }
 
@@ -44,8 +44,12 @@ export class SurveyResultDetails {
     console.log('ionViewDidLoad SurveyResultDetails');
   }
 
-  getAllSurves(survey_details) {
-    this.loadingService.showLoading();
+  ionViewWillEnter() {
+    this.getAllSurves(this.survey_details, this.doughnutCanvas);
+  }
+
+  getAllSurves(survey_details, doughnutCanvas) {
+    this.loadingService.showLoading("my-loading-class");
     this.dataService.postData("surveyResults", {
       "surveyId": survey_details._id,
     }, {
@@ -55,31 +59,39 @@ export class SurveyResultDetails {
       }).subscribe(results => {
         console.log(results);
         if (results.success == true) {
-          this.labelsArray = [];
-          this.countsArray = [];
-          let tmp_data_array = [];
           this.question_list = results.data;
           this.question_list.forEach(element => {
             let el_ans_array = element.answers;
+            element.labelsArray = [];
+            element.countsArray = [];
+            element.optionsList = [];
             el_ans_array.forEach(ansElement => {
               let tmp_label = ansElement.optionId.optionNameChn + " | " + ansElement.optionId.optionNameEn;
               element.total_counts = ansElement.optionId.optionsChn.length;
-              tmp_data_array.push({
-                "label": tmp_label,
-                "total_counts": element.total_counts
+              element.optionsList.push({
+                "chnOptionsArray": ansElement.optionId.optionsChn,
+                "enOptionsArray": ansElement.optionId.optionsEn,
+                "optionNameChn": ansElement.optionId.optionNameChn,
+                "optionNameEn": ansElement.optionId.optionNameEn
               });
             });
+            element.optionsList = element.optionsList.filter((thing, index, self) =>
+              index == self.findIndex((t) => (
+                t.optionNameEn == thing.optionNameEn && t.optionNameChn == thing.optionNameChn
+              ))
+            )
+            for (let i = 0; i < element.optionsList.length; i++) {
+              element.labelsArray.push(element.optionsList[i].optionNameChn + " | " + element.optionsList[i].optionNameEn);
+              element.countsArray.push(element.optionsList[i].chnOptionsArray.length);
+            }
           });
-          let data_array = tmp_data_array.filter((thing, index, self) =>
-            index == self.findIndex((t) => (
-              t.label == thing.label && t.total_counts == thing.total_counts
-            ))
-          )
-          for (let i = 0; i < data_array.length; i++) {
-            this.labelsArray.push(data_array[i].label);
-            this.countsArray.push(data_array[i].total_counts);
-          }
-          this.setDataToChart(this.labelsArray, this.countsArray);
+          this.doughnutCanvas.changes.subscribe(c => {
+            this.allGraphsArray = c.toArray();
+            this.allGraphsArray_length = this.allGraphsArray.length;
+            for (let j = 0; j < this.allGraphsArray_length; j++) {
+              this.setDataToChart(this.allGraphsArray[j], this.question_list[j].labelsArray, this.question_list[j].countsArray);
+            }
+          });
           this.loadingService.hideLoading();
         }
         else {
@@ -92,12 +104,12 @@ export class SurveyResultDetails {
       }, err => {
         console.log("err", err);
         this.loadingService.hideLoading();
-        this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get Survey details, please try again.");
+        this.showMessage.showToastBottom("Unable to get Survey details, please try again.");
       });
   }
 
-  setDataToChart(labelsArray, countsArray) {
-    this.doughnutChart = new Chart(this.doughnutCanvas.nativeElement, {
+  setDataToChart(doughnutCanvas, labelsArray, countsArray) {
+    this.doughnutChart = new Chart(doughnutCanvas.nativeElement, {
       type: 'doughnut',
       data: {
         labels: labelsArray,
@@ -109,13 +121,11 @@ export class SurveyResultDetails {
             '#4BC0C0', '#36A2EB', '#FF6384', '#FF9F40', '#FFCD56', '#4BC0C0', '#36A2EB'],
         }]
       }
-
     });
   }
 
-  toggleGroup1(group: any, i, survey_details) {
-    console.log(group);
-    let tmp_group_list = survey_details.question;
+  toggleGroup1(group: any, i, question_list) {
+    let tmp_group_list = question_list;
     for (let j = 0; j < tmp_group_list.length; j++) {
       if (j == i) {
         /* tmp_group_list[j].show = true; */

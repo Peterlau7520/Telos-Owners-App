@@ -7,14 +7,15 @@ import { LoadingController, Loading } from 'ionic-angular';
 @Injectable()
 export class LoadingService {
 
-  loading: Loading;
-  safeSvg: any;
+    loading: Loading;
+    loading2: Loading;
+    safeSvg: any;
 
-  constructor(public http: Http, public loadingCtrl: LoadingController, private sanitizer: DomSanitizer) {
-  }
+    constructor(public http: Http, public loadingCtrl: LoadingController, private sanitizer: DomSanitizer) {
+    }
 
-  showLoading() {
-    let svg = `<svg width="60" height="60" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+    showLoading(className) {
+        let svg = `<svg width="60" height="60" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
     <g fill="none" fill-rule="evenodd" stroke-width="2">
         <circle cx="22" cy="22" r="1">
             <animate attributeName="r"
@@ -50,20 +51,21 @@ export class LoadingService {
         </circle>
     </g>
 </svg>`;
-    this.safeSvg = this.sanitizer.bypassSecurityTrustHtml(svg);
-    this.loading = this.loadingCtrl.create({
-      /* content: 'Please wait', */
-      /* dismissOnPageChange: true, */
-      showBackdrop: false,
-      spinner: 'hide',
-      content: this.safeSvg,
-    });
-    this.loading.present();
-  }
+        this.safeSvg = this.sanitizer.bypassSecurityTrustHtml(svg);
+        this.loading = this.loadingCtrl.create({
+            /* content: 'Please wait', */
+            /* dismissOnPageChange: true, */
+            showBackdrop: false,
+            spinner: 'hide',
+            content: this.safeSvg,
+            cssClass: className
+        });
+        this.loading.present();
+    }
 
-  hideLoading() {
-    this.loading.dismiss().catch(() => { });
-    /* this.loading.dismiss(); */
-  }
+    hideLoading() {
+        this.loading.dismiss().catch(() => { });
+        /* this.loading.dismiss(); */
+    }
 
 }

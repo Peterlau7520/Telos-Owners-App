@@ -383,6 +383,10 @@ signature-pad {
     font-size: 16px !important;
 }
 
+[c-bg-grey] {
+    background-color: grey;
+}
+
 .tabbar,
 .tabs-ios,
 .tabs-md,
@@ -620,11 +624,28 @@ body.keyboard-is-open .hideElementOnKeyboardShown {
 }
 
 .loading-ios {
+    .my-loading-class {
+        top: 44px;
+        bottom: 70px;
+    }
+}
+
+ion-loading.my-loading-class {
     top: 44px;
     bottom: 70px;
 }
 
-.loading-md {
+ion-loading.my-loading-class {
     top: 56px;
     bottom: 69px;
+}
+
+ion-loading.my-loading-class2 {
+    top: 0;
+    bottom: 0;
+}
+
+ion-loading.my-loading-class2 {
+    top: 0;
+    bottom: 0;
 }

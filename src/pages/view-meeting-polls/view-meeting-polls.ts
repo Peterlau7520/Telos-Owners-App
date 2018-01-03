@@ -1,5 +1,5 @@
 import { Component, ElementRef, Renderer } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, AlertController } from 'ionic-angular';
 import { SignaturePadPage } from '../../pages/signature-pad-page/signature-pad-page';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
@@ -52,7 +52,8 @@ export class ViewMeetingPolls {
     private document: DocumentViewer,
     public loadingService: LoadingService,
     private dataService: DataService,
-    private showMessage: ShowMessage) {
+    private showMessage: ShowMessage,
+    private alertCtrl: AlertController) {
     this.meeting_details = JSON.parse(this.navParams.get("meeting_details"));
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.token = localStorage.getItem("token");
@@ -63,7 +64,7 @@ export class ViewMeetingPolls {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ViewMeetingPolls');
-    this.initParallax();
+    /* this.initParallax(); */
   }
 
   ionViewWillEnter() {
@@ -72,7 +73,7 @@ export class ViewMeetingPolls {
 
 
   /* Start Parallax */
-  initParallax() {
+  /* initParallax() {
     this.scrollerHandle = this.element.nativeElement.getElementsByClassName('scroll-content')[0];
     this.header = this.scrollerHandle.firstElementChild;
     this.headerHeight = this.scrollerHandle.clientHeight;
@@ -102,7 +103,7 @@ export class ViewMeetingPolls {
     }
     this.renderer.setElementStyle(this.header, 'webkitTransform', 'translate3d(0,' + this.translateAmt + 'px,0) scale(' + this.scaleAmt + ',' + this.scaleAmt + ')');
     this.ticking = false;
-  }
+  } */
   /* End Parallax */
 
   /* Open modal one by one */
@@ -119,7 +120,8 @@ export class ViewMeetingPolls {
         else {
           this.total_signatures = this.loginResponse.user.numberOfOwners;
           this.current_signature = 1;
-          this.acceptAgreement(this.current_signature, this.total_signatures);
+          /* this.acceptAgreement(this.current_signature, this.total_signatures); */
+          this.getAllHKIDs(this.current_HKID);
         }
       }
       else {
@@ -135,7 +137,10 @@ export class ViewMeetingPolls {
       console.log(data);
       if (data == "accept") {
         this.signatureArray = [];
-        this.acceptAgreement(this.current_signature, this.total_signatures);
+        this.total_signatures = this.loginResponse.user.numberOfOwners;
+        this.current_signature = 1;
+        /* this.acceptAgreement(this.current_signature, this.total_signatures); */
+        this.getAllHKIDs(this.current_HKID);
       }
       else {
       }
@@ -143,7 +148,7 @@ export class ViewMeetingPolls {
     myModal1.present();
   }
 
-  acceptAgreement(current_signature, total_signatures) {
+  acceptAgreement(current_signature, total_signatures, HKIDArray) {
     /* this.navCtrl.push(SignaturePageModal); */
     /* let myModal2 = this.modalCtrl.create(SignaturePageModal); */
     let myModal2 = this.modalCtrl.create(SignaturePadPage, {
@@ -158,15 +163,17 @@ export class ViewMeetingPolls {
       else if (data.closeType == "thankyou") {
         this.signatureArray.push({ "image": data.signatureData, "account": this.loginResponse.user.account, "estate": this.loginResponse.user.estateName });
         console.log(this.signatureArray);
+        console.log(HKIDArray);
         /* this.openThankYouNote(); */
-        this.saveAllSignatures(this.signatureArray);
+        this.saveAllSignatures(this.signatureArray, HKIDArray);
       }
       else if (data.closeType == "outside") {
-
+        this.HKIDArray = [];
+        this.current_HKID = 1;
       }
       else {
         this.signatureArray.push({ "image": data.signatureData, "account": this.loginResponse.user.account, "estate": this.loginResponse.user.estateName });
-        this.acceptAgreement(this.current_signature++, total_signatures);
+        this.acceptAgreement(this.current_signature++, total_signatures, this.HKIDArray);
       }
     });
     myModal2.present();
@@ -182,15 +189,16 @@ export class ViewMeetingPolls {
 
   /* End Open modals one by one */
 
-  saveAllSignatures(signatureArray) {
+  saveAllSignatures(signatureArray, HKIDArray) {
     console.log(signatureArray);
-    this.loadingService.showLoading();
-    this.dataService.postData("saveSignature", { "signatures": signatureArray, "meeting_id": this.meeting_details.meeting_id }, {
+    this.loadingService.showLoading("my-loading-class");
+    this.dataService.postData("saveSignature", { "signatures": signatureArray, "hkid": HKIDArray, "meeting_id": this.meeting_details.meeting_id }, {
       headers: {
         'authorization': this.token
       }
     }).subscribe(results => {
       console.log(results);
+      this.current_HKID = 1;
       if (results.success == true) {
         this.loginResponse.user.proxyAppointed.push(this.meeting_details.meeting_id);
         localStorage.setItem("loginResponse", JSON.stringify(this.loginResponse));
@@ -223,14 +231,8 @@ export class ViewMeetingPolls {
     return poll_details.show;
   }
 
-
-  getHKIDByOption(poll_details, current_HKID, selected_option) {
-    if (poll_details.is_complete == true) {
-      return false;
-    }
+  getAllHKIDs(current_HKID) {
     let request_data: any = {};
-    console.log("poll_details", poll_details);
-    console.log("option_details", selected_option);
     this.total_HKIDs = this.loginResponse.user.numberOfOwners;
     let myModal4 = this.modalCtrl.create("OwnerHkidNumber", {
       "total_HKIDs": this.total_HKIDs,
@@ -245,25 +247,63 @@ export class ViewMeetingPolls {
         /* this.getHKIDByOption(); */
         this.HKIDArray.push(data.hkid_val);
         request_data = {
-          "pollID": poll_details._id,
-          "option": selected_option.label,
           "account": this.loginResponse.user.account,
-          "estate": poll_details.estateName,
           "meeting_id": this.meeting_details.meeting_id,
           "HKID": this.HKIDArray
         };
         console.log("request_data", request_data);
-        this.saveVoteData(request_data, poll_details, selected_option);
+        this.total_signatures = this.loginResponse.user.numberOfOwners;
+        this.current_signature = 1;
+        this.acceptAgreement(this.current_signature, this.total_signatures, this.HKIDArray);
+        /* this.saveVoteData(request_data, poll_details, selected_option); */
       }
       else if (data.closeType == "repeat") {
         this.HKIDArray.push(data.hkid_val);
-        this.getHKIDByOption(poll_details, this.current_HKID++, selected_option);
+        this.getAllHKIDs(this.current_HKID++);
       }
       else {
       }
 
     });
     myModal4.present();
+  }
+
+
+  saveVotingData(poll_details, selected_option) {
+    if (poll_details.is_complete == true) {
+      return false;
+    }
+    let request_data: any = {};
+    request_data = {
+      "pollID": poll_details._id,
+      "option": selected_option.label,
+      "account": this.loginResponse.user.account,
+      "estate": poll_details.estateName,
+      "meeting_id": this.meeting_details.meeting_id,
+      /* "HKID": this.HKIDArray */
+    };
+
+    let alert = this.alertCtrl.create({
+      title: 'Confirm option',
+      message: '確認該選項 ？| Are you sure you want to select this option ?',
+      buttons: [
+        {
+          text: 'No',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Yes',
+          handler: () => {
+            console.log('Yes clicked');
+            this.saveVoteData(request_data, poll_details, selected_option);
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 
   checkIfproxyAppointed(loginResponse) {
@@ -307,7 +347,7 @@ export class ViewMeetingPolls {
 
   saveVoteData(request_data, poll_details, selected_option) {
     console.log(poll_details);
-    this.loadingService.showLoading();
+    this.loadingService.showLoading("my-loading-class");
     this.dataService.postData("vote", request_data, {
       headers: {
         'authorization': this.token

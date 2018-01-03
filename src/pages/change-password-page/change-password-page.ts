@@ -33,7 +33,7 @@ export class ChangePasswordPage {
   }
 
   savePassword(password_data) {
-    this.loadingService.showLoading();
+    this.loadingService.showLoading("my-loading-class2");
     this.dataService.postData("changePassword", {
       "account": this.loginResponse.user.account,
       "oldPassword": password_data.old_password,

@@ -121,7 +121,7 @@ export class IdVerification1 {
 
   submitAllHKIDData(owners_list) {
 
-    this.loadingService.showLoading();
+    this.loadingService.showLoading("my-loading-class2");
     let hkidsArray = [];
     let request_data = {};
     for (let i = 0; i < owners_list.length; i++) {

@@ -40,7 +40,7 @@ export class ForumPostModal {
     }
     else {
       this.token = localStorage.getItem("token");
-      this.loadingService.showLoading();
+      this.loadingService.showLoading("my-loading-class");
       this.dataService.postData("newPost", {
         "estateName": this.loginResponse.user.estateName,
         "account": this.loginResponse.user.account,

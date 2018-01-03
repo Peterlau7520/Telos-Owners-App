@@ -78,7 +78,7 @@ export class CompanyChop {
       return false;
     }
     else {
-      this.loadingService.showLoading();
+      this.loadingService.showLoading("my-loading-class2");
       let request_data = {
         "account": this.loginResponse.user.account,
         "image": this.chop_image,

@@ -42,7 +42,7 @@ export class ForumReportModal {
     }
     else {
       this.token = localStorage.getItem("token");
-      this.loadingService.showLoading();
+      this.loadingService.showLoading("my-loading-class");
       this.dataService.postData("reportPost", {
         "postId": this.forum_details._id,
         "account": this.loginResponse.user.account,

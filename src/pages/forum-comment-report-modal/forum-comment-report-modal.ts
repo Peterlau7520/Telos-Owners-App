@@ -42,7 +42,7 @@ export class ForumCommentReportModal {
     }
     else {
       this.token = localStorage.getItem("token");
-      this.loadingService.showLoading();
+      this.loadingService.showLoading("my-loading-class");
       this.dataService.postData("reportComment", {
         "commentId": this.comment_details._id,
         "account": this.loginResponse.user.account,

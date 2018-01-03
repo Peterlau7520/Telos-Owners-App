@@ -35,7 +35,7 @@ export class PastMeetings {
   }
 
   getPastMeetingsData() {
-    this.loadingService.showLoading();
+    this.loadingService.showLoading("my-loading-class");
     this.dataService.postData("pastMeetings", {
       "estateName": this.loginResponse.user.estateName
     }, {

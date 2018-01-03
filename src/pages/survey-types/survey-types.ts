@@ -40,7 +40,7 @@ export class SurveyTypes {
   }
 
   getAllSurves() {
-    this.loadingService.showLoading();
+    this.loadingService.showLoading("my-loading-class");
     this.dataService.postData("allSurveys", {
       "estateName": this.loginResponse.user.estateName,
       "userId": this.loginResponse.user._id

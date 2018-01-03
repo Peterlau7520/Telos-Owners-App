@@ -54,7 +54,7 @@ export class ForumDetails {
 
   getCommentsByPostIdFunction(forum_details, loginResponse) {
     this.token = localStorage.getItem("token");
-    this.loadingService.showLoading();
+    this.loadingService.showLoading("my-loading-class");
     this.dataService.postData("getCommentsByPostId", {
       "postId": forum_details._id,
       "estateName": loginResponse.user.estateName

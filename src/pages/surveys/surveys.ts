@@ -103,7 +103,7 @@ export class Surveys {
       userId: this.loginResponse.user._id
     }
 
-    this.loadingService.showLoading();
+    this.loadingService.showLoading("my-loading-class");
     this.dataService.postData("submitSurveys", request_data, {
       headers: {
         'authorization': this.token

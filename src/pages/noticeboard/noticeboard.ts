@@ -47,7 +47,7 @@ export class Noticeboard {
   }
 
   getNoticeBoardData() {
-    this.loadingService.showLoading();
+    this.loadingService.showLoading("my-loading-class");
     this.dataService.postData("noticeBoard", {
       "estateName": this.loginResponse.user.estateName
     }, {

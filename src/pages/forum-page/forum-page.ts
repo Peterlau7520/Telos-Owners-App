@@ -33,7 +33,7 @@ export class ForumPage {
 
   getForumList() {
     this.token = localStorage.getItem("token");
-    this.loadingService.showLoading();
+    this.loadingService.showLoading("my-loading-class");
     this.dataService.postData("getForum", {
       "estateName": this.loginResponse.user.estateName
     }, {

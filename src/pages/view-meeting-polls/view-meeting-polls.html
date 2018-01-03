@@ -140,7 +140,7 @@
                             <h2 color-1d1d26 class="summary-title">
                               <img src="./assets/images/icons/poll.png" c-display-inline-block class="label-icons-poll" alt=""> Poll Options</h2>
                             <div margin *ngIf="poll_details.is_complete">
-                              <ion-card no-margin transparent c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="getHKIDByOption(poll_details, 1, option_details)">
+                              <ion-card no-margin transparent c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="saveVotingData(poll_details, option_details)">
                                 <ion-item text-wrap no-padding style="background-color:#eeeeee;">
                                   <ion-icon name="md-checkmark" style="position: absolute; top: 10px;" class="check-mark-style" item-start *ngIf="option_details.choice">
                                   </ion-icon>
@@ -149,7 +149,7 @@
                               </ion-card>
                             </div>
                             <div margin *ngIf="!poll_details.is_complete">
-                              <ion-card no-margin c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="getHKIDByOption(poll_details, 1, option_details)">
+                              <ion-card no-margin c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="saveVotingData(poll_details, option_details)">
                                 <ion-item text-wrap no-padding>
                                   <ion-icon name="md-checkmark" style="position: absolute; top: 10px;" class="check-mark-style" item-start *ngIf="option_details.choice">
                                   </ion-icon>

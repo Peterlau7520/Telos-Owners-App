@@ -36,7 +36,7 @@ export class HomePage {
     /* localStorage.setItem("firstTabPage", "Noticeboard");
     this.navCtrl.push("Tabs"); */
 
-    this.loadingService.showLoading();
+    this.loadingService.showLoading("my-loading-class2");
     let deviceInfo = this.getdeviceInfo();
     form.value.deviceToken = this.deviceToken;
     console.log(deviceInfo);

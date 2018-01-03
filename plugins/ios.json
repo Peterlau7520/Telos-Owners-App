@@ -1,0 +1,57 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "CAMERA_USAGE_DESCRIPTION": " ",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "cordova-plugin-document-viewer": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "cordova-plugin-youtube-video-player": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
+    }
+  }
+}

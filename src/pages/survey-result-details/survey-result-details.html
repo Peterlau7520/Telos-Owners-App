@@ -16,14 +16,14 @@
       </ion-row>
       <ion-list no-margin>
         <ul no-margin no-padding class="collapsible">
-          <li no-margin *ngFor="let group of survey_details.question; let i=index;">
+          <li no-margin *ngFor="let group of question_list; let i=index;">
             <ion-card transparent>
               <!-- Expandable Centered with header Header-->
-              <div class="collapsible-header" no-margin no-padding (click)="toggleGroup1(group, i, survey_details)">
+              <div class="collapsible-header" no-margin no-padding (click)="toggleGroup1(group, i, question_list)">
                 <ion-item color-1d1d26 no-padding text-center transparent no-lines text-center text-wrap>
                   <ion-icon name="md-checkmark" style="visibility:hidden !important;" class="check-mark-style" item-start>
                   </ion-icon>
-                  <h2 color-1d1d26 text-center item-title>{{group.questionChn}} | {{group.questionEn}}</h2>
+                  <h2 color-f2f2f2 text-center item-title>{{group.questionChn}} | {{group.questionEn}}</h2>
                   <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="group.is_complete">
                   </ion-icon>
                   <ion-icon name="md-checkmark" style="visibility:hidden !important;" class="check-mark-style" item-end *ngIf="!group.is_complete">
@@ -32,37 +32,34 @@
               </div>
               <!-- Expandable Centered with header Body -->
               <div class="item-accordion" transparent [ngClass]="{'active': isGroupShown(group) }" [hidden]="!isGroupShown(group)">
-
                 <ion-list radio-group transparent [(ngModel)]="group.is_complete" (ionChange)="valueChanged(group, i, survey_details)">
-                  <ion-card no-margin transparent c-width-100 *ngFor="let option_details of group.optionIds; let k=index;" style="box-shadow: none;">
+                  <ion-card no-margin transparent c-width-100 *ngFor="let option_details of group.optionsList; let k=index;" style="box-shadow: none;">
                     <ion-item color-1d1d26 transparent text-wrap>
                       <ion-label margin-vertical item-title>
                         <p color-1d1d26 under-line>{{option_details.optionNameChn}} | {{option_details.optionNameEn}}</p>
-                        <p color-1d1d26 *ngFor="let option_data of option_details.optionsChn;">{{option_data.key}} : {{option_data.value}}</p>
-                        <p color-1d1d26 *ngFor="let option_data of option_details.optionsEn;">{{option_data.key}} : {{option_data.value}}</p>
+                        <p color-1d1d26 *ngFor="let option_data of option_details.chnOptionsArray;">{{option_data.key}} : {{option_data.value}}</p>
+                        <p color-1d1d26 *ngFor="let option_data of option_details.enOptionsArray;">{{option_data.key}} : {{option_data.value}}</p>
                       </ion-label>
-                      <!-- <ion-checkbox [(ngModel)]="option_details.is_checked" (ionChange)="valueChanged($event, group, i, k, survey_details)"></ion-checkbox> -->
-                      <!-- <ion-radio item-left [value]="k+1" color="mytheme"></ion-radio> -->
                     </ion-item>
                   </ion-card>
                 </ion-list>
+                <ion-row margin-bottom>
+                  <ion-col col-12 no-padding margin-bottom>
+                    <ion-card>
+                      <ion-card-header>
+                        {{group.questionChn}} | {{group.questionEn}}
+                      </ion-card-header>
+                      <ion-card-content>
+                        <canvas c-font-bold #doughnutCanvas></canvas>
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                </ion-row>
               </div>
             </ion-card>
           </li>
         </ul>
       </ion-list>
-    </ion-col>
-  </ion-row>
-  <ion-row margin-bottom>
-    <ion-col col-12>
-      <ion-card>
-        <ion-card-header>
-          {{survey_details.titleChn}} | {{survey_details.title}}
-        </ion-card-header>
-        <ion-card-content>
-          <canvas c-font-bold #doughnutCanvas></canvas>
-        </ion-card-content>
-      </ion-card>
     </ion-col>
   </ion-row>
 </ion-content>
