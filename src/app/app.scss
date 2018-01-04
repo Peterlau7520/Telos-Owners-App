@@ -409,22 +409,22 @@ signature-pad {
 .tabs-ios {
     a[aria-selected=false] {
         .tab-button-icon[ng-reflect-name=noticeboard],
-        .tab-button-icon[aria-label=noticeboard] {
+        .tab-button-icon[aria-label="noticeboard outline"] {
             background-image: url(../assets/images/tabicons/noticeboard.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=meetings],
-        .tab-button-icon[aria-label=meetings] {
+        .tab-button-icon[aria-label="meetings outline"] {
             background-image: url(../assets/images/tabicons/meetings.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=survey],
-        .tab-button-icon[aria-label=survey] {
+        .tab-button-icon[aria-label="survey outline"] {
             background-image: url(../assets/images/tabicons/survey.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=forum],
-        .tab-button-icon[aria-label=forum] {
+        .tab-button-icon[aria-label="forum outline"] {
             background-image: url(../assets/images/tabicons/forum.png);
             image-rendering: -webkit-optimize-contrast;
         }
@@ -630,22 +630,22 @@ body.keyboard-is-open .hideElementOnKeyboardShown {
     }
 }
 
-ion-loading.my-loading-class {
+.loading-ios.my-loading-class {
     top: 44px;
     bottom: 70px;
 }
 
-ion-loading.my-loading-class {
+.loading-md.my-loading-class {
     top: 56px;
     bottom: 69px;
 }
 
-ion-loading.my-loading-class2 {
+.loading-ios.my-loading-class2 {
     top: 0;
     bottom: 0;
 }
 
-ion-loading.my-loading-class2 {
+.loading-md.my-loading-class2 {
     top: 0;
     bottom: 0;
 }
