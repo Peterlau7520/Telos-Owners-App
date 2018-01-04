@@ -1,6 +1,8 @@
 {
   "name": "telos",
   "app_id": "",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
