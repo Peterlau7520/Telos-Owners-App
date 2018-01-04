@@ -623,15 +623,16 @@ body.keyboard-is-open .hideElementOnKeyboardShown {
     display: none;
 }
 
-.loading-ios {
+
+/* .loading-ios {
     .my-loading-class {
         top: 44px;
         bottom: 70px;
     }
-}
+} */
 
 .loading-ios.my-loading-class {
-    top: 44px;
+    top: 64px;
     bottom: 70px;
 }
 
