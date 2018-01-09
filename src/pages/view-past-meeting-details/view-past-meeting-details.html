@@ -29,7 +29,7 @@
                 <ion-icon>
                   <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
                 </ion-icon>
-                Meeting Time : {{meeting_details.meeting_startTime}} — {{meeting_details.meeting_endTime}}</span>
+                 大會日期 | Meeting Time : {{meeting_details.meeting_startTime}} — {{meeting_details.meeting_endTime}}</span>
               <span>&nbsp;</span>
             </div>
             <div info>
@@ -54,7 +54,7 @@
                 <ion-icon>
                   <img src="./assets/images/icons/document.png" class="label-icons-file" alt="">&nbsp;
                 </ion-icon>
-                Agenda : </span>
+                大會議程 | Agenda : </span>
               <span c-display-inline-block>
                 <a (click)="openAgendaFile(meeting_details.meeting_fileLinks[0])"> {{meeting_details.meeting_fileLinks[0].name}}</a>
               </span>
@@ -64,7 +64,7 @@
                 <ion-icon>
                   <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
                 </ion-icon>
-                Vote by : {{meeting_details.meeting_pollEndTime}}</span>
+                投票截止日期 | Vote by : {{meeting_details.meeting_pollEndTime}}</span>
             </div>
           </ion-label>
         </ion-item>
@@ -78,7 +78,7 @@
                     <div class="collapsible-header" no-margin no-padding (click)="expandPoll(poll_details)">
                       <ion-item color-1d1d26 no-padding text-center no-lines text-center>
                         <h3 no-margin c-font-bold>{{poll_details.pollNameChn}} | {{poll_details.pollName}}</h3>
-                        <h3 no-margin c-font-bold>Final Result : {{poll_details.finalResult}}</h3>
+                        <h3 no-margin c-font-bold> 最終結果 | Final Result : {{poll_details.finalResult}}</h3>
                         <!-- <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="poll_details.is_complete">
                         </ion-icon> -->
                       </ion-item>
@@ -89,7 +89,7 @@
                         <ion-item color-1d1d26 padding-5px text-wrap>
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">
-                              <img src="./assets/images/icons/poll.png" c-display-inline-block class="label-icons-poll" alt=""> Poll Results</h2>
+                              <img src="./assets/images/icons/poll.png" c-display-inline-block class="label-icons-poll" alt=""> 議案結果 | Poll Results</h2>
                             <h3 color-1d1d26 *ngFor="let result_details of poll_details.results;">{{result_details.choice}} :
                               <span color-1d1d26 c-font-bold>{{result_details.percentage}}%</span>
                             </h3>
@@ -101,7 +101,7 @@
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">
                               <span>
-                                <img src="./assets/images/icons/summary.png" c-display-inline-block class="label-icons-live-summary" alt=""> Summary
+                                <img src="./assets/images/icons/summary.png" c-display-inline-block class="label-icons-live-summary" alt=""> 投票概要 | Summary
                               </span>
                             </h2>
                             <h5 color-1d1d26 class="summary-desc">{{poll_details.summaryChn}}</h5>
@@ -113,7 +113,7 @@
                         <ion-item color-1d1d26 padding-5px text-wrap>
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">
-                              <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt=""> &nbsp;Documents
+                              <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt=""> &nbsp; 文件 | Documents
                             </h2>
                             <a *ngFor="let documents of poll_details.fileLinks;" (click)="openAgendaFile(documents)">
                               {{documents.name}}

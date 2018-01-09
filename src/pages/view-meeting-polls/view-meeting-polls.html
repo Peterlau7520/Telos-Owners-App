@@ -30,7 +30,7 @@
                   <ion-icon>
                     <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
                   </ion-icon>
-                  Meeting Time : {{meeting_details.meeting_startTime}} — {{meeting_details.meeting_endTime}}&nbsp;</span>
+                  大會時間 | Meeting Time : {{meeting_details.meeting_startTime}} — {{meeting_details.meeting_endTime}}&nbsp;</span>
                 <span c-display-inline-block>&nbsp;</span>
               </ion-col>
               <ion-col col-12 no-padding>
@@ -38,14 +38,14 @@
                   <ion-icon>
                     <img src="./assets/images/icons/venue.png" class="label-icons-venue" alt="">&nbsp;
                   </ion-icon>
-                  Venue : {{meeting_details.meeting_venue}}</span>
+                  地點 | Venue : {{meeting_details.meeting_venue}}</span>
               </ion-col>
               <ion-col col-12 no-padding>
                 <span left>
                   <!-- <ion-icon> -->
                   <img src="./assets/images/icons/live_stream.png" class="label-icons-live-stream" alt="">&nbsp;
                   <!-- </ion-icon> -->
-                  Live stream :&nbsp;</span>
+                  現場直播 | Live stream :&nbsp;</span>
                 <a c-display-inline-block *ngIf="meeting_details.meeting_youtubelink" (click)="openMeetingURL(meeting_details.meeting_youtubelink)">{{meeting_details.meeting_youtubelink}}</a>
                 <a c-display-inline-block *ngIf="!meeting_details.meeting_youtubelink">N/A</a>
               </ion-col>
@@ -66,7 +66,7 @@
                 <img src="./assets/images/icons/document.png" class="label-icons-file" alt="">&nbsp;
                 <!-- </ion-icon> -->
               </span>
-              <span left>Agenda :&nbsp;</span>
+              <span left> 大會議程 |Agenda :&nbsp;</span>
               <span c-display-inline-block>
                 <a (click)="openAgendaFile(meeting_details.meeting_fileLinks[0])"> {{meeting_details.meeting_fileLinks[0].name}}</a>
               </span>
@@ -76,7 +76,7 @@
                 <ion-icon>
                   <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
                 </ion-icon>
-                Vote by : {{meeting_details.meeting_pollEndTime}}</span>
+                 投票截止日期 | Vote by : {{meeting_details.meeting_pollEndTime}}</span>
             </div>
           </ion-label>
         </ion-item>
@@ -84,7 +84,7 @@
           <ion-label padding no-margin>
             <ion-card c-width-100 no-margin (click)="openViewPoll()">
               <ion-card-content text-center margin>
-                <h3 color-1d1d26 no-margin c-font-bold>View Polls</h3>
+                <h3 color-1d1d26 no-margin c-font-bold> 查看議案 | View Polls</h3>
               </ion-card-content>
             </ion-card>
           </ion-label>
@@ -116,7 +116,7 @@
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">
                               <span>
-                                <img src="./assets/images/icons/summary.png" c-display-inline-block class="label-icons-live-summary" alt=""> Summary
+                                <img src="./assets/images/icons/summary.png" c-display-inline-block class="label-icons-live-summary" alt=""> 概要 | Summary
                               </span>
                             </h2>
                             <h5 color-1d1d26 class="summary-desc">{{poll_details.summaryChn}} | {{poll_details.summary}} </h5>
@@ -128,7 +128,7 @@
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">
                               <span>
-                                <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt="">&nbsp; Documents
+                                <img src="./assets/images/icons/document.png" c-display-inline-block class="label-icons-file" alt="">&nbsp; 文件 | Documents
                               </span>
                             </h2>
                             <a *ngFor="let documents of poll_details.fileLinks;" (click)="openAgendaFile(documents)">
@@ -141,7 +141,7 @@
                         <ion-item color-1d1d26 text-wrap padding-5px text-wrap>
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">
-                              <img src="./assets/images/icons/poll.png" c-display-inline-block class="label-icons-poll" alt=""> Poll Options</h2>
+                              <img src="./assets/images/icons/poll.png" c-display-inline-block class="label-icons-poll" alt=""> 投票選項 | Poll Options</h2>
                             <div margin *ngIf="poll_details.is_complete">
                               <ion-card no-margin transparent c-width-100 class="margin-top-10" *ngFor="let option_details of poll_details.options;" (click)="saveVotingData(poll_details, option_details)">
                                 <ion-item text-wrap no-padding style="background-color:#eeeeee;">
