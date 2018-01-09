@@ -1,12 +1,12 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>survey-result-details</ion-title>
+    <ion-title>Survey Result Details</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content no-padding>
-  <ion-row>
+  <ion-row margin-bottom>
     <ion-col col-12>
       <ion-row padding>
         <ion-col col-12 no-padding>
@@ -24,15 +24,15 @@
                   <ion-icon name="md-checkmark" style="visibility:hidden !important;" class="check-mark-style" item-start>
                   </ion-icon>
                   <h2 color-f2f2f2 text-center item-title>{{group.questionChn}} | {{group.questionEn}}</h2>
-                  <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="group.is_complete">
+                  <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="group.is_completed">
                   </ion-icon>
-                  <ion-icon name="md-checkmark" style="visibility:hidden !important;" class="check-mark-style" item-end *ngIf="!group.is_complete">
+                  <ion-icon name="md-checkmark" style="visibility:hidden !important;" class="check-mark-style" item-end *ngIf="!group.is_completed">
                   </ion-icon>
                 </ion-item>
               </div>
               <!-- Expandable Centered with header Body -->
               <div class="item-accordion" transparent [ngClass]="{'active': isGroupShown(group) }" [hidden]="!isGroupShown(group)">
-                <ion-list radio-group transparent [(ngModel)]="group.is_complete" (ionChange)="valueChanged(group, i, survey_details)">
+                <ion-list radio-group transparent [(ngModel)]="group.is_completed" (ionChange)="valueChanged(group, i, survey_details)">
                   <ion-card no-margin transparent c-width-100 *ngFor="let option_details of group.optionsList; let k=index;" style="box-shadow: none;">
                     <ion-item color-1d1d26 transparent text-wrap>
                       <ion-label margin-vertical item-title>
@@ -40,17 +40,20 @@
                         <p color-1d1d26 *ngFor="let option_data of option_details.chnOptionsArray;">{{option_data.key}} : {{option_data.value}}</p>
                         <p color-1d1d26 *ngFor="let option_data of option_details.enOptionsArray;">{{option_data.key}} : {{option_data.value}}</p>
                       </ion-label>
+                      <ion-radio item-left [value]="k+1" color="mytheme" *ngIf="survey_details.is_completed" [disabled]="survey_details.is_completed"></ion-radio>
                     </ion-item>
                   </ion-card>
                 </ion-list>
-                <ion-row margin-bottom>
-                  <ion-col col-12 no-padding margin-bottom>
-                    <ion-card>
+                <ion-row>
+                  <ion-col col-12 no-padding>
+                    <ion-card class="chart-div">
                       <ion-card-header>
                         {{group.questionChn}} | {{group.questionEn}}
                       </ion-card-header>
-                      <ion-card-content>
+                      <ion-card-content no-padding>
+                        <!-- <div style="height:200px !important; width:400px !important;"> -->
                         <canvas c-font-bold #doughnutCanvas></canvas>
+                        <!-- </div> -->
                       </ion-card-content>
                     </ion-card>
                   </ion-col>

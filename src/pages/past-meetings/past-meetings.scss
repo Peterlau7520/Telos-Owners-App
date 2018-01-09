@@ -34,4 +34,11 @@ page-past-meetings {
         letter-spacing: 0;
         font-weight: 600 !important;
     }
+    .time-img-div {
+        width: 20px;
+        vertical-align: middle;
+    }
+    .time-text-div {
+        width: calc(100% - 26px);
+    }
 }

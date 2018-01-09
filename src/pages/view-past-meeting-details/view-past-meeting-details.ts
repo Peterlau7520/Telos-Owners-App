@@ -35,7 +35,7 @@ export class ViewPastMeetingDetails {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ViewMeetingPolls');
-    this.initParallax();
+    /* this.initParallax(); */
   }
 
   ionViewWillEnter() {
@@ -44,7 +44,7 @@ export class ViewPastMeetingDetails {
   }
 
   /* Start Parallax */
-  initParallax() {
+  /* initParallax() {
     this.scrollerHandle = this.element.nativeElement.getElementsByClassName('scroll-content')[0];
     this.header = this.scrollerHandle.firstElementChild;
     this.headerHeight = this.scrollerHandle.clientHeight;
@@ -74,7 +74,7 @@ export class ViewPastMeetingDetails {
     }
     this.renderer.setElementStyle(this.header, 'webkitTransform', 'translate3d(0,' + this.translateAmt + 'px,0) scale(' + this.scaleAmt + ',' + this.scaleAmt + ')');
     this.ticking = false;
-  }
+  } */
   /* End Parallax */
 
   expandPoll(poll_details: any) {

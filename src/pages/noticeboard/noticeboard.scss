@@ -1,7 +1,7 @@
 page-noticeboard {
     ion-card {
         [card-title] {
-            position: absolute;
+            /* position: absolute; */
             top: 36%;
             width: 90%;
             left: 5%;
@@ -9,7 +9,7 @@ page-noticeboard {
             color: #f2f2f2 !important;
         }
         [card-subtitle] {
-            position: absolute;
+            /* position: absolute; */
             bottom: 12%;
             width: 90%;
             left: 5%;
@@ -22,6 +22,7 @@ page-noticeboard {
         box-shadow: 1px 3px 7px #000000;
         @include darkening-blend-mode;
         min-height: 220px;
+        height: auto !important;
         width: 100% !important;
         text-transform: initial !important;
         border-radius: $border-radius !important;

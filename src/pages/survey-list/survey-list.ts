@@ -18,12 +18,14 @@ export class SurveyList {
   completed_survey_list = [];
   loginResponse: any = {};
   token: any = "";
+  survey_list = [];
+  past_survey_list: any = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage) {
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
-    this.new_survey_list = JSON.parse(this.navParams.get("new_surveys"));
+    /* this.new_survey_list = JSON.parse(this.navParams.get("new_surveys")); */
     this.token = localStorage.getItem("token");
   }
 
@@ -32,11 +34,11 @@ export class SurveyList {
   }
 
   ionViewWillEnter() {
-    /* this.getAllSurves(); */
+    this.getAllSurves();
   }
 
-  /* getAllSurves() {
-    this.loadingService.showLoading();
+  getAllSurves() {
+    this.loadingService.showLoading("my-loading-class");
     this.dataService.postData("allSurveys", {
       "estateName": this.loginResponse.user.estateName,
       "userId": this.loginResponse.user._id
@@ -46,18 +48,42 @@ export class SurveyList {
         }
       }).subscribe(results => {
         if (results.success == true) {
+          this.new_survey_list = [];
+          this.past_survey_list = [];
           this.survey_list = results.survey;
-          console.log(results);
           this.completed_survey_list = results.completedSurveys;
-          console.log(this.completed_survey_list);
-          this.survey_list.forEach(element => {
-            element.effectiveTo = moment(element.effectiveTo).format('YYYY-MM-DD HH:mm');
-            this.completed_survey_list.forEach(completedElement => {
-              if (element._id == completedElement) {
-                element.is_finished = true;
+
+          //check weather survey is complete or not and assign tag for each survey
+          this.survey_list.forEach(normalSurvey => {
+            normalSurvey.completed_questions = [];
+            normalSurvey.is_completed = false;
+            normalSurvey.effectiveTo = moment(normalSurvey.effectiveTo).format('YYYY-MM-DD HH:mm');
+            this.completed_survey_list.forEach(completedSurvey => {
+              if (completedSurvey.surveyId == normalSurvey._id) {
+                normalSurvey.is_completed = true;
+                completedSurvey.userAnswer.forEach(userAnswerEle => {
+                  if (userAnswerEle.userId == this.loginResponse.user._id) {
+                    normalSurvey.completed_questions.push({ "questionId": userAnswerEle.optionId.questionId, "optionNameEn": userAnswerEle.optionId.optionNameEn, "optionId": userAnswerEle.optionId._id });
+                  }
+                });
               }
             });
           });
+
+          //exploring new & past surveys
+
+          this.survey_list.forEach(element => {
+            element.effectiveTo = moment(element.effectiveTo).format('YYYY-MM-DD HH:mm');
+            if (element.status == "expired") {
+              this.past_survey_list.push(element);
+            }
+            else {
+              this.new_survey_list.push(element);
+            }
+          });
+
+          console.log("past_survey_list", this.past_survey_list);
+          console.log("new_survey_list", this.new_survey_list);
           this.loadingService.hideLoading();
         }
         else {
@@ -70,9 +96,9 @@ export class SurveyList {
       }, err => {
         console.log("err", err);
         this.loadingService.hideLoading();
-        this.showMessage.showToastBottom("Unable to get Surveys, please try again.");
+        this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get Surveys, please try again.");
       });
-  } */
+  }
 
   toggleGroup(group: any) {
     group.show = !group.show;

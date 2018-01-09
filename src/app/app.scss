@@ -26,6 +26,29 @@
     src: url('../assets/fontello/SF-Pro-Text-Semibold.ttf') format('truetype');
 }
 
+.home-bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.v-center-grid {
+    height: 100%;
+    justify-content: center;
+}
+
+[v-align-center] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ion-page {
+    position: fixed !important;
+}
+
 .header-background-image {
     /* background-image: url('../assets/images/background/16.jpg'); */
     height: 200px;
@@ -375,6 +398,10 @@ signature-pad {
     color: #1d1d26 !important;
 }
 
+[color-979797] {
+    color: #979797 !important;
+}
+
 [color-f2f2f2] {
     color: #f2f2f2 !important
 }
@@ -387,6 +414,10 @@ signature-pad {
     background-color: grey;
 }
 
+[c-bg-EDEDED] {
+    background-color: #EDEDED;
+}
+
 .tabbar,
 .tabs-ios,
 .tabs-md,
@@ -396,6 +427,9 @@ signature-pad {
         background-position: center;
         height: 24px;
         width: 24px;
+        min-width: 35px;
+        margin-top: 4px;
+        margin-bottom: 1px;
         background-size: contain;
         -webkit-background-size: contain;
         -moz-background-size: contain;
@@ -410,22 +444,22 @@ signature-pad {
     a[aria-selected=false] {
         .tab-button-icon[ng-reflect-name=noticeboard],
         .tab-button-icon[aria-label="noticeboard outline"] {
-            background-image: url(../assets/images/tabicons/noticeboard.png);
+            background-image: url(../assets/icon/tabicons/noticeboard.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=meetings],
         .tab-button-icon[aria-label="meetings outline"] {
-            background-image: url(../assets/images/tabicons/meetings.png);
+            background-image: url(../assets/icon/tabicons/meetings.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=survey],
         .tab-button-icon[aria-label="survey outline"] {
-            background-image: url(../assets/images/tabicons/survey.png);
+            background-image: url(../assets/icon/tabicons/survey.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=forum],
         .tab-button-icon[aria-label="forum outline"] {
-            background-image: url(../assets/images/tabicons/forum.png);
+            background-image: url(../assets/icon/tabicons/forum.png);
             image-rendering: -webkit-optimize-contrast;
         }
     }
@@ -436,22 +470,22 @@ signature-pad {
         //}
         .tab-button-icon[ng-reflect-name=noticeboard],
         .tab-button-icon[aria-label=noticeboard] {
-            background-image: url(../assets/images/tabicons/noticeboard_se.png);
+            background-image: url(../assets/icon/tabicons/noticeboard_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=meetings],
         .tab-button-icon[aria-label=meetings] {
-            background-image: url(../assets/images/tabicons/meetings_se.png);
+            background-image: url(../assets/icon/tabicons/meetings_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=survey],
         .tab-button-icon[aria-label=survey] {
-            background-image: url(../assets/images/tabicons/survey_se.png);
+            background-image: url(../assets/icon/tabicons/survey_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=forum],
         .tab-button-icon[aria-label=forum] {
-            background-image: url(../assets/images/tabicons/forum_se.png);
+            background-image: url(../assets/icon/tabicons/forum_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
     }
@@ -461,22 +495,22 @@ signature-pad {
     a[aria-selected=false] {
         .tab-button-icon[ng-reflect-name=noticeboard],
         .tab-button-icon[aria-label="noticeboard"] {
-            background-image: url(../assets/images/tabicons/noticeboard.png);
+            background-image: url(../assets/icon/tabicons/noticeboard.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=meetings],
         .tab-button-icon[aria-label=meetings] {
-            background-image: url(../assets/images/tabicons/meetings.png);
+            background-image: url(../assets/icon/tabicons/meetings.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=survey],
         .tab-button-icon[aria-label=survey] {
-            background-image: url(../assets/images/tabicons/survey.png);
+            background-image: url(../assets/icon/tabicons/survey.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=forum],
         .tab-button-icon[aria-label=forum] {
-            background-image: url(../assets/images/tabicons/forum.png);
+            background-image: url(../assets/icon/tabicons/forum.png);
             image-rendering: -webkit-optimize-contrast;
         }
     }
@@ -487,22 +521,22 @@ signature-pad {
         //}
         .tab-button-icon[ng-reflect-name=noticeboard],
         .tab-button-icon[aria-label=noticeboard] {
-            background-image: url(../assets/images/tabicons/noticeboard_se.png);
+            background-image: url(../assets/icon/tabicons/noticeboard_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=meetings],
         .tab-button-icon[aria-label=meetings] {
-            background-image: url(../assets/images/tabicons/meetings_se.png);
+            background-image: url(../assets/icon/tabicons/meetings_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=survey],
         .tab-button-icon[aria-label=survey] {
-            background-image: url(../assets/images/tabicons/survey_se.png);
+            background-image: url(../assets/icon/tabicons/survey_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=forum],
         .tab-button-icon[aria-label=forum] {
-            background-image: url(../assets/images/tabicons/forum_se.png);
+            background-image: url(../assets/icon/tabicons/forum_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
     }
@@ -512,22 +546,22 @@ signature-pad {
     a[aria-selected=false] {
         .tab-button-icon[ng-reflect-name=noticeboard],
         .tab-button-icon[aria-label="noticeboard"] {
-            background-image: url(../assets/images/tabicons/noticeboard.png);
+            background-image: url(../assets/icon/tabicons/noticeboard.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=meetings],
         .tab-button-icon[aria-label=meetings] {
-            background-image: url(../assets/images/tabicons/meetings.png);
+            background-image: url(../assets/icon/tabicons/meetings.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=survey],
         .tab-button-icon[aria-label=survey] {
-            background-image: url(../assets/images/tabicons/survey.png);
+            background-image: url(../assets/icon/tabicons/survey.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=forum],
         .tab-button-icon[aria-label=forum] {
-            background-image: url(../assets/images/tabicons/forum.png);
+            background-image: url(../assets/icon/tabicons/forum.png);
             image-rendering: -webkit-optimize-contrast;
         }
     }
@@ -538,22 +572,22 @@ signature-pad {
         //}
         .tab-button-icon[ng-reflect-name=noticeboard],
         .tab-button-icon[aria-label=noticeboard] {
-            background-image: url(../assets/images/tabicons/noticeboard_se.png);
+            background-image: url(../assets/icon/tabicons/noticeboard_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=meetings],
         .tab-button-icon[aria-label=meetings] {
-            background-image: url(../assets/images/tabicons/meetings_se.png);
+            background-image: url(../assets/icon/tabicons/meetings_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=survey],
         .tab-button-icon[aria-label=survey] {
-            background-image: url(../assets/images/tabicons/survey_se.png);
+            background-image: url(../assets/icon/tabicons/survey_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
         .tab-button-icon[ng-reflect-name=forum],
         .tab-button-icon[aria-label=forum] {
-            background-image: url(../assets/images/tabicons/forum_se.png);
+            background-image: url(../assets/icon/tabicons/forum_selected.png);
             image-rendering: -webkit-optimize-contrast;
         }
     }
@@ -567,6 +601,16 @@ signature-pad {
     height: 18px;
     max-width: 18px;
     vertical-align: middle;
+}
+
+.label-icons-menu {
+    height: 18px;
+    max-width: 18px;
+}
+
+.label-icons-menu-home {
+    width: 20px;
+    max-width: 22px;
 }
 
 .label-icons-file {
@@ -586,6 +630,12 @@ signature-pad {
 .label-icons-venue {
     height: 22px;
     max-width: 22px;
+    vertical-align: middle;
+}
+
+.label-icons-venue-2 {
+    height: 22px;
+    max-width: 16px;
     vertical-align: middle;
 }
 
@@ -649,4 +699,43 @@ body.keyboard-is-open .hideElementOnKeyboardShown {
 .loading-md.my-loading-class2 {
     top: 0;
     bottom: 0;
+}
+
+.loading-ios.my-loading-class3 {
+    top: 64px;
+    bottom: 0;
+}
+
+.loading-md.my-loading-class3 {
+    top: 56px;
+    bottom: 0;
+}
+
+.time-img-div {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.time-text-div {
+    width: calc(100% - 26px);
+}
+
+[c-vertical-align-top] {
+    vertical-align: top !important;
+}
+
+.like-cmmnt-txt {
+    color: #828282 !important;
+    font-weight: bolder !important;
+}
+
+.toolbar .toolbar-title {
+    font-weight: normal !important;
+    font-size: 16px !important;
+}
+
+.custom-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100% !important;
 }

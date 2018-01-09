@@ -9,19 +9,25 @@
         <ion-content color="primary">
             <ion-list no-margin>
                 <button menuClose paddinge-left ion-item no-lines item-title main-menu (click)="openNoticeboard('Noticeboard')">
-                    <ion-icon icon-small item-left name="ios-home-outline"></ion-icon>
+                    <ion-icon icon-small item-left>
+                        <img src="./assets/images/icons/home.png" class="label-icons-menu-home" alt="">
+                    </ion-icon>
                     主頁 | Home
                 </button>
             </ion-list>
             <ion-list no-margin>
                 <button menuClose paddinge-left ion-item no-lines item-title main-menu (click)="openProfilePage('ProfilePage')">
-                    <ion-icon icon-small item-left name="ios-person-outline"></ion-icon>
+                    <ion-icon icon-small item-left>
+                        <img src="./assets/images/icons/profile.png" class="label-icons-menu" alt="">
+                    </ion-icon>
                     我 | Profile
                 </button>
             </ion-list>
             <ion-list no-margin>
                 <button menuClose paddinge-left ion-item no-lines item-title main-menu (click)="doLogout()">
-                    <ion-icon icon-small item-left name="ios-log-out-outline"></ion-icon>
+                    <ion-icon icon-small item-left>
+                        <img src="./assets/images/icons/logout.png" class="label-icons-menu" alt="">
+                    </ion-icon>
                     登出 | Log Out
                 </button>
             </ion-list>

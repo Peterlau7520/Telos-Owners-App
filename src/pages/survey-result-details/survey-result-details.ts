@@ -60,29 +60,46 @@ export class SurveyResultDetails {
         console.log(results);
         if (results.success == true) {
           this.question_list = results.data;
-          this.question_list.forEach(element => {
-            let el_ans_array = element.answers;
-            element.labelsArray = [];
-            element.countsArray = [];
-            element.optionsList = [];
+          this.question_list.forEach(questionEle => {
+            let el_ans_array = questionEle.answers;
+            questionEle.labelsArray = [];
+            questionEle.countsArray = [];
+            questionEle.optionsList = [];
             el_ans_array.forEach(ansElement => {
               let tmp_label = ansElement.optionId.optionNameChn + " | " + ansElement.optionId.optionNameEn;
-              element.total_counts = ansElement.optionId.optionsChn.length;
-              element.optionsList.push({
+              questionEle.total_counts = ansElement.optionId.optionsChn.length;
+              questionEle.optionsList.push({
                 "chnOptionsArray": ansElement.optionId.optionsChn,
                 "enOptionsArray": ansElement.optionId.optionsEn,
                 "optionNameChn": ansElement.optionId.optionNameChn,
-                "optionNameEn": ansElement.optionId.optionNameEn
+                "optionNameEn": ansElement.optionId.optionNameEn,
+                "optionId": ansElement.optionId._id,
+                "questionId": ansElement.optionId.questionId
               });
             });
-            element.optionsList = element.optionsList.filter((thing, index, self) =>
+            questionEle.optionsList = questionEle.optionsList.filter((thing, index, self) =>
               index == self.findIndex((t) => (
                 t.optionNameEn == thing.optionNameEn && t.optionNameChn == thing.optionNameChn
               ))
             )
-            for (let i = 0; i < element.optionsList.length; i++) {
-              element.labelsArray.push(element.optionsList[i].optionNameChn + " | " + element.optionsList[i].optionNameEn);
-              element.countsArray.push(element.optionsList[i].chnOptionsArray.length);
+            let env = this;
+            el_ans_array.forEach(function (ansElement, j) {
+              if (ansElement.userId == env.loginResponse.user._id) {
+                console.log("ansElement", ansElement);
+                questionEle.optionsList.forEach(function (optionEle, k) {
+                  if (ansElement.questionId == optionEle.questionId) {
+                    if (ansElement.optionId._id == optionEle.optionId) {
+                      questionEle.is_completed = k + 1;
+                    }
+                  }
+                });
+              }
+            });
+            console.log("element", questionEle);
+            console.log("element.optionsList", questionEle.optionsList);
+            for (let i = 0; i < questionEle.optionsList.length; i++) {
+              questionEle.labelsArray.push(questionEle.optionsList[i].optionNameChn + " | " + questionEle.optionsList[i].optionNameEn);
+              questionEle.countsArray.push(questionEle.optionsList[i].chnOptionsArray.length);
             }
           });
           this.doughnutCanvas.changes.subscribe(c => {
@@ -152,9 +169,9 @@ export class SurveyResultDetails {
   }
 
   valueChanged(group, i, survey_details) {
-    console.log(group);
+    /* console.log(group);
     console.log(i);
-    console.log(survey_details);
+    console.log(survey_details); */
     /* for (let j = 0; j < survey_details.length; j++) {
       console.log(survey_details[j].is_complete);
     } */
@@ -162,8 +179,8 @@ export class SurveyResultDetails {
       this.toggleGroup(group);
       let tmp_group_list = survey_details.question;
       i++;
-      console.log(i);
-      console.log(tmp_group_list.length);
+      /* console.log(i);
+      console.log(tmp_group_list.length); */
       if (i < tmp_group_list.length) {
         this.toggleGroup(tmp_group_list[i]);
       }

@@ -45,7 +45,7 @@ export class ForumPage {
         if (results.success == true) {
           this.forumsList = results.posts;
           this.forumsList.forEach(element => {
-            element.postTime = moment(element.postTime).format('YYYY-MM-DD HH:mm');
+            element.postTime = moment(element.postTime).format('YYYY/MM/DD HH:mm');
             element.totalLikes = element.likedBy.length;
             element.totalComments = element.comments.length;
           });

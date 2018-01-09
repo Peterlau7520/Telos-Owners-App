@@ -46,7 +46,7 @@ export class ForumDetails {
     this.forum_details = JSON.parse(this.navParams.get("forum_details"));
     console.log(this.forum_details);
     this.forum_details.comments.forEach(element => {
-      element.commentedTime = moment(element.commentedTime).format('YYYY-MM-DD HH:mm');
+      element.commentedTime = moment(element.commentedTime).format('YYYY/MM/DD HH:mm');
       element.likesForComment = element.likedBy.length;
     });
     this.getCommentsByPostIdFunction(this.forum_details, loginResponse);
@@ -54,7 +54,7 @@ export class ForumDetails {
 
   getCommentsByPostIdFunction(forum_details, loginResponse) {
     this.token = localStorage.getItem("token");
-    this.loadingService.showLoading("my-loading-class");
+    this.loadingService.showLoading("my-loading-class3");
     this.dataService.postData("getCommentsByPostId", {
       "postId": forum_details._id,
       "estateName": loginResponse.user.estateName
@@ -69,10 +69,10 @@ export class ForumDetails {
           this.forum_details.totalLikes = this.forum_details.likedBy.length;
           this.forum_details.totalComments = this.forum_details.comments.length;
           this.forum_details.comments.forEach(element => {
-            element.commentedTime = moment(element.commentedTime).format('YYYY-MM-DD HH:mm');
+            element.commentedTime = moment(element.commentedTime).fromNow();
             element.likesForComment = element.likedBy.length;
           });
-          this.forum_details.postTime = moment(this.forum_details.postTime).format('YYYY-MM-DD HH:mm');
+          this.forum_details.postTime = moment(this.forum_details.postTime).format('YYYY/MM/DD HH:mm');
           this.loadingService.hideLoading();
         }
         else {
@@ -82,6 +82,40 @@ export class ForumDetails {
       }, err => {
         console.log("err", err);
         this.loadingService.hideLoading();
+        this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get comments, please try again.");
+      });
+  }
+
+  getCommentsByPostIdFunction1(forum_details, loginResponse) {
+    this.token = localStorage.getItem("token");
+    /* this.loadingService.showLoading("my-loading-class3"); */
+    this.dataService.postData("getCommentsByPostId", {
+      "postId": forum_details._id,
+      "estateName": loginResponse.user.estateName
+    }, {
+        headers: {
+          'authorization': this.token
+        }
+      }).subscribe(results => {
+        console.log(results);
+        if (results.success == true) {
+          this.forum_details = results.post[0];
+          this.forum_details.totalLikes = this.forum_details.likedBy.length;
+          this.forum_details.totalComments = this.forum_details.comments.length;
+          this.forum_details.comments.forEach(element => {
+            element.commentedTime = moment(element.commentedTime).fromNow();
+            element.likesForComment = element.likedBy.length;
+          });
+          this.forum_details.postTime = moment(this.forum_details.postTime).format('YYYY/MM/DD HH:mm');
+          /* this.loadingService.hideLoading(); */
+        }
+        else {
+          this.showMessage.showToastBottom(results.message);
+          /* this.loadingService.hideLoading(); */
+        }
+      }, err => {
+        console.log("err", err);
+        /* this.loadingService.hideLoading(); */
         this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get comments, please try again.");
       });
   }
@@ -127,7 +161,7 @@ export class ForumDetails {
           console.log(results);
           if (results.success == true) {
             this.commentText = "";
-            this.getCommentsByPostIdFunction(this.forum_details, this.loginResponse);
+            this.getCommentsByPostIdFunction1(this.forum_details, this.loginResponse);
             this.showMessage.showToastBottom(results.message);
           }
           else {

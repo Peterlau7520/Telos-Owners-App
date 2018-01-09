@@ -40,7 +40,12 @@ import { NoticesProvider } from '../providers/notices/notices';
     HttpModule,
     SignaturePadModule,
     IonicModule.forRoot(MyApp, {
-      backButtonText: ""
+      backButtonText: "",
+      platforms: {
+        ios: {
+          statusbarPadding: true
+        }
+      }
     }),
     IonicStorageModule.forRoot(),
   ],

@@ -132,8 +132,8 @@ export class HomePage {
     this.oneSignal.handleNotificationReceived().subscribe((data) => {
       // do something when notification is received
       this.localNotifications.schedule({
-        title: "data",
-        text: "data"
+        title: "Telos",
+        text: data.payload.body
       });
       console.log("NOTIFICATION RECEIVED", data);
     }, (err) => {

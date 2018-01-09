@@ -1,9 +1,12 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</ion-title>
+    <ion-title>
+      <p no-margin>{{meeting_details.meeting_titleChn}}</p>
+      <p no-margin>{{meeting_details.meeting_title}}</p>
+    </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
+<ion-content white-background>
   <!-- <ion-item no-lines background-size [ngStyle]="{'background-image': 'url(' + meeting_details.meeting_background + ')'}"> -->
   <!-- <ion-item no-lines background-size>
   </ion-item> -->
@@ -26,7 +29,7 @@
                 <ion-icon>
                   <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
                 </ion-icon>
-                Meeting Time : {{meeting_details.meeting_startTime}} - {{meeting_details.meeting_endTime}}</span>
+                Meeting Time : {{meeting_details.meeting_startTime}} — {{meeting_details.meeting_endTime}}</span>
               <span>&nbsp;</span>
             </div>
             <div info>

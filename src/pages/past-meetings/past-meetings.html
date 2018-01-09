@@ -19,15 +19,20 @@
           <ion-card-content>
             <p card-body-text>{{meeting_details.meeting_desc}}</p>
             <ion-row margin-top padding-top>
-              <ion-col col-6 no-padding>
-                <p card-body-text class="footer-card-txt">Meeting Date & Time: {{meeting_details.meeting_startTime}} - {{meeting_details.meeting_endTime}}</p>
+              <ion-col no-padding>
+                <div c-display-inline-block class="time-img-div">
+                  <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
+                </div>
+                <div c-display-inline-block class="time-text-div">
+                  <p card-body-text class="footer-card-txt">Meeting Time: {{meeting_details.meeting_startTime}} — {{meeting_details.meeting_endTime}}</p>
+                </div>
               </ion-col>
-              <ion-col col-3 no-padding>
+              <!-- <ion-col col-3 no-padding>
                 <p card-body-text class="footer-card-txt">Verdict:</p>
-              </ion-col>
-              <ion-col col-3 no-padding>
+              </ion-col> -->
+              <!-- <ion-col col-3 no-padding>
                 <p card-body-text class="footer-card-txt">Voted:</p>
-              </ion-col>
+              </ion-col> -->
             </ion-row>
           </ion-card-content>
         </ion-card>

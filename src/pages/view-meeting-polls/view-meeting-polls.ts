@@ -270,6 +270,7 @@ export class ViewMeetingPolls {
 
 
   saveVotingData(poll_details, selected_option) {
+    console.log("poll_details, selected_option", poll_details, selected_option);
     if (poll_details.is_complete == true) {
       return false;
     }
@@ -308,38 +309,52 @@ export class ViewMeetingPolls {
 
   checkIfproxyAppointed(loginResponse) {
     let proxyAppointed = loginResponse.user.proxyAppointed;
-    /* this.poll_list.forEach(pollElement => {
-      console.log("pollElement", pollElement);
-    }); */
     proxyAppointed.forEach(element => {
       if (this.meeting_details.meeting_id == element) {
         this.is_license_accepted = true;
         return;
       }
     });
+    this.meeting_details.meeting_polls.forEach(poll => {
+      poll.options.forEach(function (option_details, k) {
+        poll.options[k] = { "label": option_details, choice: false };
+      });
+    });
     this.checkIfVoted(this.meeting_details.meeting_polls, loginResponse);
   }
 
   checkIfVoted(pollsArray, loginResponse) {
-    pollsArray.forEach(function (element, i) {
+    pollsArray.forEach(function (pollElement, i) {
       let tmp_options = [];
-      console.log(element.options);
-      element.options.forEach(optionElement => {
-        if (optionElement == element.votingResults.choice) {
-          tmp_options.push({ "label": optionElement, choice: true });
-        }
-        else {
-          tmp_options.push({ "label": optionElement, choice: false });
-        }
-        element.options = tmp_options;
-      });
+      console.log(pollElement.options);
       console.log(tmp_options);
-      let votedArray = element.voted;
+      let votedArray = pollElement.voted;
       votedArray.forEach(votedElement => {
         console.log(votedElement);
         if (loginResponse.user._id == votedElement) {
           console.log("VOTED TRUE");
           pollsArray[i].is_complete = true;
+          console.log("VOTED TRUE");
+          pollsArray[i].is_complete = true;
+          pollElement.options.forEach(optionElement => {
+            pollElement.votingResults.forEach(votingObj => {
+              console.log(pollElement.votingResults);
+              if (votingObj.resident == loginResponse.user._id) {
+                if (votingObj.choice == optionElement.label) {
+                  tmp_options.push({ "label": optionElement.label, choice: true });
+                }
+                else {
+                  tmp_options.push({ "label": optionElement.label, choice: false });
+                }
+              }
+              else {
+              }
+              pollElement.options = tmp_options;
+            });
+          });
+        }
+        else {
+
         }
       });
     });

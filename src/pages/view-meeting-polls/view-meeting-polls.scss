@@ -115,4 +115,11 @@ page-view-meeting-polls {
     .item-md ion-icon[item-start]+.item-input {
         margin-left: 0 !important;
     }
+    .toolbar .toolbar-title {
+        font-weight: normal;
+        font-size: 12px !important;
+    }
+    .item.item-block .item-inner {
+        border: 0 !important;
+    }
 }

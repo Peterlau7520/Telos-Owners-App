@@ -58,8 +58,8 @@ export class Noticeboard {
         if (results.success == true) {
           this.notices = results.notices;
           this.notices.forEach(element => {
-            element.postDate = moment(element.postDate).format('YYYY-MM-DD HH:mm');
-            element.endTime = moment(element.endTime).format('YYYY-MM-DD HH:mm');
+            element.postDate = moment(element.postDate).format('YYYY/MM/DD HH:mm');
+            element.endTime = moment(element.endTime).format('YYYY/MM/DD HH:mm');
           });
           this.loadingService.hideLoading();
         }

@@ -32,10 +32,30 @@ export class Surveys {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Surveys');
+    this.assignValuesToCompletedSurveys(this.survey_details);
+  }
+
+  assignValuesToCompletedSurveys(survey_details) {
+    let env = this;
+    env.survey_details.question.forEach(function (questionEle, j) {
+      env.survey_details.completed_questions.forEach(function (completedEle, k) {
+        if (completedEle.questionId == questionEle._id) {
+          questionEle.optionIds.forEach(function (questionOption, k) {
+            console.log(completedEle);
+            console.log(questionOption);
+            if (completedEle.optionId == questionOption._id) {
+              questionEle.is_complete = k + 1;
+            }
+          });
+          /* questionEle.is_complete =  */
+          /* questionEle.is_complete = 1; */
+        }
+      });
+    });
   }
 
   toggleGroup1(group: any, i, survey_details) {
-    console.log(group);
+    /* console.log(group); */
     let tmp_group_list = survey_details.question;
     for (let j = 0; j < tmp_group_list.length; j++) {
       if (j == i) {
@@ -111,6 +131,7 @@ export class Surveys {
     }).subscribe(results => {
       if (results.success == true) {
         this.showMessage.showToastBottom(results.message);
+        this.survey_details.is_completed = true;
         this.loadingService.hideLoading();
       }
       else {
@@ -128,15 +149,15 @@ export class Surveys {
   }
 
   valueChanged(group, i, survey_details) {
-    console.log(group);
+    /* console.log(group);
     console.log(i);
-    console.log(survey_details);
-    if (group.is_complete && group.is_complete > 0) {
+    console.log(survey_details); */
+    if (group.is_complete) {
       this.toggleGroup(group);
       let tmp_group_list = survey_details.question;
       i++;
-      console.log(i);
-      console.log(tmp_group_list.length);
+      /* console.log(i);
+      console.log(tmp_group_list.length); */
       if (i < tmp_group_list.length) {
         this.toggleGroup(tmp_group_list[i]);
       }

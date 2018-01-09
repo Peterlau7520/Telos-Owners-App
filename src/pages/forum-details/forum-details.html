@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content no-padding>
+<ion-content no-padding c-bg-EDEDED padding-bottom>
   <ion-row>
     <ion-col no-padding>
       <ion-card no-margin c-width-100>
@@ -23,13 +23,13 @@
         </ion-card-content>
         <ion-row>
           <ion-col text-center no-padding margin-5 border-right-f2>
-            <button color-grey ion-button icon-left clear small (click)="likePostFunction(forum_details)">
+            <button class="like-cmmnt-txt" ion-button icon-left clear small (click)="likePostFunction(forum_details)">
               <ion-icon name="ios-thumbs-up-outline"></ion-icon>
               <div>{{forum_details.totalLikes}}</div>
             </button>
           </ion-col>
           <ion-col text-center no-padding margin-5>
-            <button color-grey ion-button icon-left clear small (click)="openReportPage()">
+            <button class="like-cmmnt-txt" ion-button icon-left clear small (click)="openReportPage()">
               <ion-icon name="ios-flag-outline"></ion-icon>
               <div>Report</div>
             </button>
@@ -40,11 +40,13 @@
   </ion-row>
   <ion-item-group>
     <ion-item-divider no-lines color="light">
-      <ion-label no-margin>Comments</ion-label>
+      <ion-label no-margin>
+        <p>Comments</p>
+      </ion-label>
     </ion-item-divider>
   </ion-item-group>
-  <ion-row margin-bottom>
-    <ion-col col-12 no-padding *ngFor="let comment_details of forum_details.comments">
+  <ion-row margin-bottom padding-bottom>
+    <ion-col col-12 no-padding margin-bottom *ngFor="let comment_details of forum_details.comments">
       <ion-card no-margin c-box-shadow-none border-bottom-ee c-width-100>
         <ion-item padding-horizontal>
           <ion-label no-margin>
@@ -61,13 +63,13 @@
         </ion-card-content>
         <ion-row>
           <ion-col text-center no-padding margin-5 border-right-f2>
-            <button color-grey ion-button icon-left clear small (click)="likeCommentFunction(comment_details)">
+            <button class="like-cmmnt-txt" ion-button icon-left clear small (click)="likeCommentFunction(comment_details)">
               <ion-icon name="ios-thumbs-up-outline"></ion-icon>
               <div>{{comment_details.likesForComment}}</div>
             </button>
           </ion-col>
           <ion-col text-center no-padding margin-5>
-            <button color-grey ion-button icon-left clear small (click)="openCommentReportPage(comment_details)">
+            <button class="like-cmmnt-txt" ion-button icon-left clear small (click)="openCommentReportPage(comment_details)">
               <ion-icon name="ios-flag-outline"></ion-icon>
               <div>Report</div>
             </button>
@@ -76,10 +78,18 @@
       </ion-card>
     </ion-col>
   </ion-row>
+  <!-- <ion-row class="custom-footer" white-background>
+    <ion-col no-padding col-10 col-sm-11>
+      <ion-textarea text-area-style placeholder="Add comment..." [(ngModel)]="commentText"></ion-textarea>
+    </ion-col>
+    <ion-col no-padding col-2 text-center col-sm-1>
+      <ion-icon send-button-ic name="md-send" (click)="addCommentFunction(commentText, forum_details)"></ion-icon>
+    </ion-col>
+  </ion-row> -->
 </ion-content>
-<ion-footer>
+<ion-footer style="position:fixed !important;">
   <!-- <ion-item no-padding> -->
-  <ion-row>
+  <ion-row white-background>
     <ion-col no-padding col-10 col-sm-11>
       <ion-textarea text-area-style placeholder="Add comment..." [(ngModel)]="commentText"></ion-textarea>
     </ion-col>

@@ -22,10 +22,10 @@
             <ion-card transparent>
               <!-- Expandable Centered with header Header-->
               <div class="collapsible-header" no-margin no-padding (click)="toggleGroup1(group, i, survey_details)">
-                <ion-item color-1d1d26 no-padding text-center transparent no-lines text-center text-wrap>
+                <ion-item no-padding text-center transparent no-lines text-center text-wrap>
                   <ion-icon name="md-checkmark" style="visibility:hidden !important;" class="check-mark-style" item-start>
                   </ion-icon>
-                  <h2 color-1d1d26 text-center item-title>{{group.questionChn}} | {{group.questionEn}}</h2>
+                  <h2 color-f2f2f2 text-center item-title>{{group.questionChn}} | {{group.questionEn}}</h2>
                   <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="group.is_complete">
                   </ion-icon>
                   <ion-icon name="md-checkmark" style="visibility:hidden !important;" class="check-mark-style" item-end *ngIf="!group.is_complete">
@@ -44,7 +44,7 @@
                         <p color-1d1d26 *ngFor="let option_data of option_details.optionsEn;">{{option_data.key}} : {{option_data.value}}</p>
                       </ion-label>
                       <!-- <ion-checkbox [(ngModel)]="option_details.is_checked" (ionChange)="valueChanged($event, group, i, k, survey_details)"></ion-checkbox> -->
-                      <ion-radio item-left [value]="k+1" color="mytheme"></ion-radio>
+                      <ion-radio item-left [value]="k+1" color="mytheme" [disabled]="survey_details.is_completed"></ion-radio>
                     </ion-item>
                   </ion-card>
                 </ion-list>
@@ -55,7 +55,8 @@
       </ion-list>
       <ion-row margin-vertical>
         <ion-col text-center margin-top padding-horizontal>
-          <button ion-button button-clear-outline round outline class="next-button" color="mytheme" (click)="submitData(survey_details.question)">確定 | Submit</button>
+          <button ion-button button-clear-outline round outline class="next-button" [disabled]="survey_details.is_completed" color="mytheme"
+            (click)="submitData(survey_details.question)">確定 | Submit</button>
         </ion-col>
       </ion-row>
     </ion-col>

@@ -36,10 +36,10 @@ export class SurveyTypes {
   }
 
   ionViewWillEnter() {
-    this.getAllSurves();
+    /* this.getAllSurves(); */
   }
 
-  getAllSurves() {
+  /* getAllSurves() {
     this.loadingService.showLoading("my-loading-class");
     this.dataService.postData("allSurveys", {
       "estateName": this.loginResponse.user.estateName,
@@ -53,16 +53,26 @@ export class SurveyTypes {
           this.new_survey_list = [];
           this.past_survey_list = [];
           this.survey_list = results.survey;
-          console.log(results);
           this.completed_survey_list = results.completedSurveys;
-          console.log(this.completed_survey_list);
-          this.survey_list.forEach(element => {
-            element.effectiveTo = moment(element.effectiveTo).format('YYYY-MM-DD HH:mm');
-            this.completed_survey_list.forEach(completedElement => {
-              if (element._id == completedElement) {
-                element.is_finished = true;
+          this.survey_list.forEach(normalSurvey => {
+            normalSurvey.completed_questions = [];
+            normalSurvey.is_completed = false;
+            normalSurvey.effectiveTo = moment(normalSurvey.effectiveTo).format('YYYY-MM-DD HH:mm');
+            this.completed_survey_list.forEach(completedSurvey => {
+              if (completedSurvey.surveyId == normalSurvey._id) {
+                normalSurvey.is_completed = true;
+                completedSurvey.userAnswer.forEach(userAnswerEle => {
+                  if (userAnswerEle.userId == this.loginResponse.user._id) {
+                    normalSurvey.completed_questions.push({ "questionId": userAnswerEle.optionId.questionId, "optionNameEn": userAnswerEle.optionId.optionNameEn, "optionId": userAnswerEle.optionId._id });
+                  }
+                });
               }
             });
+          });
+
+
+          this.survey_list.forEach(element => {
+            element.effectiveTo = moment(element.effectiveTo).format('YYYY-MM-DD HH:mm');
             if (element.status == "expired") {
               this.past_survey_list.push(element);
             }
@@ -70,8 +80,9 @@ export class SurveyTypes {
               this.new_survey_list.push(element);
             }
           });
-          console.log(this.past_survey_list);
-          console.log(this.new_survey_list);
+
+          console.log("past_survey_list", this.past_survey_list);
+          console.log("new_survey_list", this.new_survey_list);
           this.loadingService.hideLoading();
         }
         else {
@@ -86,14 +97,14 @@ export class SurveyTypes {
         this.loadingService.hideLoading();
         this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get Surveys, please try again.");
       });
-  }
+  } */
 
   goToNewSurveys() {
-    this.navCtrl.push("SurveyList", { "new_surveys": JSON.stringify(this.new_survey_list) });
+    this.navCtrl.push("SurveyList");
   }
 
   goToSurveyResults() {
-    this.navCtrl.push("SurveyResults", { "past_surveys": JSON.stringify(this.past_survey_list) });
+    this.navCtrl.push("SurveyResults");
   }
 
 }

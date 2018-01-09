@@ -109,4 +109,11 @@ page-view-past-meeting-details {
     .check-mark-style {
         color: #69BB7B;
     }
+    .toolbar .toolbar-title {
+        font-weight: normal;
+        font-size: 12px !important;
+    }
+    .item.item-block .item-inner {
+        border: 0 !important;
+    }
 }
