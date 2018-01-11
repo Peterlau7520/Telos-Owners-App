@@ -17,14 +17,22 @@
             </div>
           </div>
           <ion-card-content>
-            <p card-body-text>{{meeting_details.meeting_desc}}</p>
+            <!-- <p card-body-text>{{meeting_details.meeting_desc}}</p> -->
+            <ion-col no-padding>
+              <div c-display-inline-block c-vertical-align-top class="time-img-div">
+                <img src="./assets/images/icons/summary.png" class="label-icons-live-summary" alt="">
+              </div>
+              <div c-display-inline-block class="time-text-div">
+                <p card-body-text>{{meeting_details.meeting_desc}}</p>
+              </div>
+            </ion-col>
             <ion-row margin-top padding-top>
               <ion-col no-padding>
                 <div c-display-inline-block class="time-img-div">
                   <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
                 </div>
                 <div c-display-inline-block class="time-text-div">
-                  <p card-body-text class="footer-card-txt">Meeting Time: {{meeting_details.meeting_startTime}} — {{meeting_details.meeting_endTime}}</p>
+                  <p card-body-text class="footer-card-txt">大會時間 | Meeting time: {{meeting_details.meeting_startTime}} — {{meeting_details.meeting_endTime}}</p>
                 </div>
               </ion-col>
               <!-- <ion-col col-3 no-padding>

@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Forum</ion-title>
+    <ion-title> 論壇 | FORUM</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -23,15 +23,19 @@
         </ion-card-content>
         <ion-row>
           <ion-col text-center no-padding margin-5 border-right-f2>
-            <button class="like-cmmnt-txt" ion-button icon-left clear small (click)="likePostFunction(forum_details)">
+            <button class="like-cmmnt-txt" ion-button icon-left clear small *ngIf="!forum_details.is_liked" (click)="likePostFunction(forum_details)">
               <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+              <div>{{forum_details.totalLikes}}</div>
+            </button>
+            <button color-grey ion-button text-wrap icon-left clear small *ngIf="forum_details.is_liked" (click)="likePostFunction1()">
+              <ion-icon name="ios-thumbs-up"></ion-icon>
               <div>{{forum_details.totalLikes}}</div>
             </button>
           </ion-col>
           <ion-col text-center no-padding margin-5>
             <button class="like-cmmnt-txt" ion-button icon-left clear small (click)="openReportPage()">
               <ion-icon name="ios-flag-outline"></ion-icon>
-              <div>Report</div>
+              <div>投訴 | Report</div>
             </button>
           </ion-col>
         </ion-row>
@@ -63,15 +67,19 @@
         </ion-card-content>
         <ion-row>
           <ion-col text-center no-padding margin-5 border-right-f2>
-            <button class="like-cmmnt-txt" ion-button icon-left clear small (click)="likeCommentFunction(comment_details)">
+            <button class="like-cmmnt-txt" ion-button icon-left clear small *ngIf="!comment_details.is_liked" (click)="likeCommentFunction(comment_details)">
               <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+              <div>{{comment_details.likesForComment}}</div>
+            </button>
+            <button color-grey ion-button text-wrap icon-left clear small *ngIf="comment_details.is_liked" (click)="likeCommentFunction1()">
+              <ion-icon name="ios-thumbs-up"></ion-icon>
               <div>{{comment_details.likesForComment}}</div>
             </button>
           </ion-col>
           <ion-col text-center no-padding margin-5>
             <button class="like-cmmnt-txt" ion-button icon-left clear small (click)="openCommentReportPage(comment_details)">
               <ion-icon name="ios-flag-outline"></ion-icon>
-              <div>Report</div>
+              <div>投訴 | Report</div>
             </button>
           </ion-col>
         </ion-row>
@@ -94,7 +102,24 @@
       <ion-textarea text-area-style placeholder="Add comment..." [(ngModel)]="commentText"></ion-textarea>
     </ion-col>
     <ion-col no-padding col-2 text-center col-sm-1>
-      <ion-icon send-button-ic name="md-send" (click)="addCommentFunction(commentText, forum_details)"></ion-icon>
+      <svg width="45" height="50" *ngIf="showSpinner" class="small-spinner" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg"
+        stroke="#000000">
+        <g fill="none" fill-rule="evenodd" stroke-width="2">
+          <circle cx="22" cy="22" r="1">
+            <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1"
+              repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1"
+              repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="1">
+            <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1"
+              repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1"
+              repeatCount="indefinite" />
+          </circle>
+        </g>
+      </svg>
+      <ion-icon send-button-ic name="md-send" *ngIf="!showSpinner" (click)="addCommentFunction(commentText, forum_details)"></ion-icon>
     </ion-col>
   </ion-row>
   <!-- </ion-item> -->

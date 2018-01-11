@@ -5,6 +5,7 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
 import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer';
+import * as moment from 'moment';
 
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
@@ -58,6 +59,17 @@ export class ViewMeetingPolls {
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.token = localStorage.getItem("token");
     this.poll_list = this.meeting_details.meeting_polls;
+    let date = moment(this.meeting_details.meeting_pollEndTime);
+    let now = moment();
+
+    console.log(date);
+    console.log(now);
+
+    if (now > date) {
+      // date is past
+      this.is_license_accepted = true;
+      console.log("NOW is GRATER than POLL END TIME");
+    }
     this.checkIfproxyAppointed(this.loginResponse);
     console.log(this.meeting_details);
   }
@@ -271,40 +283,48 @@ export class ViewMeetingPolls {
 
   saveVotingData(poll_details, selected_option) {
     console.log("poll_details, selected_option", poll_details, selected_option);
+    let date = moment(this.meeting_details.meeting_pollEndTime);
+    let now = moment();
     if (poll_details.is_complete == true) {
       return false;
     }
-    let request_data: any = {};
-    request_data = {
-      "pollID": poll_details._id,
-      "option": selected_option.label,
-      "account": this.loginResponse.user.account,
-      "estate": poll_details.estateName,
-      "meeting_id": this.meeting_details.meeting_id,
-      /* "HKID": this.HKIDArray */
-    };
+    else if (now > date) {
+      this.showMessage.showToastBottom("抱歉，投票截止時間已過，请参加大会进行投票！| Sorry, you have missed the poll deadline, please attend the meeting in person and vote !");
+      return false;
+    }
+    else {
+      let request_data: any = {};
+      request_data = {
+        "pollID": poll_details._id,
+        "option": selected_option.label,
+        "account": this.loginResponse.user.account,
+        "estate": poll_details.estateName,
+        "meeting_id": this.meeting_details.meeting_id,
+        /* "HKID": this.HKIDArray */
+      };
 
-    let alert = this.alertCtrl.create({
-      title: 'Confirm option',
-      message: '確認該選項 ？| Are you sure you want to select this option ?',
-      buttons: [
-        {
-          text: 'No',
-          role: 'cancel',
-          handler: () => {
-            console.log('Cancel clicked');
+      let alert = this.alertCtrl.create({
+        title: 'Confirm option',
+        message: '確認該選項 ？| Are you sure you want to select this option ?',
+        buttons: [
+          {
+            text: 'No',
+            role: 'cancel',
+            handler: () => {
+              console.log('Cancel clicked');
+            }
+          },
+          {
+            text: 'Yes',
+            handler: () => {
+              console.log('Yes clicked');
+              this.saveVoteData(request_data, poll_details, selected_option);
+            }
           }
-        },
-        {
-          text: 'Yes',
-          handler: () => {
-            console.log('Yes clicked');
-            this.saveVoteData(request_data, poll_details, selected_option);
-          }
-        }
-      ]
-    });
-    alert.present();
+        ]
+      });
+      alert.present();
+    }
   }
 
   checkIfproxyAppointed(loginResponse) {

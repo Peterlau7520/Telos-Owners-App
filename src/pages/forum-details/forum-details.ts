@@ -15,6 +15,7 @@ export class ForumDetails {
   tabBarElement: any;
   forum_details: any = {};
   loginResponse: any = {};
+  showSpinner: any = false;
   commentText: any = "";
   token: any = "";
 
@@ -49,12 +50,12 @@ export class ForumDetails {
       element.commentedTime = moment(element.commentedTime).format('YYYY/MM/DD HH:mm');
       element.likesForComment = element.likedBy.length;
     });
-    this.getCommentsByPostIdFunction(this.forum_details, loginResponse);
+    this.getCommentsByPostIdFunction(this.forum_details, loginResponse, "my-loading-class3");
   }
 
-  getCommentsByPostIdFunction(forum_details, loginResponse) {
+  getCommentsByPostIdFunction(forum_details, loginResponse, loadingClass) {
     this.token = localStorage.getItem("token");
-    this.loadingService.showLoading("my-loading-class3");
+    this.loadingService.showLoading(loadingClass);
     this.dataService.postData("getCommentsByPostId", {
       "postId": forum_details._id,
       "estateName": loginResponse.user.estateName
@@ -66,11 +67,25 @@ export class ForumDetails {
         console.log(results);
         if (results.success == true) {
           this.forum_details = results.post[0];
+          this.forum_details.is_liked = false;
+          this.forum_details.likedBy.forEach(likedUserID => {
+            console.log(likedUserID);
+            console.log(this.loginResponse.user._id);
+            if (likedUserID == this.loginResponse.user._id) {
+              this.forum_details.is_liked = true;
+            }
+          });
           this.forum_details.totalLikes = this.forum_details.likedBy.length;
           this.forum_details.totalComments = this.forum_details.comments.length;
           this.forum_details.comments.forEach(element => {
             element.commentedTime = moment(element.commentedTime).fromNow();
             element.likesForComment = element.likedBy.length;
+            element.is_liked = false;
+            element.likedBy.forEach(likedUserID => {
+              if (likedUserID == this.loginResponse.user._id) {
+                element.is_liked = true;
+              }
+            });
           });
           this.forum_details.postTime = moment(this.forum_details.postTime).format('YYYY/MM/DD HH:mm');
           this.loadingService.hideLoading();
@@ -100,11 +115,25 @@ export class ForumDetails {
         console.log(results);
         if (results.success == true) {
           this.forum_details = results.post[0];
+          this.forum_details.is_liked = false;
+          this.forum_details.likedBy.forEach(likedUserID => {
+            console.log(likedUserID);
+            console.log(this.loginResponse.user._id);
+            if (likedUserID == this.loginResponse.user._id) {
+              this.forum_details.is_liked = true;
+            }
+          });
           this.forum_details.totalLikes = this.forum_details.likedBy.length;
           this.forum_details.totalComments = this.forum_details.comments.length;
           this.forum_details.comments.forEach(element => {
             element.commentedTime = moment(element.commentedTime).fromNow();
+            element.is_liked = false;
             element.likesForComment = element.likedBy.length;
+            element.likedBy.forEach(likedUserID => {
+              if (likedUserID == this.loginResponse.user._id) {
+                element.is_liked = true;
+              }
+            });
           });
           this.forum_details.postTime = moment(this.forum_details.postTime).format('YYYY/MM/DD HH:mm');
           /* this.loadingService.hideLoading(); */
@@ -148,6 +177,7 @@ export class ForumDetails {
     else {
       this.token = localStorage.getItem("token");
       /* this.loadingService.showLoading(); */
+      this.showSpinner = true;
       this.dataService.postData("newComment", {
         "postId": forum_details._id,
         "estateName": this.loginResponse.user.estateName,
@@ -161,14 +191,17 @@ export class ForumDetails {
           console.log(results);
           if (results.success == true) {
             this.commentText = "";
+            this.showSpinner = false;
             this.getCommentsByPostIdFunction1(this.forum_details, this.loginResponse);
             this.showMessage.showToastBottom(results.message);
           }
           else {
             this.showMessage.showToastBottom(results.message);
+            this.showSpinner = false;
           }
         }, err => {
           console.log("err", err);
+          this.showSpinner = false;
           this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to add comment, please try again.");
         });
     }
@@ -177,6 +210,7 @@ export class ForumDetails {
 
   likePostFunction(forum_details) {
     this.token = localStorage.getItem("token");
+    this.loadingService.showLoading("my-loading-class4");
     this.dataService.postData("likePost", {
       "userId": this.loginResponse.user._id,
       "postId": forum_details._id
@@ -187,21 +221,30 @@ export class ForumDetails {
       }).subscribe(results => {
         console.log(results);
         if (results.success == true) {
-          this.forum_details.likedBy.push(this.loginResponse.user._id);
-          this.forum_details.totalLikes = this.forum_details.likedBy.length;
+          /* this.forum_details.likedBy.push(this.loginResponse.user._id);
+          this.forum_details.totalLikes = this.forum_details.likedBy.length; */
+          this.getCommentsByPostIdFunction1(this.forum_details, this.loginResponse);
+          this.loadingService.hideLoading();
           this.showMessage.showToastBottom(results.message);
         }
         else {
           this.showMessage.showToastBottom(results.message);
+          this.loadingService.hideLoading();
         }
       }, err => {
         console.log("err", err);
+        this.loadingService.hideLoading();
         this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to like post, please try again.");
       });
   }
 
+  likePostFunction1() {
+    this.showMessage.showToastBottom(" 您已贊好 | You have already liked this post");
+  }
+
   likeCommentFunction(comment_details) {
     this.token = localStorage.getItem("token");
+    this.loadingService.showLoading("my-loading-class4");
     this.dataService.postData("likeComment", {
       "userId": this.loginResponse.user._id,
       "commentId": comment_details._id
@@ -212,17 +255,25 @@ export class ForumDetails {
       }).subscribe(results => {
         console.log(results);
         if (results.success == true) {
-          comment_details.likedBy.push(this.loginResponse.user._id);
-          comment_details.likesForComment = comment_details.likedBy.length;
+          /* comment_details.likedBy.push(this.loginResponse.user._id);
+          comment_details.likesForComment = comment_details.likedBy.length; */
+          this.getCommentsByPostIdFunction1(this.forum_details, this.loginResponse);
+          this.loadingService.hideLoading();
           this.showMessage.showToastBottom(results.message);
         }
         else {
           this.showMessage.showToastBottom(results.message);
+          this.loadingService.hideLoading();
         }
       }, err => {
         console.log("err", err);
+        this.loadingService.hideLoading();
         this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to like post, please try again.");
       });
+  }
+
+  likeCommentFunction1() {
+    this.showMessage.showToastBottom("您已贊好 | You have already liked this comment");
   }
 
 }

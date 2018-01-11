@@ -54,7 +54,7 @@ export class PastMeetings {
               "meeting_titleChn": meeting.titleChn,
               "meeting_desc": meeting.meetingSummaryChn + " | " + meeting.meetingSummary,
               "meeting_startTime": moment(meeting.startTime).format('YYYY/MM/DD HH:mm'),
-              "meeting_endTime": moment(meeting.endTime).format('YYYY/MM/DD HH:mm'),
+              "meeting_endTime": moment(meeting.endTime).format('HH:mm'),
               "meeting_venue": meeting.venue,
               "meeting_fileLinks": meeting.fileLinks,
               "meeting_pollEndTime": meeting.pollEndTime,

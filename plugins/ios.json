@@ -44,6 +44,9 @@
     },
     "ionic-plugin-keyboard": {
       "PACKAGE_NAME": "com.ionicframework.telos782183"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.ionicframework.telos782183"
     }
   },
   "dependent_plugins": {

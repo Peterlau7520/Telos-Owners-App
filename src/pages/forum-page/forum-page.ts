@@ -44,10 +44,16 @@ export class ForumPage {
         console.log(results);
         if (results.success == true) {
           this.forumsList = results.posts;
-          this.forumsList.forEach(element => {
-            element.postTime = moment(element.postTime).format('YYYY/MM/DD HH:mm');
-            element.totalLikes = element.likedBy.length;
-            element.totalComments = element.comments.length;
+          this.forumsList.forEach(forumEle => {
+            forumEle.postTime = moment(forumEle.postTime).format('YYYY/MM/DD HH:mm');
+            forumEle.totalLikes = forumEle.likedBy.length;
+            forumEle.totalComments = forumEle.comments.length;
+            forumEle.is_liked = false;
+            forumEle.likedBy.forEach(likedUserID => {
+              if (likedUserID == this.loginResponse.user._id) {
+                forumEle.is_liked = true;
+              }
+            });
           });
           this.loadingService.hideLoading();
         }
@@ -58,6 +64,43 @@ export class ForumPage {
       }, err => {
         console.log("err", err);
         this.loadingService.hideLoading();
+        this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get forums, please try again.");
+      });
+  }
+
+  getForumList1() {
+    this.token = localStorage.getItem("token");
+    /* this.loadingService.showLoading("my-loading-class"); */
+    this.dataService.postData("getForum", {
+      "estateName": this.loginResponse.user.estateName
+    }, {
+        headers: {
+          'authorization': this.token
+        }
+      }).subscribe(results => {
+        console.log(results);
+        if (results.success == true) {
+          this.forumsList = results.posts;
+          this.forumsList.forEach(forumEle => {
+            forumEle.postTime = moment(forumEle.postTime).format('YYYY/MM/DD HH:mm');
+            forumEle.totalLikes = forumEle.likedBy.length;
+            forumEle.totalComments = forumEle.comments.length;
+            forumEle.is_liked = false;
+            forumEle.likedBy.forEach(likedUserID => {
+              if (likedUserID == this.loginResponse.user._id) {
+                forumEle.is_liked = true;
+              }
+            });
+          });
+          /* this.loadingService.hideLoading(); */
+        }
+        else {
+          this.showMessage.showToastBottom(results.message);
+          /* this.loadingService.hideLoading(); */
+        }
+      }, err => {
+        console.log("err", err);
+        /* this.loadingService.hideLoading(); */
         this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get forums, please try again.");
       });
   }
@@ -92,7 +135,7 @@ export class ForumPage {
 
   likePostFunction(forum_details) {
     this.token = localStorage.getItem("token");
-    /* this.loadingService.showLoading(); */
+    this.loadingService.showLoading("my-loading-class4");
     this.dataService.postData("likePost", {
       "userId": this.loginResponse.user._id,
       "postId": forum_details._id
@@ -103,19 +146,23 @@ export class ForumPage {
       }).subscribe(results => {
         console.log(results);
         if (results.success == true) {
-          /* this.loadingService.hideLoading(); */
-          this.getForumList();
+          this.loadingService.hideLoading();
+          this.getForumList1();
           this.showMessage.showToastBottom(results.message);
         }
         else {
           this.showMessage.showToastBottom(results.message);
-          /* this.loadingService.hideLoading(); */
+          this.loadingService.hideLoading();
         }
       }, err => {
         console.log("err", err);
-        /* this.loadingService.hideLoading(); */
+        this.loadingService.hideLoading();
         this.showMessage.showToastBottom(" 網絡連接問題，請重試 | Unable to like post, please try again.");
       });
+  }
+
+  likePostFunction1() {
+    this.showMessage.showToastBottom(" 您已贊好 | You have already liked this post");
   }
 
 }

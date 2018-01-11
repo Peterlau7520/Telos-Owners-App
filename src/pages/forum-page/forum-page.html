@@ -41,8 +41,12 @@
         <ion-row>
           <ion-col text-center col-4>
             <div>
-              <button color-grey ion-button text-wrap icon-left clear small (click)="likePostFunction(forum_details)">
+              <button color-grey ion-button text-wrap icon-left clear small *ngIf="!forum_details.is_liked" (click)="likePostFunction(forum_details)">
                 <ion-icon name="ios-thumbs-up-outline"></ion-icon>
+                <div>{{forum_details.totalLikes}}</div>
+              </button>
+              <button color-grey ion-button text-wrap icon-left clear small *ngIf="forum_details.is_liked" (click)="likePostFunction1()">
+                <ion-icon name="ios-thumbs-up"></ion-icon>
                 <div>{{forum_details.totalLikes}}</div>
               </button>
             </div>

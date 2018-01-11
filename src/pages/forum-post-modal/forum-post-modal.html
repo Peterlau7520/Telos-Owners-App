@@ -1,26 +1,33 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title center>Forum</ion-title>
-    <ion-buttons end>
-      <button ion-button color="ffffff" (click)="dismiss()">
-        cancel
-      </button>
-      <button ion-button color="ffffff" (click)="sendPostData(content)">
-        Post
-      </button>
-    </ion-buttons>
-  </ion-navbar>
-</ion-header>
-
-
-<ion-content no-padding white-background>
-  <!-- <ion-list>
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss()"></div>
+  <div class="modal_content">
+    <ion-row class="modal_inner_content">
+      <!-- <ion-content no-padding white-background> -->
+      <ion-row class="custom-header">
+        <ion-col col-5 no-padding>
+          <span l-h-3 padding-left>論壇 | FORUM</span>
+        </ion-col>
+        <ion-col col-7 no-padding text-right>
+          <ion-buttons end c-display-inline-block>
+            <button ion-button clear color="ffffff" class="color-ffffff" (click)="dismiss()">
+              cancel
+            </button>
+            <button ion-button clear color="ffffff" class="color-ffffff" (click)="sendPostData(content)">
+              Post
+            </button>
+          </ion-buttons>
+        </ion-col>
+      </ion-row>
+      <!-- <ion-list>
     <ion-item no-padding> -->
-  <ion-row>
-    <ion-col>
-      <ion-textarea no-margin rows="20" placeholder="Enter text to post" [(ngModel)]="content"></ion-textarea>
-    </ion-col>
-  </ion-row>
-  <!-- </ion-item>
+      <ion-row class="custom-content">
+        <ion-col>
+          <ion-textarea no-margin rows="30" placeholder="Enter text to post" [(ngModel)]="content"></ion-textarea>
+        </ion-col>
+      </ion-row>
+      <!-- </ion-item>
   </ion-list> -->
+      <!-- </ion-content> -->
+    </ion-row>
+  </div>
 </ion-content>
