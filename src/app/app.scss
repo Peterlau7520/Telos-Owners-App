@@ -58,8 +58,9 @@
     @include darkening-blend-mode;
     img {
         margin: auto;
-        /* height: 100px;
-        width: 94px; */
+        margin: auto;
+        height: 100px;
+        width: 94px;
         display: block;
         position: absolute;
         top: 0;
@@ -96,8 +97,9 @@
 ion-label {
     a {
         color: #488aff !important;
-        font-size: 14px;
+        font-size: 16px;
         display: block;
+        word-break: break-all;
         margin-bottom: 5px;
     }
 }
@@ -167,6 +169,10 @@ img {
 
 [c-font-bold] {
     font-weight: bold !important;
+}
+
+[c-font-w-600] {
+    font-weight: 600 !important;
 }
 
 .main-view {
@@ -730,6 +736,10 @@ body.keyboard-is-open .hideElementOnKeyboardShown {
 .time-img-div {
     width: 20px;
     vertical-align: middle;
+}
+
+.time-img-div-2 {
+    width: 20px;
 }
 
 .time-text-div {

@@ -98,7 +98,7 @@ export class SurveyResultDetails {
             console.log("element", questionEle);
             console.log("element.optionsList", questionEle.optionsList);
             for (let i = 0; i < questionEle.optionsList.length; i++) {
-              questionEle.labelsArray.push(questionEle.optionsList[i].optionNameChn + " | " + questionEle.optionsList[i].optionNameEn);
+              questionEle.labelsArray.push(questionEle.optionsList[i].optionNameChn + " | " + questionEle.optionsList[i].optionNameEn + " (" + questionEle.optionsList[i].chnOptionsArray.length + "/" + questionEle.userAnswered + ")");
               questionEle.countsArray.push(questionEle.optionsList[i].chnOptionsArray.length);
             }
           });

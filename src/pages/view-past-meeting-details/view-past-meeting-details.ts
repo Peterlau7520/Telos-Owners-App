@@ -154,4 +154,46 @@ export class ViewPastMeetingDetails {
 
   }
 
+  openPollReportFile(file_url) {
+    console.log(file_url);
+    let tmp_file_url = file_url;
+    const options: DocumentViewerOptions = {
+      print: { enabled: false },
+      bookmarks: { enabled: false },
+      email: { enabled: false },
+      title: "Poll Report"
+    };
+    const fileTransfer: FileTransferObject = this.transfer.create();
+    const url = tmp_file_url;
+    fileTransfer.download(url, this.file.dataDirectory + "Poll Report").then((entry) => {
+      console.log('download complete: ' + entry.toURL());
+      this.document.viewDocument(this.file.dataDirectory + "Poll Report", "application/pdf",
+        options, onShow, onClose, onMissingApp, onError);
+    }, (error) => {
+      console.log(error);
+      // handle error
+    });
+
+    function onShow() {
+      window.console.log('document shown');
+      //e.g. track document usage
+    }
+
+    function onClose() {
+      window.console.log('document closed');
+      //e.g. remove temp files
+    }
+
+    function onMissingApp(appId, installer) {
+      if (confirm("PDF viewer not available on your device, Do you want to install the free PDF Viewer App to view this document?")) {
+        installer();
+      }
+    }
+    function onError(error) {
+      window.console.log(error);
+      alert("Sorry! Cannot view document.");
+    }
+
+  }
+
 }

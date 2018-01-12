@@ -59,6 +59,7 @@ export class PastMeetings {
               "meeting_fileLinks": meeting.fileLinks,
               "meeting_pollEndTime": meeting.pollEndTime,
               "meeting_polls": meeting.polls,
+              "pollReport": meeting.pollReport,
               "meeting_background": "./assets/images/background/1.jpg"
             })
           })

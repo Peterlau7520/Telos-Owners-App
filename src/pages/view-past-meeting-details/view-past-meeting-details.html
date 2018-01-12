@@ -13,12 +13,6 @@
 
   <ion-grid no-padding>
     <ion-row>
-      <!--Parallax Rateing-->
-      <!-- <ion-col col-12>
-        <ion-item no-lines text-wrap header-bcg no-padding>
-          <h1 parallax-title text-center margin-bottom padding-vertical>{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</h1>
-        </ion-item>
-      </ion-col> -->
       <!--Content-->
       <ion-col col-12>
         <!--Info-->
@@ -29,41 +23,48 @@
                 <ion-icon>
                   <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
                 </ion-icon>
-                大會時間 | Meeting time : {{meeting_details.meeting_startTime}} — {{meeting_details.meeting_endTime}}</span>
+                <span c-font-w-600>大會時間 | Meeting time :</span> {{meeting_details.meeting_startTime}} — {{meeting_details.meeting_endTime}}</span>
             </div>
             <div>
               <span left>
                 <ion-icon>
                   <img src="./assets/images/icons/venue.png" class="label-icons-venue" alt="">&nbsp;
                 </ion-icon>
-                地點 | Venue : {{meeting_details.meeting_venue}}</span>
+                <span c-font-w-600>地點 | Venue :</span> {{meeting_details.meeting_venue}}</span>
             </div>
           </ion-label>
         </ion-item>
         <!-- Description-->
         <ion-item color-1d1d26 no-lines text-wrap no-margin padding-right>
           <ion-label no-margin>
-            <h3 parallax-description>{{meeting_details.meeting_desc}}</h3>
+            <div c-display-inline-block class="time-img-div-2">
+              <img src="./assets/images/icons/summary.png" class="label-icons-live-summary" alt="">&nbsp;
+            </div>
+            <div c-display-inline-block class="time-text-div">
+              <div c-font-w-600>概要 | Summary</div>
+              <div>{{meeting_details.meeting_desc}}</div>
+            </div>
           </ion-label>
         </ion-item>
         <ion-item color-1d1d26 no-lines text-wrap no-margin padding-right>
           <ion-label margin-bottom>
             <div>
-              <span left>
-                <ion-icon>
-                  <img src="./assets/images/icons/document.png" class="label-icons-file" alt="">&nbsp;
-                </ion-icon>
-                議程 | Agenda : </span>
-              <span c-display-inline-block>
-                <a (click)="openAgendaFile(meeting_details.meeting_fileLinks[0])"> {{meeting_details.meeting_fileLinks[0].name}}</a>
-              </span>
+              <div c-display-inline-block class="time-img-div-2">
+                <img src="./assets/images/icons/document.png" class="label-icons-file" alt="">&nbsp;
+              </div>
+              <div c-display-inline-block class="time-text-div">
+                <div c-font-w-600>投票報告 | Poll Report : </div>
+                <div>
+                  <a (click)="openPollReportFile(meeting_details.pollReport[0])"> 投票報告 | Poll Report</a>
+                </div>
+              </div>
             </div>
             <div>
               <span left>
                 <ion-icon>
                   <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">&nbsp;
                 </ion-icon>
-                投票截止日期 | Vote by : {{meeting_details.meeting_pollEndTime}}</span>
+                <span c-font-w-600>投票截止日期 | Voted by :</span> {{meeting_details.meeting_pollEndTime}}</span>
             </div>
           </ion-label>
         </ion-item>
@@ -100,7 +101,7 @@
                           <ion-label no-margin>
                             <h2 color-1d1d26 class="summary-title">
                               <span>
-                                <img src="./assets/images/icons/summary.png" c-display-inline-block class="label-icons-live-summary" alt=""> Summary
+                                <img src="./assets/images/icons/summary.png" c-display-inline-block class="label-icons-live-summary" alt=""> 概要 | Summary
                               </span>
                             </h2>
                             <h5 color-1d1d26 class="summary-desc">{{poll_details.summaryChn}}</h5>
