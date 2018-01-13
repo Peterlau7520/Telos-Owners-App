@@ -1,8 +1,8 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      <p no-margin text-wrap style="max-height: 36px;">{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</p>
-      <!-- <p no-margin>{{meeting_details.meeting_title}}</p> -->
+      <p no-margin>{{meeting_details.meeting_titleChn}}</p>
+      <p no-margin>{{meeting_details.meeting_title}}</p>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -116,7 +116,10 @@
                         <ion-icon name="md-checkmark" class="check-mark-style" style="visibility:hidden !important;" item-start>
                         </ion-icon>
                         <h3 color-1d1d26 no-margin c-font-bold>
-                          {{poll_details.pollNameChn}} | {{poll_details.pollName}}
+                          {{poll_details.pollNameChn}}
+                        </h3>
+                        <h3 color-1d1d26 no-margin c-font-bold>
+                          {{poll_details.pollName}}
                         </h3>
                         <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="poll_details.is_complete">
                         </ion-icon>

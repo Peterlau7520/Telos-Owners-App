@@ -10,51 +10,51 @@
     "cordova-plugin-camera": {
       "CAMERA_USAGE_DESCRIPTION": " ",
       "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "cordova-plugin-document-viewer": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "cordova-plugin-local-notification": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "cordova-plugin-youtube-video-player": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "onesignal-cordova-plugin": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-badge": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     },
     "cordova-plugin-compat": {
-      "PACKAGE_NAME": "com.ionicframework.telos782183"
+      "PACKAGE_NAME": "com.telostechnology.telos"
     }
   }
 }

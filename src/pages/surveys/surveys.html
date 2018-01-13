@@ -3,7 +3,10 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-left>{{survey_details.titleChn}} | {{survey_details.title}}</ion-title>
+    <ion-title text-left>
+      <p no-margin>{{survey_details.titleChn}}</p>
+      <p no-margin>{{survey_details.title}}</p>
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -12,8 +15,8 @@
     <ion-col col-12>
       <ion-row padding>
         <ion-col col-12 no-padding>
-          <p color-1d1d26 style="font-size: 16px !important;" no-margin>Survey Title: {{survey_details.titleChn}} | {{survey_details.title}}</p>
-          <p color-1d1d26 style="font-size: 16px !important;" no-margin>Complete By: {{survey_details.effectiveTo}}</p>
+          <p color-1d1d26 style="font-size: 16px !important;" no-margin>問卷標題 | Survey Title: {{survey_details.titleChn}} | {{survey_details.title}}</p>
+          <p color-1d1d26 style="font-size: 16px !important;" no-margin>截止於 | Complete By: {{survey_details.effectiveTo}}</p>
         </ion-col>
       </ion-row>
       <ion-list>

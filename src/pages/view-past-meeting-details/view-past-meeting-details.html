@@ -1,7 +1,8 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      <p no-margin text-wrap style="max-height: 36px;">{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</p>
+      <p no-margin>{{meeting_details.meeting_titleChn}}</p>
+      <p no-margin>{{meeting_details.meeting_title}}</p>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -84,7 +85,8 @@
                     <!-- Expandable Centered with header Header-->
                     <div class="collapsible-header" no-margin no-padding (click)="expandPoll(poll_details)">
                       <ion-item color-1d1d26 no-padding text-center no-lines text-wrap text-center>
-                        <h3 no-margin c-font-bold>{{poll_details.pollNameChn}} | {{poll_details.pollName}}</h3>
+                        <h3 no-margin c-font-bold>{{poll_details.pollNameChn}}</h3>
+                        <h3 c-font-bold margin-bottom>{{poll_details.pollName}}</h3>
                         <h3 no-margin c-font-bold>Final Result : {{poll_details.finalResult}}</h3>
                         <!-- <ion-icon name="md-checkmark" class="check-mark-style" item-end *ngIf="poll_details.is_complete">
                         </ion-icon> -->
