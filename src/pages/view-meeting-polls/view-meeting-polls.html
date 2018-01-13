@@ -1,8 +1,8 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      <p no-margin>{{meeting_details.meeting_titleChn}}</p>
-      <p no-margin>{{meeting_details.meeting_title}}</p>
+      <p no-margin text-wrap style="max-height: 36px;">{{meeting_details.meeting_titleChn}} | {{meeting_details.meeting_title}}</p>
+      <!-- <p no-margin>{{meeting_details.meeting_title}}</p> -->
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -45,7 +45,7 @@
                   <img src="./assets/images/icons/live_stream.png" class="label-icons-live-stream" alt="">&nbsp;
                   <!-- </ion-icon> -->
                   <span c-font-w-600>直播 | Live stream :</span>&nbsp;</span>
-                <a c-display-inline-block *ngIf="meeting_details.meeting_youtubelink" (click)="openMeetingURL(meeting_details.meeting_youtubelink)">{{meeting_details.meeting_youtubelink}}</a>
+                <a c-display-inline-block *ngIf="meeting_details.meeting_youtubelink" (click)="openMeetingURL(meeting_details.meeting_youtubelink)">Click here</a>
                 <a c-display-inline-block *ngIf="!meeting_details.meeting_youtubelink">N/A</a>
               </ion-col>
             </ion-row>
@@ -58,7 +58,7 @@
               <img src="./assets/images/icons/summary.png" c-display-inline-block class="label-icons-live-summary" alt="">&nbsp;
             </span>
             <span left>{{meeting_details.meeting_desc}}</span> -->
-            <div c-display-inline-block class="time-img-div-2">
+            <div c-display-inline-block class="time-img-div-3">
               <img src="./assets/images/icons/summary.png" class="label-icons-live-summary" alt="">&nbsp;
             </div>
             <div c-display-inline-block class="time-text-div">
@@ -68,7 +68,7 @@
           </ion-label>
         </ion-item>
         <ion-item color-1d1d26 no-lines text-wrap no-margin padding-right>
-          <ion-label margin-bottom>
+          <ion-label no-margin padding-top>
             <div>
               <span left>
                 <img src="./assets/images/icons/document.png" class="label-icons-file" alt="">&nbsp;
@@ -84,6 +84,14 @@
                   <img src="./assets/images/icons/date_time.png" class="label-icons-time" alt="">
                 </ion-icon>
                 <span c-font-w-600>投票截止日期 | Voted by :</span> {{meeting_details.meeting_pollEndTime}}</span>
+            </div>
+            <div>
+              <span left padding-top>
+                <ion-icon>
+                  <img src="./assets/images/icons/poll.png" class="label-icons-poll" alt="">&nbsp;
+                </ion-icon>
+                <span c-font-w-600> 議案 | Polls </span>
+              </span>
             </div>
           </ion-label>
         </ion-item>

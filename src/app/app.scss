@@ -630,7 +630,7 @@ signature-pad {
     height: 20px;
     width: 20px;
     max-width: 20px;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 
 .label-icons-venue {
@@ -742,6 +742,11 @@ body.keyboard-is-open .hideElementOnKeyboardShown {
     width: 20px;
 }
 
+.time-img-div-3 {
+    width: 20px;
+    vertical-align: top;
+}
+
 .time-text-div {
     width: calc(100% - 26px);
 }
@@ -777,4 +782,8 @@ body.keyboard-is-open .hideElementOnKeyboardShown {
 [poll-box-shadow] {
     -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 4px 14px -2px rgba(0, 0, 0, 0.2), 0 1px 9px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 4px 14px -2px rgba(0, 0, 0, 0.2), 0 1px 9px 0 rgba(0, 0, 0, 0.12);
+}
+
+.toolbar-ios ion-title {
+    padding: 0 70px 1px;
 }
