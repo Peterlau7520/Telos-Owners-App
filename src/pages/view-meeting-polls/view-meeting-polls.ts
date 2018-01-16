@@ -420,13 +420,7 @@ export class ViewMeetingPolls {
     //myyoutube api key : AIzaSyBp4QuuZzoJORziRqFPc82Ag6khvUabGx4
     //Peter             : AIzaSyBFaqjP29uqhxfMpxBt8WHHLhI_QFwYo9s
     console.log(videoID);
-    // this.youtube.openVideo(videoID);
-  }
-
-  makeUrl(videoID){
-    console.log("videoID",videoID);
-    let videoUrl = 'https://www.youtube.com/embed/'+videoID+'?rel=0';
-    return this.sanitizer.bypassSecurityTrustResourceUrl(videoUrl);
+    this.youtube.openVideo(videoID);
   }
 
   openAgendaFile(agenda_details) {
