@@ -122,47 +122,4 @@ page-view-meeting-polls {
     .item.item-block .item-inner {
         border: 0 !important;
     }
-
-    //youtube video
-    .video {
-        width:100%;
-        padding:0px;
-    }
-    .videobackground {
-        background-color:#eeeeee;
-        padding:3px;
-    }
-    .videobackground>img {
-        width:100%;
-    }
-    .item-md.item-block .item-inner {
-        border-bottom: none;
-    }
-    .item-ios.item-block .item-inner {
-        border-bottom: none;
-    }
-    .fluid-width-video-wrapper {
-        width: 100%;
-        position: relative;
-        padding: 0;
-    }
-    .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    iframe {
-        border-top-width: 0px;
-        border-right-width: 0px;
-        border-bottom-width: 0px;
-        border-left-width: 0px;
-    }
-    iframe {
-        border-width: 2px;
-        border-style: inset;
-        border-color: initial;
-        border-image: initial;
-    }
 }
