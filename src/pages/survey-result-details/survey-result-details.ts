@@ -97,10 +97,26 @@ export class SurveyResultDetails {
             });
             console.log("element", questionEle);
             console.log("element.optionsList", questionEle.optionsList);
+            //added by ML
+            let s = 0;
             for (let i = 0; i < questionEle.optionsList.length; i++) {
-              questionEle.labelsArray.push(questionEle.optionsList[i].optionNameChn + " | " + questionEle.optionsList[i].optionNameEn + " (" + questionEle.optionsList[i].chnOptionsArray.length + "/" + questionEle.userAnswered + ")");
-              questionEle.countsArray.push(questionEle.optionsList[i].chnOptionsArray.length);
+              let sumArray = 0;
+              el_ans_array.forEach(function (ansElement, j) {
+                  console.log("ansElement", ansElement);
+                  if (ansElement.optionId._id == questionEle.optionsList[i].optionId) {
+                    sumArray = sumArray + 1;
+                  }
+              });
+              questionEle.countsArray.push(sumArray);
+              s += sumArray;
             }
+            for (let i = 0; i < questionEle.optionsList.length; i++) {
+              questionEle.labelsArray.push(questionEle.optionsList[i].optionNameChn + " | " + questionEle.optionsList[i].optionNameEn + " (" + questionEle.countsArray[i] + "/" + s + ")");
+            }
+            // for (let i = 0; i < questionEle.optionsList.length; i++) {
+            //   questionEle.labelsArray.push(questionEle.optionsList[i].optionNameChn + " | " + questionEle.optionsList[i].optionNameEn + " (" + questionEle.optionsList[i].chnOptionsArray.length + "/" + questionEle.userAnswered + ")");
+            //   questionEle.countsArray.push(questionEle.optionsList[i].chnOptionsArray.length);
+            // }
           });
           this.doughnutCanvas.changes.subscribe(c => {
             this.allGraphsArray = c.toArray();
@@ -126,6 +142,9 @@ export class SurveyResultDetails {
   }
 
   setDataToChart(doughnutCanvas, labelsArray, countsArray) {
+    console.log("countsArray",countsArray);
+    console.log("labels:",labelsArray);
+    console.log("label:",'# of Votes');
     this.doughnutChart = new Chart(doughnutCanvas.nativeElement, {
       type: 'doughnut',
       data: {

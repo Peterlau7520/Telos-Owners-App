@@ -11,6 +11,7 @@ import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
 import { ShowMessage } from '../../providers/show-message';
 import { HomePage } from '../../pages/home/home';
+import { DomSanitizer} from '@angular/platform-browser';
 /* import { SignaturePageModal } from '../../pages/signature-page-modal/signature-page-modal'; */
 
 @IonicPage()
@@ -54,7 +55,8 @@ export class ViewMeetingPolls {
     public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage,
-    private alertCtrl: AlertController) {
+    private alertCtrl: AlertController,
+    private sanitizer : DomSanitizer) {
     this.meeting_details = JSON.parse(this.navParams.get("meeting_details"));
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.token = localStorage.getItem("token");
@@ -415,8 +417,16 @@ export class ViewMeetingPolls {
   }
 
   openMeetingURL(videoID) {
+    //myyoutube api key : AIzaSyBp4QuuZzoJORziRqFPc82Ag6khvUabGx4
+    //Peter             : AIzaSyBFaqjP29uqhxfMpxBt8WHHLhI_QFwYo9s
     console.log(videoID);
-    this.youtube.openVideo(videoID);
+    // this.youtube.openVideo(videoID);
+  }
+
+  makeUrl(videoID){
+    console.log("videoID",videoID);
+    let videoUrl = 'https://www.youtube.com/embed/'+videoID+'?rel=0';
+    return this.sanitizer.bypassSecurityTrustResourceUrl(videoUrl);
   }
 
   openAgendaFile(agenda_details) {

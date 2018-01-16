@@ -1,8 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      <p no-margin>{{meeting_details.meeting_titleChn}}</p>
-      <p no-margin>{{meeting_details.meeting_title}}</p>
+      <p>大會詳情 | Meeting Details</p>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -45,8 +44,18 @@
                   <img src="./assets/images/icons/live_stream.png" class="label-icons-live-stream" alt="">&nbsp;
                   <!-- </ion-icon> -->
                   <span c-font-w-600>直播 | Live stream :</span>&nbsp;</span>
-                <a c-display-inline-block *ngIf="meeting_details.meeting_youtubelink" (click)="openMeetingURL(meeting_details.meeting_youtubelink)">Click here</a>
+                <!-- <a c-display-inline-block *ngIf="meeting_details.meeting_youtubelink" (click)="openMeetingURL(meeting_details.meeting_youtubelink)">Click here</a> -->
                 <a c-display-inline-block *ngIf="!meeting_details.meeting_youtubelink">N/A</a>
+                <br>
+                <div class="video" *ngIf="meeting_details.meeting_youtubelink">
+                  <div class="videobackground">
+                    <div class="video-container">
+                       <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;">
+                        <iframe  [src]="makeUrl(meeting_details.meeting_youtubelink)" frameborder="0" allowfullscreen="" id="fitvid790895"></iframe> 
+                      </div> 
+                    </div>
+                  </div>
+                </div> 
               </ion-col>
             </ion-row>
           </ion-label>
