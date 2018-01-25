@@ -94,10 +94,10 @@ export class CompanyChop {
 
           this.loadingService.hideLoading();
 
-          /* localStorage.setItem("firstTabPage", "Noticeboard");
-          this.navCtrl.push("Tabs"); */
+          localStorage.setItem("firstTabPage", "Noticeboard");
+          this.navCtrl.push("Tabs");
           /* this.navCtrl.push("Register"); */
-          this.navCtrl.push("IdVerification1");
+          /* this.navCtrl.push("IdVerification1"); */
         }
         else {
           this.loadingService.hideLoading();

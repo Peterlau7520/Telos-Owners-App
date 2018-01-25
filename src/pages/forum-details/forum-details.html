@@ -19,7 +19,7 @@
           </ion-label>
         </ion-item>
         <ion-card-content>
-          <p comment-text font-size-16 color-1d1d26>{{forum_details.content}}</p>
+          <p comment-text font-size-20 color-1d1d26>{{forum_details.content}}</p>
         </ion-card-content>
         <ion-row>
           <ion-col text-center no-padding margin-5 border-right-f2>
@@ -35,7 +35,10 @@
           <ion-col text-center no-padding margin-5>
             <button class="like-cmmnt-txt" ion-button icon-left clear small (click)="openReportPage()">
               <ion-icon name="ios-flag-outline"></ion-icon>
-              <div>投訴 | Report</div>
+              <div c-font-w-normal>
+                <div>投訴 |</div>
+                <div>Report</div>
+              </div>
             </button>
           </ion-col>
         </ion-row>
@@ -79,7 +82,10 @@
           <ion-col text-center no-padding margin-5>
             <button class="like-cmmnt-txt" ion-button icon-left clear small (click)="openCommentReportPage(comment_details)">
               <ion-icon name="ios-flag-outline"></ion-icon>
-              <div>投訴 | Report</div>
+              <div c-font-w-normal>
+                <div>投訴 |</div>
+                <div>Report</div>
+              </div>
             </button>
           </ion-col>
         </ion-row>

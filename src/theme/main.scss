@@ -51,8 +51,8 @@ $item-ios-thumbnail-size: 120px;
 
 /* @import "avenir"; */
 /* font-family: 'avenir' */
-$font-family-md-base: 'SFRegular';
-$font-family-ios-base: 'SFRegular' !default;
+/* $font-family-md-base: 'SFRegular';
+$font-family-ios-base: 'SFRegular' !default; */
 
 // Font sizes
 $font-size-text:(
@@ -406,7 +406,7 @@ $card-ios-background-color: theme-colors('mainColors', 'accent');
 [card-subtitle]{
   color: theme-colors('textColors', 'accent') !important;
   font-size: font-size-text('h5') !important;
-  font-weight: 300 !important;
+  font-weight: 500 !important;
   letter-spacing: 1px;
 }
 

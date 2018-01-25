@@ -12,19 +12,17 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-@font-face {
+/* @font-face {
     font-family: 'SFRegular' !important;
     font-style: normal;
-    /* font-weight: 400; */
     src: url('../assets/fontello/SF-Pro-Text-Regular.ttf') format('truetype');
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: 'SFSemibold' !important;
     font-style: normal;
-    /* font-weight: 600; */
     src: url('../assets/fontello/SF-Pro-Text-Semibold.ttf') format('truetype');
-}
+} */
 
 .home-bg {
     position: absolute;
@@ -62,6 +60,7 @@
         height: 100px;
         width: 94px;
         display: block;
+        image-rendering: unset !important;
         position: absolute;
         top: 0;
         z-index: 9;
@@ -118,9 +117,10 @@ ion-label {
     color: #ffffff;
 }
 
-img {
+
+/* img {
     image-rendering: -webkit-optimize-contrast;
-}
+} */
 
 .label[stacked],
 .label[floating] {
@@ -173,6 +173,10 @@ img {
 
 [c-font-w-600] {
     font-weight: 600 !important;
+}
+
+[c-font-w-normal] {
+    font-weight: normal !important;
 }
 
 .main-view {
@@ -414,6 +418,14 @@ signature-pad {
 
 [font-size-16] {
     font-size: 16px !important;
+}
+
+[font-size-18] {
+    font-size: 18px !important;
+}
+
+[font-size-20] {
+    font-size: 20px !important;
 }
 
 [c-bg-grey] {

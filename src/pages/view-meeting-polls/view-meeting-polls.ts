@@ -11,7 +11,7 @@ import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
 import { ShowMessage } from '../../providers/show-message';
 import { HomePage } from '../../pages/home/home';
-import { DomSanitizer} from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 /* import { SignaturePageModal } from '../../pages/signature-page-modal/signature-page-modal'; */
 
 @IonicPage()
@@ -56,7 +56,7 @@ export class ViewMeetingPolls {
     private dataService: DataService,
     private showMessage: ShowMessage,
     private alertCtrl: AlertController,
-    private sanitizer : DomSanitizer) {
+    private sanitizer: DomSanitizer) {
     this.meeting_details = JSON.parse(this.navParams.get("meeting_details"));
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.token = localStorage.getItem("token");
@@ -135,7 +135,8 @@ export class ViewMeetingPolls {
           this.total_signatures = this.loginResponse.user.numberOfOwners;
           this.current_signature = 1;
           /* this.acceptAgreement(this.current_signature, this.total_signatures); */
-          this.getAllHKIDs(this.current_HKID);
+          /* this.getAllHKIDs(this.current_HKID); */
+          this.acceptAgreement(this.current_signature, this.total_signatures, this.HKIDArray);
         }
       }
       else {
@@ -206,7 +207,7 @@ export class ViewMeetingPolls {
   saveAllSignatures(signatureArray, HKIDArray) {
     console.log(signatureArray);
     this.loadingService.showLoading("my-loading-class");
-    this.dataService.postData("saveSignature", { "signatures": signatureArray, "hkid": HKIDArray, "meeting_id": this.meeting_details.meeting_id }, {
+    this.dataService.postData("saveSignature", { "signatures": signatureArray, /* "hkid": HKIDArray, */ "meeting_id": this.meeting_details.meeting_id }, {
       headers: {
         'authorization': this.token
       }
@@ -263,7 +264,7 @@ export class ViewMeetingPolls {
         request_data = {
           "account": this.loginResponse.user.account,
           "meeting_id": this.meeting_details.meeting_id,
-          "HKID": this.HKIDArray
+          /* "HKID": this.HKIDArray */
         };
         console.log("request_data", request_data);
         this.total_signatures = this.loginResponse.user.numberOfOwners;

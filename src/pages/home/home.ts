@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Platform, NavController } from 'ionic-angular';
+import { Platform, NavController, Tabs } from 'ionic-angular';
 import { OneSignal } from '@ionic-native/onesignal';
 import { Device } from '@ionic-native/device';
 import { LocalNotifications } from '@ionic-native/local-notifications';
@@ -28,7 +28,7 @@ export class HomePage {
     private localNotifications: LocalNotifications) {
     this.platform.ready().then(() => {
 
-      this.initPushNotification();
+      //this.initPushNotification();
     });
   }
 
@@ -38,7 +38,8 @@ export class HomePage {
 
     this.loadingService.showLoading("my-loading-class2");
     let deviceInfo = this.getdeviceInfo();
-    form.value.deviceToken = this.deviceToken;
+    form.value.deviceToken = localStorage.getItem("deviceToken");
+    form.value.deviceType = deviceInfo.device_platform;
     console.log(deviceInfo);
     console.log(form.value);
     this.dataService.postData("login", form.value, {}).subscribe(results => {
@@ -65,14 +66,24 @@ export class HomePage {
             });
           }
           else {
-            this.addOwnerInfoData(results.user.numberOfOwners);
+            /* this.addOwnerInfoData(results.user.numberOfOwners);
             this.navCtrl.push("IdVerification1").then(() => {
               this.loadingService.hideLoading();
+            }); */
+
+            localStorage.setItem('userCredentials', JSON.stringify(userCredentials));
+            localStorage.setItem("firstTabPage", "Noticeboard");
+            this.loadingService.hideLoading();
+            this.navCtrl.push("Tabs").then(() => {
             });
           }
         }
         else {
+          localStorage.setItem('userCredentials', JSON.stringify(userCredentials));
+          localStorage.setItem("firstTabPage", "Noticeboard");
           this.loadingService.hideLoading();
+          this.navCtrl.push("Tabs").then(() => {
+          });
         }
       }
       else {
@@ -117,7 +128,7 @@ export class HomePage {
     return deviceInfo;
   }
 
-  initPushNotification() {
+  /* initPushNotification() {
     if (!this.platform.is('cordova')) {
       console.warn('Push notifications not initialized. Cordova is not available - Run in physical device');
       return;
@@ -143,12 +154,13 @@ export class HomePage {
     this.oneSignal.handleNotificationOpened().subscribe(() => {
       // do something when a notification is opened
       console.log("NOTIFICATION OPENED");
+      localStorage.setItem("selectedPageIndex", "2");
     }, (err) => {
       console.log(err);
       console.log("NOTIFICATION OPENING ERROR", err);
     });
 
     this.oneSignal.endInit();
-  }
+  } */
 
 }

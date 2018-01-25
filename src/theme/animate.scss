@@ -2633,8 +2633,8 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
+    -webkit-transform: perspective(1px) scale3d(.3, .3, .3);
+    transform: perspective(1px) scale3d(.3, .3, .3);
   }
 
   50% {
@@ -2645,8 +2645,8 @@ Copyright (c) 2015 Daniel Eden
 @keyframes zoomIn {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
+    -webkit-transform: perspective(1px) scale3d(.3, .3, .3);
+    transform: perspective(1px) scale3d(.3, .3, .3);
   }
 
   50% {

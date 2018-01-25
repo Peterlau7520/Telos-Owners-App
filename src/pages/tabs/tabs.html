@@ -1,4 +1,4 @@
-<ion-tabs (ionChange)="tabChanged($event)">
+<ion-tabs (ionChange)="tabChanged($event)" [selectedIndex]="selectedPage">
   <ion-tab [root]="tab1Root" tabTitle="通告 Noticeboard" tabIcon="noticeboard"></ion-tab>
   <!-- <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="ios-calendar" [tabBadge]="badgeCount" tabBadgeStyle="danger"></ion-tab> -->
   <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="meetings"></ion-tab>

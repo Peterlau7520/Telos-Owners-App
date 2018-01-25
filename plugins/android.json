@@ -8,48 +8,48 @@
   },
   "installed_plugins": {
     "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "cordova-plugin-document-viewer": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "cordova-plugin-local-notification": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "cordova-plugin-youtube-video-player": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     },
     "onesignal-cordova-plugin": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-badge": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
+      "PACKAGE_NAME": "com.telostechnology.telostechnology"
     }
   }
 }

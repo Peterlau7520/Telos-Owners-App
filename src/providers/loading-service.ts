@@ -58,7 +58,8 @@ export class LoadingService {
             showBackdrop: false,
             spinner: 'hide',
             content: this.safeSvg,
-            cssClass: className
+            cssClass: className,
+            duration: 5000
         });
         this.loading.present();
     }

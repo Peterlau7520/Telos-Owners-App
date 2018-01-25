@@ -14,6 +14,7 @@ page-home {
         max-width: 120px;
         max-height: 130px;
         height: 130px;
+        image-rendering: unset !important;
         display: block;
         margin: 35px auto 20px;
     }

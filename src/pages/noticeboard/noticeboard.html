@@ -11,8 +11,8 @@
 <ion-content>
   <ion-grid no-padding>
     <ion-row margin-bottom>
-      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4>
-        <ion-card padding text-center margin-bottom *ngFor="let notice of notices; let i = index;" (click)="viewPdfFile(notice)">
+      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 *ngFor="let notice of notices; let i = index;">
+        <ion-card padding text-center (click)="viewPdfFile(notice)">
           <div card-content text-wrap v-align-center ion-button no-margin>
             <ion-row>
               <div col-12 card-title>{{notice.titleChn}} | {{notice.title}}</div>
