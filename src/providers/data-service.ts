@@ -7,8 +7,10 @@ export class DataService {
 
   BASE_URL: any;
   constructor(public http: Http) {
-    this.BASE_URL = "https://telos-residents.herokuapp.com/";
-    //this.BASE_URL = "http://7dab74d2.ngrok.io/";
+    /* this.BASE_URL = "https://telos-residents.herokuapp.com/"; */
+    this.BASE_URL = "http://telos-residents-server-staging.ap-southeast-1.elasticbeanstalk.com/";
+    /* this.BASE_URL = "http://telos-residents-server-dev.ap-southeast-1.elasticbeanstalk.com/"; */
+    /* this.BASE_URL = "http://a9d77610.ngrok.io/"; */
   }
 
   token: any;

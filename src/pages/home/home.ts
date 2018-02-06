@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { Platform, NavController, Tabs } from 'ionic-angular';
+import { Platform, NavController, Tabs, Events } from 'ionic-angular';
 import { OneSignal } from '@ionic-native/onesignal';
 import { Device } from '@ionic-native/device';
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { Badge } from '@ionic-native/badge';
 
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
@@ -16,23 +17,34 @@ import { NgForm } from '@angular/forms';
 export class HomePage {
 
   deviceToken: any;
+  loginResponse: any = {};
+  userCredentials: any = {};
+  token: any = "";
+  form: NgForm;
 
   constructor(
     private platform: Platform,
     public navCtrl: NavController,
+    public events: Events,
     public loadingService: LoadingService,
     private dataService: DataService,
     private showMessage: ShowMessage,
     private device: Device,
     public oneSignal: OneSignal,
-    private localNotifications: LocalNotifications) {
+    private localNotifications: LocalNotifications,
+    public badge: Badge) {
     this.platform.ready().then(() => {
 
       //this.initPushNotification();
+      if (localStorage.getItem('userCredentials')) {
+        this.userCredentials = JSON.parse(localStorage.getItem('userCredentials'));
+        /* this.form.value.account = this.userCredentials.account;
+        this.form.value.password = this.userCredentials.password; */
+      }
     });
   }
 
-  doLoginFunction(form: NgForm) {
+  doLoginFunction(form: NgForm, tmpuserCredentials) {
     /* localStorage.setItem("firstTabPage", "Noticeboard");
     this.navCtrl.push("Tabs"); */
 
@@ -40,51 +52,23 @@ export class HomePage {
     let deviceInfo = this.getdeviceInfo();
     form.value.deviceToken = localStorage.getItem("deviceToken");
     form.value.deviceType = deviceInfo.device_platform;
+    form.value.account = tmpuserCredentials.account;
+    form.value.password = tmpuserCredentials.password;
     console.log(deviceInfo);
     console.log(form.value);
     this.dataService.postData("login", form.value, {}).subscribe(results => {
       if (results.success == true) {
+        this.loginResponse = results;
+        this.token = results.token;
         localStorage.setItem('token', results.token);
         localStorage.setItem('loginResponse', JSON.stringify(results));
         let userCredentials = {
-          "account": form.value.account,
-          "password": form.value.password
+          "account": tmpuserCredentials.account,
+          "password": tmpuserCredentials.password
         }
+        localStorage.setItem('userCredentials', JSON.stringify(userCredentials));
+        this.getNoticeBoardData(userCredentials, this.loginResponse);
         console.log(results);
-        if (results.user.registered == true) {
-          localStorage.setItem('userCredentials', JSON.stringify(userCredentials));
-          localStorage.setItem("firstTabPage", "Noticeboard");
-          this.loadingService.hideLoading();
-          this.navCtrl.push("Tabs").then(() => {
-          });
-        }
-        else if (results.user.registered == false) {
-          if (results.user.nature == "CorporateOwner") {
-            this.addOwnerInfoData(results.user.numberOfOwners);
-            this.navCtrl.push("CompanyChop").then(() => {
-              this.loadingService.hideLoading();
-            });
-          }
-          else {
-            /* this.addOwnerInfoData(results.user.numberOfOwners);
-            this.navCtrl.push("IdVerification1").then(() => {
-              this.loadingService.hideLoading();
-            }); */
-
-            localStorage.setItem('userCredentials', JSON.stringify(userCredentials));
-            localStorage.setItem("firstTabPage", "Noticeboard");
-            this.loadingService.hideLoading();
-            this.navCtrl.push("Tabs").then(() => {
-            });
-          }
-        }
-        else {
-          localStorage.setItem('userCredentials', JSON.stringify(userCredentials));
-          localStorage.setItem("firstTabPage", "Noticeboard");
-          this.loadingService.hideLoading();
-          this.navCtrl.push("Tabs").then(() => {
-          });
-        }
       }
       else {
         this.loadingService.hideLoading();
@@ -162,5 +146,99 @@ export class HomePage {
 
     this.oneSignal.endInit();
   } */
+
+  async getNoticeBoardData(userCredentials, loginResponse) {
+    try {
+      this.token = localStorage.getItem("token");
+      await this.dataService.postData("getBadge", {
+        "estateName": this.loginResponse.user.estateName,
+        "account": this.loginResponse.user.account
+      }, {
+          headers: {
+            'authorization': this.token
+          }
+        }).subscribe(results => {
+          let newMeetings = results.newMeetings;
+          let newSurveys = results.newSurveys;
+          localStorage.setItem("newMeetingsCounts", newMeetings.length);
+          localStorage.setItem("newSurveysCounts", newSurveys.length);
+          this.events.publish('newMeetings:updated', newMeetings.length);
+          this.events.publish('newSurveys:updated', newSurveys.length);
+          this.requestPermission(newMeetings.length, newSurveys.length);
+          if (loginResponse.user.registered == true) {
+            localStorage.setItem('userCredentials', JSON.stringify(userCredentials));
+            localStorage.setItem("firstTabPage", "Noticeboard");
+            this.loadingService.hideLoading();
+            this.navCtrl.push("Tabs").then(() => {
+            });
+          }
+          else if (loginResponse.user.registered == false) {
+            if (loginResponse.user.nature == "CorporateOwner") {
+              this.addOwnerInfoData(loginResponse.user.numberOfOwners);
+              this.navCtrl.push("CompanyChop").then(() => {
+                this.loadingService.hideLoading();
+              });
+            }
+            else {
+              /* this.addOwnerInfoData(results.user.numberOfOwners);
+              this.navCtrl.push("IdVerification1").then(() => {
+                this.loadingService.hideLoading();
+              }); */
+
+              localStorage.setItem('userCredentials', JSON.stringify(userCredentials));
+              localStorage.setItem("firstTabPage", "Noticeboard");
+              this.loadingService.hideLoading();
+              this.navCtrl.push("Tabs").then(() => {
+              });
+            }
+          }
+          else {
+            localStorage.setItem('userCredentials', JSON.stringify(userCredentials));
+            localStorage.setItem("firstTabPage", "Noticeboard");
+            this.loadingService.hideLoading();
+            this.navCtrl.push("Tabs").then(() => {
+            });
+          }
+        }, err => {
+          console.log("err", err);
+          this.loadingService.hideLoading();
+          this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to login, please try again.");
+          /* this.loadingService.hideLoading(); */
+          /* this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get Noticeboard data, please try again."); */
+        });
+    }
+    catch (e) {
+      console.warn(e);
+    }
+    /* this.loadingService.showLoading("my-loading-class"); */
+  }
+
+  async requestPermission(newMeetings, newSurveys) {
+    try {
+      let total_badges = parseInt(newMeetings) + parseInt(newSurveys);
+      let hasPermission = await this.badge.hasPermission();
+      console.log(hasPermission);
+      if (!hasPermission) {
+        let permission = await this.badge.registerPermission();
+        console.log(permission);
+      }
+      else {
+        this.getBadges();
+        this.badge.set(total_badges);
+      }
+    } catch (e) {
+      console.warn(e);
+    }
+  }
+
+  async getBadges() {
+    try {
+      let badgeAmount = await this.badge.get();
+      console.log("badgeAmount", badgeAmount);
+    }
+    catch (e) {
+      console.warn(e);
+    }
+  }
 
 }

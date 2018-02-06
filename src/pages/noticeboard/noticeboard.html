@@ -15,6 +15,9 @@
         <ion-card padding text-center (click)="viewPdfFile(notice)">
           <div card-content text-wrap v-align-center ion-button no-margin>
             <ion-row>
+              <div col-12 text-center *ngIf="notice.is_new">
+                <div new-notice-dot></div>
+              </div>
               <div col-12 card-title>{{notice.titleChn}} | {{notice.title}}</div>
               <div col-12 card-subtitle>
                 <span c-display-inline-block left>

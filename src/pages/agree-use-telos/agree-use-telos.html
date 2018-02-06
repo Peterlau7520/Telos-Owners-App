@@ -3,22 +3,37 @@
   <div class="modal_content">
     <ion-row class="modal_inner_content">
       <ion-col col-12>
-        <p class="agree-title">Before using our platform to vote, please agree to use a Telos Technology's employee as your proxy : </p>
+        <p class="agree-title" no-margin text-center>Proxy Agreement</p>
+        <p class="agree-title" no-margin text-center>委任代表協議</p>
+        <p>Please read this PROXY FORM (this “Agreement”) carefully before clicking the “Accept” button. By clicking the “Accept”
+          button, you are entering into and agreeing to be bound by the terms of this Agreement.</p>
+        <p no-margin>請在點擊“接受”按鈕之前仔細閱讀此委任代表協議（本“協議”）。通過點擊“接受”按鈕，即表示您同意接受本協議條款的約束。</p>
       </ion-col>
       <ion-col col-12>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-          text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-          book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-          unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-          and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. There
-          are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
-          by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
-          of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem
-          Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator
-          on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-          to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-          injected humour, or non-characteristic words etc.
+        <p no-margin>If you do not agree to the terms of this Agreement, do not click the “Accept” button.</p>
+        <p no-margin>如果您不同意本協議的條款，請不要點擊“接受”按鈕。</p>
+      </ion-col>
+      <ion-col col-12>
+        <p no-margin>Meeting of the owners of
+          <span c-font-w-600>{{loginResponse.user.estateName}}</span>
+        </p>
+      </ion-col>
+      <ion-col col-12>
+        <p no-margin>
+          I/We, {{loginResponse.user.name}}, being the owner(s) of {{loginResponse.user.unit}}, hereby appoint
+          <span c-font-w-600>
+            <span *ngIf="meeting_details.firstProxy">{{meeting_details.firstProxy}}</span>
+            <span *ngIf="!meeting_details.firstProxy">Ma, Chung Sing</span> *[or failing him
+            <span *ngIf="meeting_details.secondProxy">{{meeting_details.secondProxy}}</span>
+            <span *ngIf="!meeting_details.secondProxy">Ho, Justin Yue-chai</span>],
+          </span> as my/our proxy to attend and vote on my/our behalf at the meeting of the owners of the building described
+          above, to be held at
+          <span c-font-w-600>{{meeting_details.meeting_venue}}</span> on
+          <span c-font-w-600>{{meeting_details.displayDate}}</span> at
+          <span c-font-w-600>{{meeting_details.displayTime}}</span> *[and at any adjournment thereof], in respect of the Poll Options I will
+          select for each Poll, on the Telos Mobile Application. If I do not fill out all Polls for this meeting, before
+          <span c-font-w-600>{{meeting_details.meeting_pollEndTime}}</span>, the appointed proxy shall not pass on any votes on my/our behalf
+          at the meeting of the owners of the building described above.
         </p>
       </ion-col>
     </ion-row>

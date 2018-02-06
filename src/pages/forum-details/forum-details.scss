@@ -8,18 +8,19 @@ page-forum-details {
     [text-area-style] {
         height: 100%;
         width: 100%;
-        min-height: 80px;
+        /* min-height: 80px; */
         max-height: 100%;
         background-color: #ffffff;
         margin: 0;
         padding: 3px;
         /* max-width: 100%; */
-        /* &:focus { */
+        &:focus {
             /* ion-footer {
                 bottom: 40px !important;
             } */
             /* padding-bottom: 40px !important; */
-        /* } */
+            height: 80px;
+        }
     }
     [send-button-ic] {
         font-size: 38px;
@@ -35,4 +36,19 @@ page-forum-details {
     /* body.keyboard-open.platform-ios .bar-footer {
         bottom: 36px !important;
     } */
+    .c-transparent-button {
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: absolute;
+        z-index: 300;
+        color: #000 !important;
+        background-color: transparent !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        bottom: 0;
+        box-shadow: none !important;
+    }
 }

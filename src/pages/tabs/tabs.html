@@ -1,8 +1,11 @@
 <ion-tabs (ionChange)="tabChanged($event)" [selectedIndex]="selectedPage">
-  <ion-tab [root]="tab1Root" tabTitle="通告 Noticeboard" tabIcon="noticeboard"></ion-tab>
+  <ion-tab [root]="tab1Root" tabTitle="通告 Noticeboard" tabIcon="noticeboard" [tabBadge]="new_notices>0 ? new_notices : null"
+    tabBadgeStyle="danger"></ion-tab>
   <!-- <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="ios-calendar" [tabBadge]="badgeCount" tabBadgeStyle="danger"></ion-tab> -->
-  <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="meetings"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="將來會議 Meetings" tabIcon="meetings" [tabBadge]="newMeetingsCounts>0 ? newMeetingsCounts : null"
+    tabBadgeStyle="danger"></ion-tab>
   <!-- <ion-tab [root]="tab3Root" tabTitle="以往會議 Past&nbsp;Meetings" tabIcon="ios-paper"></ion-tab> -->
-  <ion-tab [root]="tab3Root" tabTitle="問卷 Surveys" tabIcon="survey"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="問卷 Surveys" tabIcon="survey" [tabBadge]="newSurveysCounts>0 ? newSurveysCounts : null"
+    tabBadgeStyle="danger"></ion-tab>
   <ion-tab [root]="tab4Root" tabTitle="論壇 Forum" tabIcon="forum"></ion-tab>
 </ion-tabs>

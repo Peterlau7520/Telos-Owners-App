@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { Keyboard } from '@ionic-native/keyboard';
 import { Device } from '@ionic-native/device';
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { Badge } from '@ionic-native/badge';
 import { Camera } from '@ionic-native/camera';
 import { FileOpener } from '@ionic-native/file-opener';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
@@ -63,6 +64,7 @@ import { NoticesProvider } from '../providers/notices/notices';
     HttpModule,
     Camera,
     LocalNotifications,
+    Badge,
     YoutubeVideoPlayer,
     InAppBrowser,
     ShowMessage,

@@ -58,7 +58,8 @@
     "rxjs": "5.5.2",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.18",
-    "cordova-plugin-youtube-video-player": "~1.0.6"
+    "cordova-plugin-youtube-video-player": "~1.0.6",
+    "cordova-plugin-badge": "~0.8.5"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.0",
@@ -87,7 +88,8 @@
       "cordova-plugin-statusbar": {},
       "onesignal-cordova-plugin": {},
       "cordova-plugin-youtube-video-player": {},
-      "cordova-plugin-splashscreen": {}
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-badge": {}
     },
     "platforms": [
       "ios",

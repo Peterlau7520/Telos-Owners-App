@@ -8,22 +8,22 @@
       <ion-col col-12 col-sm-12 margin-top col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 padding-top>
         <!---Logo-->
         <img src="./assets/images/logo/logo_white.png" style="margin-bottom:0px;">
-        <form #f="ngForm" (ngSubmit)="doLoginFunction(f)">
+        <form #f="ngForm" (ngSubmit)="doLoginFunction(f, userCredentials)">
           <!---Input field username-->
           <ion-item no-padding transparent>
             <ion-label floating no-margin>用戶名 | USERNAME</ion-label>
-            <ion-input required type="text" ngModel name="account"></ion-input>
+            <ion-input required type="text" required [(ngModel)]="userCredentials.account" ngControl="account" [ngModelOptions]="{standalone: true}"></ion-input>
           </ion-item>
           <!---Input field password-->
           <ion-item no-padding transparent>
             <ion-label floating margin-top>密碼 | PASSWORD</ion-label>
-            <ion-input required type="password" ngModel name="password"></ion-input>
+            <ion-input required type="password" required [(ngModel)]="userCredentials.password" ngControl="password" [ngModelOptions]="{standalone: true}"></ion-input>
           </ion-item>
 
           <!---Login button-->
           <ion-row>
             <ion-col col-12 text-center no-padding>
-              <button ion-button button-clear-outline text-center round outline class="login-button" type="submit" [disabled]="!f.valid"
+              <button ion-button button-clear-outline text-center round outline class="login-button" type="submit" [disabled]="!userCredentials.account || !userCredentials.password"
                 color="mytheme">登入 | Log In</button>
               <!-- <button ion-button button-clear-outline text-center round outline class="login-button" type="submit" color="mytheme">登入 | Log In</button> -->
             </ion-col>

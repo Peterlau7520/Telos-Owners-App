@@ -1,16 +1,18 @@
 import { Component, ElementRef, Renderer } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, AlertController, Events } from 'ionic-angular';
 import { SignaturePadPage } from '../../pages/signature-pad-page/signature-pad-page';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
 import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer';
+import { Badge } from '@ionic-native/badge';
 import * as moment from 'moment';
 
 import { LoadingService } from '../../providers/loading-service';
 import { DataService } from '../../providers/data-service';
 import { ShowMessage } from '../../providers/show-message';
 import { HomePage } from '../../pages/home/home';
+import { Tabs } from '../../pages/tabs/tabs';
 import { DomSanitizer } from '@angular/platform-browser';
 /* import { SignaturePageModal } from '../../pages/signature-page-modal/signature-page-modal'; */
 
@@ -32,7 +34,6 @@ export class ViewMeetingPolls {
   is_license_accepted: any = false;
   meeting_details: any = {};
   data: any = {};
-  events: any = {};
   total_signatures: any = 2;
   current_signature: any = 1;
   loginResponse: any = {};
@@ -45,8 +46,11 @@ export class ViewMeetingPolls {
   poll_list: any = [];
   browser: any;
   token: any = "";
+  tabs: Tabs;
 
   constructor(public element: ElementRef, public renderer: Renderer, public navCtrl: NavController, public navParams: NavParams,
+    public events: Events,
+    public badge: Badge,
     public modalCtrl: ModalController,
     private youtube: YoutubeVideoPlayer,
     private transfer: FileTransfer,
@@ -400,6 +404,37 @@ export class ViewMeetingPolls {
         /* poll_details.votingResults = {};
         poll_details.votingResults.choice = ""; */
         selected_option.choice = true;
+        this.dataService.postData("getBadge", {
+          "estateName": this.loginResponse.user.estateName,
+          "account": this.loginResponse.user.account
+        }, {
+            headers: {
+              'authorization': this.token
+            }
+          }).subscribe(results => {
+            let newMeetings = results.newMeetings;
+            let newSurveys = results.newSurveys;
+            localStorage.setItem("newMeetingsCounts", newMeetings.length);
+            localStorage.setItem("newSurveysCounts", newSurveys.length);
+            let new_notices = window.localStorage.getItem("new_notices");
+            this.events.publish('newMeetings:updated', newMeetings.length);
+            this.events.publish('newSurveys:updated', newSurveys.length);
+            this.requestPermission(newMeetings.length, newSurveys.length, new_notices);
+            if (results.success == true) {
+              /* this.loadingService.hideLoading(); */
+            }
+            else {
+              this.showMessage.showToastBottom(results.message);
+              if (results.message == "Invalid token" || results.message == "Please login") {
+                this.navCtrl.setRoot(HomePage);
+              }
+              /* this.loadingService.hideLoading(); */
+            }
+          }, err => {
+            console.log("err", err);
+            /* this.loadingService.hideLoading(); */
+            /* this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get Noticeboard data, please try again."); */
+          });
         this.openThankYouNote2();
         this.loadingService.hideLoading();
       }
@@ -472,6 +507,34 @@ export class ViewMeetingPolls {
       /* this.is_license_accepted = true; */
     });
     myModal5.present();
+  }
+
+  async requestPermission(newMeetings, newSurveys, new_notices) {
+    try {
+      let total_badges = parseInt(newMeetings) + parseInt(newSurveys) + parseInt(new_notices);
+      let hasPermission = await this.badge.hasPermission();
+      console.log(hasPermission);
+      if (!hasPermission) {
+        let permission = await this.badge.registerPermission();
+        console.log(permission);
+      }
+      else {
+        this.getBadges();
+        this.badge.set(total_badges);
+      }
+    } catch (e) {
+      console.warn(e);
+    }
+  }
+
+  async getBadges() {
+    try {
+      let badgeAmount = await this.badge.get();
+      console.log("badgeAmount", badgeAmount);
+    }
+    catch (e) {
+      console.warn(e);
+    }
   }
 
 }

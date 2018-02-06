@@ -61,7 +61,8 @@ export class UpcomingMeetings {
               "meeting_pollEndTime": meeting.pollEndTime,
               "meeting_polls": meeting.polls,
               "meeting_background": "./assets/images/background/1.jpg",
-              "meeting_youtubelink": meeting.youtubelink
+              "meeting_youtubelink": meeting.youtubelink,
+              "meeting_proxyFullName" : meeting.proxyFullName
             })
           })
           this.loadingService.hideLoading();

@@ -108,6 +108,9 @@
       <ion-textarea text-area-style placeholder="Add comment..." [(ngModel)]="commentText"></ion-textarea>
     </ion-col>
     <ion-col no-padding col-2 text-center col-sm-1>
+      <button ion-button text-center *ngIf="!showSpinner" class="c-transparent-button" type="button" (click)="addCommentFunction(commentText, forum_details)">
+        <ion-icon send-button-ic name="md-send"></ion-icon>
+      </button>
       <svg width="45" height="50" *ngIf="showSpinner" class="small-spinner" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg"
         stroke="#000000">
         <g fill="none" fill-rule="evenodd" stroke-width="2">
@@ -125,7 +128,6 @@
           </circle>
         </g>
       </svg>
-      <ion-icon send-button-ic name="md-send" *ngIf="!showSpinner" (click)="addCommentFunction(commentText, forum_details)"></ion-icon>
     </ion-col>
   </ion-row>
   <!-- </ion-item> -->

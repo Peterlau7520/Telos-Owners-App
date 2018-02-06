@@ -7,6 +7,9 @@
     "files": {}
   },
   "installed_plugins": {
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.telostechnology.telos"
+    },
     "cordova-plugin-camera": {
       "CAMERA_USAGE_DESCRIPTION": " ",
       "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
@@ -50,9 +53,6 @@
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-badge": {
-      "PACKAGE_NAME": "com.telostechnology.telos"
-    },
     "cordova-plugin-compat": {
       "PACKAGE_NAME": "com.telostechnology.telos"
     }

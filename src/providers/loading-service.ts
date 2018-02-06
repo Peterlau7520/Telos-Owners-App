@@ -59,7 +59,7 @@ export class LoadingService {
             spinner: 'hide',
             content: this.safeSvg,
             cssClass: className,
-            duration: 5000
+            duration: 9000
         });
         this.loading.present();
     }

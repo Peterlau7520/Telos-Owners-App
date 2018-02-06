@@ -706,7 +706,7 @@ body.keyboard-is-open .hideElementOnKeyboardShown {
 
 .loading-md.my-loading-class {
     top: 56px;
-    bottom: 69px;
+    bottom: 73px;
 }
 
 .loading-ios.my-loading-class2 {
@@ -739,7 +739,7 @@ body.keyboard-is-open .hideElementOnKeyboardShown {
 
 .loading-md.my-loading-class4 {
     top: 56px;
-    bottom: 69px;
+    bottom: 73px;
     .loading-wrapper {
         background: rgba(250, 250, 250, 0.6) !important;
     }
@@ -798,4 +798,14 @@ body.keyboard-is-open .hideElementOnKeyboardShown {
 
 .toolbar-ios ion-title {
     padding: 0 70px 1px;
+}
+
+[new-notice-dot] {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    z-index: 1000;
+    margin: 0 auto;
+    position: relative;
+    background-color: #405FF4;
 }
