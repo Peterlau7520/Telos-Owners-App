@@ -10,28 +10,32 @@
 <!--Theme Full Image Cards-->
 <ion-content>
   <ion-grid no-padding>
+
     <ion-row margin-bottom>
-      <ion-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 *ngFor="let notice of notices; let i = index;">
-        <ion-card padding text-center (click)="viewPdfFile(notice)">
-          <div card-content text-wrap v-align-center ion-button no-margin>
-            <ion-row>
-              <div col-12 text-center *ngIf="notice.is_new">
-                <div new-notice-dot></div>
-              </div>
-              <div col-12 card-title>{{notice.titleChn}} | {{notice.title}}</div>
-              <div col-12 card-subtitle>
-                <span c-display-inline-block left>
-                  通告發出日期 | Post date: {{notice.postDate}}
-                </span>
-                <span c-display-inline-block left>
-                  有效期至 | Effective until: {{notice.endTime}}
-                </span>
-              </div>
-            </ion-row>
-            <!-- <img images-filter src="./assets/images/background/{{i+1}}.jpg" style="min-height: 220px;" /> -->
-          </div>
+      <ion-col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center> 
+        <div class="tab-btn-grp">
+        <button class="active">Tabe 1</button>
+        <button>Tabe 2</button>
+        </div>
+      </ion-col> 
+    </ion-row>
+
+    <ion-row class="notice-box">      
+      <ion-col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 *ngFor="let notice of notices; let i = index;">
+        <ion-card padding text-center (click)="viewPdfFile(notice)" style="margin-bottom: 0px;">
+        <ion-row>
+          <ion-col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-left> 
+            <div class="date-month">7 Feb</div>
+            <div class="day-day">Wednesday</div>
+          </ion-col>
+          <ion-col col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 class="cart-title"> I Of Hanging Object       </ion-col>
+          <ion-col col-1>
+            <ion-icon name="arrow-forward" class="card-arrow"></ion-icon>
+          </ion-col>
+        </ion-row>
         </ion-card>
       </ion-col>
     </ion-row>
+
   </ion-grid>
 </ion-content>
