@@ -27,6 +27,7 @@ export class Noticeboard {
   new_notices: any;
   loginResponse: any = {};
   token: any = "";
+  tab: any;
 
   constructor(
     public navCtrl: NavController,
@@ -41,6 +42,7 @@ export class Noticeboard {
     this.notices = [];
     this.loginResponse = JSON.parse(localStorage.getItem("loginResponse"));
     this.token = localStorage.getItem("token");
+    this.tab = 1;
   };
   ionViewDidLoad() {
     console.log('ionViewDidLoad Noticeboard');
@@ -101,7 +103,15 @@ export class Noticeboard {
         this.loadingService.hideLoading();
         this.showMessage.showToastBottom("網絡連接問題，請重試 | Unable to get Noticeboard data, please try again.");
       });
+  }
 
+  tabEvent(index){
+    this.tab = index;
+    if (index == 2) {
+      // this.notices = [];
+    }else{
+      //this.getNoticeBoardData();
+    }
   }
 
   viewPdfFile(notice) {
